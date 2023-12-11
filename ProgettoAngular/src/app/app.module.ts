@@ -19,6 +19,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 import { PAGES404Component } from './pages/pages404/pages404.component';
 import { DetailsComponent } from './pages/details/details.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { DetailsComponent } from './pages/details/details.component';
     AppRoutingModule,
     HttpClientModule,
     SharedModule,
+    FontAwesomeModule,
 
   ],
   providers: [],
