@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 const routes: Routes = [{ path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) }];
 =======
 const routes: Routes = [
@@ -12,6 +13,8 @@ const routes: Routes = [
 >>>>>>> 255b2829b47c55f9b7cf25bd2b1821155b8f686c
 =======
 >>>>>>> c835b810d1e84ba7831954ee6e091ec263a900dc
+=======
+>>>>>>> fb1d8f3fe5de2fa2276d90cb80b4c88b3985f763
 
 
 const routes: Routes = [{ path: 'LogSystem',
