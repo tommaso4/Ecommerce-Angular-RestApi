@@ -1,11 +1,11 @@
-import { Component, NgModule } from '@angular/core';
+import { Component } from '@angular/core';
 import { IconDefinition, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { PaginatorService } from '../../core/services/paginator.service';
 
 
 @Component({
   selector: 'app-paginator',
-  templateUrl: './paginator.component.html',
+  templateUrl:'./paginator.component.html',
   styleUrls: ['./paginator.component.scss'],
   providers: [PaginatorService]
 })
