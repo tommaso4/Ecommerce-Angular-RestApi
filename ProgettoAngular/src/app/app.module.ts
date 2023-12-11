@@ -7,8 +7,9 @@ import { HomeComponent } from './pages/home/home.component';
 
 import { BeerCardComponent } from './pages/home/beer-card/beer-card.component';
 import { HttpClientModule } from '@angular/common/http';
-import { SharedModule } from './shared/shared.module';
+
 import { NameFilterComponent } from './pages/home/name-filter/name-filter.component';
+import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({

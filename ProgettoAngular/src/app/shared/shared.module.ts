@@ -10,7 +10,7 @@ import { FormsModule } from "@angular/forms";
     HeaderComponent,
     PaginatorComponent
   ],
-  imports: [ 
+  imports: [
     CommonModule,
     FormsModule,
     FontAwesomeModule
