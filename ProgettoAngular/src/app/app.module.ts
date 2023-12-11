@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { NameFilterComponent } from './pages/home/name-filter/name-filter.component';
 import { SharedModule } from './shared/shared.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { SharedModule } from './shared/shared.module';
     AppRoutingModule,
     HttpClientModule,
     SharedModule,
+    FontAwesomeModule,
 
   ],
   providers: [],
