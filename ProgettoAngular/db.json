@@ -271,7 +271,7 @@
 " durata " :  10
 },
 {
-" temp " :  {
+"temp" :  {
 " valore " :  65 ,
 " unità " :  " centigradi "
 },
@@ -305,28 +305,28 @@
 {
 " nome " :  " Propino Pale Malt " ,
 " quantità " :  {
-" valore " :  1,63 ,
+" valore " :  1.63,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Malto di Frumento " ,
 " quantità " :  {
-" valore " :  1,63 ,
+" valore " :  1.63,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Propino Pale Malt for kettle souring " ,
 " quantità " :  {
-" valore " :  0,03 ,
+" valore " : 0.03,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Malto acidificato per acidificazione " ,
 " quantità " :  {
-" valore " :  0,03 ,
+" valore " : 0.03,
 " unità " :  " chilogrammi "
 }
 }
@@ -359,13 +359,13 @@
 " first_brewed " :  " 09/2013 " ,
 " description " :  " La nostra serie Unleash the Yeast è stata un esperimento epico sulle differenze di aroma e sapore fornite cambiando il lievito. Abbiamo preparato un mosto con una leggera nota di caramello e un sapore di biscotto tostato, e l'abbiamo luppolato con Amarillo e Centenario per un'amarezza agrumata. Tutto il resto dipende dal lievito. Il lievito Pilsner fermenta senza esteri fruttati o fenoli speziati, anche se può aggiungere un pizzico di butterscotch. " ,
 " url_immagine " :  " https://images.punkapi.com/v2/4.png " ,
-" abv " :  6,3 ,
+" abv " :  6.3,
 " ibu " :  55 ,
 " target_fg " :  1012 ,
 " target_og " :  1060 ,
 " ebc " :  30 ,
 " srm " :  15 ,
-" ph " :  4,4 ,
+" ph " :  4.4 ,
 " livello_attenuazione " :  80 ,
 " volume " :  {
 " valore " :  20 ,
@@ -398,28 +398,28 @@
 {
 " nome " :  " Extra Pale " ,
 " quantità " :  {
-" valore " :  4,58 ,
+" valore " :  4.58 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Caramalto " ,
 " quantità " :  {
-" valore " :  0,25 ,
+" valore " :  0.25 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Cristallo scuro " ,
 " quantità " :  {
-" valore " :  0,06 ,
+" valore " :  0.06 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Monaco " ,
 " quantità " :  {
-" valore " :  0,25 ,
+" valore " :  0.25 ,
 " unità " :  " chilogrammi "
 }
 }
@@ -464,7 +464,7 @@
 {
 " nome " :  " Centenario " ,
 " quantità " :  {
-" valore " :  17,5 ,
+" valore " :  17.5 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " fine " ,
@@ -473,7 +473,7 @@
 {
 " nome " :  " Amarillo " ,
 " quantità " :  {
-" valore " :  17,5 ,
+" valore " :  17.5 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " fine " ,
@@ -503,7 +503,7 @@
 " target_og " :  1069 ,
 " ebc " :  10 ,
 " srm " :  5 ,
-" ph " :  4,4 ,
+" ph " :  4.4 ,
 " livello_attenuazione " :  67 ,
 " volume " :  {
 " valore " :  20 ,
@@ -536,14 +536,14 @@
 {
 " nome " :  " Lager Malt " ,
 " quantità " :  {
-" valore " :  6,63 ,
+" valore " :  6.63 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Grano " ,
 " quantità " :  {
-" valore " :  0,38 ,
+" valore " :  0.38 ,
 " unità " :  " chilogrammi "
 }
 }
@@ -599,9 +599,9 @@
 " target_fg " :  1005 ,
 " target_og " :  1045 ,
 " ebc " :  15 ,
-" srm " :  7,5 ,
-" ph " :  4,4 ,
-" livello_attenuazione " :  88,9 ,
+" srm " :  7.5 ,
+" ph " :  4.4 ,
+" livello_attenuazione " :  88.9 ,
 " volume " :  {
 " valore " :  20 ,
 " unità " :  " litri "
@@ -633,21 +633,21 @@
 {
 " nome " :  " Extra Pale " ,
 " quantità " :  {
-" valore " :  3,63 ,
+" valore " :  3.63 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Monaco " ,
 " quantità " :  {
-" valore " :  0,13 ,
+" valore " :  0.13 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Grano " ,
 " quantità " :  {
-" valore " :  0,25 ,
+" valore " :  0.25 ,
 " unità " :  " chilogrammi "
 }
 }
@@ -656,7 +656,7 @@
 {
 " nome " :  " Amarillo " ,
 " quantità " :  {
-" valore " :  2,5 ,
+" valore " :  2.5 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " inizio " ,
@@ -683,7 +683,7 @@
 {
 " nome " :  " Pepe in grani " ,
 " quantità " :  {
-" valore " :  2,5 ,
+" valore " :  2.5 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " centro " ,
@@ -701,7 +701,7 @@
 {
 " nome " :  " Amarillo " ,
 " quantità " :  {
-" valore " :  12,5 ,
+" valore " :  12.5 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " fine " ,
@@ -731,7 +731,7 @@
 " target_og " :  1108 ,
 " ebc " :  80 ,
 " srm " :  40 ,
-" ph " :  5,3 ,
+" ph " :  5.3 ,
 " livello_attenuazione " :  84 ,
 " volume " :  {
 " valore " :  20 ,
@@ -764,21 +764,21 @@
 {
 " nome " :  " Extra Pale " ,
 " quantità " :  {
-" valore " :  9,69 ,
+" valore " :  9.69 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Cioccolato " ,
 " quantità " :  {
-" valore " :  0,19 ,
+" valore " :  0.19 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Carafa Special Malt Tipo 3 " ,
 " quantità " :  {
-" valore " :  0,44 ,
+" valore " :  0.44 ,
 " unità " :  " chilogrammi "
 }
 }
@@ -787,7 +787,7 @@
 {
 " nome " :  " Tomahawk " ,
 " quantità " :  {
-" valore " :  31,25 ,
+" valore " :  31.25 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " inizio " ,
@@ -796,7 +796,7 @@
 {
 " nome " :  " Magnum " ,
 " quantità " :  {
-" valore " :  12,5 ,
+" valore " :  12.5 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " inizio " ,
@@ -805,7 +805,7 @@
 {
 " nome " :  " Magnum " ,
 " quantità " :  {
-" valore " :  12,5 ,
+" valore " :  12.5 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " centro " ,
@@ -814,7 +814,7 @@
 {
 " nome " :  " Tomahawk " ,
 " quantità " :  {
-" valore " :  12,5 ,
+" valore " :  12.5 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " fine " ,
@@ -859,7 +859,7 @@
 {
 " nome " :  " Tomahawk " ,
 " quantità " :  {
-" valore " :  37,5 ,
+" valore " :  37.5 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " luppolo secco " ,
@@ -883,13 +883,13 @@
 " first_brewed " :  " 03/2013 " ,
 " descrizione " :  " Il falso è il nuovo nero. Il falso è dove si trova. Arte falsa, marchi falsi, seni finti e birra chiara finta. Vogliamo fare la nostra parte nelle brutte conseguenze del sogno Lager. Saluta Fake Lager: un finto capolavoro floreale e piccante del 21° secolo con l'aggiunta dell'amarezza BrewDog. " ,
 " url_immagine " :  " https://images.punkapi.com/v2/8.png " ,
-" abv " :  4,7 ,
+" abv " :  4.7 ,
 " ibu " :  40 ,
 " target_fg " :  1010 ,
 " target_og " :  1046 ,
 " ebc " :  12 ,
 " srm " :  6 ,
-" ph " :  4,4 ,
+" ph " :  4.4 ,
 " livello_attenuazione " :  78 ,
 " volume " :  {
 " valore " :  20 ,
@@ -922,28 +922,28 @@
 {
 " nome " :  " Extra Pale " ,
 " quantità " :  {
-" valore " :  3,33 ,
+" valore " :  3.33 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Monaco " ,
 " quantità " :  {
-" valore " :  0,42 ,
+" valore " :  0.42 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Caramalto " ,
 " quantità " :  {
-" valore " :  0,28 ,
+" valore " :  0.28 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Malto acidificato " ,
 " quantità " :  {
-" valore " :  0,07 ,
+" valore " :  0.07 ,
 " unità " :  " chilogrammi "
 }
 }
@@ -952,7 +952,7 @@
 {
 " nome " :  " Magnum " ,
 " quantità " :  {
-" valore " :  7,5 ,
+" valore " :  7.5 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " inizio " ,
@@ -970,7 +970,7 @@
 {
 " nome " :  " Hersbrucker " ,
 " quantità " :  {
-" valore " :  6,25 ,
+" valore " :  6.25 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " centro " ,
@@ -979,7 +979,7 @@
 {
 " nome " :  " Saaz " ,
 " quantità " :  {
-" valore " :  6,25 ,
+" valore " :  6.25 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " centro " ,
@@ -988,7 +988,7 @@
 {
 " nome " :  " Hersbrucker " ,
 " quantità " :  {
-" valore " :  18,75 ,
+" valore " :  18.75 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " fine " ,
@@ -997,7 +997,7 @@
 {
 " nome " :  " Saaz " ,
 " quantità " :  {
-" valore " :  18,75 ,
+" valore " :  18.75 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " fine " ,
@@ -1021,13 +1021,13 @@
 " first_brewed " :  " 03/2010 " ,
 " descrizione " :  " Imperial scotch ale whisky invecchiato in botte. Birra perfetta per quando la pioggia cade di traverso. Liquirizia, prugna e uva passa temperano il caldo alcol, producendo una birra capace di trattenere il freddo scozzese. " ,
 " url_immagine " :  " https://images.punkapi.com/v2/9.png " ,
-" abv " :  12,5 ,
+" abv " :  12.5 ,
 " ibu " :  30 ,
 " target_fg " :  1020 ,
 " target_og " :  1106 ,
 " ebc " :  84 ,
 " srm " :  42 ,
-" ph " :  5,6 ,
+" ph " :  5.6 ,
 " livello_attenuazione " :  83 ,
 " volume " :  {
 " valore " :  20 ,
@@ -1060,70 +1060,70 @@
 {
 " nome " :  " Monaco " ,
 " quantità " :  {
-" valore " :  5,63 ,
+" valore " :  5.63 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Avena in Fiocchi " ,
 " quantità " :  {
-" valore " :  1,88 ,
+" valore " :  1.88 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Grano " ,
 " quantità " :  {
-" valore " :  1,88 ,
+" valore " :  1.88 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Caramalto " ,
 " quantità " :  {
-" valore " :  1,25 ,
+" valore " :  1.25 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Cristallo " ,
 " quantità " :  {
-" valore " :  0,63 ,
+" valore " :  0.63 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Cristallo scuro " ,
 " quantità " :  {
-" valore " :  0,63 ,
+" valore " :  0.63 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Cioccolato " ,
 " quantità " :  {
-" valore " :  0,31 ,
+" valore " :  0.31 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Malto Torbato " ,
 " quantità " :  {
-" valore " :  0,13 ,
+" valore " :  0.13 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Ambra " ,
 " quantità " :  {
-" valore " :  0,13 ,
+" valore " :  0.13 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Marrone " ,
 " quantità " :  {
-" valore " :  0,13 ,
+" valore " :  0.13 ,
 " unità " :  " chilogrammi "
 }
 }
@@ -1141,7 +1141,7 @@
 {
 " nome " :  " Primo Oro " ,
 " quantità " :  {
-" valore " :  31,3 ,
+" valore " :  31.3 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " inizio " ,
@@ -1165,14 +1165,14 @@
 " first_brewed " :  " 01/2011 " ,
 " descrizione " :  " Il buon vecchio Bramling Cross è elegante, raffinato, sicuro, (noioso) e discreto. Sottostimato, a meno che non ci si lasci bere una birra. Questo è Bramling Cross reinventato e reimmaginato, e mostra cosa si può fare con il luppolo inglese se ne usi abbastanza. La povera Bramling Cross normalmente si perde in un flusso doloroso di birre marroni conformiste prodotte da assonnati birrai di botte. Ma non più. Questa birra dimostra che il luppolo britannico ha un po' di anima, ed è un tripudio fruttato di more, pere e prugne. Mi ricorda la marmellata di rovi, mele e zenzero che preparava mia nonna. " ,
 " url_immagine " :  " https://images.punkapi.com/v2/10.png " ,
-" abv " :  7,5 ,
+" abv " :  7.5 ,
 " ibu " :  75 ,
 " target_fg " :  1013 ,
 " target_og " :  1068 ,
 " ebc " :  22 ,
 " srm " :  11 ,
-" ph " :  4,4 ,
-" livello_attenuazione " :  80,9 ,
+" ph " :  4.4 ,
+" livello_attenuazione " :  80.9 ,
 " volume " :  {
 " valore " :  20 ,
 " unità " :  " litri "
@@ -1204,21 +1204,21 @@
 {
 " nome " :  " Extra Pale " ,
 " quantità " :  {
-" valore " :  6,38 ,
+" valore " :  6.38 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Cristallo 150 " ,
 " quantità " :  {
-" valore " :  0,13 ,
+" valore " :  0.13 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Caramalto " ,
 " quantità " :  {
-" valore " :  0,25 ,
+" valore " :  0.25 ,
 " unità " :  " chilogrammi "
 }
 }
@@ -1260,14 +1260,14 @@
 " first_brewed " :  " 04/2013 " ,
 " descrizione " :  " Il frutto dell'ingegno del nostro piccolo produttore di birra, George Woods. Una Scotch Ale pericolosamente bevibile con infuso di zucchero e latte. " ,
 " url_immagine " :  " https://images.punkapi.com/v2/keg.png " ,
-" abv " :  7,3 ,
+" abv " :  7.3 ,
 " ibu " :  30 ,
 " target_fg " :  1020 ,
 " target_og " :  1079 ,
 " ebc " :  120 ,
 " srm " :  60 ,
-" ph " :  4,4 ,
-" livello_attenuazione " :  74,7 ,
+" ph " :  4.4 ,
+" livello_attenuazione " :  74.7 ,
 " volume " :  {
 " valore " :  20 ,
 " unità " :  " litri "
@@ -1299,70 +1299,70 @@
 {
 " nome " :  " Pale Ale " ,
 " quantità " :  {
-" valore " :  2,18 ,
+" valore " :  2.18 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Caramalto " ,
 " quantità " :  {
-" valore " :  0,3 ,
+" valore " :  0.3 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Cristallo scuro " ,
 " quantità " :  {
-" valore " :  0,3 ,
+" valore " :  0.3 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Weyermann affumicato " ,
 " quantità " :  {
-" valore " :  1,8 ,
+" valore " :  1.8 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Avena in Fiocchi " ,
 " quantità " :  {
-" valore " :  0,6 ,
+" valore " :  0.6 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Marrone " ,
 " quantità " :  {
-" valore " :  0,6 ,
+" valore " :  0.6 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Ambra " ,
 " quantità " :  {
-" valore " :  0,1 ,
+" valore " :  0.1 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Cioccolato " ,
 " quantità " :  {
-" valore " :  0,05 ,
+" valore " :  0.05 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Monaco " ,
 " quantità " :  {
-" valore " :  0,6 ,
+" valore " :  0.6 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Cristallo 150 " ,
 " quantità " :  {
-" valore " :  0,2 ,
+" valore " :  0.2 ,
 " unità " :  " chilogrammi "
 }
 }
@@ -1430,8 +1430,8 @@
 " Ali di pollo alla coreana " ,
 " Frullato al cioccolato "
 ],
-" brewers_tips " :  " Molto malto in questo. Mash-in in più fasi e spargi il malto Pale Ale in tutto il mash per fornire stabilità. Se il mash inizia ad affondare, fermati, attendi qualche minuto mentre mescoli, quindi ricomincia " , _
-" contribuito_da " :  " Sam Mason <samjbmason> "
+" brewers_tips " :  " Molto malto in questo. Mash-in in più fasi e spargi il malto Pale Ale in tutto il mash per fornire stabilità. Se il mash inizia ad affondare, fermati, attendi qualche minuto mentre mescoli, quindi ricomincia " ,
+" contribuito da " :  " Sam Mason <samjbmason> "
 },
 {
 " id " :  12 ,
@@ -1440,13 +1440,13 @@
 " first_brewed " :  " 12/2015 " ,
 " description " :  " A cavallo tra un'India Pale Ale e una Stout, questo particolare stile è uno di quelli che amiamo davvero. Le Black IPA sono una grande vetrina per l'abilità del nostro team di birrai, bilanciando così tanti sapori complessi e contorti in nello stesso momento. Gli agrumi, il mango e il pino del luppolo – tre dei nostri preferiti di tutti i tempi – si contrappongono alla secchezza tostata del malto ad ogni giro. " ,
 " url_immagine " :  " https://images.punkapi.com/v2/12.png " ,
-" abv " :  5,3 ,
+" abv " :  5.3 ,
 " ibu " :  60 ,
 " target_fg " :  1012 ,
 " target_og " :  1052 ,
 " ebc " :  200 ,
 " srm " :  100 ,
-" ph " :  4,2 ,
+" ph " :  4.2 ,
 " livello_attenuazione " :  77 ,
 " volume " :  {
 " valore " :  20 ,
@@ -1479,28 +1479,28 @@
 {
 " nome " :  " Pale Ale " ,
 " quantità " :  {
-" valore " :  3,13 ,
+" valore " :  3.13 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Caramalto " ,
 " quantità " :  {
-" valore " :  0,25 ,
+" valore " :  0.25 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Cristallo 150 " ,
 " quantità " :  {
-" valore " :  0,18 ,
+" valore " :  0.18 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Carafa Special Malt Tipo 1 " ,
 " quantità " :  {
-" valore " :  0,25 ,
+" valore " :  0.25 ,
 " unità " :  " chilogrammi "
 }
 }
@@ -1509,7 +1509,7 @@
 {
 " nome " :  " Simcoe " ,
 " quantità " :  {
-" valore " :  12,5 ,
+" valore " :  12.5 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " inizio " ,
@@ -1527,7 +1527,7 @@
 {
 " nome " :  " Simcoe " ,
 " quantità " :  {
-" valore " :  12,5 ,
+" valore " :  12.5 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " fine " ,
@@ -1536,7 +1536,7 @@
 {
 " nome " :  " Amarillo " ,
 " quantità " :  {
-" valore " :  12,5 ,
+" valore " :  12.5 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " fine " ,
@@ -1545,7 +1545,7 @@
 {
 " nome " :  " Citra " ,
 " quantità " :  {
-" valore " :  12,5 ,
+" valore " :  12.5 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " fine " ,
@@ -1554,7 +1554,7 @@
 {
 " nome " :  " Simcoe " ,
 " quantità " :  {
-" valore " :  62,5 ,
+" valore " :  62.5 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " luppolo secco " ,
@@ -1563,7 +1563,7 @@
 {
 " nome " :  " Amarillo " ,
 " quantità " :  {
-" valore " :  62,5 ,
+" valore " :  62.5 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " luppolo secco " ,
@@ -1572,7 +1572,7 @@
 {
 " nome " :  " Citra " ,
 " quantità " :  {
-" valore " :  62,5 ,
+" valore " :  62.5 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " luppolo secco " ,
@@ -1596,14 +1596,14 @@
 " first_brewed " :  " 11/2009 " ,
 " descrizione " :  " Una birra al malto nero deliziosamente robusta con un decadente sapore di cacao scuro e secco che fornisce uno sfondo seducente al luppolo Cascade. " ,
 " url_immagine " :  " https://images.punkapi.com/v2/13.png " ,
-" abv " :  4,5 ,
+" abv " :  4.5 ,
 " ibu " :  50 ,
 " target_fg " :  1012 ,
 " target_og " :  1047 ,
 " ebc " :  140 ,
 " srm " :  70 ,
-" ph " :  5,2 ,
-" livello_attenuazione " :  74,5 ,
+" ph " :  5.2 ,
+" livello_attenuazione " :  74.5 ,
 " volume " :  {
 " valore " :  20 ,
 " unità " :  " litri "
@@ -1635,35 +1635,35 @@
 {
 " nome " :  " Maris Otter Extra Pale " ,
 " quantità " :  {
-" valore " :  3,44 ,
+" valore " :  3.44 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Caramalto " ,
 " quantità " :  {
-" valore " :  0,63 ,
+" valore " :  0.63 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Cristallo 150 " ,
 " quantità " :  {
-" valore " :  0,31 ,
+" valore " :  0.31 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Carafa Special Malt Tipo 1 " ,
 " quantità " :  {
-" valore " :  0,31 ,
+" valore " :  0.31 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Carafa Special Malt Tipo 3 " ,
 " quantità " :  {
-" valore " :  0,31 ,
+" valore " :  0.31 ,
 " unità " :  " chilogrammi "
 }
 }
@@ -1672,7 +1672,7 @@
 {
 " nome " :  " Cascata " ,
 " quantità " :  {
-" valore " :  43,8 ,
+" valore " :  43.8 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " inizio " ,
@@ -1681,7 +1681,7 @@
 {
 " nome " :  " Cascata " ,
 " quantità " :  {
-" valore " :  81,3 ,
+" valore " :  81.3 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " fine " ,
@@ -1714,14 +1714,14 @@
 " first_brewed " :  " 02/2010 " ,
 " descrizione " :  " Una fusione di sapori di malto caramellato e luppolo incisivo della Nuova Zelanda. Una birra da sessione in cui puoi mettere i denti. " ,
 " url_immagine " :  " https://images.punkapi.com/v2/14.png " ,
-" abv " :  4,5 ,
+" abv " :  4.5 ,
 " ibu " :  42 ,
 " target_fg " :  1025 ,
 " target_og " :  1046 ,
 " ebc " :  62 ,
 " srm " :  31 ,
-" ph " :  4,4 ,
-" livello_attenuazione " :  72,8 ,
+" ph " :  4.4 ,
+" livello_attenuazione " :  72.8 ,
 " volume " :  {
 " valore " :  20 ,
 " unità " :  " litri "
@@ -1753,35 +1753,35 @@
 {
 " nome " :  " Maris Otter Extra Pale " ,
 " quantità " :  {
-" valore " :  2,5 ,
+" valore " :  2.5 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Caramalto " ,
 " quantità " :  {
-" valore " :  1,25 ,
+" valore " :  1.25 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Monaco " ,
 " quantità " :  {
-" valore " :  0,61 ,
+" valore " :  0.61 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Cristallo 150 " ,
 " quantità " :  {
-" valore " :  0,28 ,
+" valore " :  0.28 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Cristallo scuro 350-400 " ,
 " quantità " :  {
-" valore " :  0,2 ,
+" valore " :  0.2 ,
 " unità " :  " chilogrammi "
 }
 }
@@ -1833,13 +1833,13 @@
 " first_brewed " :  " 01/2012 " ,
 " descrizione " :  " Questa ricetta è per la base Belgian Tripel. Una miscela di due enormi birre invecchiate in rovere: metà una Belgian Tripel luppolata e metà una Triple India Pale Ale. Entrambe invecchiate in botti di whisky a grano singolo per due anni e miscelate , ogni birra apporta il proprio carattere al mix. La Tripel belga è ricca di esteri speziati e fruttati complessi e di un carattere incisivo di luppolo agrumato. " ,
 " url_immagine " :  " https://images.punkapi.com/v2/15.png " ,
-" abv " :  14,5 ,
+" abv " :  14.5 ,
 " ibu " :  50 ,
 " target_fg " :  1014 ,
 " target_og " :  1093 ,
 " ebc " :  40 ,
 " srm " :  20 ,
-" ph " :  4,4 ,
+" ph " :  4.4 ,
 " livello_attenuazione " :  85 ,
 " volume " :  {
 " valore " :  20 ,
@@ -1879,14 +1879,14 @@
 {
 " nome " :  " Caramalto " ,
 " quantità " :  {
-" valore " :  0,94 ,
+" valore " :  0.94 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Cristallo " ,
 " quantità " :  {
-" valore " :  0,44 ,
+" valore " :  0.44 ,
 " unità " :  " chilogrammi "
 }
 }
@@ -1895,7 +1895,7 @@
 {
 " nome " :  " Estratto Columbus " ,
 " quantità " :  {
-" valore " :  12,5 ,
+" valore " :  12.5 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " inizio " ,
@@ -1904,7 +1904,7 @@
 {
 " nome " :  " Centenario " ,
 " quantità " :  {
-" valore " :  37,5 ,
+" valore " :  37.5 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " fine " ,
@@ -1913,7 +1913,7 @@
 {
 " nome " :  " Cascata " ,
 " quantità " :  {
-" valore " :  37,5 ,
+" valore " :  37.5 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " fine " ,
@@ -1922,7 +1922,7 @@
 {
 " nome " :  " Simcoe " ,
 " quantità " :  {
-" valore " :  37,5 ,
+" valore " :  37.5 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " fine " ,
@@ -3221,14 +3221,14 @@
 {
 " nome " :  " Grano " ,
 " quantità " :  {
-" valore " :  2,5 ,
+" valore " :  2.5 ,
 " unità " :  " chilogrammi "
 }
 },
 {
 " nome " :  " Extra Pale " ,
 " quantità " :  {
-" valore " :  2,06 ,
+" valore " :  2.06 ,
 " unità " :  " chilogrammi "
 }
 }
@@ -3237,7 +3237,7 @@
 {
 " nome " :  " Primo Oro " ,
 " quantità " :  {
-" valore " :  18,75 ,
+" valore " :  18.75 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " inizio " ,
@@ -3255,7 +3255,7 @@
 {
 " nome " :  " Asso Sorachi " ,
 " quantità " :  {
-" valore " :  16,25 ,
+" valore " :  16.25 ,
 " unità " :  " grammi "
 },
 " aggiungi " :  " fine " ,
