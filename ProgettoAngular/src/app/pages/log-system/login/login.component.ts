@@ -32,7 +32,7 @@ export class LoginComponent {
     this.LSS.login(this.form.value)
     .pipe(tap(()=>{
       this.loading=false;
-      this.router.navigate([`Home`]);
+      this.router.navigate([``]);
     }),
     catchError(error=>{
       this.loading=false;
