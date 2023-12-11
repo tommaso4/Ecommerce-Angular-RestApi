@@ -1,0 +1,23 @@
+.container {
+  margin: 1rem;
+
+  @media (min-width: 768px) {
+    margin: 1rem 30vw;
+    padding-bottom: 1rem;
+  }
+
+  .filter-container {
+    width: 100%;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem 0rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}
