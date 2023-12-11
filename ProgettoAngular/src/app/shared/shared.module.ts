@@ -3,6 +3,7 @@ import { NgModule } from "@angular/core";
 import { HeaderComponent } from './header/header.component';
 import { PaginatorComponent } from './paginator/paginator.component';
 import { FormsModule } from "@angular/forms";
+import { AppRoutingModule } from "../app-routing.module";
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { FormsModule } from "@angular/forms";
   ],
   imports: [
     CommonModule,
+    AppRoutingModule,
     FormsModule,
   ],
   exports: [
