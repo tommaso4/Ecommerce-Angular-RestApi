@@ -4,6 +4,7 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { HeaderComponent } from './header/header.component';
 import { PaginatorComponent } from './paginator/paginator.component';
 import { FormsModule } from "@angular/forms";
+import { AppRoutingModule } from "../app-routing.module";
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { FormsModule } from "@angular/forms";
   imports: [
     CommonModule,
     FormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AppRoutingModule
   ],
   exports: [
     HeaderComponent,
