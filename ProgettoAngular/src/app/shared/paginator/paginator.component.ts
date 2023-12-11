@@ -19,22 +19,25 @@ export class PaginatorComponent {
   goToPreviousPage() {
     if (this.page > 1) {
       this.page -= 1;
-      this.paginatorService.goToPage(this.page);
+      this.paginatorService.getPaginatedBeers(this.page);
     }
   }
 
   goToNextPage() {
     this.page += 1;
-    this.paginatorService.goToPage(this.page);
+    this.paginatorService.getPaginatedBeers(this.page);
   }
 
   goToPage(event: Event) {
     const target = event.target as HTMLInputElement;
-    const value: number = +target.value;
-
-    if ( value >= 1 ) {
-      this.page = value;
-      this.paginatorService.goToPage(this.page);
+    if (target instanceof HTMLInputElement) {
+      const value: number = +target.value;
+      if (!isNaN(value) && value >= 1) {
+        this.page = value;
+        this.paginatorService.getPaginatedBeers(this.page);
+      }
     }
   }
+
+
 }

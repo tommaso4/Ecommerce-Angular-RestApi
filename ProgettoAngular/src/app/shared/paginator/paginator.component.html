@@ -5,7 +5,7 @@
         </span>
     </div>
     <div class="paginator__page">
-        <input type="text" class="text-input paginator__page__go-to-input" [(ngModel)]="page" (input)="goToPage($event)">
+      <input type="text" class="text-input paginator__page__go-to-input" [(ngModel)]="page" (input)="goToPage($event)">
     </div>
     <div class="paginator__next">
         <span class="button paginate-button" (click)="goToNextPage()"><fa-icon [icon]="faChevronRight" class="paginate-button__icon"></fa-icon></span>
