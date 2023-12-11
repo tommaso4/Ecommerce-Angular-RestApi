@@ -1,0 +1,17 @@
+<div class="container">
+  <form [formGroup]="form">
+    <div>
+      <label for="email">Email:</label>
+      <input class="form-control" type="text" id="email" formControlName="email">
+    </div>
+
+    <div>
+      <label for="password">Password:</label>
+      <input class="form-control" type="password" id="password" formControlName="password">
+    </div>
+    <div *ngIf="failedLogin">Email o Password sbagliata</div>
+    <p>Non sei ancora registrato?<a routerLink="/LogSystem/register">Registrati!</a></p>
+    <button [disabled]="!form.valid" class="btn btn-primary mt-3" (click)="submit()">Accedi</button>
+  </form>
+  <div *ngIf="loading">Caricamento...</div>
+</div>
