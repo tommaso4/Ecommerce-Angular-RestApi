@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { environment } from '../../environments/environment.development';
 import { HttpClient } from '@angular/common/http';
 import { IRegister } from '../Modules/iregister';
 import { ILogin } from '../Modules/ilogin';
@@ -7,6 +6,7 @@ import { BehaviorSubject, Observable, map, tap } from 'rxjs';
 import { IUserAuth } from '../Modules/iuser-auth';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { Router } from '@angular/router';
+import { environment } from '../environments/environment';
 
 
 @Injectable({
@@ -27,8 +27,8 @@ export class LogSystemService {
     this.logged();
   }
 
-  APIRegister:string=`${environment.API}/register`;
-  APILogin:string=`${environment.API}/login`;
+  APIRegister:string=`${environment.apiUrl}/register`;
+  APILogin:string=`${environment.apiUrl}/login`;
 
   register(user:IRegister):Observable<IUserAuth>{
     return this.http.post<IUserAuth>(this.APIRegister,user)

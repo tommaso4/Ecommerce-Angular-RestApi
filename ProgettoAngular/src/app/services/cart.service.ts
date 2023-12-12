@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { environment } from '../../environments/environment.development';
 import { HttpClient } from '@angular/common/http';
 import { Observable, map } from 'rxjs';
 import { ICart } from '../Modules/icart';
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +13,7 @@ export class CartService {
     private http:HttpClient,
   ) { }
 
-  API:string=environment.API;
+  API:string=environment.apiUrl;
 
   getCartByUserID(userID:number):Observable<ICart[]>{
     return this.http.get<ICart[]>(this.API).pipe(map(cartArr=>cartArr.filter(cart=>cart.userID === userID)))
