@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { Beer } from '../../core/models/beer.model';
 import { BeerService } from '../../core/services/beer.service';
 import { PaginatorService } from '../../core/services/paginator.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -19,19 +20,19 @@ import { PaginatorService } from '../../core/services/paginator.service';
 
     constructor(
       private beerService: BeerService,
-      private paginatorService: PaginatorService
+      private paginatorService: PaginatorService,
+      private router: Router
     ) {}
 
     ngOnInit(): void {
       this.fetchBeers();
     }
 
-
     fetchBeers(): void {
       this.beerService.getBeers().subscribe({
         next: (data: any[]) => {
           this.allBeers = data;
-          this.updatePage(); // Aggiorna la visualizzazione
+          this.updatePage();
           console.log(this.allBeers)
         },
         error: (error) => {
@@ -39,7 +40,6 @@ import { PaginatorService } from '../../core/services/paginator.service';
         }
       });
     }
-
 
     updatePage(): void {
       if (this.beerService.beerName) {
