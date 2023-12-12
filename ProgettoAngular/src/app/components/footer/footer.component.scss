@@ -1,0 +1,61 @@
+//dimensioni foto
+
+.footer-container-logo{
+  height: 25vh;
+
+}
+
+// bottoni scarica
+.scarica{
+  height: 30px;
+  width: 100px;
+  margin: 10px;
+}
+
+
+//colori
+.bg-footer{
+  background-color: #0A2F69;
+}
+a {
+  color:  #F6B74B;
+  text-decoration: none;
+}
+
+div{
+  color: #F6B74B;
+}
+.icons{
+  color: white;
+}
+
+// brackpoints
+@media only screen and (max-width: 600px) {
+  .footer-container-logo{
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-menu{
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: repeat(2,minmax(2em,1fr));
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+
+  }
+}
+@media only screen and (min-width: 600px) {
+
+  .footer-menu{
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .bg-footer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

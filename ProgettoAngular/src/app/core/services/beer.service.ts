@@ -1,30 +1,32 @@
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, Observable } from 'rxjs';
-
-import { Beer } from '../models/beer.model';
-import { environment } from '../../environments/environment';
+import { Observable, throwError } from 'rxjs';
+import { environment } from '../../../environments/environment.development';
+import { Ibeer } from '../../Modules/ibeer';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BeerService {
-  apiUrl: string = environment.apiUrl;
-  private beersSubject: BehaviorSubject<Beer[]> = new BehaviorSubject<Beer[]>([{ id: 0, name: '', abv: 0, image_url: '' }]);
-  beers$: Observable<Beer[]> = this.beersSubject.asObservable();
-  perPage: number = 25;
-  beerName: string = '';
+  private apiUrl = environment.apiUrl ;
+  beerName: string = ""
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) {
-    this.getBeers();
+  getBeers(): Observable<Ibeer[]> {
+    return this.http.get<Ibeer[]>(this.apiUrl);
   }
 
-  getBeers(page: number = 1) {
-    this.http.get<Beer[]>(`${this.apiUrl}/beers?page=${page}&per_page=${this.perPage}`).subscribe((beers: Beer[]) => this.beersSubject.next(beers));
+  getBeerById(id: number): Observable<Ibeer> {
+    if (!isNaN(id) && id > 0) {
+      const url = `${this.apiUrl}/${id}`;
+      return this.http.get<Ibeer>(url);
+    } else {
+      return throwError('ID della birra non valido');
+    }
   }
 
-  getBeersByName(page: number = 1) {
-    this.http.get<Beer[]>(`${this.apiUrl}/beers?beer_name=${this.beerName}&page=${page}&per_page=${this.perPage}`).subscribe((beers: Beer[]) => this.beersSubject.next(beers));
+  setBeerName(name: string): void {
+    this.beerName = name;
   }
-
 }

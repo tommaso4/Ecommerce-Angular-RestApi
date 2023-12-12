@@ -1,1 +1,17 @@
-<p>details works!</p>
+<div *ngIf="beer">
+    <div class="singleCard">
+      <div class="d-flex">
+        <div>
+          <img [src]="beer.urlImmagine" >
+        </div>
+        <div>
+          <h2 class="text-center">{{beer.nome}}</h2>
+          <h5 class="text-center text-secondary">{{beer.slogan}}</h5>
+          <h5 class="px-3">{{beer.descrizione}}</h5>
+        </div>
+      </div>
+      <div class="text-center">
+        <button (click)="addToFavorite()">ADD</button>
+      </div>
+    </div>
+</div>

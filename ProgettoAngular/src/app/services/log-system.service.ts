@@ -7,6 +7,7 @@ import { BehaviorSubject, Observable, map, tap } from 'rxjs';
 import { IUserAuth } from '../Modules/iuser-auth';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { Router } from '@angular/router';
+import { IUser } from '../Modules/iuser';
 
 
 @Injectable({
@@ -19,7 +20,6 @@ export class LogSystemService {
   booleanUser$=this.user$.pipe(map(user=>!!user))
   jwt:JwtHelperService=new JwtHelperService();
 
-
   constructor(
     private http:HttpClient,
     private router: Router
@@ -27,11 +27,16 @@ export class LogSystemService {
     this.logged();
   }
 
+  APIUser:string=`${environment.API}/users`
   APIRegister:string=`${environment.API}/register`;
   APILogin:string=`${environment.API}/login`;
 
   register(user:IRegister):Observable<IUserAuth>{
     return this.http.post<IUserAuth>(this.APIRegister,user)
+  }
+
+  updateUser(user:IUser):Observable<IUser>{
+    return this.http.post<IUser>(this.APIUser, user);
   }
 
   login(user:ILogin):Observable<IUserAuth>{
@@ -57,7 +62,11 @@ export class LogSystemService {
   logOut(){
     localStorage.removeItem('user');
     this.authorized.next(null);
-    this.router.navigate(['/Home']);
+    this.router.navigate(['/home']);
+  }
+
+  deleteAccount(id:string):Observable<IUser>{
+    return this.http.delete<IUser>(`${this.APIUser}/${id}`);
   }
 
   autoLogOut(token:string){

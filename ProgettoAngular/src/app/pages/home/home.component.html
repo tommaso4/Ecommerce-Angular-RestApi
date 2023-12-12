@@ -1,13 +1,20 @@
 <div class="container">
-    <div class="filter-container">
-        <app-name-filter (beerNameEvent)="searchBeersByName()"></app-name-filter>
-    </div>
-    <div class="card-container" *ngIf="(beersList$ | async)!.length > 0">
-        <div *ngFor="let beer of beersList$ | async">
-            <app-beer-card [beer]="beer"></app-beer-card>
-        </div>
-    </div>
-    <div class="paginator-container">
-        <app-paginator></app-paginator>
-    </div>
+  <div class="filter-container">
+      <app-name-filter (beerNameEvent)="searchBeersByName($event)"></app-name-filter>
+  </div>
+
+  <div class="card-container" *ngIf="beers.length > 0">
+      <div *ngFor="let beer of beers" >
+        <a [routerLink]="['/details/'+ beer.id]">
+          <app-beer-card [beer]="beer"></app-beer-card>
+        </a>
+      </div>
+  </div>
+
+  <div class="paginator-container">
+      <app-paginator
+          [currentPage]="currentPage"
+          (pageChange)="onPageChange($event)"
+      ></app-paginator>
+  </div>
 </div>

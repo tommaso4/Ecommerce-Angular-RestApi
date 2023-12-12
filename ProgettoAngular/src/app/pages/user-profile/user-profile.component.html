@@ -1,1 +1,28 @@
-<p>user-profile works!</p>
+<div class="container mt-5">
+  <div *ngIf="!editMode">
+    <div>
+      <p>Nome: {{user?.name}}</p>
+      <p>Cognome: {{user?.surname}}</p>
+      <p>Email: {{user?.email}}</p>
+    </div>
+    <div>
+      <button class="btn btn-warning me-2">Modifica Dati</button>
+      <button (click)="logOut()" class="btn btn-danger me-2">Disconnettiti</button>
+      <button (click)="deleteAccount()" class="btn btn-dark">Elimina Account</button>
+
+      <div *ngIf="deleting" class="bg-dark mt-3 text-white p-3">
+        <h3>Sei sicuro di volere eliminare questo account?</h3>
+        <label for="deleting-name" class="mb-1">Inserisci "{{user?.name}}" per confermare l'eliminazione!</label>
+        <div class="d-flex me-1">
+          <input id="deleting-name" class="me-2" [(ngModel)]="deletingName" type="text">
+          <button class="btn btn-danger me-2" (click)="confirmDelete()">ELIMINA</button>
+          <button class="btn btn-success" (click)="cancelDelete()">No</button>
+        </div>
+        <div *ngIf="wrongName">Se si desidera proseguire inserire il proprio nome</div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="editMode">
+    <form></form>
+  </div>
+</div>
