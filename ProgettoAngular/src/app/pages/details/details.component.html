@@ -10,8 +10,11 @@
           <h5 class="px-3">{{beer.descrizione}}</h5>
         </div>
       </div>
-      <div class="text-center">
-        <button (click)="addToFavorite()">ADD</button>
+      <div class="detFoot">
+        <div class="d-flex  align-items-baseline">
+          <p>Prezzo: {{beer.prezzo}} &#8364;</p>
+          <button (click)="addToShop()">ADD</button>
+        </div>
       </div>
     </div>
 </div>

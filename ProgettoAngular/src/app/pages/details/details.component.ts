@@ -45,8 +45,11 @@ export class DetailsComponent {
     });
   }
 
-  addToFavorite(){
+  addToShop(){
+    this.beerService.addToShop(this.beer).subscribe(beer=> {
+      console.log(beer);
 
+    })
   }
 }
 

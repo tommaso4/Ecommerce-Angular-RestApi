@@ -10,6 +10,7 @@ import { Ibeer } from '../../Modules/ibeer';
 })
 export class BeerService {
   private apiUrl = environment.apiUrl ;
+  private api = environment.API ;
   beerName: string = ""
   constructor(private http: HttpClient) {}
 
@@ -24,6 +25,11 @@ export class BeerService {
     } else {
       return throwError('ID della birra non valido');
     }
+  }
+
+  addToShop(beer:Ibeer): Observable<Ibeer> {
+    const url = `${this.api}/shop`
+    return this.http.post<Ibeer>(url,beer)
   }
 
   setBeerName(name: string): void {
