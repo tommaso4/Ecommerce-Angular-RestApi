@@ -6,7 +6,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { BeerCardComponent } from './pages/home/beer-card/beer-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NameFilterComponent } from './pages/home/name-filter/name-filter.component';
-import { SharedModule } from './shared/shared.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './components/footer/footer.component';
 import { BlondBeerComponent } from './pages/blond-beer/blond-beer.component';
@@ -17,6 +16,10 @@ import { RedBeerComponent } from './pages/red-beer/red-beer.component';
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 import { WhishlistComponent } from './pages/whishlist/whishlist.component';
 import { WhiteBeerComponent } from './pages/white-beer/white-beer.component';
+
+import { HeaderComponent } from './shared/header/header.component';
+import { PaginatorComponent } from './shared/paginator/paginator.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -33,17 +36,18 @@ import { WhiteBeerComponent } from './pages/white-beer/white-beer.component';
     FooterComponent,
     UserProfileComponent,
     PAGES404Component,
-    DetailsComponent
+    DetailsComponent,
+    HeaderComponent,
+    PaginatorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    SharedModule,
     FontAwesomeModule,
+    FormsModule
 
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
