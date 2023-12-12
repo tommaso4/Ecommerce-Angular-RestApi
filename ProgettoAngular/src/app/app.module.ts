@@ -6,7 +6,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { BeerCardComponent } from './pages/home/beer-card/beer-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NameFilterComponent } from './pages/home/name-filter/name-filter.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './components/footer/footer.component';
 import { BlondBeerComponent } from './pages/blond-beer/blond-beer.component';
 import { CartComponent } from './pages/cart/cart.component';
@@ -51,4 +51,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+  }
+
