@@ -5,6 +5,7 @@ import { map } from 'rxjs/operators';
 
 import { Beer } from '../models/beer.model';
 import { environment } from '../../environments/environment';
+import { Ibeer } from '../../Modules/ibeer';
 
 @Injectable({
   providedIn: 'root'
@@ -14,8 +15,8 @@ export class BeerService {
   beerName: string = ""
   constructor(private http: HttpClient) {}
 
-  getBeers(): Observable<any[]> {
-    return this.http.get<any[]>(this.apiUrl);
+  getBeers(): Observable<Ibeer[]> {
+    return this.http.get<Ibeer[]>(this.apiUrl);
   }
 
   setBeerName(name: string): void {

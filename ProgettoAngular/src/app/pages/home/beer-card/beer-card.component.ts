@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Beer } from '../../../core/models/beer.model';
+import { Ibeer } from '../../../Modules/ibeer';
 
 
 @Component({
@@ -8,7 +9,7 @@ import { Beer } from '../../../core/models/beer.model';
   styleUrls: ['./beer-card.component.scss']
 })
 export class BeerCardComponent {
-  @Input() beer: Beer = { id: 0, name: '', abv: 0, image_url: '', price : 0 };
+  @Input() beer: Ibeer | null = null; // Inizializzato a null anziché {}
 
   constructor() { }
 }

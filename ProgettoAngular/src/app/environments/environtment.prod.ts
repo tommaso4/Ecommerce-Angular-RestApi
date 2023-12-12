@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://api.punkapi.com/v2/'
+  apiUrl: 'http://localhost:3000/beers'
 };

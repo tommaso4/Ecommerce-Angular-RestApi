@@ -15,77 +15,77 @@ fs.readFile('beer.json', 'utf8', (err, data) => {
 
     // Traduci e aggiorna tutte le birre nel formato italiano usando il modello
     const birreItaliano = birreInglese.map(birraInglese => {
-        return {
-            id: birraInglese.id,
-            nome: birraInglese.name,
-            slogan: birraInglese.tagline,
-            prima_produzione: birraInglese.first_brewed,
-            descrizione: birraInglese.description,
-            url_immagine: birraInglese.image_url,
-            abv: birraInglese.abv,
-            ibu: birraInglese.ibu,
-            target_fg: birraInglese.target_fg,
-            target_og: birraInglese.target_og,
-            ebc: birraInglese.ebc,
-            srm: birraInglese.srm,
-            ph: birraInglese.ph,
-            livello_attenuazione: birraInglese.livello_attenuazione,
-            volume: {
-                valore: birraInglese.volume.value,
-                unità: birraInglese.volume.unit,
-                tipologia: birraInglese.volume.tipologia
-            },
-            volume_bollire: {
-                valore: birraInglese.boil_volume.value,
-                unità: birraInglese.boil_volume.unit
-            },
-            metodo: {
-                mash_temp: birraInglese.method.mash_temp.map(temp => {
-                    return {
-                        temp: {
-                            valore: temp.temp.value,
-                            unità: temp.temp.unit
-                        },
-                        durata: temp.duration
-                    };
-                }),
-                fermentazione: {
-                    temp: {
-                        valore: birraInglese.method.fermentation.temp.value,
-                        unità: birraInglese.method.fermentation.temp.unit
-                    }
-                },
-                torsione: birraInglese.method.twist
-            },
-            ingredienti: {
-                malto: birraInglese.ingredients.malt.map(malto => {
-                    return {
-                        nome: malto.name,
-                        quantità: {
-                            valore: malto.amount.value,
-                            unità: malto.amount.unit
-                        }
-                    };
-                }),
-                luppolo: birraInglese.ingredients.hops.map(luppolo => {
-                    return {
-                        nome: luppolo.name,
-                        quantità: {
-                            valore: luppolo.amount.value,
-                            unità: luppolo.amount.unit
-                        },
-                        aggiungi: luppolo.add,
-                        attributo: luppolo.attribute
-                    };
-                }),
-                lievito: birraInglese.ingredients.yeast
-            },
-            abbinamento_cibo: birraInglese.food_pairing,
-            brewers_tips: birraInglese.brewers_tips,
-            contribuito_da: birraInglese.contributed_by,
-            prezzo: birraInglese.price // Se necessario
-        };
-    });
+      return {
+          id: birraInglese.id,
+          nome: birraInglese.name,
+          slogan: birraInglese.tagline,
+          primaProduzione: birraInglese.first_brewed,
+          descrizione: birraInglese.description,
+          urlImmagine: birraInglese.image_url,
+          abv: birraInglese.abv,
+          ibu: birraInglese.ibu,
+          targetFg: birraInglese.target_fg,
+          targetOg: birraInglese.target_og,
+          ebc: birraInglese.ebc,
+          srm: birraInglese.srm,
+          ph: birraInglese.ph,
+          livelloAttenuazione: birraInglese.livello_attenuazione,
+          volume: {
+              valore: birraInglese.volume.value,
+              unità: birraInglese.volume.unit,
+              tipologia: birraInglese.volume.tipologia
+          },
+          volumeBollire: {
+              valore: birraInglese.boil_volume.value,
+              unità: birraInglese.boil_volume.unit
+          },
+          metodo: {
+              mashTemp: birraInglese.method.mash_temp.map(temp => {
+                  return {
+                      temp: {
+                          valore: temp.temp.value,
+                          unità: temp.temp.unit
+                      },
+                      durata: temp.duration
+                  };
+              }),
+              fermentazione: {
+                  temp: {
+                      valore: birraInglese.method.fermentation.temp.value,
+                      unità: birraInglese.method.fermentation.temp.unit
+                  }
+              },
+              torsione: birraInglese.method.twist
+          },
+          ingredienti: {
+              malto: birraInglese.ingredients.malt.map(malto => {
+                  return {
+                      nome: malto.name,
+                      quantità: {
+                          valore: malto.amount.value,
+                          unità: malto.amount.unit
+                      }
+                  };
+              }),
+              luppolo: birraInglese.ingredients.hops.map(luppolo => {
+                  return {
+                      nome: luppolo.name,
+                      quantità: {
+                          valore: luppolo.amount.value,
+                          unità: luppolo.amount.unit
+                      },
+                      aggiungi: luppolo.add,
+                      attributo: luppolo.attribute
+                  };
+              }),
+              lievito: birraInglese.ingredients.yeast
+          },
+          abbinamentoCibo: birraInglese.food_pairing,
+          brewersTips: birraInglese.brewers_tips,
+          contribuitoDa: birraInglese.contributed_by,
+          prezzo: birraInglese.price // Se necessario
+      };
+  });
 
     // Ora birreItaliano contiene tutte le birre tradotte
     console.log(birreItaliano); // Qui puoi vedere l'array completo delle birre tradotte

@@ -1,4 +1,4 @@
-{"beers":[
+[
   {
     "id": 1,
     "nome": "Buzz",
@@ -43870,4 +43870,4 @@
     "contribuitoDa": "John Jenkman <johnjenkman>",
     "prezzo": 8.9
   }
-]}
+]
