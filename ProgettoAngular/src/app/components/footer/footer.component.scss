@@ -1,0 +1,16 @@
+.footer-container-logo{
+  height: 25vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-container-logo{
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+  }
+  .mobile-footer{
+    display: none;
+  }
+}
+
+
