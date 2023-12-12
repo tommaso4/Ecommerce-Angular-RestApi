@@ -20,6 +20,8 @@
 a {
   color:  #F6B74B;
   text-decoration: none;
+  font-size: 1em;
+  margin-left: 20px;
 }
 
 div{
@@ -58,4 +60,15 @@ div{
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+.me{
+
+
+    //allineare in orizzontale
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+
 }
