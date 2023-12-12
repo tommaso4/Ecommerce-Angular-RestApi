@@ -5,7 +5,7 @@ import { IconDefinition, faChevronLeft, faChevronRight } from '@fortawesome/free
 @Component({
 
   selector: 'app-paginator',
-  templateUrl: './paginator.component.html',
+  templateUrl:'./paginator.component.html',
   styleUrls: ['./paginator.component.scss'],
 })
 export class PaginatorComponent {
