@@ -13,6 +13,7 @@ import { AppRoutingModule } from "../app-routing.module";
   ],
   imports: [
     CommonModule,
+    AppRoutingModule,
     FormsModule,
     FontAwesomeModule,
     AppRoutingModule
