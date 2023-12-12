@@ -13,7 +13,7 @@ export class DetailsComponent {
 
 
   beerId!: number;
-  beer!: any;
+  beer!: Ibeer;
 
   constructor(
     private route: ActivatedRoute,
