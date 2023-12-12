@@ -14,10 +14,7 @@
         <div class="d-flex  align-items-baseline">
           <p>Prezzo: {{beer.prezzo}} &#8364;</p>
           <button (click)="addToShop()">ADD</button>
+          <a class="btn btn-primary" [routerLink]="['/edit/'+ beer.id]" >Modifica</a>
         </div>
-      <div class="text-center">
-        <button class="btn btn-primary"(click)="addToFavorite()">ADD</button>
-        <a class="btn btn-primary" [routerLink]="['/edit/'+ beer.id]" >Modifica</a>
-      </div>
     </div>
 </div>
