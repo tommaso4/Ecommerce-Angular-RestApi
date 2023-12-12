@@ -1,11 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Ibeer } from '../Modules/ibeer';
-import { Observable, filter, map } from 'rxjs';
-
-type responseData = {
-  beer:Ibeer[];
-}
+import { Observable, map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -19,6 +15,10 @@ export class BeerService {
 
   getRedBeer(): Observable<Ibeer[]> {
     return this.http.get<Ibeer[]>(this.apiUrl)
-    .pipe(map((beer:Ibeer[]) => beer.filter(birra => birra.volume.tipologia === 'rossa')));
+    .pipe(map((beer:Ibeer[]) => {
+      const birrerosse = beer.filter(birra => birra.volume && birra.volume.tipologia && birra.volume.tipologia === 'rossa');
+      return birrerosse;
+    })
+    );
   }
 }

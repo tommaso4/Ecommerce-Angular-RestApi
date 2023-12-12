@@ -11,14 +11,18 @@ export class RedBeerComponent {
 
   beer:Ibeer[] = [];
 
-  birreRosse:any;
-
   constructor(private beerSvc:BeerService){}
 
   ngOnInit(){
-    this.beerSvc.getRedBeer().subscribe(res=>{
-      this.birreRosse = res;
-      this.beer.push(this.birreRosse);
-    })
+    this.InBirreRosse();
+  }
+
+  InBirreRosse(){
+    this.beerSvc.getRedBeer().subscribe(
+      (beer) => {
+        this.beer = beer;
+        console.log(this.beer);
+      }
+    )
   }
 }

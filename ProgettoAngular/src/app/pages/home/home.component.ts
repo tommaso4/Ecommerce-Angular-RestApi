@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Beer } from '../../core/models/beer.model';
+import { Birra } from '../../core/models/beer.model';
 import { BeerService } from '../../core/services/beer.service';
 import { PaginatorService } from '../../core/services/paginator.service';
 
