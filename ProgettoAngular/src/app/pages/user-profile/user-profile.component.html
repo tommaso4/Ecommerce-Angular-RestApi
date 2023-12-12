@@ -6,10 +6,9 @@
       <p>Email: {{user?.email}}</p>
     </div>
     <div>
-      <button class="btn btn-warning me-2">Modifica Dati</button>
+      <button (click)="editMode=!editMode" class="btn btn-warning me-2">Modifica Dati</button>
       <button (click)="logOut()" class="btn btn-danger me-2">Disconnettiti</button>
       <button (click)="deleteAccount()" class="btn btn-dark">Elimina Account</button>
-
       <div *ngIf="deleting" class="bg-dark mt-3 text-white p-3">
         <h3>Sei sicuro di volere eliminare questo account?</h3>
         <label for="deleting-name" class="mb-1">Inserisci "{{user?.name}}" per confermare l'eliminazione!</label>
@@ -22,7 +21,7 @@
       </div>
     </div>
   </div>
-  <div *ngIf="editMode">
-    <form></form>
+
+  <div>
+    <app-edit-profile [editMode]="editMode"></app-edit-profile>
   </div>
-</div>

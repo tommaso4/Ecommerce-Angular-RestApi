@@ -20,6 +20,11 @@ export class LogSystemService {
   booleanUser$=this.user$.pipe(map(user=>!!user))
   jwt:JwtHelperService=new JwtHelperService();
 
+
+  APIUser:string=`${environment.API}/users`
+  APIRegister:string=`${environment.API}/register`;
+  APILogin:string=`${environment.API}/login`;
+
   constructor(
     private http:HttpClient,
     private router: Router
@@ -27,16 +32,17 @@ export class LogSystemService {
     this.logged();
   }
 
-  APIUser:string=`${environment.API}/users`
-  APIRegister:string=`${environment.API}/register`;
-  APILogin:string=`${environment.API}/login`;
-
   register(user:IRegister):Observable<IUserAuth>{
     return this.http.post<IUserAuth>(this.APIRegister,user)
   }
 
-  updateUser(user:IUser):Observable<IUser>{
-    return this.http.post<IUser>(this.APIUser, user);
+  updateUser(id:string,user:IUser):Observable<IUser>{
+    user.id=id;
+    console.log(user);
+
+    return this.http.put<IUser>(`${this.APIUser}/${id}`, user).pipe(tap(data=>{
+      console.log(data)
+    }));
   }
 
   login(user:ILogin):Observable<IUserAuth>{
