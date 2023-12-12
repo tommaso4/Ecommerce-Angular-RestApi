@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, Subscribable } from 'rxjs';
 import { Birra } from '../../core/models/beer.model';
 import { BeerService } from '../../core/services/beer.service';
 import { PaginatorService } from '../../core/services/paginator.service';
@@ -10,19 +10,52 @@ import { PaginatorService } from '../../core/services/paginator.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {
-  beersList$: Observable<Beer[]>;
 
-  constructor(private beerService: BeerService) {
-    this.beersList$ = this.beerService.beers$;
-  }
+export class HomeComponent implements OnInit {
+  beers: any[] = [];
+  allBeers: any[] = [];
+  currentPage: number = 1;
+  itemsPerPage: number = 25;
+  beersList$: Observable<undefined> | Subscribable<undefined> | Promise<undefined> | undefined;
 
-  searchBeersByName() {
-    const page: number = 1;
-    if (this.beerService.beerName !== '') {
-      this.beerService.getBeersByName(page);
-    } else {
-      this.beerService.getBeers();
+  constructor(
+    private beerService: BeerService,
+    private paginatorService: PaginatorService,
+    beersList$: Observable<Birra[]>
+    ) {}
+
+    ngOnInit(): void {
+      this.fetchBeers();
+    }
+
+
+    fetchBeers(): void {
+      this.beerService.getBeers().subscribe({
+        next: (data: any[]) => {
+          this.allBeers = data;
+          this.updatePage(); // Aggiorna la visualizzazione
+          console.log(this.allBeers)
+        },
+        error: (error) => {
+          console.error('Errore nel recupero delle birre:', error);
+        }
+      });
+    }
+
+
+    updatePage(): void {
+      if (this.beerService.beerName) {
+        this.beers = this.allBeers.filter((beer: any) =>
+          beer.name.toLowerCase().includes(this.beerService.beerName.toLowerCase())
+        );
+      } else {
+        this.beers = this.paginatorService.paginate(this.allBeers, this.currentPage, this.itemsPerPage);
+      }
+    }
+
+    onPageChange(page: number): void {
+      this.currentPage = page;
+      this.updatePage();
     }
 
     // Metodo per filtrare le birre per nome
