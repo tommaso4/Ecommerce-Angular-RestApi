@@ -8,7 +8,7 @@ import { Beer } from '../../../core/models/beer.model';
   styleUrls: ['./beer-card.component.scss']
 })
 export class BeerCardComponent {
-  @Input() beer: Beer = { id: 0, name: '', abv: 0, image_url: '' };
+  @Input() beer: Beer = { id: 0, name: '', abv: 0, image_url: '', price : 0 };
 
   constructor() { }
 }

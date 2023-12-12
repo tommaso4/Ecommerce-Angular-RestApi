@@ -1,40 +1,40 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { IconDefinition, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { PaginatorService } from '../../core/services/paginator.service';
 
 
 @Component({
+
   selector: 'app-paginator',
-  templateUrl: './paginator.component.html',
+  templateUrl:'./paginator.component.html',
   styleUrls: ['./paginator.component.scss'],
-  providers: [PaginatorService]
 })
 export class PaginatorComponent {
   faChevronLeft: IconDefinition = faChevronLeft;
   faChevronRight: IconDefinition = faChevronRight;
-  page: number = 1;
+  @Input() currentPage: number = 1;
+  @Output() pageChange: EventEmitter<number> = new EventEmitter<number>();
 
-  constructor (private paginatorService: PaginatorService) { }
-
-  goToPreviousPage() {
-    if (this.page > 1) {
-      this.page -= 1;
-      this.paginatorService.goToPage(this.page);
+  goToPreviousPage(): void {
+    if (this.currentPage > 1) {
+      this.currentPage--;
+      this.emitPageChange();
     }
   }
 
-  goToNextPage() {
-    this.page += 1;
-    this.paginatorService.goToPage(this.page);
+  goToNextPage(): void {
+    this.currentPage++;
+    this.emitPageChange();
   }
 
-  goToPage(event: Event) {
-    const target = event.target as HTMLInputElement;
-    const value: number = +target.value;
-
-    if ( value >= 1 ) {
-      this.page = value;
-      this.paginatorService.goToPage(this.page);
+  goToPage(event: Event): void {
+    const enteredPage = +(event.target as HTMLInputElement).value;
+    if (enteredPage >= 1) {
+      this.currentPage = enteredPage;
+      this.emitPageChange();
     }
+  }
+
+  emitPageChange(): void {
+    this.pageChange.emit(this.currentPage);
   }
 }
