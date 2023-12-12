@@ -10,7 +10,7 @@ import { Observable, map } from 'rxjs';
 export class BeerService {
   constructor(private http:HttpClient) { }
 
-  apiUrl:string = 'http://localhost:3000/beer'
+  apiUrl:string = 'http://localhost:3000/beers'
 
   getRedBeer(): Observable<Ibeer[]> {
     return this.http.get<Ibeer[]>(this.apiUrl)
