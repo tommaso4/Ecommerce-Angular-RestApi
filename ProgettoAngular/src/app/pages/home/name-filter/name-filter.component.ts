@@ -1,7 +1,5 @@
-import { transition } from '@angular/animations';
 import { Component, EventEmitter, Output } from '@angular/core';
 import { BeerService } from '../../../core/services/beer.service';
-
 
 @Component({
   selector: 'app-name-filter',
@@ -15,8 +13,10 @@ export class NameFilterComponent {
 
   filterByName(event: Event) {
     const target = event.target as HTMLInputElement;
-    this.beerService.beerName = target.value;
-    this.beerNameEvent.emit(target.value);
-  }
+    const name = target.value;
 
+    this.beerService.setBeerName(name);
+    this.beerNameEvent.emit(name); // Invia il nome inserito tramite evento
+  }
 }
+

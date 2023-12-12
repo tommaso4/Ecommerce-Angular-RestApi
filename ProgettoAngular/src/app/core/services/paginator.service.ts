@@ -1,38 +1,18 @@
-import { BehaviorSubject, Observable, map } from "rxjs";
-import { Beer } from "../models/beer.model";
-import { HttpClient } from "@angular/common/http";
-import { Injectable } from "@angular/core";
-import { environment } from "../../environments/environment";
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { Beer } from '../models/beer.model';
 
-@Injectable()
+
+@Injectable({
+  providedIn: 'root'
+})
 export class PaginatorService {
-  private beers: Beer[] = [];
-  private apiurl = environment.apiUrl;
-
-  constructor(private http: HttpClient) {
-    this.loadBeers();
-  }
-
-  private loadBeers() {
-    this.http.get<Beer[]>(this.apiurl).subscribe((beers: Beer[]) => {
-      this.beers = beers;
-    });
-  }
-
-  getPaginatedBeers(page: number, perPage: number, beerName: string = ''): Beer[] {
-    let filteredBeers = this.beers;
-
-    if (beerName.trim() !== '') {
-      filteredBeers = this.beers.filter(beer =>
-        beer.name.toLowerCase().includes(beerName.toLowerCase())
-      );
-    }
-
-    const startIndex = (page - 1) * perPage;
-    const endIndex = startIndex + perPage;
-    const paginatedBeers = filteredBeers.slice(startIndex, endIndex);
-    
-    return paginatedBeers;
+  paginate(data: any[], page: number, itemsPerPage: number): any[] {
+    const startIndex = (page - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    return data.slice(startIndex, endIndex);
   }
 }
-

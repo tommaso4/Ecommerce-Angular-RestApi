@@ -3,4 +3,5 @@ export interface Beer {
   name: string;
   abv: number;
   image_url: string;
+  price: number;
 }
