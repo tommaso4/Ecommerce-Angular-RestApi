@@ -17,11 +17,11 @@ fs.readFile('beer.json', 'utf8', (err, data) => {
     const birreItaliano = birreInglese.map(birraInglese => {
         return {
             id: birraInglese.id,
-            nome: traduzioneModello.nome,
-            slogan: traduzioneModello.slogan,
-            first_brewed: traduzioneModello.first_brewed,
-            descrizione: traduzioneModello.descrizione,
-            url_immagine: traduzioneModello.url_immagine,
+            nome: birraInglese.name,
+            slogan: birraInglese.tagline,
+            prima_produzione: birraInglese.first_brewed,
+            descrizione: birraInglese.description,
+            url_immagine: birraInglese.image_url,
             abv: birraInglese.abv,
             ibu: birraInglese.ibu,
             target_fg: birraInglese.target_fg,
