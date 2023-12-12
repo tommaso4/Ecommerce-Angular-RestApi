@@ -3,8 +3,4 @@ export interface Birra {
   name: string;
   abv: number;
   image_url: string;
-
-
-
-
 }

@@ -10,12 +10,28 @@ import { Observable, map } from 'rxjs';
 export class BeerService {
   constructor(private http:HttpClient) { }
 
-  apiUrl:string = 'http://localhost:3000/beer'
+  apiUrl:string = 'http://localhost:3000/beers'
 
   getRedBeer(): Observable<Ibeer[]> {
     return this.http.get<Ibeer[]>(this.apiUrl)
     .pipe(map((beer:Ibeer[]) => {
-      const birrerosse = beer.filter(birra => birra.volume && birra.volume.tipologia && birra.volume.tipologia === 'rossa');
+      const birrerosse = beer.filter(birra => birra.ebc > 20 || birra.srm > 10);
+      return birrerosse;
+    })
+    );
+  }
+  getBlondBeer(): Observable<Ibeer[]> {
+    return this.http.get<Ibeer[]>(this.apiUrl)
+    .pipe(map((beer:Ibeer[]) => {
+      const birrerosse = beer.filter(birra => birra.ebc < 10);
+      return birrerosse;
+    })
+    );
+  }
+  getWhiteBeer(): Observable<Ibeer[]> {
+    return this.http.get<Ibeer[]>(this.apiUrl)
+    .pipe(map((beer:Ibeer[]) => {
+      const birrerosse = beer.filter(birra => birra.srm < 5);
       return birrerosse;
     })
     );

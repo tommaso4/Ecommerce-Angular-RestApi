@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { BeerService } from '../../services/beer.service';
+import { Ibeer } from '../../Modules/ibeer';
 
 @Component({
   selector: 'app-white-beer',
@@ -6,5 +8,20 @@ import { Component } from '@angular/core';
   styleUrl: './white-beer.component.scss'
 })
 export class WhiteBeerComponent {
+  beer:Ibeer[] = [];
 
+  constructor(private beerSvc:BeerService){}
+
+  ngOnInit(){
+    this.InBirreWhite();
+  }
+
+  InBirreWhite(){
+    this.beerSvc.getWhiteBeer().subscribe(
+      (beer) => {
+        this.beer = beer;
+        console.log(this.beer);
+      }
+    )
+  }
 }
