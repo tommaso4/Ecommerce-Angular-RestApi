@@ -8,13 +8,11 @@
           <h2 class="text-center">{{beer.nome}}</h2>
           <h5 class="text-center text-secondary">{{beer.slogan}}</h5>
           <h5 class="px-3">{{beer.descrizione}}</h5>
+          <div class="d-flex  align-items-baseline detFoot ms-3 mt-3">
+            <button (click)="addToShop()">ADD</button>
+            <button [routerLink]="['/edit/'+ beer.id]" >Modifica</button>
+            <p>{{beer.prezzo}} &#8364;</p>
+          </div>
         </div>
       </div>
-      <div class="detFoot">
-        <div class="d-flex  align-items-baseline">
-          <p>Prezzo: {{beer.prezzo}} &#8364;</p>
-          <button (click)="addToShop()">ADD</button>
-          <a class="btn btn-primary" [routerLink]="['/edit/'+ beer.id]" >Modifica</a>
-        </div>
-    </div>
 </div>
