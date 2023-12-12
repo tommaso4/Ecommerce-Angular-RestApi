@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BeerService } from '../../core/services/beer.service';
-import { Beer } from '../../core/models/beer.model';
+import { Ibeer } from '../../Modules/ibeer';
+
 
 @Component({
   selector: 'app-details',
@@ -34,7 +35,7 @@ export class DetailsComponent {
 
   getBeerDetails(): void {
     this.beerService.getBeerById(this.beerId).subscribe({
-      next: (beer: Beer) => {
+      next: (beer: Ibeer) => {
         this.beer = beer;
         console.log('Dettagli della birra:', this.beer);
       },
