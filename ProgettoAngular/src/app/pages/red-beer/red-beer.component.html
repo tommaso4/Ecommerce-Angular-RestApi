@@ -3,10 +3,10 @@
     <div class="card" style="width: 18rem;">
       <img [src]="birra.url_immagine" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">{{ birra.nome }}</h5>
-        <p class="card-text">{{ birra.descrizione }}</p>
-        <p class="card-text">{{ birra.abv }}</p>
-        <p class="card-text">{{ birra.volume.tipologia }}</p>
+        <h5 class="card-title">{{ birra.name }}</h5>
+        <p class="card-text">{{ birra.description }}</p>
+        <p class="card-text">ABV: {{ birra.abv }}</p>
+        <p class="card-text">Tipologia: {{ birra.volume.tipologia }}</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>

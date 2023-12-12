@@ -5,10 +5,10 @@ export class Beer implements Ibeer {
 
   constructor(
   public id: number,
-  public nome: string,
+  public name: string,
   public slogan: string,
   public first_brewed: string,
-  public descrizione: string,
+  public description: string,
   public url_immagine: string,
   public abv: number,
   public ibu: number,

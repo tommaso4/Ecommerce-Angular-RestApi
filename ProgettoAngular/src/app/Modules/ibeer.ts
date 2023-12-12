@@ -1,9 +1,9 @@
 export interface Ibeer {
   "id": number,
-  "nome": string,
+  "name": string,
   "slogan": string,
   "first_brewed": string
-  "descrizione": string,
+  "description": string,
   "url_immagine": string,
   "abv": number,
   "ibu": number,
