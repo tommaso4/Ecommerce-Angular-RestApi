@@ -11,7 +11,8 @@
         </div>
       </div>
       <div class="text-center">
-        <button (click)="addToFavorite()">ADD</button>
+        <button class="btn btn-primary"(click)="addToFavorite()">ADD</button>
+        <a class="btn btn-primary" [routerLink]="['/edit/'+ beer.id]" >Modifica</a>
       </div>
     </div>
 </div>
