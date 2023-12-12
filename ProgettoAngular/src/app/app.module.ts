@@ -6,7 +6,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { BeerCardComponent } from './pages/home/beer-card/beer-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NameFilterComponent } from './pages/home/name-filter/name-filter.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './components/footer/footer.component';
 import { BlondBeerComponent } from './pages/blond-beer/blond-beer.component';
 import { CartComponent } from './pages/cart/cart.component';
@@ -19,7 +19,10 @@ import { WhiteBeerComponent } from './pages/white-beer/white-beer.component';
 
 import { HeaderComponent } from './shared/header/header.component';
 import { PaginatorComponent } from './shared/paginator/paginator.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+
+import { fab } from '@fortawesome/free-brands-svg-icons';
 
 
 @NgModule({
@@ -45,10 +48,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     FontAwesomeModule,
-    FormsModule,
-    ReactiveFormsModule
+    FormsModule
 
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    library.addIconPacks(far,fas,fab)
+  }
+}
