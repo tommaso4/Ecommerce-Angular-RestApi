@@ -26,6 +26,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { EditComponent } from './pages/edit/edit.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +45,8 @@ import { EditComponent } from './pages/edit/edit.component';
     HeaderComponent,
     PaginatorComponent,
     EditProfileComponent,
-    EditComponent
+    EditComponent,
+    WhishlistComponent
   ],
   imports: [
     BrowserModule,

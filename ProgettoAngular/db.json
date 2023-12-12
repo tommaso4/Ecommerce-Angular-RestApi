@@ -6,6 +6,13 @@
       "name": "prova",
       "surname": "prova",
       "id": 1
+    },
+    {
+      "email": "simo@gmail.com",
+      "password": "$2a$10$1RV5tg4bEJuRYFp745fg8erdHHe.PGsx/pNM6xm3.Lp0LxCXsjC52",
+      "name": "simo",
+      "surname": "aimo",
+      "id": 2
     }
   ],
   "cart": [],
@@ -19,6 +26,41 @@
       "beerId": 2,
       "userId": 1,
       "id": 2
+    },
+    {
+      "beerId": 1,
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "beerId": 1,
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "beerId": 1,
+      "userId": 2,
+      "id": 5
+    },
+    {
+      "beerId": 2,
+      "userId": 2,
+      "id": 6
+    },
+    {
+      "beerId": 3,
+      "userId": 2,
+      "id": 7
+    },
+    {
+      "beerId": 8,
+      "userId": 2,
+      "id": 8
+    },
+    {
+      "beerId": 7,
+      "userId": 2,
+      "id": 9
     }
   ],
   "shop": [
