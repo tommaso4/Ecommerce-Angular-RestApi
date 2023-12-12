@@ -1,4 +1,12 @@
 {
-  "users": [],
-  "cart":[]
+  "users": [
+    {
+      "email": "emilio.plances@gmail.com",
+      "password": "$2a$10$joRX2y32W4WHom3PfOm.Qepju72F5EohJ0dvyAEfTNH9FdzvJuKea",
+      "name": "Emilio",
+      "surname": "Plances",
+      "id": 1
+    }
+  ],
+  "cart": []
 }

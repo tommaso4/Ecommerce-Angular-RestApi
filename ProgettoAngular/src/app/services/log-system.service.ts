@@ -19,7 +19,6 @@ export class LogSystemService {
   booleanUser$=this.user$.pipe(map(user=>!!user))
   jwt:JwtHelperService=new JwtHelperService();
 
-
   constructor(
     private http:HttpClient,
     private router: Router

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -17,6 +16,15 @@ import { UserProfileComponent } from './pages/user-profile/user-profile.componen
 import { PAGES404Component } from './pages/pages404/pages404.component';
 import { DetailsComponent } from './pages/details/details.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FooterComponent } from './components/footer/footer.component';
+import { BlondBeerComponent } from './pages/blond-beer/blond-beer.component';
+import { CartComponent } from './pages/cart/cart.component';
+import { DetailsComponent } from './pages/details/details.component';
+import { PAGES404Component } from './pages/pages404/pages404.component';
+
+import { UserProfileComponent } from './pages/user-profile/user-profile.component';
+
+
 
 import { HeaderComponent } from './shared/header/header.component';
 import { PaginatorComponent } from './shared/paginator/paginator.component';
