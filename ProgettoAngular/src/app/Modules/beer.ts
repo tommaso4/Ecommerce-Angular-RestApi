@@ -3,10 +3,10 @@ import { Ibeer } from "./ibeer";
 export class Beer implements Ibeer {
   constructor(
     public id: number,
-    public name: string,
+    public nome: string,
     public slogan: string,
     public primaProduzione: string, // Rinominato per corrispondere all'interfaccia
-    public description: string,
+    public descrizione: string,
     public url_immagine: string, // Nomina le proprietà in stile camelCase per la convenzione di TypeScript
     public abv: number,
     public ibu: number,

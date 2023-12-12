@@ -1,9 +1,9 @@
 export interface Ibeer {
   id: number;
-  name: string;
+  nome: string;
   slogan: string;
   primaProduzione: string;
-  description: string;
+  descrizione: string;
   url_immagine: string;
   abv: number;
   ibu: number;

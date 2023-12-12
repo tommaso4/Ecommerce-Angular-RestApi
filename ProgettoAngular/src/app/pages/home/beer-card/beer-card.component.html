@@ -2,7 +2,7 @@
     <div class="card">
         <img [src]="beer?.url_immagine" class="card__img" alt="beer image">
         <div class="card__data">
-            <p class="card__data--title">{{ beer?.name }}</p>
+            <p class="card__data--title">{{ beer?.nome }}</p>
             <p class="card__data--text">ABV: {{ beer?.abv }}</p>
             <p class="card__data--text">Price: {{ beer?.prezzo | currency:'EUR' }}</p>
         </div>
