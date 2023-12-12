@@ -20,7 +20,9 @@ import { WhiteBeerComponent } from './pages/white-beer/white-beer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { PaginatorComponent } from './shared/paginator/paginator.component';
 import { FormsModule } from '@angular/forms';
-
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 
 
 @NgModule({
@@ -52,6 +54,7 @@ import { FormsModule } from '@angular/forms';
   bootstrap: [AppComponent]
 })
 export class AppModule {
-
+  constructor(library: FaIconLibrary) {
+    library.addIconPacks(far,fas,fab)
   }
-
+}

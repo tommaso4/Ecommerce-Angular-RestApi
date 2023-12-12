@@ -13,10 +13,10 @@ export class NameFilterComponent {
 
   filterByName(event: Event) {
     const target = event.target as HTMLInputElement;
-    const name = target.value;
+    const nome = target.value;
 
-    this.beerService.setBeerName(name);
-    this.beerNameEvent.emit(name); // Invia il nome inserito tramite evento
+    this.beerService.setBeerName(nome);
+    this.beerNameEvent.emit(nome); // Invia il nome inserito tramite evento
   }
 }
 
