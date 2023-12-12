@@ -1,12 +1,3301 @@
 {
-  "users": [
-    {
-      "email": "emilio.plances@gmail.com",
-      "password": "$2a$10$joRX2y32W4WHom3PfOm.Qepju72F5EohJ0dvyAEfTNH9FdzvJuKea",
-      "name": "Emilio",
-      "surname": "Plances",
-      "id": 1
-    }
-  ],
-  "cart": []
+  "users": [],
+  "cart":[],
+  "beer":[
+{
+  "id": 1,
+  "nome": "Buzz",
+  "slogan" : "Un'esperienza davvero amara.",
+  "first_brewed": "09/2007",
+  "descrizione": "Una IPA leggera, frizzante e amara, prodotta con luppoli inglesi e americani. Un piccolo lotto prodotto una sola volta. " ,
+  "url_immagine": "https://images.punkapi.com/v2/keg.png " ,
+  "abv": 4.5,
+  "ibu": 60,
+  "target_fg": 1010,
+  "target_og": 1044,
+  "ebc": 20,
+  "srm": 10,
+  "ph": 4.4,
+  "livello_attenuazione": 75,
+  "volume":{
+  "valore": 20,
+  "unità": "litri",
+  "tipologia":"chiara"
+},
+  "volume_bollire":  {
+  "valore": 25,
+  "unità": "litri"
+},
+ "metodo":{
+ "mash_temp": [
+  {
+  " temp":  {
+    "valore":  64,
+    "unità": "centigradi"
+  },
+  " durata " :  75
+  }
+],
+" fermentazione " :  {
+" temp " :  {
+" valore " :  19 ,
+" unità " :  " centigradi "
+}
+},
+" torsione " :  "nulla"
+},
+" ingredienti " :  {
+" malto " :  [
+{
+" nome " :  " Maris Otter Extra Pale " ,
+" quantità " :  {
+" valore " :  3.3 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Caramalto " ,
+" quantità " :  {
+" valore " :  0.2 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Monaco " ,
+" quantità " :  {
+" valore " :  0.4 ,
+" unità " :  " chilogrammi "
+}
+}
+],
+" luppolo " :  [
+{
+" nome " :  " Fuggles " ,
+" quantità " :  {
+" valore " :  25 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Primo Oro " ,
+" quantità " :  {
+" valore " :  25 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Fuggles " ,
+" quantità " :  {
+" valore " :  37.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " centro " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Primo Oro " ,
+" quantità " :  {
+" valore " :  37.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " centro " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Cascata " ,
+" quantità " :  {
+" valore " :  37.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+}
+],
+" lievito " :  " Wyeast 1056 - American Ale™ "
+},
+" abbinamento_cibo " :  [
+" Pollo piccante tikka masala " ,
+" Quesadilla di pollo alla griglia " ,
+" Torta al caramello "
+],
+" brewers_tips " :  " Gli aromi terrosi e floreali del luppolo possono essere opprimenti. Aggiungi un po' di Cascade alla fine dell'ebollizione per sollevare il profilo con un po' di agrumi. " ,
+" contribuito_da " :  " Sam Mason <samjbmason> "
+},
+{
+" id " :  2 ,
+" nome " :  " Bionda Trashy " ,
+" slogan " :  " Sai che non dovresti " ,
+" first_brewed " :  " 04/2008 " ,
+" descrizione " :  " Una Pale Ale punk frizzante, nevrotica e ossigenata. Unisce attitudine, stile, sostanza e un po' di bassa autostima per buona misura; cosa direbbe tua madre? Il richiamo seducente dell'impertinente frutto della passione il luppolo si è rivelato troppo a cui resistere. Tutto questo prima ancora di arrivare al fatto che non ci sono additivi, conservanti, pastorizzazione o fili allegati. Il tutto avvolto con il consueto morso e tocco fantasioso di BrewDog. " ,
+" url_immagine " :  " https://images.punkapi.com/v2/2.png " ,
+" abv " :  4.1 ,
+" ibu " :  41.5 ,
+" target_fg " :  1010 ,
+" target_og " :  1041.7 ,
+" ebc " :  15 ,
+" srm " :  15 ,
+" ph " :  4.4 ,
+" livello_attenuazione " :  76 ,
+" volume " :  {
+" valore " :  20 ,
+" unità " :  " litri ",
+"tipologia":"chiara"
+},
+" volume_bollire " :  {
+" valore " :  25 ,
+" unità " :  " litri "
+},
+" metodo " :  {
+" mash_temp " :  [
+{
+" temp " :  {
+" valore " :  69 ,
+" unità " :  " centigradi "
+},
+" durata " :  "nulla"
+}
+],
+" fermentazione " :  {
+" temp " :  {
+" valore " :  18 ,
+" unità " :  " centigradi "
+}
+},
+" torsione " :  "nulla"
+},
+" ingredienti " :  {
+" malto " :  [
+{
+" nome " :  " Maris Otter Extra Pale " ,
+" quantità " :  {
+" valore " :  3.25 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Caramalto " ,
+" quantità " :  {
+" valore " :  0.2 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Monaco " ,
+" quantità " :  {
+" valore " :  0.4 ,
+" unità " :  " chilogrammi "
+}
+}
+],
+" luppolo " :  [
+{
+" nome " :  " Amarillo " ,
+" quantità " :  {
+" valore " :  13.8 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Simcoe " ,
+" quantità " :  {
+" valore " :  13.8 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Amarillo " ,
+" quantità " :  {
+" valore " :  26.3 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Motueka " ,
+" quantità " :  {
+" valore " :  18.8 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+}
+],
+" lievito " :  " Wyeast 1056 - American Ale™ "
+},
+" abbinamento_cibo " :  [
+" Granchio fresco al limone " ,
+" Salsa al burro e aglio " ,
+" Insalata di formaggio di capra " ,
+" Barretta cremosa al limone ricoperta di zucchero a velo "
+],
+" brewers_tips " :  " Fai attenzione a non raccogliere troppo mosto dal mosto. Una volta che tutti gli zuccheri sono stati lavati via, nel mosto possono essere estratti alcuni composti dal sapore granuloso molto sgradevoli. " ,
+" contribuito_da " :  " Sam Mason <samjbmason> "
+},
+{
+" id " :  3 ,
+" nome " :  " Berliner Weisse With Yuzu - B-Sides " ,
+" slogan " :  " Berliner Weisse di agrumi giapponesi " ,
+" first_brewed " :  " 11/2015 " ,
+" descrizione " :  " Gli agrumi giapponesi intensificano la natura aspra di questo classico tedesco. " ,
+" url_immagine " :  " https://images.punkapi.com/v2/keg.png " ,
+" abv " :  4.2 ,
+" ibu " :  8 ,
+" target_fg " :  1007 ,
+" target_og " :  1040 ,
+" ebc " :  8 ,
+" srm " :  4 ,
+" ph " :  3.2 ,
+" livello_attenuazione " :  83 ,
+" volume " :  {
+" valore " :  20 ,
+" unità " :  " litri ",
+"tipologia":"chiara"
+},
+" volume_bollire " :  {
+" valore " :  25 ,
+" unità " :  " litri "
+},
+" metodo " :  {
+" mash_temp " :  [
+{
+" temp " :  {
+" valore " :  60 ,
+" unità " :  " centigradi "
+},
+" durata " :  10
+},
+{
+"temp" :  {
+" valore " :  65 ,
+" unità " :  " centigradi "
+},
+" durata " :  30
+},
+{
+" temp " :  {
+" valore " :  72 ,
+" unità " :  " centigradi "
+},
+" durata " :  10
+},
+{
+" temp " :  {
+" valore " :  78 ,
+" unità " :  " centigradi "
+},
+" durata " :  5
+}
+],
+" fermentazione " :  {
+" temp " :  {
+" valore " :  21 ,
+" unità " :  " centigradi "
+}
+},
+" twist " :  " Inacidito naturalmente utilizzando la tecnica del kettle aciding, frutto di Yuzu: 50 g al centro, succo di Yuzu: 200 ml a FV "
+},
+" ingredienti " :  {
+" malto " :  [
+{
+" nome " :  " Propino Pale Malt " ,
+" quantità " :  {
+" valore " :  1.63,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Malto di Frumento " ,
+" quantità " :  {
+" valore " :  1.63,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Propino Pale Malt for kettle souring " ,
+" quantità " :  {
+" valore " : 0.03,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Malto acidificato per acidificazione " ,
+" quantità " :  {
+" valore " : 0.03,
+" unità " :  " chilogrammi "
+}
+}
+],
+" luppolo " :  [
+{
+" nome " :  " Bramling Cross " ,
+" quantità " :  {
+" valore " :  10 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " centro " ,
+" attributo " :  " amaro "
+}
+],
+" lievito " :  " Wyeast 1056 - American Ale™ "
+},
+" abbinamento_cibo " :  [
+" Ali di pollo affumicate " ,
+" Ramen di miso " ,
+" Cheesecake allo Yuzu "
+],
+" brewers_tips " :  " Pulisci tutto due volte. Tutto ciò che desideri è la netta acidità dei lattobacilli. " ,
+" contribuito_da " :  " Sam Mason <samjbmason> "
+},
+{
+" id " :  4 ,
+" nome " :  " Pilsen Lager " ,
+" slogan " :  " Scatena la serie del lievito " ,
+" first_brewed " :  " 09/2013 " ,
+" description " :  " La nostra serie Unleash the Yeast è stata un esperimento epico sulle differenze di aroma e sapore fornite cambiando il lievito. Abbiamo preparato un mosto con una leggera nota di caramello e un sapore di biscotto tostato, e l'abbiamo luppolato con Amarillo e Centenario per un'amarezza agrumata. Tutto il resto dipende dal lievito. Il lievito Pilsner fermenta senza esteri fruttati o fenoli speziati, anche se può aggiungere un pizzico di butterscotch. " ,
+" url_immagine " :  " https://images.punkapi.com/v2/4.png " ,
+" abv " :  6.3,
+" ibu " :  55 ,
+" target_fg " :  1012 ,
+" target_og " :  1060 ,
+" ebc " :  30 ,
+" srm " :  15 ,
+" ph " :  4.4 ,
+" livello_attenuazione " :  80 ,
+" volume " :  {
+" valore " :  20 ,
+" unità " :  " litri ",
+"tipologia":"chiara"
+},
+" volume_bollire " :  {
+" valore " :  25 ,
+" unità " :  " litri "
+},
+" metodo " :  {
+" mash_temp " :  [
+{
+" temp " :  {
+" valore " :  65 ,
+" unità " :  " centigradi "
+},
+" durata " :  "nulla"
+}
+],
+" fermentazione " :  {
+" temp " :  {
+" valore " :  9 ,
+" unità " :  " centigradi "
+}
+},
+" torsione " :  "nulla"
+},
+" ingredienti " :  {
+" malto " :  [
+{
+" nome " :  " Extra Pale " ,
+" quantità " :  {
+" valore " :  4.58 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Caramalto " ,
+" quantità " :  {
+" valore " :  0.25 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Cristallo scuro " ,
+" quantità " :  {
+" valore " :  0.06 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Monaco " ,
+" quantità " :  {
+" valore " :  0.25 ,
+" unità " :  " chilogrammi "
+}
+}
+],
+" luppolo " :  [
+{
+" nome " :  " Centenario " ,
+" quantità " :  {
+" valore " :  5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Amarillo " ,
+" quantità " :  {
+" valore " :  5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Centenario " ,
+" quantità " :  {
+" valore " :  10 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " centro " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Amarillo " ,
+" quantità " :  {
+" valore " :  10 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " centro " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Centenario " ,
+" quantità " :  {
+" valore " :  17.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Amarillo " ,
+" quantità " :  {
+" valore " :  17.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+}
+],
+" lievito " :  " Wyeast 2007 - Pilsen Lager™ "
+},
+" abbinamento_cibo " :  [
+" Torte piccanti di granchio " ,
+" Insalata tailandese piccante di cetrioli e carote " ,
+" Gnocchi ripieni dolci "
+],
+" brewers_tips " :  " Gioca con la temperatura di fermentazione per ottenere il miglior profilo aromatico dai singoli lieviti. " ,
+" contribuito_da " :  " Ali Skinner <AliSkinner> "
+},
+{
+" id " :  5 ,
+" nome " :  " Avery Brown Dredge " ,
+" slogan " :  " Pilsner imperiale dei blogger. " ,
+" first_brewed " :  " 02/2011 " ,
+" descrizione " :  " Una Pilsner imperiale in collaborazione con scrittori di birra. Tradizione. Omaggio. Rivoluzione. Volevamo mostrare la fantastica spina dorsale della tradizione birraria ceca, il nobile luppolo Saaz, e anche dare il nostro cappello alle birre moderne che scuotono il nostro mondo e le persone che li realizzano. " ,
+" url_immagine " :  " https://images.punkapi.com/v2/5.png " ,
+" abv " :  7.2 ,
+" ibu " :  59 ,
+" target_fg " :  1027 ,
+" target_og " :  1069 ,
+" ebc " :  10 ,
+" srm " :  5 ,
+" ph " :  4.4 ,
+" livello_attenuazione " :  67 ,
+" volume " :  {
+" valore " :  20 ,
+" unità " :  " litri ",
+"tipologia":"chiara"
+},
+" volume_bollire " :  {
+" valore " :  25 ,
+" unità " :  " litri "
+},
+" metodo " :  {
+" mash_temp " :  [
+{
+" temp " :  {
+" valore " :  66 ,
+" unità " :  " centigradi "
+},
+" durata " :  70
+}
+],
+" fermentazione " :  {
+" temp " :  {
+" valore " :  10 ,
+" unità " :  " centigradi "
+}
+},
+" torsione " :  "nulla"
+},
+" ingredienti " :  {
+" malto " :  [
+{
+" nome " :  " Lager Malt " ,
+" quantità " :  {
+" valore " :  6.63 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Grano " ,
+" quantità " :  {
+" valore " :  0.38 ,
+" unità " :  " chilogrammi "
+}
+}
+],
+" luppolo " :  [
+{
+" nome " :  " Saaz " ,
+" quantità " :  {
+" valore " :  60 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Saaz " ,
+" quantità " :  {
+" valore " :  60 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " centro " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Saaz " ,
+" quantità " :  {
+" valore " :  60 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+}
+],
+" lievito " :  " Wyeast 2007 - Pilsen Lager™ "
+},
+" abbinamento_cibo " :  [
+" Insalata di calamari vietnamita " ,
+" Pannocchie di mais alla griglia con burro alla paprika " ,
+" Torta di fragole e rabarbaro "
+],
+" brewers_tips " :  " Assicurati di avere un lievito madre abbastanza grande da poter fermentare con successo attraverso l'OG e la lager. " ,
+" contribuito_da " :  " Sam Mason <samjbmason> "
+},
+{
+" id " :  6 ,
+" nome " :  " India elettrica " ,
+" slogan " :  " Vibrante stagione luppolata " ,
+" first_brewed " :  " 05/2013 " ,
+" descrizione " :  " Riprodotta come birra stagionale primaverile, questa birra, che originariamente appariva come una creazione degli azionisti di Equity Punk, conserva il suo caratteristico tocco speziato e fruttato. Una miscela perfetta di Saison belga e IPA statunitense, grani di pepe tritati e miele di erica sono aggiunti anche per produrre una birra davvero unica. " ,
+" url_immagine " :  " https://images.punkapi.com/v2/6.png " ,
+" abv " :  5.2 ,
+" ibu " :  38 ,
+" target_fg " :  1005 ,
+" target_og " :  1045 ,
+" ebc " :  15 ,
+" srm " :  7.5 ,
+" ph " :  4.4 ,
+" livello_attenuazione " :  88.9 ,
+" volume " :  {
+" valore " :  20 ,
+" unità " :  " litri ",
+"tipologia":"chiara"
+},
+" volume_bollire " :  {
+" valore " :  25 ,
+" unità " :  " litri "
+},
+" metodo " :  {
+" mash_temp " :  [
+{
+" temp " :  {
+" valore " :  65 ,
+" unità " :  " centigradi "
+},
+" durata " :  75
+}
+],
+" fermentazione " :  {
+" temp " :  {
+" valore " :  22 ,
+" unità " :  " centigradi "
+}
+},
+" twist " :  " Miele: 62,5 g alla fine (WP), semi di coriandolo: 8,5 g a 45 minuti "
+},
+" ingredienti " :  {
+" malto " :  [
+{
+" nome " :  " Extra Pale " ,
+" quantità " :  {
+" valore " :  3.63 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Monaco " ,
+" quantità " :  {
+" valore " :  0.13 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Grano " ,
+" quantità " :  {
+" valore " :  0.25 ,
+" unità " :  " chilogrammi "
+}
+}
+],
+" luppolo " :  [
+{
+" nome " :  " Amarillo " ,
+" quantità " :  {
+" valore " :  2.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Nelson Sauvin " ,
+" quantità " :  {
+" valore " :  5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " centro " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Amarillo " ,
+" quantità " :  {
+" valore " :  5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " centro " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Pepe in grani " ,
+" quantità " :  {
+" valore " :  2.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " centro " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Nelson Sauvin " ,
+" quantità " :  {
+" valore " :  20 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Amarillo " ,
+" quantità " :  {
+" valore " :  12.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+}
+],
+" lievito " :  " Wyeast 3711 - French Saison™ "
+},
+" abbinamento_cibo " :  [
+" Cozze con salsa all'aglio e alle erbe " ,
+" Panino al granchio fuso " ,
+" Biscotto di pasta frolla "
+],
+" brewers_tips " :  " Acquista dell'ottimo miele di erica per ottenere i giusti esteri speziati nella birra. " ,
+" contribuito_da " :  " Sam Mason <samjbmason> "
+},
+{
+" id " :  7 ,
+" nome " :  " AB:12 " ,
+" slogan " :  " Imperial Black Belgian Ale. " ,
+" first_brewed " :  " 07/2012 " ,
+" descrizione " :  " Una Imperial Black Belgian Ale invecchiata in vecchie botti di whisky scozzese Invergordon con montagne di lamponi, mirtilli e more in ogni botte. Decadente ma leggera e secca, questa birra sarebbe una base fantastica per l'invecchiamento praticamente su qualsiasi frutto scuro - abbiamo usato lamponi, tayberry e more perché erano locali. " ,
+" url_immagine " :  " https://images.punkapi.com/v2/7.png " ,
+" abv " :  11.2 ,
+" ibu " :  35 ,
+" target_fg " :  1017 ,
+" target_og " :  1108 ,
+" ebc " :  80 ,
+" srm " :  40 ,
+" ph " :  5.3 ,
+" livello_attenuazione " :  84 ,
+" volume " :  {
+" valore " :  20 ,
+" unità " :  " litri ",
+"tipologia":"scura"
+},
+" volume_bollire " :  {
+" valore " :  25 ,
+" unità " :  " litri "
+},
+" metodo " :  {
+" mash_temp " :  [
+{
+" temp " :  {
+" valore " :  69 ,
+" unità " :  " centigradi "
+},
+" durata " :  105
+}
+],
+" fermentazione " :  {
+" temp " :  {
+" valore " :  21 ,
+" unità " :  " centigradi "
+}
+},
+" twist " :  " Invecchiato in botti di whisky con lamponi, mirtilli e more "
+},
+" ingredienti " :  {
+" malto " :  [
+{
+" nome " :  " Extra Pale " ,
+" quantità " :  {
+" valore " :  9.69 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Cioccolato " ,
+" quantità " :  {
+" valore " :  0.19 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Carafa Special Malt Tipo 3 " ,
+" quantità " :  {
+" valore " :  0.44 ,
+" unità " :  " chilogrammi "
+}
+}
+],
+" luppolo " :  [
+{
+" nome " :  " Tomahawk " ,
+" quantità " :  {
+" valore " :  31.25 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Magnum " ,
+" quantità " :  {
+" valore " :  12.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Magnum " ,
+" quantità " :  {
+" valore " :  12.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " centro " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Tomahawk " ,
+" quantità " :  {
+" valore " :  12.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Centenario " ,
+" quantità " :  {
+" valore " :  25 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Amarillo " ,
+" quantità " :  {
+" valore " :  25 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Centenario " ,
+" quantità " :  {
+" valore " :  25 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " luppolo secco " ,
+" attributo " :  " aroma "
+},
+{
+" nome " :  " Amarillo " ,
+" quantità " :  {
+" valore " :  25 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " luppolo secco " ,
+" attributo " :  " aroma "
+},
+{
+" nome " :  " Tomahawk " ,
+" quantità " :  {
+" valore " :  37.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " luppolo secco " ,
+" attributo " :  " aroma "
+}
+],
+" lievito " :  " Wyeast 3522 - Ardenne belghe™ "
+},
+" abbinamento_cibo " :  [
+" Agnello Tandoori al melograno " ,
+" Manzo alla Wellington con sugo di vino rosso " ,
+"Raspberry chocolate torte"
+],
+" brewers_tips " :  " Non preoccuparti troppo di controllare la temperatura con il ceppo di lievito belga: assicurati solo che non superi i 30°C! " ,
+" contribuito_da " :  " Sam Mason <samjbmason> "
+},
+{
+" id " :  8 ,
+" nome " :  " Fake Lager " ,
+" slogan " :  " Pilsner bohémien " ,
+" first_brewed " :  " 03/2013 " ,
+" descrizione " :  " Il falso è il nuovo nero. Il falso è dove si trova. Arte falsa, marchi falsi, seni finti e birra chiara finta. Vogliamo fare la nostra parte nelle brutte conseguenze del sogno Lager. Saluta Fake Lager: un finto capolavoro floreale e piccante del 21° secolo con l'aggiunta dell'amarezza BrewDog. " ,
+" url_immagine " :  " https://images.punkapi.com/v2/8.png " ,
+" abv " :  4.7 ,
+" ibu " :  40 ,
+" target_fg " :  1010 ,
+" target_og " :  1046 ,
+" ebc " :  12 ,
+" srm " :  6 ,
+" ph " :  4.4 ,
+" livello_attenuazione " :  78 ,
+" volume " :  {
+" valore " :  20 ,
+" unità " :  " litri ",
+"tipologia":"chiara"
+},
+" volume_bollire " :  {
+" valore " :  25 ,
+" unità " :  " litri "
+},
+" metodo " :  {
+" mash_temp " :  [
+{
+" temp " :  {
+" valore " :  65 ,
+" unità " :  " centigradi "
+},
+" durata " :  75
+}
+],
+" fermentazione " :  {
+" temp " :  {
+" valore " :  10 ,
+" unità " :  " centigradi "
+}
+},
+" torsione " :  "nulla"
+},
+" ingredienti " :  {
+" malto " :  [
+{
+" nome " :  " Extra Pale " ,
+" quantità " :  {
+" valore " :  3.33 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Monaco " ,
+" quantità " :  {
+" valore " :  0.42 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Caramalto " ,
+" quantità " :  {
+" valore " :  0.28 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Malto acidificato " ,
+" quantità " :  {
+" valore " :  0.07 ,
+" unità " :  " chilogrammi "
+}
+}
+],
+" luppolo " :  [
+{
+" nome " :  " Magnum " ,
+" quantità " :  {
+" valore " :  7.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Magnum " ,
+" quantità " :  {
+" valore " :  5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " centro " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Hersbrucker " ,
+" quantità " :  {
+" valore " :  6.25 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " centro " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Saaz " ,
+" quantità " :  {
+" valore " :  6.25 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " centro " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Hersbrucker " ,
+" quantità " :  {
+" valore " :  18.75 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Saaz " ,
+" quantità " :  {
+" valore " :  18.75 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+}
+],
+" lievito " :  " Wyeast 2007 - Pilsen Lager™ "
+},
+" abbinamento_cibo " :  [
+" Torte di granchio fritte con salsa di avocado " ,
+" Involtino di maiale piccante con salsa piccante " ,
+" Torta al lime "
+],
+" brewers_tips " :  " Una volta completata la fermentazione primaria, raffredda la birra più che puoi e lasciala maturare per tutto il tempo che hai. " ,
+" contribuito_da " :  " Sam Mason <samjbmason> "
+},
+{
+" id " :  9 ,
+" nome " :  " AB:07 " ,
+" slogan " :  " Whisky Scotch Ale invecchiata in botte. " ,
+" first_brewed " :  " 03/2010 " ,
+" descrizione " :  " Imperial scotch ale whisky invecchiato in botte. Birra perfetta per quando la pioggia cade di traverso. Liquirizia, prugna e uva passa temperano il caldo alcol, producendo una birra capace di trattenere il freddo scozzese. " ,
+" url_immagine " :  " https://images.punkapi.com/v2/9.png " ,
+" abv " :  12.5 ,
+" ibu " :  30 ,
+" target_fg " :  1020 ,
+" target_og " :  1106 ,
+" ebc " :  84 ,
+" srm " :  42 ,
+" ph " :  5.6 ,
+" livello_attenuazione " :  83 ,
+" volume " :  {
+" valore " :  20 ,
+" unità " :  " litri ",
+"tipologia":"chiara"
+},
+" volume_bollire " :  {
+" valore " :  25 ,
+" unità " :  " litri "
+},
+" metodo " :  {
+" mash_temp " :  [
+{
+" temp " :  {
+" valore " :  65 ,
+" unità " :  " centigradi "
+},
+" durata " :  105
+}
+],
+" fermentazione " :  {
+" temp " :  {
+" valore " :  11 ,
+" unità " :  " centigradi "
+}
+},
+" twist " :  " Miele di erica scozzese: 62,5 g al centro, aggiungere il miele durante l'ebollizione. Dopo la fermentazione, invecchiare in una botte di whisky scozzese "
+},
+" ingredienti " :  {
+" malto " :  [
+{
+" nome " :  " Monaco " ,
+" quantità " :  {
+" valore " :  5.63 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Avena in Fiocchi " ,
+" quantità " :  {
+" valore " :  1.88 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Grano " ,
+" quantità " :  {
+" valore " :  1.88 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Caramalto " ,
+" quantità " :  {
+" valore " :  1.25 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Cristallo " ,
+" quantità " :  {
+" valore " :  0.63 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Cristallo scuro " ,
+" quantità " :  {
+" valore " :  0.63 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Cioccolato " ,
+" quantità " :  {
+" valore " :  0.31 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Malto Torbato " ,
+" quantità " :  {
+" valore " :  0.13 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Ambra " ,
+" quantità " :  {
+" valore " :  0.13 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Marrone " ,
+" quantità " :  {
+" valore " :  0.13 ,
+" unità " :  " chilogrammi "
+}
+}
+],
+" luppolo " :  [
+{
+" nome " :  " Saaz " ,
+" quantità " :  {
+" valore " :  25 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Primo Oro " ,
+" quantità " :  {
+" valore " :  31.3 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+}
+],
+" lievito " :  " Saflager S189 "
+},
+" abbinamento_cibo " :  [
+" Kedgeree " ,
+" Brodo scozzese con pane a lievitazione naturale " ,
+" Gnocchi di Clootie "
+],
+" brewers_tips " :  " L'autentico miele di erica aggiunge una bellissima nota di testa floreale che è irraggiungibile in nessun altro modo. " ,
+" contribuito_da " :  " Sam Mason <samjbmason> "
+},
+{
+" id " :  10 ,
+" nome " :  " Bramling X " ,
+" slogan " :  " Serie Single Hop IPA - 2011. " ,
+" first_brewed " :  " 01/2011 " ,
+" descrizione " :  " Il buon vecchio Bramling Cross è elegante, raffinato, sicuro, (noioso) e discreto. Sottostimato, a meno che non ci si lasci bere una birra. Questo è Bramling Cross reinventato e reimmaginato, e mostra cosa si può fare con il luppolo inglese se ne usi abbastanza. La povera Bramling Cross normalmente si perde in un flusso doloroso di birre marroni conformiste prodotte da assonnati birrai di botte. Ma non più. Questa birra dimostra che il luppolo britannico ha un po' di anima, ed è un tripudio fruttato di more, pere e prugne. Mi ricorda la marmellata di rovi, mele e zenzero che preparava mia nonna. " ,
+" url_immagine " :  " https://images.punkapi.com/v2/10.png " ,
+" abv " :  7.5 ,
+" ibu " :  75 ,
+" target_fg " :  1013 ,
+" target_og " :  1068 ,
+" ebc " :  22 ,
+" srm " :  11 ,
+" ph " :  4.4 ,
+" livello_attenuazione " :  80.9 ,
+" volume " :  {
+" valore " :  20 ,
+" unità " :  " litri ",
+"tipologia":"scura"
+},
+" volume_bollire " :  {
+" valore " :  25 ,
+" unità " :  " litri "
+},
+" metodo " :  {
+" mash_temp " :  [
+{
+" temp " :  {
+" valore " :  65 ,
+" unità " :  " centigradi "
+},
+" durata " :  75
+}
+],
+" fermentazione " :  {
+" temp " :  {
+" valore " :  19 ,
+" unità " :  " centigradi "
+}
+},
+" torsione " :  "nulla"
+},
+" ingredienti " :  {
+" malto " :  [
+{
+" nome " :  " Extra Pale " ,
+" quantità " :  {
+" valore " :  6.38 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Cristallo 150 " ,
+" quantità " :  {
+" valore " :  0.13 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Caramalto " ,
+" quantità " :  {
+" valore " :  0.25 ,
+" unità " :  " chilogrammi "
+}
+}
+],
+" luppolo " :  [
+{
+" nome " :  " Bramling Cross " ,
+" quantità " :  {
+" valore " :  60 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Bramling Cross " ,
+" quantità " :  {
+" valore " :  50 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+}
+],
+" lievito " :  " Wyeast 1056 - American Ale™ "
+},
+" abbinamento_cibo " :  [
+" Torta calda alle more " ,
+" Fish and chips ricoperti di aceto " ,
+" Curry aromatico korma con naan al limone e aglio "
+],
+" brewers_tips " :  " Ottenere un buon Bramling Cross è fondamentale. La maggior parte del luppolo inglese è sotto forma di foglie (non pellettizzato), quindi ottenere luppolo fresco vicino al raccolto (settembre) conferirà a questa birra la giusta quantità di intensità di bacca scura. " ,
+" contribuito_da " :  " Sam Mason <samjbmason> "
+},
+{
+" id " :  11 ,
+" nome " :  " Gioventù sprecata " ,
+" slogan " :  " Milk & Honey Scotch Ale. " ,
+" first_brewed " :  " 04/2013 " ,
+" descrizione " :  " Il frutto dell'ingegno del nostro piccolo produttore di birra, George Woods. Una Scotch Ale pericolosamente bevibile con infuso di zucchero e latte. " ,
+" url_immagine " :  " https://images.punkapi.com/v2/keg.png " ,
+" abv " :  7.3 ,
+" ibu " :  30 ,
+" target_fg " :  1020 ,
+" target_og " :  1079 ,
+" ebc " :  120 ,
+" srm " :  60 ,
+" ph " :  4.4 ,
+" livello_attenuazione " :  74.7 ,
+" volume " :  {
+" valore " :  20 ,
+" unità " :  " litri ",
+"tipologia":"chiara"
+},
+" volume_bollire " :  {
+" valore " :  25 ,
+" unità " :  " litri "
+},
+" metodo " :  {
+" mash_temp " :  [
+{
+" temp " :  {
+" valore " :  67 ,
+" unità " :  " centigradi "
+},
+" durata " :  75
+}
+],
+" fermentazione " :  {
+" temp " :  {
+" valore " :  19 ,
+" unità " :  " centigradi "
+}
+},
+" twist " :  " Vedi aggiunte di miele e lattosio "
+},
+" ingredienti " :  {
+" malto " :  [
+{
+" nome " :  " Pale Ale " ,
+" quantità " :  {
+" valore " :  2.18 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Caramalto " ,
+" quantità " :  {
+" valore " :  0.3 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Cristallo scuro " ,
+" quantità " :  {
+" valore " :  0.3 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Weyermann affumicato " ,
+" quantità " :  {
+" valore " :  1.8 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Avena in Fiocchi " ,
+" quantità " :  {
+" valore " :  0.6 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Marrone " ,
+" quantità " :  {
+" valore " :  0.6 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Ambra " ,
+" quantità " :  {
+" valore " :  0.1 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Cioccolato " ,
+" quantità " :  {
+" valore " :  0.05 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Monaco " ,
+" quantità " :  {
+" valore " :  0.6 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Cristallo 150 " ,
+" quantità " :  {
+" valore " :  0.2 ,
+" unità " :  " chilogrammi "
+}
+}
+],
+" luppolo " :  [
+{
+" nome " :  " Primo Oro " ,
+" quantità " :  {
+" valore " :  25 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Fuggles " ,
+" quantità " :  {
+" valore " :  25 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Miele " ,
+" quantità " :  {
+" valore " :  250 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " centro " ,
+" attributo " :  " Sapore "
+},
+{
+" nome " :  " Lattosio " ,
+" quantità " :  {
+" valore " :  375 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " centro " ,
+" attributo " :  " Sapore "
+},
+{
+" nome " :  " Primo Oro " ,
+" quantità " :  {
+" valore " :  10 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " aroma "
+},
+{
+" nome " :  " Fuggles " ,
+" quantità " :  {
+" valore " :  10 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " aroma "
+}
+],
+" lievito " :  " Wyeast 1056 - American Ale™ "
+},
+" abbinamento_cibo " :  [
+" Formaggio Camembert infuso con aglio arrostito e peperoncino " ,
+" Ali di pollo alla coreana " ,
+" Frullato al cioccolato "
+],
+" brewers_tips " :  " Molto malto in questo. Mash-in in più fasi e spargi il malto Pale Ale in tutto il mash per fornire stabilità. Se il mash inizia ad affondare, fermati, attendi qualche minuto mentre mescoli, quindi ricomincia " ,
+" contribuito da " :  " Sam Mason <samjbmason> "
+},
+{
+" id " :  12 ,
+" nome " :  " Arcade Nation " ,
+" slogan " :  " Black IPA stagionale. " ,
+" first_brewed " :  " 12/2015 " ,
+" description " :  " A cavallo tra un'India Pale Ale e una Stout, questo particolare stile è uno di quelli che amiamo davvero. Le Black IPA sono una grande vetrina per l'abilità del nostro team di birrai, bilanciando così tanti sapori complessi e contorti in nello stesso momento. Gli agrumi, il mango e il pino del luppolo – tre dei nostri preferiti di tutti i tempi – si contrappongono alla secchezza tostata del malto ad ogni giro. " ,
+" url_immagine " :  " https://images.punkapi.com/v2/12.png " ,
+" abv " :  5.3 ,
+" ibu " :  60 ,
+" target_fg " :  1012 ,
+" target_og " :  1052 ,
+" ebc " :  200 ,
+" srm " :  100 ,
+" ph " :  4.2 ,
+" livello_attenuazione " :  77 ,
+" volume " :  {
+" valore " :  20 ,
+" unità " :  " litri ",
+"tipologia":"scura"
+},
+" volume_bollire " :  {
+" valore " :  25 ,
+" unità " :  " litri "
+},
+" metodo " :  {
+" mash_temp " :  [
+{
+" temp " :  {
+" valore " :  65 ,
+" unità " :  " centigradi "
+},
+" durata " :  "nulla"
+}
+],
+" fermentazione " :  {
+" temp " :  {
+" valore " :  19 ,
+" unità " :  " centigradi "
+}
+},
+" torsione " :  "nulla"
+},
+" ingredienti " :  {
+" malto " :  [
+{
+" nome " :  " Pale Ale " ,
+" quantità " :  {
+" valore " :  3.13 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Caramalto " ,
+" quantità " :  {
+" valore " :  0.25 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Cristallo 150 " ,
+" quantità " :  {
+" valore " :  0.18 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Carafa Special Malt Tipo 1 " ,
+" quantità " :  {
+" valore " :  0.25 ,
+" unità " :  " chilogrammi "
+}
+}
+],
+" luppolo " :  [
+{
+" nome " :  " Simcoe " ,
+" quantità " :  {
+" valore " :  12.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Simcoe " ,
+" quantità " :  {
+" valore " :  19 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " centro " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Simcoe " ,
+" quantità " :  {
+" valore " :  12.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Amarillo " ,
+" quantità " :  {
+" valore " :  12.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Citra " ,
+" quantità " :  {
+" valore " :  12.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Simcoe " ,
+" quantità " :  {
+" valore " :  62.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " luppolo secco " ,
+" attributo " :  " aroma "
+},
+{
+" nome " :  " Amarillo " ,
+" quantità " :  {
+" valore " :  62.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " luppolo secco " ,
+" attributo " :  " aroma "
+},
+{
+" nome " :  " Citra " ,
+" quantità " :  {
+" valore " :  62.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " luppolo secco " ,
+" attributo " :  " aroma "
+}
+],
+" lievito " :  " Wyeast 1056 - American Ale™ "
+},
+" abbinamento_cibo " :  [
+" Spiedini di gamberoni " ,
+" Halibut con insalata di mango e pomodori " ,
+" Gelato al cioccolato e menta "
+],
+" brewers_tips " :  " Sii il più preciso possibile quando pesi i malti per assicurarti di trovare il giusto equilibrio. " ,
+" contribuito_da " :  " Sam Mason <samjbmason> "
+},
+{
+" id " :  13 ,
+" nome " :  " Movember " ,
+" slogan " :  " Birra degna di baffi. " ,
+" first_brewed " :  " 11/2009 " ,
+" descrizione " :  " Una birra al malto nero deliziosamente robusta con un decadente sapore di cacao scuro e secco che fornisce uno sfondo seducente al luppolo Cascade. " ,
+" url_immagine " :  " https://images.punkapi.com/v2/13.png " ,
+" abv " :  4.5 ,
+" ibu " :  50 ,
+" target_fg " :  1012 ,
+" target_og " :  1047 ,
+" ebc " :  140 ,
+" srm " :  70 ,
+" ph " :  5.2 ,
+" livello_attenuazione " :  74.5 ,
+" volume " :  {
+" valore " :  20 ,
+" unità " :  " litri ",
+"tipologia":"scura"
+},
+" volume_bollire " :  {
+" valore " :  25 ,
+" unità " :  " litri "
+},
+" metodo " :  {
+" mash_temp " :  [
+{
+" temp " :  {
+" valore " :  68 ,
+" unità " :  " centigradi "
+},
+" durata " :  50
+}
+],
+" fermentazione " :  {
+" temp " :  {
+" valore " :  19 ,
+" unità " :  " centigradi "
+}
+},
+" torsione " :  "nulla"
+},
+" ingredienti " :  {
+" malto " :  [
+{
+" nome " :  " Maris Otter Extra Pale " ,
+" quantità " :  {
+" valore " :  3.44 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Caramalto " ,
+" quantità " :  {
+" valore " :  0.63 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Cristallo 150 " ,
+" quantità " :  {
+" valore " :  0.31 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Carafa Special Malt Tipo 1 " ,
+" quantità " :  {
+" valore " :  0.31 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Carafa Special Malt Tipo 3 " ,
+" quantità " :  {
+" valore " :  0.31 ,
+" unità " :  " chilogrammi "
+}
+}
+],
+" luppolo " :  [
+{
+" nome " :  " Cascata " ,
+" quantità " :  {
+" valore " :  43.8 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Cascata " ,
+" quantità " :  {
+" valore " :  81.3 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Cascata " ,
+" quantità " :  {
+" valore " :  250 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " luppolo secco " ,
+" attributo " :  " aroma "
+}
+],
+" lievito " :  " Wyeast 1056 - American Ale™ "
+},
+" abbinamento_cibo " :  [
+" Uova strapazzate con verdure " ,
+"Margherita pizza",
+" Crostata croccante ai frutti di bosco "
+],
+" brewers_tips " :  " Se non riesci a trovare una cascata davvero fresca, sostituiscila con Amarillo o Ahtanum. " ,
+" contribuito_da " :  " Sam Mason <samjbmason> "
+},
+{
+" id " :  14 ,
+" nome " :  " Cane Alfa " ,
+" slogan " :  " Birra rossa esistenziale. " ,
+" first_brewed " :  " 02/2010 " ,
+" descrizione " :  " Una fusione di sapori di malto caramellato e luppolo incisivo della Nuova Zelanda. Una birra da sessione in cui puoi mettere i denti. " ,
+" url_immagine " :  " https://images.punkapi.com/v2/14.png " ,
+" abv " :  4.5 ,
+" ibu " :  42 ,
+" target_fg " :  1025 ,
+" target_og " :  1046 ,
+" ebc " :  62 ,
+" srm " :  31 ,
+" ph " :  4.4 ,
+" livello_attenuazione " :  72.8 ,
+" volume " :  {
+" valore " :  20 ,
+" unità " :  " litri ",
+"tipologia":"rossa"
+},
+" volume_bollire " :  {
+" valore " :  25 ,
+" unità " :  " litri "
+},
+" metodo " :  {
+" mash_temp " :  [
+{
+" temp " :  {
+" valore " :  65 ,
+" unità " :  " centigradi "
+},
+" durata " :  25
+}
+],
+" fermentazione " :  {
+" temp " :  {
+" valore " :  22 ,
+" unità " :  " centigradi "
+}
+},
+" torsione " :  "nulla"
+},
+" ingredienti " :  {
+" malto " :  [
+{
+" nome " :  " Maris Otter Extra Pale " ,
+" quantità " :  {
+" valore " :  2.5 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Caramalto " ,
+" quantità " :  {
+" valore " :  1.25 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Monaco " ,
+" quantità " :  {
+" valore " :  0.61 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Cristallo 150 " ,
+" quantità " :  {
+" valore " :  0.28 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Cristallo scuro 350-400 " ,
+" quantità " :  {
+" valore " :  0.2 ,
+" unità " :  " chilogrammi "
+}
+}
+],
+" luppolo " :  [
+{
+" nome " :  " Nelson Sauvin " ,
+" quantità " :  {
+" valore " :  15 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Amarillo " ,
+" quantità " :  {
+" valore " :  10 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Nelson Sauvin " ,
+" quantità " :  {
+" valore " :  30 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+}
+],
+" lievito " :  " Wyeast 1056 - American Ale™ "
+},
+" abbinamento_cibo " :  [
+" Pastrami " ,
+" Panino svizzero e rafano " ,
+" Formaggio cheddar piccante e chutney di cipolla/uvetta " ,
+" Croccante di arachidi "
+],
+" brewers_tips " :  " Frantuma il malto il più vicino possibile al tempo di preparazione. Più fresco è il malto, più intensi sapori di caramello verranno rilasciati nel mosto. " ,
+" contribuito_da " :  " Sam Mason <samjbmason> "
+},
+{
+" id " :  15 ,
+" nome " :  " Mixtape 8 " ,
+" slogan " :  " Una fusione epica di vecchio belga, new wave americana e whisky scozzese. " ,
+" first_brewed " :  " 01/2012 " ,
+" descrizione " :  " Questa ricetta è per la base Belgian Tripel. Una miscela di due enormi birre invecchiate in rovere: metà una Belgian Tripel luppolata e metà una Triple India Pale Ale. Entrambe invecchiate in botti di whisky a grano singolo per due anni e miscelate , ogni birra apporta il proprio carattere al mix. La Tripel belga è ricca di esteri speziati e fruttati complessi e di un carattere incisivo di luppolo agrumato. " ,
+" url_immagine " :  " https://images.punkapi.com/v2/15.png " ,
+" abv " :  14.5 ,
+" ibu " :  50 ,
+" target_fg " :  1014 ,
+" target_og " :  1093 ,
+" ebc " :  40 ,
+" srm " :  20 ,
+" ph " :  4.4 ,
+" livello_attenuazione " :  85 ,
+" volume " :  {
+" valore " :  20 ,
+" unità " :  " litri ",
+"tipologia":"chiara"
+},
+" volume_bollire " :  {
+" valore " :  25 ,
+" unità " :  " litri "
+},
+" metodo " :  {
+" mash_temp " :  [
+{
+" temp " :  {
+" valore " :  65 ,
+" unità " :  " centigradi "
+},
+" durata " :  40
+}
+],
+" fermentazione " :  {
+" temp " :  {
+" valore " :  21 ,
+" unità " :  " centigradi "
+}
+},
+" twist " :  " Invecchiato in botte e miscelato con Alchimista Anarchico "
+},
+" ingredienti " :  {
+" malto " :  [
+{
+" nome " :  " Pale Ale - Tipple " ,
+" quantità " :  {
+" valore " :  11.1 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Caramalto " ,
+" quantità " :  {
+" valore " :  0.94 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Cristallo " ,
+" quantità " :  {
+" valore " :  0.44 ,
+" unità " :  " chilogrammi "
+}
+}
+],
+" luppolo " :  [
+{
+" nome " :  " Estratto Columbus " ,
+" quantità " :  {
+" valore " :  12.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Centenario " ,
+" quantità " :  {
+" valore " :  37.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Cascata " ,
+" quantità " :  {
+" valore " :  37.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Simcoe " ,
+" quantità " :  {
+" valore " :  37.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+}
+],
+" lievito " :  " Wyeast 3522 - Ardenne belghe™ "
+},
+" abbinamento_cibo " :  [
+" Tortini di granchio al coriandolo e peperoncino " ,
+" Insalata di formaggio di capra con noci, ravanello e arancia rossa " ,
+" Torta al pistacchio "
+],
+" brewers_tips " :  " Prepara il doppio della tripel belga di quella che avevi intenzione di invecchiare: è fantastica anche da sola! " ,
+" contribuito_da " :  " Sam Mason <samjbmason> "
+},
+{
+"id": 16,
+"name": "Libertine Porter",
+"tagline": "Dry-Hopped Aggressive Porter.",
+"first_brewed": "01/2012",
+"description": "An avalanche of cross-continental hop varieties give this porter a complex spicy, resinous and citrusy aroma, with a huge malt bill providing a complex roasty counterpoint. Digging deeper into the flavour draws out cinder toffee, bitter chocolate and hints of woodsmoke.",
+"image_url": "https://images.punkapi.com/v2/16.png",
+"abv": 6.1,
+"ibu": 45,
+"target_fg": 1020,
+"target_og": 1067,
+"ebc": 219,
+"srm": 109.5,
+"ph": 4.4,
+"attenuation_level": 70.1,
+"volume": {
+"value": 20,
+"unit": "litres",
+"tipologia":"scura"
+},
+"boil_volume": {
+"value": 25,
+"unit": "litres"
+},
+"method": {
+"mash_temp": [
+{
+"temp": {
+"value": 68,
+"unit": "celsius"
+},
+"duration": 35
+}
+],
+"fermentation": {
+"temp": {
+"value": 18,
+"unit": "celsius"
+}
+},
+"twist": null
+},
+"ingredients": {
+"malt": [
+{
+"name": "Extra Pale - Spring Blend",
+"amount": {
+"value": 5,
+"unit": "kilograms"
+}
+},
+{
+"name": "Caramalt",
+"amount": {
+"value": 1.25,
+"unit": "kilograms"
+}
+},
+{
+"name": "Crystal 150",
+"amount": {
+"value": 0.63,
+"unit": "kilograms"
+}
+},
+{
+"name": "Chocolate",
+"amount": {
+"value": 0.63,
+"unit": "kilograms"
+}
+},
+{
+"name": "Roasted Barley",
+"amount": {
+"value": 0.63,
+"unit": "kilograms"
+}
+},
+{
+"name": "Wheat",
+"amount": {
+"value": 0.31,
+"unit": "kilograms"
+}
+},
+{
+"name": "Flaked Oats",
+"amount": {
+"value": 0.31,
+"unit": "kilograms"
+}
+},
+{
+"name": "Smoked Malt",
+"amount": {
+"value": 0.06,
+"unit": "kilograms"
+}
+}
+],
+"hops": [
+{
+"name": "Columbus",
+"amount": {
+"value": 31.25,
+"unit": "grams"
+},
+"add": "start",
+"attribute": "bitter"
+},
+{
+"name": "Columbus",
+"amount": {
+"value": 25,
+"unit": "grams"
+},
+"add": "end",
+"attribute": "bitter"
+},
+{
+"name": "Willamette",
+"amount": {
+"value": 25,
+"unit": "grams"
+},
+"add": "end",
+"attribute": "flavour"
+},
+{
+"name": "Galena",
+"amount": {
+"value": 25,
+"unit": "grams"
+},
+"add": "end",
+"attribute": "flavour"
+},
+{
+"name": "Columbus",
+"amount": {
+"value": 75,
+"unit": "grams"
+},
+"add": "dry hop",
+"attribute": "aroma"
+},
+{
+"name": "Galena",
+"amount": {
+"value": 75,
+"unit": "grams"
+},
+"add": "dry hop",
+"attribute": "aroma"
+},
+{
+"name": "Simcoe",
+"amount": {
+"value": 100,
+"unit": "grams"
+},
+"add": "dry hop",
+"attribute": "aroma"
+}
+],
+"yeast": "Wyeast 1056 - American Ale™"
+},
+"food_pairing": [
+"Blue cheese beef burger",
+"Glazed short ribs",
+"Chocolate cake"
+],
+"brewers_tips": "Mash in at a higher temperature to leave more unfermentable sugars in the wort. This gives the beer a sweeter porter profile.",
+"contributed_by": "Sam Mason <samjbmason>"
+},
+{
+"id": 17,
+"name": "AB:06",
+"tagline": "Imperial Black IPA.",
+"first_brewed": "04/2011",
+"description": "Our sixth Abstrakt, this imperial black IPA combined dark malts with a monumental triple dry-hop, using an all-star team of some of our favourite American hops. Roasty and resinous.",
+"image_url": "https://images.punkapi.com/v2/17.png",
+"abv": 11.2,
+"ibu": 150,
+"target_fg": 1013,
+"target_og": 1098,
+"ebc": 70,
+"srm": 35,
+"ph": null,
+"attenuation_level": 87,
+"volume": {
+"value": 20,
+"unit": "litres",
+"tipologia":"scura"
+},
+"boil_volume": {
+"value": 25,
+"unit": "litres"
+},
+"method": {
+"mash_temp": [
+{
+"temp": {
+"value": 65,
+"unit": "celsius"
+},
+"duration": 90
+}
+],
+"fermentation": {
+"temp": {
+"value": 17,
+"unit": "celsius"
+}
+},
+"twist": "White cane sugar: 150g at middle"
+},
+"ingredients": {
+"malt": [
+{
+"name": "Pale Ale",
+"amount": {
+"value": 6.13,
+"unit": "kilograms"
+}
+},
+{
+"name": "Crystal 150",
+"amount": {
+"value": 0.25,
+"unit": "kilograms"
+}
+},
+{
+"name": "Caramalt",
+"amount": {
+"value": 0.38,
+"unit": "kilograms"
+}
+},
+{
+"name": "Carafa Special Malt Type 1",
+"amount": {
+"value": 0.13,
+"unit": "kilograms"
+}
+},
+{
+"name": "Carafa Special Malt Type 3",
+"amount": {
+"value": 0.13,
+"unit": "kilograms"
+}
+}
+],
+"hops": [
+{
+"name": "Hop Extract",
+"amount": {
+"value": 20,
+"unit": "grams"
+},
+"add": "start",
+"attribute": "bitter"
+},
+{
+"name": "Amarillo",
+"amount": {
+"value": 25,
+"unit": "grams"
+},
+"add": "start",
+"attribute": "bitter"
+},
+{
+"name": "Chinook",
+"amount": {
+"value": 25,
+"unit": "grams"
+},
+"add": "end",
+"attribute": "flavour"
+},
+{
+"name": "Cascade",
+"amount": {
+"value": 25,
+"unit": "grams"
+},
+"add": "end",
+"attribute": "flavour"
+},
+{
+"name": "Centennial",
+"amount": {
+"value": 25,
+"unit": "grams"
+},
+"add": "end",
+"attribute": "flavour"
+},
+{
+"name": "Columbus",
+"amount": {
+"value": 25,
+"unit": "grams"
+},
+"add": "end",
+"attribute": "flavour"
+},
+{
+"name": "Chinook",
+"amount": {
+"value": 25,
+"unit": "grams"
+},
+"add": "dry hop",
+"attribute": "aroma"
+},
+{
+"name": "Cascade",
+"amount": {
+"value": 25,
+"unit": "grams"
+},
+"add": "dry hop",
+"attribute": "aroma"
+},
+{
+"name": "Centennial",
+"amount": {
+"value": 25,
+"unit": "grams"
+},
+"add": "dry hop",
+"attribute": "aroma"
+},
+{
+"name": "Columbus",
+"amount": {
+"value": 25,
+"unit": "grams"
+},
+"add": "dry hop",
+"attribute": "aroma"
+},
+{
+"name": "Amarillo",
+"amount": {
+"value": 25,
+"unit": "grams"
+},
+"add": "dry hop",
+"attribute": "aroma"
+}
+],
+"yeast": "Wyeast 1272 - American Ale II™"
+},
+"food_pairing": [
+"Coffee dusted venison loin",
+"Memphis-style beef short ribs",
+"Chocolate orange brownies"
+],
+"brewers_tips": "Boil down to desired OG (about 17 litres).",
+"contributed_by": "Sam Mason <samjbmason>"
+},
+{
+"id": 18,
+"name": "Russian Doll – India Pale Ale",
+"tagline": "Nesting Hop Bomb.",
+"first_brewed": "08/2014",
+"description": "The levels of hops vary throughout the range. We love hops, so all four beers are big, bitter badasses, but by tweaking the amount of each hop used later in the boil and during dry- hopping, we can balance the malty backbone with some unexpected flavours. Simcoe is used in the whirlpool for all four beers, and yet still lends different characters to each",
+"image_url": "https://images.punkapi.com/v2/18.png",
+"abv": 6,
+"ibu": 70,
+"target_fg": 1012,
+"target_og": 1058,
+"ebc": 25,
+"srm": 12.5,
+"ph": 5.2,
+"attenuation_level": 79.3,
+"volume": {
+"value": 20,
+"unit": "litres",
+"tipologia":"scura"
+},
+"boil_volume": {
+"value": 25,
+"unit": "litres"
+},
+"method": {
+"mash_temp": [
+{
+"temp": {
+"value": 65,
+"unit": "celsius"
+},
+"duration": 75
+}
+],
+"fermentation": {
+"temp": {
+"value": 19,
+"unit": "celsius"
+}
+},
+"twist": null
+},
+"ingredients": {
+"malt": [
+{
+"name": "Extra Pale",
+"amount": {
+"value": 5.06,
+"unit": "kilograms"
+}
+},
+{
+"name": "Caramalt",
+"amount": {
+"value": 0.25,
+"unit": "kilograms"
+}
+},
+{
+"name": "Dark Crystal",
+"amount": {
+"value": 0.06,
+"unit": "kilograms"
+}
+}
+],
+"hops": [
+{
+"name": "Cascade",
+"amount": {
+"value": 2.5,
+"unit": "grams"
+},
+"add": "start",
+"attribute": "bitter"
+},
+{
+"name": "Centennial",
+"amount": {
+"value": 12.5,
+"unit": "grams"
+},
+"add": "middle",
+"attribute": "flavour"
+},
+{
+"name": "Simcoe",
+"amount": {
+"value": 17.5,
+"unit": "grams"
+},
+"add": "middle",
+"attribute": "flavour"
+},
+{
+"name": "Simcoe",
+"amount": {
+"value": 17.5,
+"unit": "grams"
+},
+"add": "end",
+"attribute": "flavour"
+},
+{
+"name": "Citra",
+"amount": {
+"value": 17.5,
+"unit": "grams"
+},
+"add": "end",
+"attribute": "flavour"
+},
+{
+"name": "Simcoe",
+"amount": {
+"value": 75,
+"unit": "grams"
+},
+"add": "dry hop",
+"attribute": "aroma"
+},
+{
+"name": "Cascade",
+"amount": {
+"value": 75,
+"unit": "grams"
+},
+"add": "dry hop",
+"attribute": "aroma"
+},
+{
+"name": "Centennial",
+"amount": {
+"value": 75,
+"unit": "grams"
+},
+"add": "dry hop",
+"attribute": "aroma"
+},
+{
+"name": "Citra",
+"amount": {
+"value": 25,
+"unit": "grams"
+},
+"add": "dry hop",
+"attribute": "aroma"
+}
+],
+"yeast": "Wyeast 1056 - American Ale™"
+},
+"food_pairing": [
+"Spicy chicken skewers",
+"Fish tacos with hot sauce",
+"Lemon pound cake with a ice sugar glaze"
+],
+"brewers_tips": "Create balance through experimentation with the hop amounts and malt backbone.",
+"contributed_by": "Sam Mason <samjbmason>"
+},
+{
+"id": 19,
+"name": "Hello My Name Is Mette-Marit",
+"tagline": "Lingonberry Double IPA.",
+"first_brewed": "06/2013",
+"description": "We sent this beer to Norway where it was known as 'Hello, my name is Censored’. You can make up your own mind as to why. This brew was a red berry explosion, with a reisnous bitter edge layered with dry berry tartness.",
+"image_url": "https://images.punkapi.com/v2/19.png",
+"abv": 8.2,
+"ibu": 70,
+"target_fg": 1013,
+"target_og": 1076,
+"ebc": null,
+"srm": null,
+"ph": 4.4,
+"attenuation_level": 83,
+"volume": {
+"value": 20,
+"unit": "litres",
+"tipologia":"chiara"
+},
+"boil_volume": {
+"value": 25,
+"unit": "litres"
+},
+"method": {
+"mash_temp": [
+{
+"temp": {
+"value": 66,
+"unit": "celsius"
+},
+"duration": 90
+}
+],
+"fermentation": {
+"temp": {
+"value": 19,
+"unit": "celsius"
+}
+},
+"twist": "Infusion of lingonberries alongside the dry hops, Cranberry Juice: 5.5g at 30mins, Lingonberries: 10g Twist"
+},
+"ingredients": {
+"malt": [
+{
+"name": "Extra Pale",
+"amount": {
+"value": 6.12,
+"unit": "kilograms"
+}
+},
+{
+"name": "Caramalt",
+"amount": {
+"value": 0.8,
+"unit": "kilograms"
+}
+}
+],
+"hops": [
+{
+"name": "Tomahawk",
+"amount": {
+"value": 7,
+"unit": "grams"
+},
+"add": "start",
+"attribute": "bitter"
+},
+{
+"name": "Motueka",
+"amount": {
+"value": 5.5,
+"unit": "grams"
+},
+"add": "start",
+"attribute": "bitter"
+},
+{
+"name": "Galena",
+"amount": {
+"value": 2.5,
+"unit": "grams"
+},
+"add": "middle",
+"attribute": "flavour"
+},
+{
+"name": "Mt.Hood",
+"amount": {
+"value": 2.5,
+"unit": "grams"
+},
+"add": "middle",
+"attribute": "flavour"
+},
+{
+"name": "Challenger",
+"amount": {
+"value": 15,
+"unit": "grams"
+},
+"add": "dry hop",
+"attribute": "aroma"
+},
+{
+"name": "Galena",
+"amount": {
+"value": 15,
+"unit": "grams"
+},
+"add": "dry hop",
+"attribute": "aroma"
+},
+{
+"name": "Nelson Sauvin",
+"amount": {
+"value": 20,
+"unit": "grams"
+},
+"add": "dry hop",
+"attribute": "aroma"
+}
+],
+"yeast": "Wyeast 1056 - American Ale™"
+},
+"food_pairing": [
+"Fårikål (mutton stew) with a spicy twist",
+"Fenalår (salted cured lamb)",
+"Krumkake with lingonberry jam"
+],
+"brewers_tips": "Using crushed cranberries will dry out the beer further, drawing out their natural astringent character.",
+"contributed_by": "Sam Mason <samjbmason>"
+},
+{
+"id": 20,
+"name": "Rabiator",
+"tagline": "Imperial Wheat Beer",
+"first_brewed": "03/2011",
+"description": "Imperial Wheat beer / Weizenbock brewed by a homesick German in leather trousers. Think banana bread, bubble gum and David Hasselhoff.",
+"image_url": "https://images.punkapi.com/v2/keg.png",
+"abv": 10.27,
+"ibu": 26,
+"target_fg": 1014,
+"target_og": 1092,
+"ebc": 24,
+"srm": 12,
+"ph": 4.4,
+"attenuation_level": 85,
+"volume": {
+"value": 20,
+"unit": "litres",
+"tipologia":"rossa"
+},
+"boil_volume": {
+"value": 25,
+"unit": "litres"
+},
+"method": {
+"mash_temp": [
+{
+"temp": {
+"value": 64,
+"unit": "celsius"
+},
+"duration": 60
+}
+],
+"fermentation": {
+"temp": {
+"value": 21,
+"unit": "celsius"
+}
+},
+"twist": null
+},
+"ingredients": {
+"malt": [
+{
+"name": "Extra Pale",
+"amount": {
+"value": 5.63,
+"unit": "kilograms"
+}
+},
+{
+"name": "Wheat",
+"amount": {
+"value": 0.69,
+"unit": "kilograms"
+}
+},
+{
+"name": "Crystal",
+"amount": {
+"value": 0.63,
+"unit": "kilograms"
+}
+}
+],
+"hops": [
+{
+"name": "Columbus",
+"amount": {
+"value": 12.5,
+"unit": "grams"
+},
+"add": "start",
+"attribute": "bitter"
+},
+{
+"name": "Hersbrucker",
+"amount": {
+"value": 12.5,
+"unit": "grams"
+},
+"add": "middle",
+"attribute": "flavour"
+}
+],
+"yeast": "Wyeast 3333 - German Wheat™"
+},
+"food_pairing": [
+"Grilled portabello mushroom burger",
+"Chicken sausages with creamy mash",
+"Caramel and banana meringue pie"
+],
+"brewers_tips": "If you are struggling to get that authentic head retention increase your mash temperature to about 70°C.",
+"contributed_by": "Sam Mason <samjbmason>"
+},
+{
+"id": 21,
+"name": "Vice Bier",
+"tagline": "Hoppy Wheat Bier.",
+"first_brewed": "04/2013",
+"description": "Our take on the classic German Kristallweizen. A clear German wheat beer, layers of bubblegum and vanilla perfectly balanced with the American and New Zealand hops.",
+"image_url": "https://images.punkapi.com/v2/keg.png",
+"abv": 4.3,
+"ibu": 25,
+"target_fg": 1010,
+"target_og": 1043,
+"ebc": 30,
+"srm": 15,
+"ph": 4,
+"attenuation_level": 81.8,
+"volume": {
+"value": 20,
+"unit": "litres",
+"tipologia":"chiara"
+},
+"boil_volume": {
+"value": 25,
+"unit": "litres"
+},
+"method": {
+"mash_temp": [
+{
+"temp": {
+"value": 65,
+"unit": "celsius"
+},
+"duration": 75
+}
+],
+"fermentation": {
+"temp": {
+"value": 22,
+"unit": "celsius"
+}
+},
+"twist": null
+},
+"ingredients": {
+"malt": [
+{
+"name": "Extra Pale",
+"amount": {
+"value": 2.69,
+"unit": "kilograms"
+}
+},
+{
+"name": "Wheat",
+"amount": {
+"value": 1.25,
+"unit": "kilograms"
+}
+},
+{
+"name": "Caramalt",
+"amount": {
+"value": 0.38,
+"unit": "kilograms"
+}
+}
+],
+"hops": [
+{
+"name": "Waimea",
+"amount": {
+"value": 2.5,
+"unit": "grams"
+},
+"add": "start",
+"attribute": "bitter"
+},
+{
+"name": "Amarillo",
+"amount": {
+"value": 2.5,
+"unit": "grams"
+},
+"add": "middle",
+"attribute": "flavour"
+},
+{
+"name": "Nelson Sauvin",
+"amount": {
+"value": 2.5,
+"unit": "grams"
+},
+"add": "middle",
+"attribute": "flavour"
+},
+{
+"name": "Motueka",
+"amount": {
+"value": 2.5,
+"unit": "grams"
+},
+"add": "middle",
+"attribute": "flavour"
+},
+{
+"name": "Simcoe",
+"amount": {
+"value": 6,
+"unit": "grams"
+},
+"add": "end",
+"attribute": "flavour"
+},
+{
+"name": "Citra",
+"amount": {
+"value": 6,
+"unit": "grams"
+},
+"add": "end",
+"attribute": "flavour"
+},
+{
+"name": "Waimea",
+"amount": {
+"value": 6,
+"unit": "grams"
+},
+"add": "end",
+"attribute": "flavour"
+}
+],
+"yeast": "Wyeast 3638 - Bavarian Wheat™"
+},
+"food_pairing": [
+"Citrus salad with balsamic dressing",
+"Lobster",
+"Ginger and orange cookies"
+],
+"brewers_tips": "Ferment at higher or lower temperatures to select the esters that will create clove- like or banana-like flavours.",
+"contributed_by": "Sam Mason <samjbmason>"
+},
+{
+"id": 22,
+"name": "Devine Rebel (w/ Mikkeller)",
+"tagline": "Oak-aged Barley Wine.",
+"first_brewed": "12/2008",
+"description": "Two of Europe's most experimental, boundary-pushing brewers, BrewDog and Mikkeller, combined forces to produce a rebellious beer that combined their respective talents and brewing skills. The 12.5% Barley Wine fermented well, and the champagne yeast drew it ever closer to 12.5%. The beer was brewed with a single hop variety and was going to be partially aged in oak casks.",
+"image_url": "https://images.punkapi.com/v2/22.png",
+"abv": 12.5,
+"ibu": 100,
+"target_fg": 1030,
+"target_og": 1093,
+"ebc": 36,
+"srm": 18,
+"ph": 4.4,
+"attenuation_level": 68,
+"volume": {
+"value": 20,
+"unit": "litres",
+"tipologia":"rossa"
+},
+"boil_volume": {
+"value": 25,
+"unit": "litres"
+},
+"method": {
+"mash_temp": [
+{
+"temp": {
+"value": 65,
+"unit": "celsius"
+},
+"duration": 90
+}
+],
+"fermentation": {
+"temp": {
+"value": 19,
+"unit": "celsius"
+}
+},
+"twist": "Part-aged in oak barrels, finished with champagne yeast"
+},
+"ingredients": {
+"malt": [
+{
+"name": "Extra Pale",
+"amount": {
+"value": 10,
+"unit": "kilograms"
+}
+},
+{
+"name": "Caramalt",
+"amount": {
+"value": 1.88,
+"unit": "kilograms"
+}
+},
+{
+"name": "Munich",
+"amount": {
+"value": 1.25,
+"unit": "kilograms"
+}
+},
+{
+"name": "Amber",
+"amount": {
+"value": 0.63,
+"unit": "kilograms"
+}
+}
+],
+"hops": [
+{
+"name": "Nelson Sauvin",
+"amount": {
+"value": 100,
+"unit": "grams"
+},
+"add": "start",
+"attribute": "bitter"
+},
+{
+"name": "Nelson Sauvin",
+"amount": {
+"value": 100,
+"unit": "grams"
+},
+"add": "end",
+"attribute": "flavour"
+}
+],
+"yeast": "Wyeast 1056 - American Ale™"
+},
+"food_pairing": [
+"Stilton on gingerbread biscuits",
+"Pot roasted artichokes",
+"Lamb chops with caramelised figs"
+],
+"brewers_tips": "Rack off to a secondary fermenter before pitching in some champagne.",
+"contributed_by": "Sam Mason <samjbmason>"
+},
+{
+"id": 23,
+"name": "Storm",
+"tagline": "Islay Whisky Aged IPA.",
+"first_brewed": "12/2007",
+"description": "Dark and powerful Islay magic infuses this tropical sensation of an IPA. Using the original Punk IPA as a base, we boosted the ABV to 8% giving it some extra backbone to stand up to the peated smoke imported directly from Islay.",
+"image_url": "https://images.punkapi.com/v2/23.png",
+"abv": 8,
+"ibu": 60,
+"target_fg": 1010,
+"target_og": 1082,
+"ebc": 12,
+"srm": 6,
+"ph": 4.4,
+"attenuation_level": 86,
+"volume": {
+"value": 20,
+"unit": "litres",
+"tipologia":"chiara"
+},
+"boil_volume": {
+"value": 25,
+"unit": "litres"
+},
+"method": {
+"mash_temp": [
+{
+"temp": {
+"value": 65,
+"unit": "celsius"
+},
+"duration": 75
+}
+],
+"fermentation": {
+"temp": {
+"value": 19,
+"unit": "celsius"
+}
+},
+"twist": "Oak chips soaked in Islay whisky 50g"
+},
+"ingredients": {
+"malt": [
+{
+"name": "Extra Pale",
+"amount": {
+"value": 5.8,
+"unit": "kilograms"
+}
+}
+],
+"hops": [
+{
+"name": "Ahtanum",
+"amount": {
+"value": 17.5,
+"unit": "grams"
+},
+"add": "start",
+"attribute": "bitter"
+},
+{
+"name": "Chinook",
+"amount": {
+"value": 15,
+"unit": "grams"
+},
+"add": "start",
+"attribute": "bitter"
+},
+{
+"name": "Crystal",
+"amount": {
+"value": 17.5,
+"unit": "grams"
+},
+"add": "middle",
+"attribute": "flavour"
+},
+{
+"name": "Chinook",
+"amount": {
+"value": 17.5,
+"unit": "grams"
+},
+"add": "middle",
+"attribute": "flavour"
+},
+{
+"name": "Ahtanum",
+"amount": {
+"value": 17.5,
+"unit": "grams"
+},
+"add": "end",
+"attribute": "flavour"
+},
+{
+"name": "Chinook",
+"amount": {
+"value": 27.5,
+"unit": "grams"
+},
+"add": "end",
+"attribute": "flavour"
+},
+{
+"name": "Crystal",
+"amount": {
+"value": 17.5,
+"unit": "grams"
+},
+"add": "end",
+"attribute": "flavour"
+},
+{
+"name": "Motueka",
+"amount": {
+"value": 17.5,
+"unit": "grams"
+},
+"add": "end",
+"attribute": "flavour"
+}
+],
+"yeast": "Wyeast 1056 - American Ale™"
+},
+"food_pairing": [
+"Oysters",
+"Hickory smoked ham",
+"Rocky Road"
+],
+"brewers_tips": "After primary fermentation is complete, rack off into a secondary fermeter and add the oak chips to replicate the authentic Islay barrel experience.",
+"contributed_by": "Sam Mason <samjbmason>"
+},
+{
+"id": 24,
+"name": "The End Of History",
+"tagline": "The World's Strongest Beer.",
+"first_brewed": "06/2011",
+"description": "The End of History: The name derives from the famous work of philosopher Francis Fukuyama, this is to beer what democracy is to history. Complexity defined. Floral, grapefruit, caramel and cloves are intensified by boozy heat.",
+"image_url": "https://images.punkapi.com/v2/24.png",
+"abv": 55,
+"ibu": null,
+"target_fg": 1000,
+"target_og": 1112,
+"ebc": null,
+"srm": null,
+"ph": 4.4,
+"attenuation_level": 100,
+"volume": {
+"value": 20,
+"unit": "litres",
+"tipologia":"scura"
+},
+"boil_volume": {
+"value": 25,
+"unit": "litres"
+},
+"method": {
+"mash_temp": [
+{
+"temp": {
+"value": 65,
+"unit": "celsius"
+},
+"duration": 75
+}
+],
+"fermentation": {
+"temp": {
+"value": 20,
+"unit": "celsius"
+}
+},
+"twist": "Nettles: 25g at end, Juniper: 25g at end"
+},
+"ingredients": {
+"malt": [
+{
+"name": "Extra Pale",
+"amount": {
+"value": 12.5,
+"unit": "kilograms"
+}
+}
+],
+"hops": [
+{
+"name": "Nelson Sauvin",
+"amount": {
+"value": 6.25,
+"unit": "grams"
+},
+"add": "start",
+"attribute": "bitter"
+},
+{
+"name": "Centennial",
+"amount": {
+"value": 12.5,
+"unit": "grams"
+},
+"add": "start",
+"attribute": "bitter"
+},
+{
+"name": "Nelson Sauvin",
+"amount": {
+"value": 12.5,
+"unit": "grams"
+},
+"add": "end",
+"attribute": "flavour"
+},
+{
+"name": "Amarillo",
+"amount": {
+"value": 12.5,
+"unit": "grams"
+},
+"add": "end",
+"attribute": "flavour"
+},
+{
+"name": "Centennial",
+"amount": {
+"value": 12.5,
+"unit": "grams"
+},
+"add": "end",
+"attribute": "flavour"
+}
+],
+"yeast": "Wyeast 3522 - Belgian Ardennes™"
+},
+"food_pairing": [
+"Roasted wood pigeon with black pudding",
+"Pan seared venison fillet with juniper sauce",
+"Apricot coconut cake"
+],
+"brewers_tips": "You'll have to get this one all the way down to -70°C. Taxidermy is not optional.",
+"contributed_by": "Sam Mason <samjbmason>"
+},
+{
+"id": 25,
+"name": "Bad Pixie",
+"tagline": "Spiced Wheat Beer.",
+"first_brewed": "10/2008",
+"description": "2008 Prototype beer, a 4.7% wheat ale with crushed juniper berries and citrus peel.",
+"image_url": "https://images.punkapi.com/v2/25.png",
+"abv": 4.7,
+"ibu": 45,
+"target_fg": 1010,
+"target_og": 1047,
+"ebc": 8,
+"srm": 4,
+"ph": 4.4,
+"attenuation_level": 79,
+"volume": {
+"value": 20,
+"unit": "litres",
+"tipologia":"scura"
+},
+"boil_volume": {
+"value": 25,
+"unit": "litres"
+},
+"method": {
+"mash_temp": [
+{
+"temp": {
+"value": 67,
+"unit": "celsius"
+},
+"duration": 75
+}
+],
+"fermentation": {
+"temp": {
+"value": 19,
+"unit": "celsius"
+}
+},
+" twist " :  " Bacche di ginepro schiacciate: 12,5 g, scorza di limone: 18,8 g "
+},
+" ingredienti " :  {
+" malto " :  [
+{
+" nome " :  " Grano " ,
+" quantità " :  {
+" valore " :  2.5 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Extra Pale " ,
+" quantità " :  {
+" valore " :  2.06 ,
+" unità " :  " chilogrammi "
+}
+}
+],
+" luppolo " :  [
+{
+" nome " :  " Primo Oro " ,
+" quantità " :  {
+" valore " :  18.75 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Primo Oro " ,
+" quantità " :  {
+" valore " :  25 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Asso Sorachi " ,
+" quantità " :  {
+" valore " :  16.25 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+}
+],
+" lievito " :  " Wyeast 1056 - American Ale™ "
+},
+" abbinamento_cibo " :  [
+" Filetto di sogliola affogata ai capperi " ,
+" Macedonia di frutta estiva " ,
+" Banane spaccate "
+],
+" brewers_tips " :  " Assicurati di avere molto spazio nel fermentatore. Le birre contenenti frumento possono spesso produrre schiuma in modo aggressivo durante la fermentazione. " ,
+" contribuito_da " :  " Sam Mason <samjbmason> "
+}
+]
 }
