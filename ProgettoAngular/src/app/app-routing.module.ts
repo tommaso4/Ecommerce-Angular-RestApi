@@ -26,7 +26,9 @@ const routes: Routes = [
   { path: 'userprofile', component: UserProfileComponent, canActivate:[LogGuard]},
   { path: 'wishlist', component: WhishlistComponent, canActivate:[LogGuard]},
   { path: 'edit/:id', component: EditComponent },
-  { path: '**', component:PAGES404Component}
+  { path: '**', component:PAGES404Component},
+  { path: 'wishlist', component: WhishlistComponent }
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

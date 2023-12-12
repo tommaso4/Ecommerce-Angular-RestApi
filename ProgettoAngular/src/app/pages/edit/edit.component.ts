@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Ibeer } from '../../Modules/ibeer';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { LogSystemService } from '../../services/log-system.service';
+import { take } from 'rxjs';
 
 @Component({
   selector: 'app-edit',
@@ -18,7 +20,8 @@ export class EditComponent implements OnInit {
     private route: ActivatedRoute,
     private beerService: BeerService,
     private formBuilder: FormBuilder,
-    private router: Router
+    private router: Router,
+    private logService: LogSystemService,
   ) {
     this.beerForm = this.formBuilder.group({
     id: [''],
@@ -83,8 +86,4 @@ export class EditComponent implements OnInit {
   }
 
 
-  addToFavorite(): void {
-    // Aggiungi la birra ai preferiti
-    // Implementa la logica per aggiungere la birra ai preferiti
-  }
 }

@@ -45,4 +45,11 @@ export class BeerService {
       })
     );
   }
+
+  //metodo per ottenere la lista delle birre preferite(parametri: id oggetto dove salviamo le bire e i due id birra e del user proprietario account)
+  addToWishList(beerId: number,userId:string): Observable<{id:number,beerId:number,userId:number}> {
+    return this.http.post<{id:number,beerId:number,userId:number}>(this.api+'/wishlist',{beerId:beerId,userId:userId});
+
+
+  }
 }

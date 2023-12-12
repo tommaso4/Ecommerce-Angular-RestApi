@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, take } from 'rxjs';
 import { Birra } from '../../core/models/beer.model';
 import { BeerService } from '../../core/services/beer.service';
 import { PaginatorService } from '../../core/services/paginator.service';
 import { Router } from '@angular/router';
+import { LogSystemService } from '../../services/log-system.service';
 
 
 @Component({
@@ -21,7 +22,8 @@ import { Router } from '@angular/router';
     constructor(
       private beerService: BeerService,
       private paginatorService: PaginatorService,
-      private router: Router
+      private router: Router,
+     private logService:LogSystemService
     ) {}
 
     ngOnInit(): void {
@@ -74,5 +76,14 @@ import { Router } from '@angular/router';
       this.beerService.setBeerName(nome);
       this.updatePage(); // Aggiorna la visualizzazione quando il nome della birra cambia
     }
+    //metodo per aggiungere la birra alla lista dei desideri da richiamare nel bottone addToWishList nella pagina edit component
+  addToWishList(beerId:number): void {
+    this.logService.user$.subscribe(accessData=>{
+      if(!accessData?.user?.id) return;
+    this.beerService.addToWishList(beerId,accessData.user.id).pipe(take(1)).subscribe(
+
+
+    )});
+  }
   }
 
