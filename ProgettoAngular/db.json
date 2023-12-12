@@ -18,7 +18,8 @@
     "ph": 4.4,
     "volume": {
       "valore": 20,
-      "unità": "litres"
+      "unità": "litres",
+      "tipologia":"rossa"
     },
     "volumeBollire": {
       "valore": 25,
