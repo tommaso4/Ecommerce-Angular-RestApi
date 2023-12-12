@@ -54,8 +54,15 @@ div{
     flex-wrap: wrap;
   }
 
+  .menu-scarica{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .bg-footer{
     display: flex;
     flex-wrap: wrap;
   }
 }
+
+//d-flex flex-column align-items-center menu-scarica
