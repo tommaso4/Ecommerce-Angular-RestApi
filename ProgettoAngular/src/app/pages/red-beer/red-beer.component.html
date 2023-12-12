@@ -1,14 +1,13 @@
-<div *ngFor="let birra of beer">
-  <div class="card-container">
-    <div class="card" style="width: 18rem;">
-      <img [src]="birra.urlImmagine" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">{{ birra.nome }}</h5>
-        <p class="card-text">{{ birra.descrizione }}</p>
-        <p class="card-text">ABV: {{ birra.abv }}</p>
-        <p class="card-text">Tipologia: {{ birra.volume.tipologia }}</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+<div class="d-flex flex-wrap m-1 gap-1">
+  <div *ngFor="let birra of beer">
+    <div class="card">
+      <img [src]="birra.urlImmagine" class="card__img" alt="beer image">
+      <div class="card__data">
+        <h2>{{ birra.nome }}</h2>
+        <p class="card__data--title">{{ birra.descrizione }}</p>
+        <h5 class="card__data--text">ABV: {{ birra.abv }}</h5>
+        <h5 class="card__data--text">Price: {{ birra.prezzo | currency:'EUR' }}</h5>
       </div>
     </div>
-</div>
+  </div>
 </div>

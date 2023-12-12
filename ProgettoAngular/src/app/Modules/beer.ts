@@ -7,7 +7,7 @@ export class Beer implements Ibeer {
     public slogan: string,
     public primaProduzione: string, // Rinominato per corrispondere all'interfaccia
     public descrizione: string,
-    public urlImmagine: string, // Nomina le proprietà in stile camelCase per la convenzione di TypeScript
+    public url_immagine: string, // Nomina le proprietà in stile camelCase per la convenzione di TypeScript
     public abv: number,
     public ibu: number,
     public targetFg: number, // Nomina le proprietà in stile camelCase

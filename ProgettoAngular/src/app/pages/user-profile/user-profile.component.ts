@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { LogSystemService } from '../../services/log-system.service';
 import { IUser } from '../../Modules/iuser';
 
-
 @Component({
   selector: 'app-user-profile',
   templateUrl: './user-profile.component.html',
@@ -15,10 +14,11 @@ export class UserProfileComponent {
   wrongName!: boolean;
   editMode!:boolean;
 
+
   constructor(
     private LSS:LogSystemService,
-
   ){
+
     this.LSS.user$.subscribe(user =>this.user=user?.user);
   }
 
@@ -45,3 +45,4 @@ export class UserProfileComponent {
     this.deleting=false;
   }
 }
+

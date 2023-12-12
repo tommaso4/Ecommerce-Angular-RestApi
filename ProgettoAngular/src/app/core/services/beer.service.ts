@@ -1,7 +1,7 @@
 
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, throwError } from 'rxjs';
+import { Observable, catchError, throwError } from 'rxjs';
 import { environment } from '../../../environments/environment.development';
 import { Ibeer } from '../../Modules/ibeer';
 
@@ -10,6 +10,7 @@ import { Ibeer } from '../../Modules/ibeer';
 })
 export class BeerService {
   private apiUrl = environment.apiUrl ;
+  private api = environment.API ;
   beerName: string = ""
   constructor(private http: HttpClient) {}
 
@@ -26,7 +27,22 @@ export class BeerService {
     }
   }
 
+  addToShop(beer:Ibeer): Observable<Ibeer> {
+    const url = `${this.api}/shop`
+    return this.http.post<Ibeer>(url,beer)
+  }
+
   setBeerName(name: string): void {
     this.beerName = name;
+  }
+
+
+  updateBeer(beerId: number, updatedBeer: Ibeer): Observable<Ibeer> {
+    const url = `${this.apiUrl}/${beerId}`;
+    return this.http.put<Ibeer>(url, updatedBeer).pipe(
+      catchError((error: any) => {
+        return throwError('Errore durante l\'aggiornamento della birra');
+      })
+    );
   }
 }

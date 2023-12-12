@@ -1,11 +1,19 @@
-//dimensioni foto
+
+.bg-footer{
+
+  background-color: #0a2f69;
+  bottom: 0%;
+  width: 100%;
+}
+
+//dimensioni foto logo
 
 .footer-container-logo{
   height: 25vh;
 
 }
 
-// bottoni scarica
+// bottoni scarica app
 .scarica{
   height: 30px;
   width: 100px;
@@ -13,10 +21,9 @@
 }
 
 
-//colori
-.bg-footer{
-  background-color: #0A2F69;
-}
+
+
+//colori footer
 a {
   color:  #F6B74B;
   text-decoration: none;
@@ -25,10 +32,10 @@ a {
 }
 
 div{
-  color: #F6B74B;
+  color: #FEEFDE;
 }
 .icons{
-  color: white;
+  color:  #F6B74B;
 }
 
 // brackpoints
@@ -56,19 +63,15 @@ div{
     flex-wrap: wrap;
   }
 
-  .bg-footer{
+  .menu-scarica{
     display: flex;
     flex-wrap: wrap;
   }
-}
 
-.me{
-
-
-    //allineare in orizzontale
+  .bg-footer{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    margin-left: 50px;
-
+    justify-content: center
+  }
 }

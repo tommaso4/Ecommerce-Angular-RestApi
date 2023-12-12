@@ -1,7 +1,7 @@
 @import "../../../../colors.scss";
 
 .card {
-  background-color: $secondary;
+  background-color:  #f6b74b9e;
   border-radius: 0.6rem;
   cursor: pointer;
   display: flex;
@@ -12,6 +12,7 @@
 
   &__img {
     align-self: center;
+    padding-top: 30px;
     height: 150px;
     transition: all 0.3s;
   }
@@ -39,7 +40,7 @@
 
     &:hover & {
       &__img {
-        transform: rotateZ(25deg);
+        transform: rotateZ(45deg);
       }
 
       &__data {

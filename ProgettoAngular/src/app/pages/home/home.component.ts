@@ -44,7 +44,7 @@ import { Router } from '@angular/router';
     updatePage(): void {
       if (this.beerService.beerName) {
         this.beers = this.allBeers.filter((beer: any) =>
-          beer.name.toLowerCase().includes(this.beerService.beerName.toLowerCase())
+          beer.nome.toLowerCase().includes(this.beerService.beerName.toLowerCase())
         );
       } else {
         this.beers = this.paginatorService.paginate(this.allBeers, this.currentPage, this.itemsPerPage);
@@ -57,21 +57,21 @@ import { Router } from '@angular/router';
     }
 
     // Metodo per filtrare le birre per nome
-    searchBeersByName(name: string): void {
-      if (!name) {
+    searchBeersByName(nome: string): void {
+      if (!nome) {
         this.beers = this.allBeers.slice(); // Mostra tutte le birre se il campo di ricerca è vuoto
         return;
       }
       // Filtra le birre in base al nome
       this.beers = this.allBeers.filter((beer: any) =>
-        beer.name.toLowerCase().includes(name.toLowerCase())
+        beer.nome.toLowerCase().includes(nome.toLowerCase())
       );
       this.updatePage(); // Aggiorna la paginazione con i nuovi dati filtrati
     }
 
 
-    handleBeerNameEvent(name: string): void {
-      this.beerService.setBeerName(name);
+    handleBeerNameEvent(nome: string): void {
+      this.beerService.setBeerName(nome);
       this.updatePage(); // Aggiorna la visualizzazione quando il nome della birra cambia
     }
   }
