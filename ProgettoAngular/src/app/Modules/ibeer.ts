@@ -4,7 +4,7 @@ export interface Ibeer {
   slogan: string;
   primaProduzione: string;
   descrizione: string;
-  url_immagine: string;
+  urlImmagine: string;
   abv: number;
   ibu: number;
   targetFg: number;
