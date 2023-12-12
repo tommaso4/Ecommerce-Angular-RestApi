@@ -1,0 +1,125 @@
+[{
+  "id": 1,
+  "nome": "Buzz",
+  "slogan" : "Un'esperienza davvero amara.",
+  "first_brewed": "09/2007",
+  "descrizione": "Una IPA leggera, frizzante e amara, prodotta con luppoli inglesi e americani. Un piccolo lotto prodotto una sola volta. " ,
+  "url_immagine": "https://images.punkapi.com/v2/keg.png " ,
+  "abv": 4.5,
+  "ibu": 60,
+  "target_fg": 1010,
+  "target_og": 1044,
+  "ebc": 20,
+  "srm": 10,
+  "ph": 4.4,
+  "livello_attenuazione": 75,
+  "volume":{
+  "valore": 20,
+  "unità": "litri",
+  "tipologia":"chiara"
+},
+  "volume_bollire":  {
+  "valore": 25,
+  "unità": "litri"
+},
+ "metodo":{
+ "mash_temp": [
+  {
+  " temp":  {
+    "valore":  64,
+    "unità": "centigradi"
+  },
+  " durata " :  75
+  }
+],
+" fermentazione " :  {
+" temp " :  {
+" valore " :  19 ,
+" unità " :  " centigradi "
+}
+},
+" torsione " :  "nulla"
+},
+" ingredienti " :  {
+" malto " :  [
+{
+" nome " :  " Maris Otter Extra Pale " ,
+" quantità " :  {
+" valore " :  3.3 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Caramalto " ,
+" quantità " :  {
+" valore " :  0.2 ,
+" unità " :  " chilogrammi "
+}
+},
+{
+" nome " :  " Monaco " ,
+" quantità " :  {
+" valore " :  0.4 ,
+" unità " :  " chilogrammi "
+}
+}
+],
+" luppolo " :  [
+{
+" nome " :  " Fuggles " ,
+" quantità " :  {
+" valore " :  25 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Primo Oro " ,
+" quantità " :  {
+" valore " :  25 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " inizio " ,
+" attributo " :  " amaro "
+},
+{
+" nome " :  " Fuggles " ,
+" quantità " :  {
+" valore " :  37.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " centro " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Primo Oro " ,
+" quantità " :  {
+" valore " :  37.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " centro " ,
+" attributo " :  " sapore "
+},
+{
+" nome " :  " Cascata " ,
+" quantità " :  {
+" valore " :  37.5 ,
+" unità " :  " grammi "
+},
+" aggiungi " :  " fine " ,
+" attributo " :  " sapore "
+}
+],
+" lievito " :  " Wyeast 1056 - American Ale™ "
+},
+" abbinamento_cibo " :  [
+" Pollo piccante tikka masala " ,
+" Quesadilla di pollo alla griglia " ,
+" Torta al caramello "
+],
+" brewers_tips " :  " Gli aromi terrosi e floreali del luppolo possono essere opprimenti. Aggiungi un po' di Cascade alla fine dell'ebollizione per sollevare il profilo con un po' di agrumi. " ,
+" contribuito_da " :  " Sam Mason <samjbmason> ",
+"prezzo" : 5.23
+}
+]
