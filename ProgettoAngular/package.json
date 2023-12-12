@@ -8,7 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "beerBackend": "json-server-auth beer.json -w ",
-    "userBackend": "json-server-auth db.json -w"
+    "userBackend": "json-server-auth db.json -w",
+    "backend": "json-server db.json -w"
+
   },
   "private": true,
   "dependencies": {

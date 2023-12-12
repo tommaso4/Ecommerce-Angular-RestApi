@@ -1,10 +1,10 @@
 export interface Ibeer {
   id: number;
-  nome: string;
+  name: string;
   slogan: string;
   primaProduzione: string;
-  descrizione: string;
-  urlImmagine: string;
+  description: string;
+  url_immagine: string;
   abv: number;
   ibu: number;
   targetFg: number;
