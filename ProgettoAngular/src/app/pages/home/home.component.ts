@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Beer } from '../../core/models/beer.model';
+import { Birra } from '../../core/models/beer.model';
 import { BeerService } from '../../core/services/beer.service';
 
 
@@ -10,7 +10,7 @@ import { BeerService } from '../../core/services/beer.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  beersList$: Observable<Beer[]>;
+  beersList$: Observable<Birra[]>;
 
   constructor(private beerService: BeerService) {
     this.beersList$ = this.beerService.beers$;

@@ -3,10 +3,6 @@ import { Injectable } from '@angular/core';
 import { Ibeer } from '../Modules/ibeer';
 import { Observable, map } from 'rxjs';
 
-type responseData = {
-  beer:Ibeer[];
-}
-
 @Injectable({
   providedIn: 'root'
 })

@@ -1,7 +1,7 @@
 import { Ibeer } from "./ibeer"
 
 
-export class Birra implements Ibeer {
+export class Beer implements Ibeer {
 
   constructor(
   public id: number,

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
 
-import { Beer } from '../models/beer.model';
+import { Birra } from '../models/beer.model';
 import { environment } from '../../environments/environment';
 
 @Injectable({
@@ -10,8 +10,8 @@ import { environment } from '../../environments/environment';
 })
 export class BeerService {
   apiUrl: string = environment.apiUrl;
-  private beersSubject: BehaviorSubject<Beer[]> = new BehaviorSubject<Beer[]>([{ id: 0, name: '', abv: 0, image_url: '' }]);
-  beers$: Observable<Beer[]> = this.beersSubject.asObservable();
+  private beersSubject: BehaviorSubject<Birra[]> = new BehaviorSubject<Birra[]>([{ id: 0, name: '', abv: 0, image_url: '' }]);
+  beers$: Observable<Birra[]> = this.beersSubject.asObservable();
   perPage: number = 25;
   beerName: string = '';
 
@@ -20,11 +20,11 @@ export class BeerService {
   }
 
   getBeers(page: number = 1) {
-    this.http.get<Beer[]>(`${this.apiUrl}/beers?page=${page}&per_page=${this.perPage}`).subscribe((beers: Beer[]) => this.beersSubject.next(beers));
+    this.http.get<Birra[]>(`${this.apiUrl}/beers?page=${page}&per_page=${this.perPage}`).subscribe((beers: Birra[]) => this.beersSubject.next(beers));
   }
 
   getBeersByName(page: number = 1) {
-    this.http.get<Beer[]>(`${this.apiUrl}/beers?beer_name=${this.beerName}&page=${page}&per_page=${this.perPage}`).subscribe((beers: Beer[]) => this.beersSubject.next(beers));
+    this.http.get<Birra[]>(`${this.apiUrl}/beers?beer_name=${this.beerName}&page=${page}&per_page=${this.perPage}`).subscribe((beers: Birra[]) => this.beersSubject.next(beers));
   }
 
 }
