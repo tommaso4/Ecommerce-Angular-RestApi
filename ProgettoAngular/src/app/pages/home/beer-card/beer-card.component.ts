@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Beer } from '../../../core/models/beer.model';
+
 import { Ibeer } from '../../../Modules/ibeer';
 
 
