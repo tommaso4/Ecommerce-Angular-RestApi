@@ -15,7 +15,23 @@ export class BeerService {
   getRedBeer(): Observable<Ibeer[]> {
     return this.http.get<Ibeer[]>(this.apiUrl)
     .pipe(map((beer:Ibeer[]) => {
-      const birrerosse = beer.filter(birra => birra.volume && birra.volume.tipologia && birra.volume.tipologia === 'rossa');
+      const birrerosse = beer.filter(birra => birra.ebc > 20 || birra.srm > 10);
+      return birrerosse;
+    })
+    );
+  }
+  getBlondBeer(): Observable<Ibeer[]> {
+    return this.http.get<Ibeer[]>(this.apiUrl)
+    .pipe(map((beer:Ibeer[]) => {
+      const birrerosse = beer.filter(birra => birra.ebc < 10);
+      return birrerosse;
+    })
+    );
+  }
+  getWhiteBeer(): Observable<Ibeer[]> {
+    return this.http.get<Ibeer[]>(this.apiUrl)
+    .pipe(map((beer:Ibeer[]) => {
+      const birrerosse = beer.filter(birra => birra.srm < 5);
       return birrerosse;
     })
     );

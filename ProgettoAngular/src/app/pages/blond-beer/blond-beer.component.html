@@ -1,1 +1,14 @@
-<p>blond-beer works!</p>
+<div class="d-flex flex-wrap m-1 gap-1">
+  <div *ngFor="let birra of beer">
+    <div class="card">
+      <img [src]="birra.url_immagine" class="card__img" alt="beer image">
+      <div class="card__data">
+        <h2>{{ birra.nome }}</h2>
+        <p class="card__data--title">{{ birra.descrizione }}</p>
+        <h5 class="card__data--text">ABV: {{ birra.abv }}</h5>
+        <h5 class="card__data--text">Price: {{ birra.prezzo | currency:'EUR' }}</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
