@@ -1,18 +1,17 @@
 <div class="container">
   <div class="filter-container">
-      <!-- Applicazione del filtro per il nome delle birre -->
       <app-name-filter (beerNameEvent)="searchBeersByName($event)"></app-name-filter>
   </div>
 
   <div class="card-container" *ngIf="beers.length > 0">
-      <!-- Visualizzazione delle card delle birre paginate -->
-      <div *ngFor="let beer of beers">
+      <div *ngFor="let beer of beers" >
+        <a [routerLink]="['/details/'+ beer.id]">
           <app-beer-card [beer]="beer"></app-beer-card>
+        </a>
       </div>
   </div>
 
   <div class="paginator-container">
-      <!-- Componente di paginazione -->
       <app-paginator
           [currentPage]="currentPage"
           (pageChange)="onPageChange($event)"

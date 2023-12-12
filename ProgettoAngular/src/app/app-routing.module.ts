@@ -14,17 +14,17 @@ import { DetailsComponent } from './pages/details/details.component';
 
 
 const routes: Routes = [
-{ path: 'LogSystem',loadChildren: () => import('./pages/log-system/log-system.module').then(m => m.LogSystemModule) },
-{ path: '', pathMatch:'full', redirectTo:'/home' },
-{ path: 'home', component: HomeComponent },
-{ path: 'details/:id', component: DetailsComponent },
-{ path: 'blondbeer', component: BlondBeerComponent },
-{ path: 'redbeer', component: RedBeerComponent },
-{ path: 'whitebeer', component: WhiteBeerComponent },
-{ path: 'cart', component: CartComponent, canActivate:[LogGuard]},
-{ path: 'userprofile', component: UserProfileComponent, canActivate:[LogGuard]},
-{ path: 'wishlist', component: WhishlistComponent, canActivate:[LogGuard]},
-{ path: '**', component:PAGES404Component}
+  { path: 'LogSystem',loadChildren: () => import('./pages/log-system/log-system.module').then(m => m.LogSystemModule) },
+  { path: '', pathMatch:'full', redirectTo:'/home' },
+  { path: 'home', component: HomeComponent },
+  { path: 'details/:id', component: DetailsComponent },
+  { path: 'blondbeer', component: BlondBeerComponent },
+  { path: 'redbeer', component: RedBeerComponent },
+  { path: 'whitebeer', component: WhiteBeerComponent },
+  { path: 'cart', component: CartComponent, canActivate:[LogGuard]},
+  { path: 'userprofile', component: UserProfileComponent, canActivate:[LogGuard]},
+  { path: 'wishlist', component: WhishlistComponent, canActivate:[LogGuard]},
+  { path: '**', component:PAGES404Component}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
