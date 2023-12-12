@@ -1,11 +1,8 @@
 
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, Observable, throwError } from 'rxjs';
-import { map } from 'rxjs/operators';
-
-import { Birra } from '../models/beer.model';
-import { environment } from '../../environments/environment';
+import { Observable, throwError } from 'rxjs';
+import { environment } from '../../../environments/environment.development';
 import { Ibeer } from '../../Modules/ibeer';
 
 @Injectable({

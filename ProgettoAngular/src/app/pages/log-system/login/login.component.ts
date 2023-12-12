@@ -14,6 +14,8 @@ export class LoginComponent {
   loading!:boolean;
 
   failedLogin!: boolean;
+  notExist!: boolean;
+
   constructor(
     private fb:FormBuilder,
     private LSS:LogSystemService,
@@ -36,7 +38,14 @@ export class LoginComponent {
     }),
     catchError(error=>{
       this.loading=false;
-      this.failedLogin=true
+      switch(error.error){
+        case "Cannot find user":
+          this.notExist=true;
+          break;
+        default:
+          this.failedLogin=true;
+          break;
+      }
       throw error
     })
     ).subscribe()
