@@ -3296,8 +3296,7 @@
 ],
 " brewers_tips " :  " Assicurati di avere molto spazio nel fermentatore. Le birre contenenti frumento possono spesso produrre schiuma in modo aggressivo durante la fermentazione. " ,
 " contribuito_da " :  " Sam Mason <samjbmason> "
-}
-],
+},
 {
   "id": 26,
   "nome": "Skull Candy",
@@ -43899,4 +43898,4 @@
   "contribuito_da": "John Jenkman <johnjenkman>",
   "prezzo": 8.9
 }
-}
+]}
