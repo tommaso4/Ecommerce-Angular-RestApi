@@ -23,6 +23,7 @@ import { EditProfileComponent } from './pages/user-profile/edit-profile/edit-pro
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import { EditComponent } from './pages/edit/edit.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
     DetailsComponent,
     HeaderComponent,
     PaginatorComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
