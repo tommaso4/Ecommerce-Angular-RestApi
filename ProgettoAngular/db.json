@@ -43523,4 +43523,380 @@
       },
       {
         "nome": "Simcoe",
+        "quantità": {
+          "valore": 40,
+          "unità": "grams"
+        },
+        "aggiungi": "Dry Hop",
+        "attributo": "Aroma"
+      },
+      {
+        "nome": "Cascade",
+        "quantità": {
+          "valore": 20,
+          "unità": "grams"
+        },
+        "aggiungi": "Dry Hop",
+        "attributo": "Aroma"
+      },
+      {
+        "nome": "Chinook",
+        "quantità": {
+          "valore": 20,
+          "unità": "grams"
+        },
+        "aggiungi": "Dry Hop",
+        "attributo": "Aroma"
+      },
+      {
+        "nome": "Mosaic",
+        "quantità": {
+          "valore": 20,
+          "unità": "grams"
+        },
+        "aggiungi": "Dry Hop",
+        "attributo": "Aroma"
+      }
+    ],
+    "lievito": "Wyeast 1056 - American Ale™"
+  },
+  "abbinamento_cibo": [
+    "Roast chicken",
+    "Seared steak",
+    "Crusty bread"
+  ],
+  "brewers_tips": "Split this batch and try fermenting the other half with WLP008 East Coast Ale, dry hop whilst primary fermentation is going and have an East Coast IPA to compare with.",
+  "contribuito_da": "John Jenkman <johnjenkman>",
+  "prezzo": 5.8
+},
+{
+  "id": 323,
+  "nome": "Interstate Vienna Lager.",
+  "slogan": "Vienna Lager.",
+  "prima_produzione": "2018",
+  "descrizione": "A new 5% ABV Vienna Lager, that features in Fanzine, our new subscription model.",
+  "url_immagine": null,
+  "abv": 5,
+  "ibu": 25,
+  "target_fg": 1007,
+  "target_og": 1045,
+  "ebc": 14,
+  "srm": 7,
+  "ph": 4.2,
+  "volume": {
+    "valore": 20,
+    "unità": "litres"
+  },
+  "volume_bollire": {
+    "valore": 25,
+    "unità": "litres"
+  },
+  "metodo": {
+    "mash_temp": [
+      {
+        "temp": {
+          "valore": 67,
+          "unità": "celsius"
+        },
+        "durata": 70
+      }
+    ],
+    "fermentazione": {
+      "temp": {
+        "valore": 10,
+        "unità": "celsius"
+      }
+    },
+    "torsione": null
+  },
+  "ingredienti": {
+    "malto": [
+      {
+        "nome": "Pilsner",
+        "quantità": {
+          "valore": 1.56,
+          "unità": "kilograms"
+        }
+      },
+      {
+        "nome": "Vienna",
+        "quantità": {
+          "valore": 1.56,
+          "unità": "kilograms"
+        }
+      },
+      {
+        "nome": "Munich",
+        "quantità": {
+          "valore": 0.6,
+          "unità": "kilograms"
+        }
+      },
+      {
+        "nome": "Carahell",
+        "quantità": {
+          "valore": 0.18,
+          "unità": "kilograms"
+        }
+      },
+      {
+        "nome": "Carared",
+        "quantità": {
+          "valore": 0.18,
+          "unità": "kilograms"
+        }
+      }
+    ],
+    "luppolo": [
+      {
+        "nome": "Perle",
+        "quantità": {
+          "valore": 5,
+          "unità": "grams"
+        },
+        "aggiungi": "65",
+        "attributo": "Bittering"
+      },
+      {
+        "nome": "Hallertauer Mittelfrüh",
+        "quantità": {
+          "valore": 20,
+          "unità": "grams"
+        },
+        "aggiungi": "10",
+        "attributo": "Aroma"
+      },
+      {
+        "nome": "Mandarina Bavaria",
+        "quantità": {
+          "valore": 20,
+          "unità": "grams"
+        },
+        "aggiungi": "0",
+        "attributo": "Aroma"
+      }
+    ],
+    "lievito": "Wyeast 2126 - Bohemian Lager™"
+  },
+  "abbinamento_cibo": [
+    "Grilled chicken and steamed vegetables",
+    "Pork sausages",
+    "Almond biscotti"
+  ],
+  "brewers_tips": "Instead of using Pilsner, try to substitute this out for more Vienna malt. This is more traditional but you should calculate your diastatic power for your new mash. Ideally it should be a minimum of 30 to 50 Lintner.",
+  "contribuito_da": "John Jenkman <johnjenkman>",
+  "prezzo": 4.45
+},
+{
+  "id": 324,
+  "nome": "Fools Gold Dortmunder Lager",
+  "slogan": "Lager.",
+  "prima_produzione": "2018",
+  "descrizione": "A new 5.6% Dortmunder Lager, that featues in Fanzine, our new subscription model.",
+  "url_immagine": null,
+  "abv": 5.6,
+  "ibu": 32,
+  "target_fg": 1009,
+  "target_og": 1052,
+  "ebc": 11,
+  "srm": 6,
+  "ph": 4.2,
+  "volume": {
+    "valore": 20,
+    "unità": "litres"
+  },
+  "volume_bollire": {
+    "valore": 25,
+    "unità": "litres"
+  },
+  "metodo": {
+    "mash_temp": [
+      {
+        "temp": {
+          "valore": 65,
+          "unità": "celsius"
+        },
+        "durata": 45
+      }
+    ],
+    "fermentazione": {
+      "temp": {
+        "valore": 14,
+        "unità": "celsius"
+      }
+    },
+    "torsione": null
+  },
+  "ingredienti": {
+    "malto": [
+      {
+        "nome": "Pilsner",
+        "quantità": {
+          "valore": 3.36,
+          "unità": "kilograms"
+        }
+      },
+      {
+        "nome": "Pale Ale",
+        "quantità": {
+          "valore": 1.2,
+          "unità": "kilograms"
+        }
+      }
+    ],
+    "luppolo": [
+      {
+        "nome": "Magnum",
+        "quantità": {
+          "valore": 10,
+          "unità": "grams"
+        },
+        "aggiungi": "70",
+        "attributo": "Bitering"
+      },
+      {
+        "nome": "Sterling",
+        "quantità": {
+          "valore": 20,
+          "unità": "grams"
+        },
+        "aggiungi": "10",
+        "attributo": "Flavour"
+      },
+      {
+        "nome": "Sterling",
+        "quantità": {
+          "valore": 20,
+          "unità": "grams"
+        },
+        "aggiungi": "0",
+        "attributo": "Aroma"
+      }
+    ],
+    "lievito": "Saflager W-34/70"
+  },
+  "abbinamento_cibo": [
+    "Seafood salad",
+    "Sweet and sour pork",
+    "Lemon drizzle cake"
+  ],
+  "brewers_tips": "Make sure you burtonise your water as Dortmund's water contains a fairly high amount of sulphates. Carbonate this to approximately 2.6 volumes",
+  "contribuito_da": "John Jenkman <johnjenkman>",
+  "prezzo": 8.42
+},
+{
+  "id": 325,
+  "nome": "Zipcode",
+  "slogan": "Pilsner.",
+  "prima_produzione": "2018",
+  "descrizione": "A new 5% Pilsner, that feaures in Fanzine, our new subscription model.",
+  "url_immagine": null,
+  "abv": 5,
+  "ibu": 37,
+  "target_fg": 1006,
+  "target_og": 1044,
+  "ebc": 5,
+  "srm": 3,
+  "ph": 4.4,
+  "volume": {
+    "valore": 20,
+    "unità": "litres"
+  },
+  "volume_bollire": {
+    "valore": 25,
+    "unità": "litres"
+  },
+  "metodo": {
+    "mash_temp": [
+      {
+        "temp": {
+          "valore": 50,
+          "unità": "celsius"
+        },
+        "durata": 50
+      }
+    ],
+    "fermentazione": {
+      "temp": {
+        "valore": 11,
+        "unità": "celsius"
+      }
+    },
+    "torsione": null
+  },
+  "ingredienti": {
+    "malto": [
+      {
+        "nome": "Pilsner",
+        "quantità": {
+          "valore": 3.54,
+          "unità": "kilograms"
+        }
+      },
+      {
+        "nome": "Carapils",
+        "quantità": {
+          "valore": 0.24,
+          "unità": "kilograms"
+        }
+      }
+    ],
+    "luppolo": [
+      {
+        "nome": "Magnum",
+        "quantità": {
+          "valore": 12,
+          "unità": "grams"
+        },
+        "aggiungi": "70",
+        "attributo": "Bittering"
+      },
+      {
+        "nome": "Spalter",
+        "quantità": {
+          "valore": 15,
+          "unità": "grams"
+        },
+        "aggiungi": "30",
+        "attributo": "Flavour"
+      },
+      {
+        "nome": "Spalter",
+        "quantità": {
+          "valore": 15,
+          "unità": "grams"
+        },
+        "aggiungi": "10",
+        "attributo": "Flavour"
+      },
+      {
+        "nome": "Saphire",
+        "quantità": {
+          "valore": 30,
+          "unità": "grams"
+        },
+        "aggiungi": "0",
+        "attributo": "Aroma"
+      },
+      {
+        "nome": "Saphire",
+        "quantità": {
+          "valore": 30,
+          "unità": "grams"
+        },
+        "aggiungi": "Dry Hop",
+        "attributo": "Aroma"
+      }
+    ],
+    "lievito": "Saflager W-34/70"
+  },
+  "abbinamento_cibo": [
+    "Goat's cheese salad",
+    "Pesto pasta",
+    "Lemon cookies"
+  ],
+  "brewers_tips": "Saphir hops are not widespread at the moment if you cannot get hold of any, a good batch of Mittlefruh is a fair substitute.",
+  "contribuito_da": "John Jenkman <johnjenkman>",
+  "prezzo": 8.9
+}
 }
