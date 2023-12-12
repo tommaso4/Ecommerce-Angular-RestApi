@@ -9,9 +9,9 @@ import { ICart } from '../Modules/icart';
 })
 export class CartService {
 
-  addCartSubject=new Subject<ICart>();
+  addCartSubject=new Subject<ICart|null>();
   addedProduct$=this.addCartSubject.asObservable();
-  deleteCartSubject=new Subject<ICart>();
+  deleteCartSubject=new Subject<ICart|null>();
   removedProduct$=this.deleteCartSubject.asObservable()
 
   constructor(

@@ -19,7 +19,7 @@ import { WhiteBeerComponent } from './pages/white-beer/white-beer.component';
 
 import { HeaderComponent } from './shared/header/header.component';
 import { PaginatorComponent } from './shared/paginator/paginator.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -45,7 +45,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
 
   ],
   bootstrap: [AppComponent]

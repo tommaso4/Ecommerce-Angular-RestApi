@@ -12,7 +12,6 @@ type responseData = {
 })
 
 export class BeerService {
-
   constructor(private http:HttpClient) { }
 
   apiUrl:string = 'http://localhost:3000/beer'

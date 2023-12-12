@@ -4,7 +4,8 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 import { Beer } from '../models/beer.model';
-import { environment } from '../../environments/environment';
+import { environment } from '../../../environments/environment.development';
+
 
 @Injectable({
   providedIn: 'root'
