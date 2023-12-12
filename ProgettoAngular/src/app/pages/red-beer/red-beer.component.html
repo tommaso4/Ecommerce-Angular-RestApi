@@ -1,13 +1,14 @@
-<div *ngIf="birreRosse">
-  <div class="w-50 mb-2">
-    <img [src]="birreRosse.url_immagine" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">{{birreRosse.slogan}}</h5>
-      <p class="card-text">{{birreRosse.descrizione}}</p>
-      <p class=" m-0 alert alert-danger" >Categoria: {{birreRosse.volume.tipologia}}</p>
-      <p class=" m-0 alert alert-warning" >Prezzo: {{birreRosse.volume_bollire.valore}}</p>
-      <p class=" m-0 alert alert-success" > Quantità: {{birreRosse.abv}}</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+<div *ngFor="let birra of beer">
+  <div class="card-container">
+    <div class="card" style="width: 18rem;">
+      <img [src]="birra.url_immagine" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ birra.nome }}</h5>
+        <p class="card-text">{{ birra.descrizione }}</p>
+        <p class="card-text">{{ birra.abv }}</p>
+        <p class="card-text">{{ birra.volume.tipologia }}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
     </div>
-  </div>
+</div>
 </div>
