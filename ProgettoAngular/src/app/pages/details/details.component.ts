@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { BeerService } from '../../services/beer.service';
 import { Ibeer } from '../../Modules/ibeer';
 import { LogSystemService } from '../../services/log-system.service';
-import { WhishlistService } from '../../components/whishlist/whishlist.service';
+import { WhishlistService } from '../whishlist/whishlist.service';
 import { IUserAuth } from '../../Modules/iuser-auth';
 import { take } from 'rxjs';
 

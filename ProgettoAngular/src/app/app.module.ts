@@ -14,7 +14,7 @@ import { DetailsComponent } from './pages/details/details.component';
 import { PAGES404Component } from './pages/pages404/pages404.component';
 import { RedBeerComponent } from './pages/typeOfBeer/red-beer/red-beer.component';
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
-import { WhishlistComponent } from './components/whishlist/whishlist.component';
+import { WhishlistComponent } from './pages/whishlist/whishlist.component';
 import { WhiteBeerComponent } from './pages/typeOfBeer/white-beer/white-beer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PaginatorComponent } from './components/paginator/paginator.component';
