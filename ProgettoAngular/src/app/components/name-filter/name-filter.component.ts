@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { BeerService } from '../../services/beer.service';
 
+
 @Component({
   selector: 'app-name-filter',
   templateUrl: './name-filter.component.html',
