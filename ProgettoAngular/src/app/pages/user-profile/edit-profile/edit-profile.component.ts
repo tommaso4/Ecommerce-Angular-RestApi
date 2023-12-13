@@ -33,9 +33,8 @@ export class EditProfileComponent {
       name: this.fb.control(this.user?.name,[Validators.required]),
       surname: this.fb.control(this.user?.surname,[Validators.required]),
       email: this.fb.control(this.user?.email,[Validators.email]),
-      oldPassword: this.fb.control(null),
       password: this.fb.control(null),
-      confirmPassword: this.fb.control (null,[this.passwordMatchValidator] as Validators)
+
     })
   }
 
@@ -67,15 +66,12 @@ export class EditProfileComponent {
 
   submit(){
     this.loading=true;
-
-    delete this.form.value.confirmPassword;
-    if(this.form.value.password==``|| !this.form.value.password){
-      this.form.value.password= this.form.value.oldPassword
-      delete this.form.value.oldPassword;
-    }
-
+    this.form.value.password=this.user?.password;
+    console.log(this.user);
 
     if(!this.user) return
+    console.log(this.form.value);
+
     this.LSS.updateUser(this.user?.id,this.form.value).pipe(tap(()=>{
       this.loading=false;
       this.editMode=false;

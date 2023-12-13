@@ -17,26 +17,6 @@
   </div>
   <div *ngIf="isValidAndTouched('email')" class="alert alert-warning">Non è una mail valida</div>
 
-  <div>
-    <label for="old-password">Vecchia password:</label>
-    <input class="form-control" type="password" id="old-password" formControlName="oldPassword">
-  </div>
-  <div *ngIf="isValidAndTouched('oldPassword')" class="alert alert-warning">Non è una password valida</div>
-
-  <div>
-    <label for="password">Password:</label>
-    <input class="form-control" type="password" id="password" formControlName="password">
-  </div>
-  <div *ngIf="isValidAndTouched('password')" class="alert alert-warning">Non è una password valida</div>
-
-  <div>
-    <label for="confirmPassword">Conferma Password:</label>
-    <input class="form-control" type="password" id="confirmPassword" formControlName="confirmPassword">
-  </div>
-  <div *ngIf="isValidAndTouched('confirmPassword')" class="alert alert-warning">
-    {{getCustomMessage('confirmPassword')}}
-  </div>
-
   <button [disabled]="!form.valid" class="btn btn-primary mt-3" (click)="submit()">Salva</button>
 </form>
 <div *ngIf="loading">Caricamento...</div>

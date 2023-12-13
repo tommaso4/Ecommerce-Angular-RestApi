@@ -1,5 +1,13 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "emilio.plances@gmail.com",
+      "password": "$2a$10$86kwZYNlX3Y.SuqJ/wQDHu02t6PsxDfJZTArV2INmvdSMOesYPrve",
+      "name": "Emilio",
+      "surname": "Plances",
+      "id": 1
+    }
+  ],
   "cart": [],
   "shop": [],
   "beers": [

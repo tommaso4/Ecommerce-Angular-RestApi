@@ -9,7 +9,6 @@ import { JwtHelperService } from '@auth0/angular-jwt';
 import { Router } from '@angular/router';
 import { IUser } from '../Modules/iuser';
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -19,7 +18,6 @@ export class LogSystemService {
   user$=this.authorized.asObservable();
   booleanUser$=this.user$.pipe(map(user=>!!user))
   jwt:JwtHelperService=new JwtHelperService();
-
 
   APIUser:string=`${environment.API}/users`
   APIRegister:string=`${environment.API}/register`;
