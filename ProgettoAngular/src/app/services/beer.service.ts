@@ -49,10 +49,6 @@ export class BeerService {
 }
 
 
-
-
-
-
   setBeerName(name: string): void {
     this.beerName = name;
   }
