@@ -11,6 +11,9 @@ import { UserProfileComponent } from './pages/user-profile/user-profile.componen
 import { WhishlistComponent } from './components/whishlist/whishlist.component';
 import { DetailsComponent } from './pages/details/details.component';
 import { EditComponent } from './pages/edit/edit.component';
+import { RimborsiComponent } from './components/rimborsi/rimborsi.component';
+import { ServizioClientiComponent } from './components/servizioclienti/servizioclienti.component';
+import { SpedizioniComponent } from './components/spedizioni/spedizioni.component';
 
 
 
@@ -27,7 +30,12 @@ const routes: Routes = [
   { path: 'wishlist', component: WhishlistComponent, canActivate:[LogGuard]},
   { path: 'edit/:id', component: EditComponent },
   { path: '**', component:PAGES404Component},
-  { path: 'wishlist', component: WhishlistComponent }
+  { path: 'wishlist', component: WhishlistComponent },
+  { path: 'rmborsi', component: RimborsiComponent },
+  { path: 'servizioclienti', component: ServizioClientiComponent },
+  { path: 'spedizioni', component: SpedizioniComponent }
+
+
 
 ];
 @NgModule({

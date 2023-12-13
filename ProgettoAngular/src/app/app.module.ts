@@ -1,3 +1,4 @@
+import { ServizioClientiComponent } from './components/servizioclienti/servizioclienti.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -24,6 +25,11 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { EditComponent } from './pages/edit/edit.component';
+import { SpedizioniComponent } from './components/spedizioni/spedizioni.component';
+
+import { RimborsiComponent } from './components/rimborsi/rimborsi.component';
+
+
 
 
 
@@ -46,7 +52,10 @@ import { EditComponent } from './pages/edit/edit.component';
     PaginatorComponent,
     EditProfileComponent,
     EditComponent,
-    WhishlistComponent
+    WhishlistComponent,
+    SpedizioniComponent,
+    RimborsiComponent,
+    ServizioClientiComponent,
   ],
   imports: [
     BrowserModule,

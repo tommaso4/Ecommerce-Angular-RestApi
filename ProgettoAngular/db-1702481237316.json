@@ -29,14 +29,6 @@
       "surname": "Cantarini",
       "admin": false,
       "id": 4
-    },
-    {
-      "email": "prova@gmail.com",
-      "password": "$2a$10$ZvrUqjA04PpjUjSO34HeU.JjrEjPg3OdXl/kiR8bNNvMiRWZ5mZ3u",
-      "name": "prova",
-      "surname": "prova",
-      "admin": false,
-      "id": 5
     }
   ],
   "cart": [],
@@ -75,71 +67,6 @@
       "beerId": 19,
       "userId": 4,
       "id": 7
-    },
-    {
-      "beerId": 1,
-      "userId": 5,
-      "id": 8
-    },
-    {
-      "beerId": 2,
-      "userId": 5,
-      "id": 9
-    },
-    {
-      "beerId": 3,
-      "userId": 5,
-      "id": 10
-    },
-    {
-      "beerId": 4,
-      "userId": 5,
-      "id": 11
-    },
-    {
-      "beerId": 5,
-      "userId": 5,
-      "id": 12
-    },
-    {
-      "beerId": 3,
-      "userId": 5,
-      "id": 13
-    },
-    {
-      "beerId": 19,
-      "userId": 5,
-      "id": 14
-    },
-    {
-      "beerId": 24,
-      "userId": 5,
-      "id": 15
-    },
-    {
-      "beerId": 25,
-      "userId": 5,
-      "id": 16
-    },
-    {
-      "beerId": 35,
-      "userId": 5,
-      "id": 17
-    },
-    {
-      "beerId": 115,
-      "userId": 5,
-      "id": 18
-    },
-    {
-      "beerId": 112,
-      "userId": 5,
-      "id": 19
-    },
-    {
-      "beerId": 84,
-      "userId": 5,
-      "id": 20
     }
   ],
   "shop": [],
