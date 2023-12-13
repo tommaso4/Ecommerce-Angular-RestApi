@@ -31,11 +31,20 @@
   ],
   "cart": [],
   "wishlist": [
-
+    {
+      "userId": 4,
+      "id": 1
+    },
+    {
+      "userId": 4,
+      "id": 2
+    },
+    {
+      "userId": 4,
+      "id": 3
+    }
   ],
-  "shop": [
-    
-  ],
+  "shop": [],
   "beers": [
     {
       "id": 1,
