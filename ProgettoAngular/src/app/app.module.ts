@@ -29,8 +29,6 @@ import { TransferComponent } from './components/payment/transfer/transfer.compon
 import { PaypalComponent } from './components/payment/paypal/paypal.component';
 import { BancomatComponent } from './components/payment/bancomat/bancomat.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,

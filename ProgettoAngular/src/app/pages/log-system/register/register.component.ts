@@ -3,6 +3,7 @@ import {FormBuilder, FormControl, FormGroup, ValidationErrors, Validators } from
 import { LogSystemService } from '../../../services/log-system.service';
 import { Router } from '@angular/router';
 import { catchError, tap } from 'rxjs';
+import { RolesService } from '../../../services/roles.service';
 
 @Component({
   selector: 'app-register',
@@ -19,6 +20,7 @@ export class RegisterComponent {
   constructor(
     private fb:FormBuilder,
     private LSS:LogSystemService,
+    private RolesSVC:RolesService,
     private router:Router
   ){}
 
@@ -38,14 +40,16 @@ export class RegisterComponent {
 
     delete this.form.value.confirmPassword;
 
-    this.LSS.register(this.form.value).pipe(tap(()=>{
-      this.loading=false;
-      this.router.navigate(['/LogSystem/login']);
-    }),catchError(err=>{
+    this.LSS.register(this.form.value).pipe(catchError(err=>{
       this.loading=false
       this.emailExist=true
       throw err
-    })).subscribe()
+    })).subscribe(data=>{
+      this.RolesSVC.setRoleNewUser(data.user.id,`customer`).subscribe(()=>{
+        this.router.navigate(['/LogSystem/login']);
+        this.loading=false;
+      })
+    });
   }
 
   isValid(nameForm:string):boolean|undefined{

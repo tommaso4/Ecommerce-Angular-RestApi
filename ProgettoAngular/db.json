@@ -2,7 +2,7 @@
   "users": [
     {
       "email": "emilio.plances@gmail.com",
-      "password": "$2a$10$De8RUbneFkmQ5rIjQ48mJOh9xheYH8143PriRgU3brIwiPBG5L1YK",
+      "password": "$2a$10$IvS7dlOBdDCuRumRhGV2ZewJB4ClBdaKLj/cA5h5vkpHsYMuMW4KW",
       "name": "Emilio",
       "surname": "Plances",
       "admin": false,
@@ -31,6 +31,7 @@
       "id": 4
     }
   ],
+  "roles":[],
   "cart": [],
   "wishlist": [
     {

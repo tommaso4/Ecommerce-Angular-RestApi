@@ -9,8 +9,8 @@
       <label for="password">Password:</label>
       <input class="form-control" type="password" id="password" formControlName="password">
     </div>
-    <div *ngIf="notExist">Questa email non è associata ad un account</div>
-    <div *ngIf="failedLogin">Email o Password sbagliata</div>
+    <div class="mt-3" *ngIf="notExist">Questa email non è associata ad un account</div>
+    <div class="my-3" *ngIf="failedLogin">Email o Password sbagliata</div>
     <p>Non sei ancora registrato?<a routerLink="/LogSystem/register">Registrati!</a></p>
     <button [disabled]="!form.valid" class="mt-3 p-1" (click)="submit()">Accedi</button>
   </form>
