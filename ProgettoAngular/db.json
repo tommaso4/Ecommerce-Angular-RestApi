@@ -1,10 +1,10 @@
 {
   "users": [
     {
-      "email": "emilio.plances@gmail.com",
-      "password": "$2a$10$86kwZYNlX3Y.SuqJ/wQDHu02t6PsxDfJZTArV2INmvdSMOesYPrve",
-      "name": "Emilio",
+      "name": "EmilioPlances",
       "surname": "Plances",
+      "email": "emilio.plances@gmail.com",
+      "password": "$2a$10$ohdY/iXM9MsVsqzqy7Rdjeixe12k3flPHVZx954rFxw9wtJT2f8ca",
       "id": 1
     }
   ],
