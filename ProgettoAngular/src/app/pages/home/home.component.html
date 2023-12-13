@@ -8,7 +8,9 @@
         <a [routerLink]="['/details/'+ beer.id]">
           <app-beer-card [beer]="beer"></app-beer-card>
         </a>
+        <button class="addToWishList" (click)="addToWishList(beer.id)">Add to Whishlist</button>
       </div>
+
   </div>
 
   <div class="paginator-container">

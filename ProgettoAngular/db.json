@@ -1,5 +1,13 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "tommasocantarini4@gmail.com",
+      "password": "$2a$10$41Qng172sV8KXKhSOtDflutVh/9IB2aEOrSsax.odH3Vso72ZtNs2",
+      "name": "Tommaso",
+      "surname": "Cantarini",
+      "id": 1
+    }
+  ],
   "cart": [],
   "shop": [
     {
@@ -43990,5 +43998,6 @@
       "contribuitoDa": "John Jenkman <johnjenkman>",
       "prezzo": 8.9
     }
-  ]
+  ],
+  "wishlist": []
 }
