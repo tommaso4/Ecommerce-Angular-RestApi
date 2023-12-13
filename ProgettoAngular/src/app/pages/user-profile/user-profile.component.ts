@@ -18,7 +18,6 @@ export class UserProfileComponent {
   constructor(
     private LSS:LogSystemService,
   ){
-
     this.LSS.user$.subscribe(user =>this.user=user?.user);
   }
 
