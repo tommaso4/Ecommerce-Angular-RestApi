@@ -1,7 +1,7 @@
 export interface IShop {
   id?: number;
   beerId: number;
-  user_id?:number|undefined
+  userId?:number|undefined
   nameBeer: string;
   numberBeer?: number;
 }

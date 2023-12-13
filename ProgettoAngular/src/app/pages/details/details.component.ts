@@ -5,7 +5,8 @@ import { Ibeer } from '../../Modules/ibeer';
 import { LogSystemService } from '../../services/log-system.service';
 import { WhishlistService } from '../whishlist/whishlist.service';
 import { IUserAuth } from '../../Modules/iuser-auth';
-import { take } from 'rxjs';
+import { Observable, map, take, tap } from 'rxjs';
+import { IShop } from '../../Modules/ishop';
 
 
 @Component({
@@ -18,6 +19,7 @@ export class DetailsComponent {
   isLogged: boolean = false;
   beerId!: number;
   beer!: Ibeer;
+  allItem: IShop[]= [];
 
   constructor(
     private route: ActivatedRoute,
@@ -54,21 +56,61 @@ export class DetailsComponent {
     });
   }
 
+
   addToShop() {
     this.LSS.user$.subscribe((accessData) => {
-      if (accessData) {
-        console.log(accessData);
-        console.log('vvvvvvv:',this.beer);
-        console.log(this.beer)
-        if(!this.beer) return;
-        this.beerService.addToShop(Number(accessData.user.id), {
+      if (!accessData) {
+        alert("Per aggiungere ai preferiti devi loggarti o registrarti");
+        return;
+      }
 
+      if (!this.beer) {
+        return;
+      }
+
+      const beerExists = this.allItem.some(item => item.beerId === this.beer.id);
+
+      if (beerExists) {
+        const existingBeer = this.allItem.find(item => item.beerId === this.beer.id);
+        if (!existingBeer || !existingBeer.id) {
+          console.error('ID della birra esistente non valido.');
+          return;
+        }
+
+        const numberBeerToUpdate = existingBeer.numberBeer !== undefined ? existingBeer.numberBeer + 1 : 1;
+
+        this.beerService.updateShopItem(existingBeer.id, {
           nameBeer: this.beer.nome,
           beerId: this.beer.id,
+          numberBeer: numberBeerToUpdate,
+        }).subscribe((data: any) => {
+          console.log('Birra aggiornata:', data);
+          this.fetchShop();
         });
-      }else{
+      } else {
+        this.beerService.addToShop(Number(accessData.user.id), {
+          nameBeer: this.beer.nome,
+          beerId: this.beer.id,
+        }).subscribe((data: any) => {
+          console.log('Birra creata:', data);
+          this.fetchShop();
+        });
+      }
+    });
+  }
 
-        alert("Per aggiungere ai preferiti devi loggarti o registrarti");
+
+
+
+
+  fetchShop(): void {
+    this.beerService.getShop().subscribe({
+      next: (data: any[]) => {
+        this.allItem = data;
+        console.log('Tutte le birre presenti nello shop:', this.allItem);
+      },
+      error: (error) => {
+        console.error('Errore nel recupero delle birre:', error);
       }
     });
   }

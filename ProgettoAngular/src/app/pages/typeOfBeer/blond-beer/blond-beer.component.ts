@@ -37,9 +37,13 @@ export class BlondBeerComponent {
       this.isLogged=!!user;
     })
   }
+
+
   addToWish(beerid:number){
     this.LSS.user$.subscribe(accessData=>{
       if(!accessData?.user?.id) return;
+      console.log(beerid);
+
       this.beerSvc.addToWishList(beerid, accessData.user.id).pipe(take(1)).subscribe(
         )
     })
