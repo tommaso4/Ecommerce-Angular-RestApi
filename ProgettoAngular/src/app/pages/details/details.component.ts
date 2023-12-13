@@ -119,11 +119,9 @@ export class DetailsComponent {
   addToWish(beerid:number):void{
     this.LSS.user$.subscribe(accessData=>{
       if(!accessData?.user?.id) return;
-      this.beerService.addToWishList(beerid, accessData.user.id).pipe(take(1)).subscribe(
-        )
+      this.beerService.addToWishList(beerid, accessData.user.id).pipe(take(1)).subscribe( )
     })
   }
-
 }
 
 
