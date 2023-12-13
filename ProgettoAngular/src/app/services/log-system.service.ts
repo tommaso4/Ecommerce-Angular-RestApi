@@ -34,11 +34,10 @@ export class LogSystemService {
     return this.http.post<IUserAuth>(this.APIRegister,user)
   }
 
-  updateUser(id:string,user:IUser):Observable<IUser>{
-    user.id=id;
+  updateUser(user:IUserAuth):Observable<IUser>{
     console.log(user);
-
-    return this.http.put<IUser>(`${this.APIUser}/${id}`, user).pipe(tap(data=>{
+    this.authorized.next(user);
+    return this.http.put<IUser>(`${this.APIUser}/${user.user.id}`, user.user).pipe(tap(data=>{
       console.log(data)
     }));
   }

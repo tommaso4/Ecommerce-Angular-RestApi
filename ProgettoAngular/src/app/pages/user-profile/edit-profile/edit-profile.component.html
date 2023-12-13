@@ -17,6 +17,21 @@
   </div>
   <div *ngIf="isValidAndTouched('email')" class="alert alert-warning">Non è una mail valida</div>
 
+  <div>
+    <label for="password">Password:</label>
+    <input class="form-control" type="password" id="password" formControlName="password">
+  </div>
+  <div *ngIf="isValidAndTouched('password')" class="alert alert-warning">
+    <p>Non è una password valida. La password deve contenere:</p>
+    <ul>
+      <li>Minimo 8 caratteri</li>
+      <li>Almeno un numero</li>
+      <li>Almeno una lettera maiuscola</li>
+      <li>Almeno una lettera minuscola</li>
+      <li>Almeno un carattere speciale</li>
+    </ul>
+  </div>
+
   <button [disabled]="!form.valid" class="btn btn-primary mt-3" (click)="submit()">Salva</button>
 </form>
 <div *ngIf="loading">Caricamento...</div>

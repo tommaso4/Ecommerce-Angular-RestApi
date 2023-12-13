@@ -1,5 +1,5 @@
-<div class="container mt-5 bg-white">
-  <div>
+<div class="container py-5 bg-white">
+  <div *ngIf="!editMode">
     <div>
       <p>Nome: {{user?.name}}</p>
       <p>Cognome: {{user?.surname}}</p>
@@ -20,8 +20,9 @@
         <div *ngIf="wrongName">Se si desidera proseguire inserire il proprio nome</div>
       </div>
     </div>
-    <div>
-      <app-edit-profile [editMode]="editMode"></app-edit-profile>
-    </div>
   </div>
+  <div>
+    <app-edit-profile [editMode]="editMode"></app-edit-profile>
+  </div>
+</div>
 

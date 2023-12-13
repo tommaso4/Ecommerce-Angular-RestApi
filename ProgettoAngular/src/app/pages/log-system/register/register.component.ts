@@ -14,7 +14,7 @@ export class RegisterComponent {
   form!: FormGroup;
   loading!:boolean;
   emailExist: boolean=false;
-
+  regExPassword:string=`^(?=[^A-Z]*[A-Z])(?=[^a-z]*[a-z])(?=[^0-9]*[0-9]).{8,}$`
 
   constructor(
     private fb:FormBuilder,
@@ -27,7 +27,7 @@ export class RegisterComponent {
       name: this.fb.control(null,[Validators.required]),
       surname: this.fb.control(null,[Validators.required]),
       email: this.fb.control(null,[Validators.required, Validators.email]),
-      password: this.fb.control(null,[Validators.required]),
+      password: this.fb.control(null,[Validators.required,Validators.pattern(this.regExPassword)]),
       confirmPassword: this.fb.control (null,[Validators.required, this.passwordMatchValidator] as Validators)
     })
   }

@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container bg-white">
   <form [formGroup]="form">
     <div>
       <label for="name">Nome:</label>
@@ -23,7 +23,16 @@
       <label for="password">Password:</label>
       <input class="form-control" type="password" id="password" formControlName="password">
     </div>
-    <div *ngIf="isValidAndTouched('password')" class="alert alert-warning">Non è una password valida</div>
+    <div *ngIf="isValidAndTouched('password')" class="alert alert-warning">
+      <p>Non è una password valida. La password deve contenere:</p>
+      <ul>
+        <li>Minimo 8 caratteri</li>
+        <li>Almeno un numero</li>
+        <li>Almeno una lettera maiuscola</li>
+        <li>Almeno una lettera minuscola</li>
+        <li>Almeno un carattere speciale</li>
+      </ul>
+    </div>
 
     <div>
       <label for="confirmPassword">Conferma Password:</label>
