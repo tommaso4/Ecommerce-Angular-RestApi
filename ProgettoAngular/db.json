@@ -20,76 +20,21 @@
       "name": "Calogero",
       "surname": "Teresi",
       "id": 3
+    },
+    {
+      "email": "admin@admin.com",
+      "password": "$2a$10$b3SHNLVWUs5RKVpU7msmF.q38tqtvOpO/MfGdJOv798mi7JEq6a7C",
+      "name": "Lorenzo",
+      "surname": "Neroni",
+      "id": 4
     }
   ],
   "cart": [],
   "wishlist": [
-   
+
   ],
   "shop": [
-    {
-      "userId": 3,
-      "nameBeer": "Buzz",
-      "beerId": 1,
-      "numberBeer": 1,
-      "id": 1
-    },
-    {
-      "userId": 3,
-      "nameBeer": "Buzz",
-      "beerId": 1,
-      "numberBeer": 1,
-      "id": 2
-    },
-    {
-      "userId": 3,
-      "nameBeer": "Buzz",
-      "beerId": 1,
-      "numberBeer": 1,
-      "id": 3
-    },
-    {
-      "userId": 3,
-      "nameBeer": "Buzz",
-      "beerId": 1,
-      "numberBeer": 1,
-      "id": 4
-    },
-    {
-      "userId": 3,
-      "nameBeer": "Buzz",
-      "beerId": 1,
-      "numberBeer": 1,
-      "id": 5
-    },
-    {
-      "userId": 3,
-      "nameBeer": "Buzz",
-      "beerId": 1,
-      "numberBeer": 1,
-      "id": 6
-    },
-    {
-      "userId": 3,
-      "nameBeer": "Buzz",
-      "beerId": 1,
-      "numberBeer": 1,
-      "id": 7
-    },
-    {
-      "userId": 3,
-      "nameBeer": "Buzz",
-      "beerId": 1,
-      "numberBeer": 1,
-      "id": 8
-    },
-    {
-      "userId": 3,
-      "nameBeer": "Buzz",
-      "beerId": 1,
-      "numberBeer": 1,
-      "id": 9
-    }
+    
   ],
   "beers": [
     {
