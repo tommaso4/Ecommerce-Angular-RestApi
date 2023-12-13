@@ -13,6 +13,13 @@
       "name": "simo",
       "surname": "aimo",
       "id": 2
+    },
+    {
+      "email": "caloteresi@gmail.com",
+      "password": "$2a$10$LEKJUJqxKRIl4vwXaEVq2uoSoZ0SWoBx.y6xHYGmKunhSdk0rvHDi",
+      "name": "Calogero",
+      "surname": "Teresi",
+      "id": 3
     }
   ],
   "cart": [],
@@ -95,127 +102,67 @@
   ],
   "shop": [
     {
-      "id": 1,
-      "nome": "Buzz",
-      "slogan": "A Real Bitter Experience.",
-      "primaProduzione": "09/2007",
-      "descrizione": "A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.",
-      "urlImmagine": "https://images.punkapi.com/v2/keg.png",
-      "abv": 4.5,
-      "ibu": 60,
-      "targetFg": 1010,
-      "targetOg": 1044,
-      "ebc": 20,
-      "srm": 10,
-      "ph": 4.4,
-      "volume": {
-        "valore": 20,
-        "unità": "litres",
-        "tipologia": "rossa"
-      },
-      "volumeBollire": {
-        "valore": 25,
-        "unità": "litres"
-      },
-      "metodo": {
-        "mashTemp": [
-          {
-            "temp": {
-              "valore": 64,
-              "unità": "celsius"
-            },
-            "durata": 75
-          }
-        ],
-        "fermentazione": {
-          "temp": {
-            "valore": 19,
-            "unità": "celsius"
-          }
-        },
-        "torsione": null
-      },
-      "ingredienti": {
-        "malto": [
-          {
-            "nome": "Maris Otter Extra Pale",
-            "quantità": {
-              "valore": 3.3,
-              "unità": "kilograms"
-            }
-          },
-          {
-            "nome": "Caramalt",
-            "quantità": {
-              "valore": 0.2,
-              "unità": "kilograms"
-            }
-          },
-          {
-            "nome": "Munich",
-            "quantità": {
-              "valore": 0.4,
-              "unità": "kilograms"
-            }
-          }
-        ],
-        "luppolo": [
-          {
-            "nome": "Fuggles",
-            "quantità": {
-              "valore": 25,
-              "unità": "grams"
-            },
-            "aggiungi": "start",
-            "attributo": "bitter"
-          },
-          {
-            "nome": "First Gold",
-            "quantità": {
-              "valore": 25,
-              "unità": "grams"
-            },
-            "aggiungi": "start",
-            "attributo": "bitter"
-          },
-          {
-            "nome": "Fuggles",
-            "quantità": {
-              "valore": 37.5,
-              "unità": "grams"
-            },
-            "aggiungi": "middle",
-            "attributo": "flavour"
-          },
-          {
-            "nome": "First Gold",
-            "quantità": {
-              "valore": 37.5,
-              "unità": "grams"
-            },
-            "aggiungi": "middle",
-            "attributo": "flavour"
-          },
-          {
-            "nome": "Cascade",
-            "quantità": {
-              "valore": 37.5,
-              "unità": "grams"
-            },
-            "aggiungi": "end",
-            "attributo": "flavour"
-          }
-        ],
-        "lievito": "Wyeast 1056 - American Ale™"
-      },
-      "abbinamentoCibo": [
-        "Spicy chicken tikka masala",
-        "Grilled chicken quesadilla",
-        "Caramel toffee cake"
-      ],
-      "brewersTips": "The earthy and floral aromas from the hops can be overpowering. Drop a little Cascade in at the end of the boil to lift the profile with a bit of citrus.",
-      "contribuitoDa": "Sam Mason <samjbmason>",
-      "prezzo": 4.5
+      "userId": 3,
+      "nameBeer": "Buzz",
+      "beerId": 1,
+      "numberBeer": 1,
+      "id": 1
+    },
+    {
+      "userId": 3,
+      "nameBeer": "Buzz",
+      "beerId": 1,
+      "numberBeer": 1,
+      "id": 2
+    },
+    {
+      "userId": 3,
+      "nameBeer": "Buzz",
+      "beerId": 1,
+      "numberBeer": 1,
+      "id": 3
+    },
+    {
+      "userId": 3,
+      "nameBeer": "Buzz",
+      "beerId": 1,
+      "numberBeer": 1,
+      "id": 4
+    },
+    {
+      "userId": 3,
+      "nameBeer": "Buzz",
+      "beerId": 1,
+      "numberBeer": 1,
+      "id": 5
+    },
+    {
+      "userId": 3,
+      "nameBeer": "Buzz",
+      "beerId": 1,
+      "numberBeer": 1,
+      "id": 6
+    },
+    {
+      "userId": 3,
+      "nameBeer": "Buzz",
+      "beerId": 1,
+      "numberBeer": 1,
+      "id": 7
+    },
+    {
+      "userId": 3,
+      "nameBeer": "Buzz",
+      "beerId": 1,
+      "numberBeer": 1,
+      "id": 8
+    },
+    {
+      "userId": 3,
+      "nameBeer": "Buzz",
+      "beerId": 1,
+      "numberBeer": 1,
+      "id": 9
     }
   ],
   "beers": [

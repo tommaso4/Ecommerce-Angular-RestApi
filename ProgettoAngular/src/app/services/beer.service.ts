@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, catchError, map, throwError } from 'rxjs';
 import { environment } from '../../environments/environment.development';
 import { Ibeer } from '../Modules/ibeer';
+import { IShop } from '../Modules/ishop';
 
 @Injectable({
   providedIn: 'root'
@@ -27,10 +28,30 @@ export class BeerService {
     }
   }
 
-  addToShop(beer:Ibeer): Observable<Ibeer> {
-    const url = `${this.api}/shop`
-    return this.http.post<Ibeer>(url,beer)
-  }
+  addToShop(userId: number, beer: IShop) {
+    let numberBeerToSend = 1; // Valore predefinito
+    if (beer.numberBeer !== undefined && beer.numberBeer > 1) {
+      numberBeerToSend = beer.numberBeer;
+    }
+    return this.http
+    .post('http://localhost:3000/shop',
+    {
+      userId: userId,
+      nameBeer: beer.nameBeer,
+      beerId: beer.beerId,
+      numberBeer: numberBeerToSend
+
+    }).pipe()
+    .subscribe((data: any) => {
+      console.log(data);
+      return data;
+    });
+}
+
+
+
+
+
 
   setBeerName(name: string): void {
     this.beerName = name;
@@ -70,5 +91,11 @@ export class BeerService {
     })
     );
   }
+
+    addToWishList(beerId: number,userId:string): Observable<{id:number,beerId:number,userId:number}> {
+      return this.http.post<{id:number,beerId:number,userId:number}>(this.api+'/wishlist',{beerId:beerId,userId:userId});
+
+
+    }
 
 }

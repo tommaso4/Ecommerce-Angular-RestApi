@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BeerService } from '../../services/beer.service';
 import { Ibeer } from '../../Modules/ibeer';
+import { LogSystemService } from '../../services/log-system.service';
 
 
 @Component({
@@ -17,7 +18,8 @@ export class DetailsComponent {
 
   constructor(
     private route: ActivatedRoute,
-    private beerService: BeerService
+    private beerService: BeerService,
+    private authSvc : LogSystemService
   ) {}
 
   ngOnInit(): void {
@@ -45,12 +47,26 @@ export class DetailsComponent {
     });
   }
 
-  addToShop(){
-    this.beerService.addToShop(this.beer).subscribe(beer=> {
-      console.log(beer);
+  addToShop() {
+    this.authSvc.user$.subscribe((accessData) => {
+      if (accessData) {
+        console.log(accessData);
+        console.log('vvvvvvv:',this.beer);
+        console.log(this.beer)
+        if(!this.beer) return;
+        this.beerService.addToShop(Number(accessData.user.id), {
 
-    })
+          nameBeer: this.beer.nome,
+          beerId: this.beer.id,
+        });
+      }else{
+
+        alert("Per aggiungere ai preferiti devi loggarti o registrarti");
+      }
+    });
   }
 }
+
+
 
 
