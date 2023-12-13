@@ -10,12 +10,15 @@ import { IUserAuth } from '../../Modules/iuser-auth';
 export class HeaderComponent {
 
   isLogged = false;
+  user!: IUserAuth;
   constructor(private LSS:LogSystemService) { }
-  ngOnInit(){
-    console.log('ciao');
 
+  ngOnInit(){
     this.LSS.user$.subscribe((user:IUserAuth|null)=>{
-      this.isLogged=!!user
+      this.isLogged=!!user;
+      this.user = user!;
     })
+
   }
+
 }

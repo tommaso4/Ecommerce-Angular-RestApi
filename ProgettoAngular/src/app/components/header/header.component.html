@@ -12,14 +12,13 @@
     <a routerLink="/blondbeer">Blonde Beer</a>
     <a routerLink="/redbeer">Red Beer</a>
     <a *ngIf="isLogged" routerLink="/wishlist">Wish List</a>
+    <a *ngIf="isLogged" routerLink="/wishlist">Cart</a>
   </div>
 </div>
-
-
   <div>
     <a routerLink="userprofile">Profilo</a>
     <fa-icon [icon]="['far','user']" class="paginate-button__icon h3 log-in-icon"></fa-icon>
-    <a routerLink="/LogSystem">LogIn</a>
-
+    <a *ngIf="!isLogged" routerLink="/LogSystem">LogIn</a>
+    <a *ngIf="isLogged" routerLink="/LogSystem">{{user.user.name}}</a>
   </div>
 </div>

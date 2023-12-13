@@ -2,35 +2,49 @@
 @import "colors";
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  max-height: 100%;
+  background-color: $primary;
+
+  /* Barra di scorrimento verticale */
+  ::-webkit-scrollbar {
+    width: 10px;
   }
 
-  html,
-  body {
-    max-height: 100%;
-    background-color: $primary;
+  ::-webkit-scrollbar-track {
+    background: #f1f1f100;
   }
 
-  body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+  ::-webkit-scrollbar-thumb {
+    background-color: #0A2F69;
   }
 
-  .text-input {
-    appearance: none;
-    background-color: $primary;
-    border: none;
-    border-bottom: .2em solid $dark-blue;
-    border-radius: .2em .2em 0 0;
-    color: $dark-blue;
-    font-size: 1.2rem;
-    outline: none;
-  }
+}
 
-  .button {
-    background-color: $dark-blue;
-    border-radius: 0.2rem;
-  }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.text-input {
+  appearance: none;
+  background-color: $primary;
+  border: none;
+  border-bottom: .2em solid $dark-blue;
+  border-radius: .2em .2em 0 0;
+  color: $dark-blue;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+.button {
+  background-color: $dark-blue;
+  border-radius: 0.2rem;
+}

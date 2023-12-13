@@ -3,6 +3,9 @@ import { ActivatedRoute } from '@angular/router';
 import { BeerService } from '../../services/beer.service';
 import { Ibeer } from '../../Modules/ibeer';
 import { LogSystemService } from '../../services/log-system.service';
+import { WhishlistService } from '../../components/whishlist/whishlist.service';
+import { IUserAuth } from '../../Modules/iuser-auth';
+import { take } from 'rxjs';
 
 
 @Component({
@@ -12,14 +15,15 @@ import { LogSystemService } from '../../services/log-system.service';
 })
 export class DetailsComponent {
 
-
+  isLogged: boolean = false;
   beerId!: number;
   beer!: Ibeer;
 
   constructor(
     private route: ActivatedRoute,
     private beerService: BeerService,
-    private authSvc : LogSystemService
+    private LSS:LogSystemService,
+    private whishlistService: WhishlistService
   ) {}
 
   ngOnInit(): void {
@@ -32,8 +36,11 @@ export class DetailsComponent {
         console.error('ID della birra non presente nei parametri');
       }
     });
-  }
 
+    this.LSS.user$.subscribe((user:IUserAuth|null)=>{
+      this.isLogged=!!user;
+    })
+  }
 
   getBeerDetails(): void {
     this.beerService.getBeerById(this.beerId).subscribe({
@@ -48,7 +55,7 @@ export class DetailsComponent {
   }
 
   addToShop() {
-    this.authSvc.user$.subscribe((accessData) => {
+    this.LSS.user$.subscribe((accessData) => {
       if (accessData) {
         console.log(accessData);
         console.log('vvvvvvv:',this.beer);
@@ -65,8 +72,15 @@ export class DetailsComponent {
       }
     });
   }
+
+  addToWish(beerid:number):void{
+    this.LSS.user$.subscribe(accessData=>{
+      if(!accessData?.user?.id) return;
+      this.beerService.addToWishList(beerid, accessData.user.id).pipe(take(1)).subscribe(
+        )
+    })
+  }
+
 }
-
-
 
 
