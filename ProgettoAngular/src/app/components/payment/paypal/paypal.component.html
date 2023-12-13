@@ -1,0 +1,19 @@
+<form [formGroup]="paypalForm" (ngSubmit)="submitForm()">
+  <label for="email">Indirizzo email PayPal:</label>
+  <input type="email" id="email" formControlName="email" />
+
+  <div *ngIf="paypalForm.get('email')?.invalid && (paypalForm.get('email')?.dirty || paypalForm.get('email')?.touched)">
+    <div *ngIf="paypalForm.get('email')?.errors?.['required']">L'indirizzo email è obbligatorio.</div>
+    <div *ngIf="paypalForm.get('email')?.errors?.['email']">L'indirizzo email non è valido.</div>
+  </div>
+
+  <label for="password">Password PayPal:</label>
+  <input type="password" id="password" formControlName="password" />
+
+  <div *ngIf="paypalForm.get('password')?.invalid && (paypalForm.get('password')?.dirty || paypalForm.get('password')?.touched)">
+    <div *ngIf="paypalForm.get('password')?.errors?.['required']">La password è obbligatoria.</div>
+    <div *ngIf="paypalForm.get('password')?.errors?.['minlength']">La password deve contenere almeno 6 caratteri.</div>
+  </div>
+
+  <button type="submit" [disabled]="paypalForm.invalid">Invia</button>
+</form>

@@ -10,29 +10,29 @@ import { IwishListItem } from '../../Modules/iwishListItem';
 })
 export class WhishlistComponent {
 
-  Whishlist:IwishListItem[] = [];
+  Whishlist: IwishListItem[] = [];
 
   constructor(
     private logSystem: LogSystemService,
-    private whishlistService: WhishlistService) {}
+    private whishlistService: WhishlistService) { }
 
-ngOnInit(): void {
-    this.logSystem.user$.subscribe((accessData)=>{
-      if(!accessData?.user.id){
+  ngOnInit(): void {
+    this.logSystem.user$.subscribe((accessData) => {
+      if (!accessData?.user.id) {
         return;
-
       }
-      this.whishlistService.getWishlist(accessData.user.id).subscribe((items)=>{
+      this.whishlistService.getWishlist(accessData.user.id).subscribe((items) => {
         this.Whishlist = items;
       })
 
     })
+  }
 
+  removeBerrWish(beerid?:number){
+    console.log(this.Whishlist);
+    this.whishlistService.removeWish(beerid).subscribe((items) =>{
+        this.Whishlist.filter(items => items.beerId !== beerid)
+    })
+  }
 
-
-
-
-
-
-}
 }

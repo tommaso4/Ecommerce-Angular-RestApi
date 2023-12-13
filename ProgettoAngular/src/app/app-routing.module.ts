@@ -11,6 +11,13 @@ import { UserProfileComponent } from './pages/user-profile/user-profile.componen
 import { WhishlistComponent } from './pages/whishlist/whishlist.component';
 import { DetailsComponent } from './pages/details/details.component';
 import { EditComponent } from './pages/edit/edit.component';
+import { PaymentComponent } from './components/payment/payment.component';
+import { BancomatComponent } from './components/payment/bancomat/bancomat.component';
+import { PaypalComponent } from './components/payment/paypal/paypal.component';
+import { TransferComponent } from './components/payment/transfer/transfer.component';
+import { RimborsiComponent } from './components/rimborsi/rimborsi.component';
+import { ServizioClientiComponent } from './components/servizioclienti/servizioclienti.component';
+import { SpedizioniComponent } from './components/spedizioni/spedizioni.component';
 
 
 
@@ -25,9 +32,22 @@ const routes: Routes = [
   { path: 'cart', component: CartComponent, canActivate:[LogGuard]},
   { path: 'userprofile', component: UserProfileComponent, canActivate:[LogGuard]},
   { path: 'wishlist', component: WhishlistComponent, canActivate:[LogGuard]},
+  { path: 'payment', component: PaymentComponent,
+  children:[
+    { path: 'bancomat', component: BancomatComponent},
+    { path: 'paypal', component: PaypalComponent},
+    { path: 'transfer', component: TransferComponent},
+    { path: '', redirectTo: 'bancomat', pathMatch: 'full' }
+  ],
+  canActivate:[LogGuard]},
   { path: 'edit/:id', component: EditComponent },
-  { path: '**', component:PAGES404Component},
-  { path: 'wishlist', component: WhishlistComponent }
+  { path: 'wishlist', component: WhishlistComponent },
+  { path: 'rimborsi', component: RimborsiComponent },
+  { path: 'servizioclienti', component: ServizioClientiComponent },
+  { path: 'spedizioni', component: SpedizioniComponent },
+  { path: '**', component:PAGES404Component}
+
+
 
 ];
 @NgModule({

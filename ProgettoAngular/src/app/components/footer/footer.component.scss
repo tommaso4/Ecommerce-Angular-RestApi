@@ -3,10 +3,11 @@
   background-color: #0a2f69;
 
   position: fixed;
-  bottom: 0;
+  bottom: 0%;
   left: 0;
   width: 100%;
   z-index: 1000;
+
 
 }
 
@@ -21,7 +22,7 @@
 .scarica{
   height: 30px;
   width: 100px;
-  margin: 10px;
+
 }
 
 
@@ -50,9 +51,6 @@ div{
     justify-content: center;
   }
   .footer-menu{
-    display: grid;
-    gap: 0.5em;
-    grid-template-columns: repeat(2,minmax(2em,1fr));
     justify-content: center;
     text-align: center;
     text-transform: uppercase;
@@ -64,29 +62,35 @@ div{
   .footer-menu{
     display: inline-block;
     display: flex;
-    flex-wrap: wrap;
   }
 
   .menu-scarica{
     display: flex;
-    flex-wrap: wrap;
+
   }
 
   .bg-footer{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+
   }
 }
 
-.me{
+@media only screen and (max-width: 850px) {
 
-
-    //ALLINEARE IN ORIZZONTALE
+  .bg-footer{
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-left: 50px;
+    justify-content: center;
+    flex-direction: column;
 
+  }
+
+
+  .footer-menu, .menu-icons, .menu-servizi{
+    margin: 0%;
+    height: 4.5vh;
+  }
 }
+
