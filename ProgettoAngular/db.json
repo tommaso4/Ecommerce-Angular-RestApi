@@ -31,32 +31,7 @@
   ],
   "cart": [],
   "wishlist": [
-    {
-      "userId": 4,
-      "id": 1
-    },
-    {
-      "userId": 4,
-      "id": 2
-    },
-    {
-      "userId": 4,
-      "id": 3
-    },
-    {
-      "userId": 4,
-      "id": 4
-    },
-    {
-      "beerId": 3,
-      "userId": 4,
-      "id": 5
-    },
-    {
-      "beerId": 169,
-      "userId": 4,
-      "id": 6
-    }
+    
   ],
   "shop": [],
   "beers": [
