@@ -88,6 +88,7 @@ export class DetailsComponent {
           console.log('Birra aggiornata:', data);
           this.fetchShop(Number(accessData.user.id));
 
+
         });
       } else {
         this.beerService.addToShop(Number(accessData.user.id), {

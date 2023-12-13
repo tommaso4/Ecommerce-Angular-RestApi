@@ -43,13 +43,33 @@
     {
       "userId": 3,
       "id": 1
+    },
+    {
+      "beerId": 2,
+      "userId": 3,
+      "id": 2
+    },
+    {
+      "beerId": 2,
+      "userId": 3,
+      "id": 3
+    },
+    {
+      "beerId": 2,
+      "userId": 3,
+      "id": 4
+    },
+    {
+      "beerId": 2,
+      "userId": 3,
+      "id": 5
     }
   ],
   "shop": [
     {
       "nameBeer": "Trashy Blonde",
       "beerId": 2,
-      "numberBeer": 12,
+      "numberBeer": 13,
       "userId": 3,
       "id": 1
     }
