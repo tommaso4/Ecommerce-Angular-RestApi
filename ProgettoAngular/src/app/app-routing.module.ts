@@ -41,11 +41,11 @@ const routes: Routes = [
   ],
   canActivate:[LogGuard]},
   { path: 'edit/:id', component: EditComponent },
-  { path: '**', component:PAGES404Component},
   { path: 'wishlist', component: WhishlistComponent },
   { path: 'rimborsi', component: RimborsiComponent },
   { path: 'servizioclienti', component: ServizioClientiComponent },
-  { path: 'spedizioni', component: SpedizioniComponent }
+  { path: 'spedizioni', component: SpedizioniComponent },
+  { path: '**', component:PAGES404Component}
 
 
 
