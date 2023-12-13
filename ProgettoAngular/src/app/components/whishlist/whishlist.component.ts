@@ -12,10 +12,9 @@ export class WhishlistComponent {
 
   Whishlist:IwishListItem[] = [];
 
-  constructor(private logSystem: LogSystemService,
-    private whishlistService: WhishlistService) {
-
-  }
+  constructor(
+    private logSystem: LogSystemService,
+    private whishlistService: WhishlistService) {}
 
 ngOnInit(): void {
     this.logSystem.user$.subscribe((accessData)=>{

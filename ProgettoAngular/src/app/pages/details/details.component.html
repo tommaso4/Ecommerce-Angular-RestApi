@@ -9,8 +9,8 @@
           <h5 class="text-center text-secondary">{{beer.slogan}}</h5>
           <h5 class="px-3">{{beer.descrizione}}</h5>
           <div class="d-flex  align-items-baseline detFoot ms-3 mt-3">
-            <button (click)="addToShop()">ADD</button>
-            <button [routerLink]="['/edit/'+ beer.id]" >Modifica</button>
+            <button *ngIf="isLogged" (click)="addToWish(beer.id)">WISH</button>
+            <button *ngIf="isLogged" [routerLink]="['/edit/'+ beer.id]" >EDIT</button>
             <p>{{beer.prezzo}} &#8364;</p>
           </div>
         </div>

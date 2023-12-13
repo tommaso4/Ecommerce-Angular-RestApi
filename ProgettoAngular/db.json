@@ -123,6 +123,120 @@
       "brewersTips": "Be careful not to collect too much wort from the mash. Once the sugars are all washed out there are some very unpleasant grainy tasting compounds that can be extracted into the wort.",
       "contribuitoDa": "Sam Mason <samjbmason>",
       "prezzo": 4.19
+    },
+    {
+      "id": 3,
+      "nome": "Berliner Weisse With Yuzu - B-Sides",
+      "slogan": "Japanese Citrus Berliner Weisse.",
+      "primaProduzione": "11/2015",
+      "descrizione": "Japanese citrus fruit intensifies the sour nature of this German classic.",
+      "urlImmagine": "https://images.punkapi.com/v2/keg.png",
+      "abv": 4.2,
+      "ibu": 8,
+      "targetFg": 1007,
+      "targetOg": 1040,
+      "ebc": 8,
+      "srm": 4,
+      "ph": 3.2,
+      "volume": {
+        "valore": 20,
+        "unità": "litres"
+      },
+      "volumeBollire": {
+        "valore": 25,
+        "unità": "litres"
+      },
+      "metodo": {
+        "mashTemp": [
+          {
+            "temp": {
+              "valore": 60,
+              "unità": "celsius"
+            },
+            "durata": 10
+          },
+          {
+            "temp": {
+              "valore": 65,
+              "unità": "celsius"
+            },
+            "durata": 30
+          },
+          {
+            "temp": {
+              "valore": 72,
+              "unità": "celsius"
+            },
+            "durata": 10
+          },
+          {
+            "temp": {
+              "valore": 78,
+              "unità": "celsius"
+            },
+            "durata": 5
+          }
+        ],
+        "fermentazione": {
+          "temp": {
+            "valore": 21,
+            "unità": "celsius"
+          }
+        },
+        "torsione": "Soured naturally using the kettle souring technique, Yuzu fruit: 50g at middle, Yuzu juice: 200ml at FV"
+      },
+      "ingredienti": {
+        "malto": [
+          {
+            "nome": "Propino Pale Malt",
+            "quantità": {
+              "valore": 1.63,
+              "unità": "kilograms"
+            }
+          },
+          {
+            "nome": "Wheat Malt",
+            "quantità": {
+              "valore": 1.63,
+              "unità": "kilograms"
+            }
+          },
+          {
+            "nome": "Propino Pale Malt for kettle souring",
+            "quantità": {
+              "valore": 0.03,
+              "unità": "kilograms"
+            }
+          },
+          {
+            "nome": "Acidulated Malt for kettle souring",
+            "quantità": {
+              "valore": 0.03,
+              "unità": "kilograms"
+            }
+          }
+        ],
+        "luppolo": [
+          {
+            "nome": "Bramling Cross",
+            "quantità": {
+              "valore": 10,
+              "unità": "grams"
+            },
+            "aggiungi": "middle",
+            "attributo": "bitter"
+          }
+        ],
+        "lievito": "Wyeast 1056 - American Ale™"
+      },
+      "abbinamentoCibo": [
+        "Smoked chicken wings",
+        "Miso ramen",
+        "Yuzu cheesecake"
+      ],
+      "brewersTips": "Clean everything twice. All you want is the clean sourness of lactobacillus.",
+      "contribuitoDa": "Sam Mason <samjbmason>",
+      "prezzo": 9.68
     }
   ],
   "beers": [
@@ -43999,5 +44113,16 @@
       "prezzo": 8.9
     }
   ],
-  "wishlist": []
+  "wishlist": [
+    {
+      "beerId": 1,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "beerId": 4,
+      "userId": 1,
+      "id": 2
+    }
+  ]
 }
