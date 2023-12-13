@@ -24,6 +24,10 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { EditComponent } from './pages/edit/edit.component';
+import { PaymentComponent } from './components/payment/payment.component';
+import { TransferComponent } from './components/payment/transfer/transfer.component';
+import { PaypalComponent } from './components/payment/paypal/paypal.component';
+import { BancomatComponent } from './components/payment/bancomat/bancomat.component';
 
 
 
@@ -46,7 +50,11 @@ import { EditComponent } from './pages/edit/edit.component';
     PaginatorComponent,
     EditProfileComponent,
     EditComponent,
-    WhishlistComponent
+    WhishlistComponent,
+    PaymentComponent,
+    TransferComponent,
+    PaypalComponent,
+    BancomatComponent
   ],
   imports: [
     BrowserModule,

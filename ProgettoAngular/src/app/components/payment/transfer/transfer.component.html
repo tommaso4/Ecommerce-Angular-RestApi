@@ -1,0 +1,26 @@
+<form [formGroup]="transferForm" (ngSubmit)="submitForm()">
+  <label for="accountHolder">Intestatario dell'account:</label>
+  <input type="text" id="accountHolder" formControlName="accountHolder" />
+
+  <div *ngIf="transferForm.get('accountHolder')?.invalid && (transferForm.get('accountHolder')?.dirty || transferForm.get('accountHolder')?.touched)">
+    <div *ngIf="transferForm.get('accountHolder')?.errors?.['required']">L'intestatario dell'account è obbligatorio.</div>
+  </div>
+
+  <label for="accountNumber">Numero dell'account:</label>
+  <input type="text" id="accountNumber" formControlName="accountNumber" />
+
+  <div *ngIf="transferForm.get('accountNumber')?.invalid && (transferForm.get('accountNumber')?.dirty || transferForm.get('accountNumber')?.touched)">
+    <div *ngIf="transferForm.get('accountNumber')?.errors?.['required']">Il numero dell'account è obbligatorio.</div>
+    <div *ngIf="transferForm.get('accountNumber')?.errors?.['pattern']">Il numero dell'account deve contenere solo cifre e avere una lunghezza di 12 cifre.</div>
+  </div>
+
+  <label for="amount">Importo:</label>
+  <input type="number" id="amount" formControlName="amount" />
+
+  <div *ngIf="transferForm.get('amount')?.invalid && (transferForm.get('amount')?.dirty || transferForm.get('amount')?.touched)">
+    <div *ngIf="transferForm.get('amount')?.errors?.['required']">L'importo è obbligatorio.</div>
+    <div *ngIf="transferForm.get('amount')?.errors?.['min']">L'importo deve essere maggiore di 0.</div>
+  </div>
+
+  <button type="submit" [disabled]="transferForm.invalid">Invia</button>
+</form>

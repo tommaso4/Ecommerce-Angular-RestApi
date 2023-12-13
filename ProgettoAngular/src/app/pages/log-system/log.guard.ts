@@ -24,5 +24,4 @@ export class LogGuard {
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     return this.canActivate(childRoute,state);
   }
-
 }

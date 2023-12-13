@@ -93,4 +93,5 @@ export class BeerService {
     return this.http.post<{ id: number, beerId: number, userId: number }>(this.api + '/wishlist', { beerId: beerId, userId: userId });
   }
 
+
 }

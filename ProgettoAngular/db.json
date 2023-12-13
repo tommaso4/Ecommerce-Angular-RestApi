@@ -34,26 +34,6 @@
   "cart": [],
   "wishlist": [
     {
-      "beerId": 1,
-      "userId": 4,
-      "id": 1
-    },
-    {
-      "beerId": 2,
-      "userId": 4,
-      "id": 2
-    },
-    {
-      "beerId": 13,
-      "userId": 4,
-      "id": 3
-    },
-    {
-      "beerId": 14,
-      "userId": 4,
-      "id": 4
-    },
-    {
       "beerId": 15,
       "userId": 4,
       "id": 5
@@ -67,6 +47,16 @@
       "beerId": 19,
       "userId": 4,
       "id": 7
+    },
+    {
+      "beerId": 1,
+      "userId": 4,
+      "id": 8
+    },
+    {
+      "beerId": 8,
+      "userId": 4,
+      "id": 9
     }
   ],
   "shop": [],

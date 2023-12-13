@@ -11,20 +11,17 @@ import { Observable } from 'rxjs';
 })
 export class WhishlistService {
 
-
   constructor(private router: Router,
     private LSS:LogSystemService, private httpClient:HttpClient) { }
 
   getWishlist(userId:string): Observable<IwishListItem[] >{
     return this.httpClient.get<IwishListItem[]>('http://localhost:3000/wishlist?_expand=beer&userId='+userId);
   }
+
+  removeWish(id:any): Observable<any>{
+    const url = `http://localhost:3000/wishlist/${id}`
+    return this.httpClient.delete(url)
+  }
+
 }
-
-
-
-
-
-
-
-
 

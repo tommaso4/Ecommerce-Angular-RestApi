@@ -19,6 +19,6 @@
     <a routerLink="userprofile">Profilo</a>
     <fa-icon [icon]="['far','user']" class="paginate-button__icon h3 log-in-icon"></fa-icon>
     <a *ngIf="!isLogged" routerLink="/LogSystem">LogIn</a>
-    <a *ngIf="isLogged" routerLink="/LogSystem">{{user.user.name}}</a>
+    <a *ngIf="isLogged" routerLink="/userprofile">{{user.user.name}}</a>
   </div>
 </div>
