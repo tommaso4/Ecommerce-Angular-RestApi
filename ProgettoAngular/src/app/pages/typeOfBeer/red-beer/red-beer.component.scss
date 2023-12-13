@@ -68,3 +68,15 @@ top: 10px;
   height: 208px;
   overflow-y: auto;
 }
+
+.wish{
+  background-color: $dark-blue;
+  color: $primary;
+  font-size: large;
+  border-radius: 5px;
+}
+
+.wish:hover{
+  background-color: $primary;
+  color:  $dark-blue;
+}
