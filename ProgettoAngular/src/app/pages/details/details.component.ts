@@ -42,6 +42,7 @@ export class DetailsComponent {
     this.LSS.user$.subscribe((user:IUserAuth|null)=>{
       this.isLogged=!!user;
     })
+    this.fetchShop();
   }
 
   getBeerDetails(): void {
@@ -58,26 +59,22 @@ export class DetailsComponent {
 
 
   addToShop() {
+    if (!this.beer) {
+      console.error('Nessuna birra selezionata.');
+      return;
+    }
+
     this.LSS.user$.subscribe((accessData) => {
       if (!accessData) {
         alert("Per aggiungere ai preferiti devi loggarti o registrarti");
         return;
       }
 
-      if (!this.beer) {
-        return;
-      }
+      const existingBeerIndex = this.allItem.findIndex(item => item.beerId === this.beer.id);
 
-      const beerExists = this.allItem.some(item => item.beerId === this.beer.id);
-
-      if (beerExists) {
-        const existingBeer = this.allItem.find(item => item.beerId === this.beer.id);
-        if (!existingBeer || !existingBeer.id) {
-          console.error('ID della birra esistente non valido.');
-          return;
-        }
-
-        const numberBeerToUpdate = existingBeer.numberBeer !== undefined ? existingBeer.numberBeer + 1 : 1;
+      if (existingBeerIndex !== -1) {
+        const existingBeer = this.allItem[existingBeerIndex];
+        const numberBeerToUpdate: number = existingBeer.numberBeer !== undefined ? existingBeer.numberBeer + 1 : 1;
 
         this.beerService.updateShopItem(existingBeer.id, {
           nameBeer: this.beer.nome,
@@ -91,6 +88,7 @@ export class DetailsComponent {
         this.beerService.addToShop(Number(accessData.user.id), {
           nameBeer: this.beer.nome,
           beerId: this.beer.id,
+          numberBeer: 1 // Poiché è la prima volta che viene aggiunta la birra
         }).subscribe((data: any) => {
           console.log('Birra creata:', data);
           this.fetchShop();
@@ -98,6 +96,9 @@ export class DetailsComponent {
       }
     });
   }
+
+
+
 
 
 

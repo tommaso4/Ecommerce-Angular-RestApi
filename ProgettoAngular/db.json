@@ -22,7 +22,6 @@
       "id": 3
     }
   ],
-  "cart": [],
   "wishlist": [
     {
       "userId": 3,
@@ -31,23 +30,10 @@
   ],
   "shop": [
     {
-      "nameBeer": "Trashy Blonde",
-      "beerId": 2,
-      "numberBeer": 4,
+      "nameBeer": "Buzz",
+      "beerId": 1,
+      "numberBeer": 11,
       "id": 1
-    },
-    {
-      "nameBeer": "Pilsen Lager",
-      "beerId": 4,
-      "numberBeer": 2,
-      "id": 2
-    },
-    {
-      "userId": 3,
-      "nameBeer": "Pilsen Lager",
-      "beerId": 4,
-      "numberBeer": 1,
-      "id": 3
     }
   ],
   "beers": [

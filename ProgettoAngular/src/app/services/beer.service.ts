@@ -74,7 +74,7 @@ export class BeerService {
   }
 
 
-  updateShopItem(beerId: number, updatedData: any): Observable<any> {
+  updateShopItem(beerId: number|undefined, updatedData: any): Observable<any> {
     return this.http.put(`${this.apiUrlShop}/${beerId}`, updatedData);
   }
 
