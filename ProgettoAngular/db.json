@@ -21,27 +21,18 @@
       "name": "Calogero",
       "surname": "Teresi",
       "id": 3
-    }
-  ],
-  "cart": [],
-  "wishlist": [
-    {
-      "beerId": 1,
-      "userId": 1,
-      "id": 1
     },
     {
-      "email": "admin@admin.com",
-      "password": "$2a$10$b3SHNLVWUs5RKVpU7msmF.q38tqtvOpO/MfGdJOv798mi7JEq6a7C",
+      "email": "lorenzoneroni13@gmail.com",
+      "password": "$2a$10$pKSaNu5njvmqtJ59kf0UR.4hURSaCiXcr3eit9B9ZarIvfFPfyWqO",
       "name": "Lorenzo",
       "surname": "Neroni",
+      "admin": false,
       "id": 4
     }
   ],
   "cart": [],
-  "wishlist": [
-
-  ],
+  "wishlist": [],
   "shop": [],
   "beers": [
     {
