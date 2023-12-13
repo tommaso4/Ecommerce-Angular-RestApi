@@ -15,6 +15,9 @@ import { PaymentComponent } from './components/payment/payment.component';
 import { BancomatComponent } from './components/payment/bancomat/bancomat.component';
 import { PaypalComponent } from './components/payment/paypal/paypal.component';
 import { TransferComponent } from './components/payment/transfer/transfer.component';
+import { RimborsiComponent } from './components/rimborsi/rimborsi.component';
+import { ServizioClientiComponent } from './components/servizioclienti/servizioclienti.component';
+import { SpedizioniComponent } from './components/spedizioni/spedizioni.component';
 
 
 
@@ -39,6 +42,12 @@ const routes: Routes = [
   canActivate:[LogGuard]},
   { path: 'edit/:id', component: EditComponent },
   { path: '**', component:PAGES404Component},
+  { path: 'wishlist', component: WhishlistComponent },
+  { path: 'rimborsi', component: RimborsiComponent },
+  { path: 'servizioclienti', component: ServizioClientiComponent },
+  { path: 'spedizioni', component: SpedizioniComponent }
+
+
 
 ];
 @NgModule({

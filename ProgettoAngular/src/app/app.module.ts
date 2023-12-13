@@ -1,3 +1,4 @@
+import { ServizioClientiComponent } from './components/servizioclienti/servizioclienti.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -28,6 +29,12 @@ import { PaymentComponent } from './components/payment/payment.component';
 import { TransferComponent } from './components/payment/transfer/transfer.component';
 import { PaypalComponent } from './components/payment/paypal/paypal.component';
 import { BancomatComponent } from './components/payment/bancomat/bancomat.component';
+import { RimborsiComponent } from './components/rimborsi/rimborsi.component';
+import { SpedizioniComponent } from './components/spedizioni/spedizioni.component';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -52,7 +59,10 @@ import { BancomatComponent } from './components/payment/bancomat/bancomat.compon
     PaymentComponent,
     TransferComponent,
     PaypalComponent,
-    BancomatComponent
+    BancomatComponent,
+    SpedizioniComponent,
+    RimborsiComponent,
+    ServizioClientiComponent,
   ],
   imports: [
     BrowserModule,
