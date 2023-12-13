@@ -1,13 +1,12 @@
-
-<div class="d-flex flex-wrap m-1 gap-1">
+<div class="d-flex flex-wrap justify-content-center">
   <div *ngFor="let birra of beer">
-    <div class="card">
+    <div class="card d-flex justify-content-end">
       <img [src]="birra.urlImmagine || 'https://images.punkapi.com/v2/keg.png'" class="card__img" alt="beer image">
       <div class="card__data">
-        <h2>{{ birra.nome }}</h2>
-        <p class="card__data--title">{{ birra.descrizione }}</p>
-        <h5 class="card__data--text">ABV: {{ birra.abv }}</h5>
-        <h5 class="card__data--text">Price: {{ birra.prezzo | currency:'EUR' }}</h5>
+        <h5 class="card__data--title">{{ birra.nome }}</h5>
+        <p  class="card__data--text desc">{{ birra.descrizione }}</p>
+        <h5 class="card__data--text"><strong>Vol:</strong> {{ birra.abv | percent }}</h5>
+        <h5 class="card__data--text"><strong>Price:</strong> {{ birra.prezzo | currency:'EUR' }}</h5>
       </div>
     </div>
   </div>
