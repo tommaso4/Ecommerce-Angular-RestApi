@@ -1,6 +1,6 @@
 
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
 import { Observable, catchError, map, mergeMap, tap, throwError } from 'rxjs';
 import { environment } from '../../environments/environment.development';
 import { Ibeer } from '../Modules/ibeer';
@@ -30,9 +30,20 @@ export class BeerService {
     }
   }
 
-  getShop(): Observable<IShop[]> {
-    return this.http.get<IShop[]>(this.apiUrlShop);
+
+
+  getShop(id: number): Observable<any> {
+    let params = new HttpParams().set('userId', id.toString()); // Converte l'ID in una stringa
+
+    return this.http.get<IShop>(this.apiUrlShop, { params }).pipe(
+      catchError(this.errorHandler)
+    );
   }
+
+  errorHandler(error: HttpErrorResponse): Observable<never> {
+    return throwError(() => error);
+  }
+
 
 
   setBeerName(name: string): void {

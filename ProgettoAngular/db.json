@@ -29,6 +29,14 @@
       "surname": "Cantarini",
       "admin": false,
       "id": 4
+    },
+    {
+      "email": "mario@rossi.it",
+      "password": "$2a$10$yEvLFToQ7YSH3hDb7Y8efej9PsKHwL6naxszLjPFSMKYSI1AUVDSe",
+      "name": "Mario",
+      "surname": "Rossi",
+      "admin": false,
+      "id": 5
     }
   ],
   "wishlist": [
@@ -39,13 +47,13 @@
   ],
   "shop": [
     {
-      "nameBeer": "Buzz",
-      "beerId": 1,
-      "numberBeer": 11,
+      "nameBeer": "Trashy Blonde",
+      "beerId": 2,
+      "numberBeer": 12,
+      "userId": 3,
       "id": 1
     }
   ],
-  "shop": [],
   "beers": [
     {
       "id": 1,

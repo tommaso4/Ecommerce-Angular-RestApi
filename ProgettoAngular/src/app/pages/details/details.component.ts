@@ -39,10 +39,13 @@ export class DetailsComponent {
       }
     });
 
-    this.LSS.user$.subscribe((user:IUserAuth|null)=>{
-      this.isLogged=!!user;
-    })
-    this.fetchShop();
+    this.LSS.user$.subscribe((user: IUserAuth | null) => {
+      this.isLogged = !!user;
+      if (user && user.user.id) {
+        const userId = Number(user.user.id); // Ottieni l'ID dell'utente da LSS.user$
+        this.fetchShop(userId); // Passa l'ID dell'utente a fetchShop() per ottenere le birre associate a quell'utente
+      }
+    });
   }
 
   getBeerDetails(): void {
@@ -80,18 +83,21 @@ export class DetailsComponent {
           nameBeer: this.beer.nome,
           beerId: this.beer.id,
           numberBeer: numberBeerToUpdate,
+          userId: accessData.user.id
         }).subscribe((data: any) => {
           console.log('Birra aggiornata:', data);
-          this.fetchShop();
+          this.fetchShop(Number(accessData.user.id));
+
         });
       } else {
         this.beerService.addToShop(Number(accessData.user.id), {
           nameBeer: this.beer.nome,
           beerId: this.beer.id,
-          numberBeer: 1 // Poiché è la prima volta che viene aggiunta la birra
+          numberBeer: 1
         }).subscribe((data: any) => {
           console.log('Birra creata:', data);
-          this.fetchShop();
+          this.fetchShop(Number(accessData.user.id));
+
         });
       }
     });
@@ -104,10 +110,10 @@ export class DetailsComponent {
 
 
 
-  fetchShop(): void {
-    this.beerService.getShop().subscribe({
-      next: (data: any[]) => {
-        this.allItem = data;
+  fetchShop(userId: number): void {
+    this.beerService.getShop(userId).subscribe({
+      next: (data:any) => {
+        this.allItem = data; // Assegna l'array di IShop alla variabile allItem
         console.log('Tutte le birre presenti nello shop:', this.allItem);
       },
       error: (error) => {
@@ -115,6 +121,9 @@ export class DetailsComponent {
       }
     });
   }
+
+
+
 
   addToWish(beerid:number):void{
     this.LSS.user$.subscribe(accessData=>{
