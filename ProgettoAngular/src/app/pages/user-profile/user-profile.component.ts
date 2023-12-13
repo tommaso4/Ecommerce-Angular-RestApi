@@ -47,6 +47,11 @@ export class UserProfileComponent {
   }
 
   toggleAdminMode(){
+    if(this.adminSwitch){
+
+    }else{
+
+    }
 
   }
 
