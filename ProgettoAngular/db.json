@@ -1,25 +1,94 @@
 {
   "users": [
     {
-      "email": "tommasocantarini4@gmail.com",
-      "password": "$2a$10$41Qng172sV8KXKhSOtDflutVh/9IB2aEOrSsax.odH3Vso72ZtNs2",
-      "name": "Tommaso",
-      "surname": "Cantarini",
+      "email": "emilio.plances@gmail.com",
+      "password": "$2a$10$De8RUbneFkmQ5rIjQ48mJOh9xheYH8143PriRgU3brIwiPBG5L1YK",
+      "name": "Emilio",
+      "surname": "Plances",
+      "admin": false,
+      "id": 1
+    }
+  ],
+  "wishlist": [
+    {
+      "beerId": 1,
+      "userId": 1,
       "id": 1
     },
     {
-      "email": "simo@gmail.com",
-      "password": "$2a$10$1RV5tg4bEJuRYFp745fg8erdHHe.PGsx/pNM6xm3.Lp0LxCXsjC52",
-      "name": "simo",
-      "surname": "aimo",
+      "beerId": 2,
+      "userId": 1,
       "id": 2
     },
     {
-      "email": "caloteresi@gmail.com",
-      "password": "$2a$10$LEKJUJqxKRIl4vwXaEVq2uoSoZ0SWoBx.y6xHYGmKunhSdk0rvHDi",
-      "name": "Calogero",
-      "surname": "Teresi",
+      "beerId": 1,
+      "userId": 1,
       "id": 3
+    },
+    {
+      "beerId": 1,
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "beerId": 1,
+      "userId": 2,
+      "id": 5
+    },
+    {
+      "beerId": 2,
+      "userId": 2,
+      "id": 6
+    },
+    {
+      "beerId": 3,
+      "userId": 2,
+      "id": 7
+    },
+    {
+      "beerId": 8,
+      "userId": 2,
+      "id": 8
+    },
+    {
+      "beerId": 7,
+      "userId": 2,
+      "id": 9
+    },
+    {
+      "beerId": 3,
+      "userId": 1,
+      "id": 10
+    },
+    {
+      "beerId": 4,
+      "userId": 1,
+      "id": 11
+    },
+    {
+      "beerId": 5,
+      "userId": 1,
+      "id": 12
+    },
+    {
+      "beerId": 13,
+      "userId": 1,
+      "id": 13
+    },
+    {
+      "beerId": 14,
+      "userId": 1,
+      "id": 14
+    },
+    {
+      "beerId": 15,
+      "userId": 1,
+      "id": 15
+    },
+    {
+      "beerId": 17,
+      "userId": 3,
+      "id": 16
     }
   ],
   "shop": [
@@ -43959,18 +44028,6 @@
       "brewersTips": "Saphir hops are not widespread at the moment if you cannot get hold of any, a good batch of Mittlefruh is a fair substitute.",
       "contribuitoDa": "John Jenkman <johnjenkman>",
       "prezzo": 8.9
-    }
-  ],
-  "wishlist": [
-    {
-      "beerId": 1,
-      "userId": 1,
-      "id": 1
-    },
-    {
-      "beerId": 4,
-      "userId": 1,
-      "id": 2
     }
   ]
 }

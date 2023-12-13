@@ -1,10 +1,11 @@
-import { BeerService } from '../../services/beer.service';
+
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Ibeer } from '../../Modules/ibeer';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { LogSystemService } from '../../services/log-system.service';
 import { take } from 'rxjs';
+import { BeerService } from '../../services/beer.service';
 
 @Component({
   selector: 'app-edit',
