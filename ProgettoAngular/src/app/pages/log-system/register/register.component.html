@@ -1,11 +1,10 @@
-<div class="container bg-white">
+<div class="container userTab">
   <form [formGroup]="form">
     <div>
       <label for="name">Nome:</label>
       <input class="form-control" type="text" id="name" formControlName="name" >
     </div>
     <div *ngIf="isValidAndTouched('name')" class="alert alert-warning">Non è un nome valido</div>
-
     <div>
       <label for="surname">Cognome:</label>
       <input class="form-control" type="text" id="surname" formControlName="surname">
@@ -43,7 +42,7 @@
     </div>
     <p>Sei già registrato?<a routerLink="/LogSystem/login">Accedi!</a></p>
 
-    <button [disabled]="!form.valid" class="btn btn-primary mt-3" (click)="submit()">Registrati</button>
+    <button [disabled]="!form.valid" class="mt-1 p-1" (click)="submit()">Registrati</button>
   </form>
   <div *ngIf="loading">Caricamento...</div>
 </div>

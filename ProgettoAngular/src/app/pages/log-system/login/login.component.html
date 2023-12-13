@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container userTab">
   <form [formGroup]="form">
     <div>
       <label for="email">Email:</label>
@@ -12,7 +12,7 @@
     <div *ngIf="notExist">Questa email non è associata ad un account</div>
     <div *ngIf="failedLogin">Email o Password sbagliata</div>
     <p>Non sei ancora registrato?<a routerLink="/LogSystem/register">Registrati!</a></p>
-    <button [disabled]="!form.valid" class="btn btn-primary mt-3" (click)="submit()">Accedi</button>
+    <button [disabled]="!form.valid" class="mt-3 p-1" (click)="submit()">Accedi</button>
   </form>
   <div *ngIf="loading">Caricamento...</div>
 </div>
