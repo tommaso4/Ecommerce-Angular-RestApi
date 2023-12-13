@@ -7,8 +7,6 @@
       "surname": "Plances",
       "admin": false,
       "id": 1
-<<<<<<< HEAD
-=======
     },
     {
       "email": "simo@gmail.com",
@@ -23,6 +21,14 @@
       "name": "Calogero",
       "surname": "Teresi",
       "id": 3
+    }
+  ],
+  "cart": [],
+  "wishlist": [
+    {
+      "beerId": 1,
+      "userId": 1,
+      "id": 1
     },
     {
       "email": "admin@admin.com",
@@ -30,11 +36,11 @@
       "name": "Lorenzo",
       "surname": "Neroni",
       "id": 4
->>>>>>> 66bf6b500fd1916123bcec86fac0ba9bf9fc7bc3
     }
   ],
+  "cart": [],
   "wishlist": [
-    
+
   ],
   "shop": [],
   "beers": [
