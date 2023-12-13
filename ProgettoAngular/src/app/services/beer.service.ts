@@ -9,11 +9,12 @@ import { IShop } from '../Modules/ishop';
 @Injectable({
   providedIn: 'root'
 })
+
 export class BeerService {
-  private apiUrl = environment.apiUrl ;
-  private api = environment.API ;
+  private apiUrl = environment.apiUrl;
+  private api = environment.API;
   beerName: string = ""
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   getBeers(): Observable<Ibeer[]> {
     return this.http.get<Ibeer[]>(this.apiUrl);
@@ -34,29 +35,23 @@ export class BeerService {
       numberBeerToSend = beer.numberBeer;
     }
     return this.http
-    .post('http://localhost:3000/shop',
-    {
-      userId: userId,
-      nameBeer: beer.nameBeer,
-      beerId: beer.beerId,
-      numberBeer: numberBeerToSend
+      .post('http://localhost:3000/shop',
+        {
+          userId: userId,
+          nameBeer: beer.nameBeer,
+          beerId: beer.beerId,
+          numberBeer: numberBeerToSend
 
-    }).pipe()
-    .subscribe((data: any) => {
-      console.log(data);
-      return data;
-    });
-}
-
-
-
-
-
+        }).pipe()
+      .subscribe((data: any) => {
+        console.log(data);
+        return data;
+      });
+  }
 
   setBeerName(name: string): void {
     this.beerName = name;
   }
-
 
   updateBeer(beerId: number, updatedBeer: Ibeer): Observable<Ibeer> {
     const url = `${this.apiUrl}/${beerId}`;
@@ -69,33 +64,33 @@ export class BeerService {
 
   getRedBeer(): Observable<Ibeer[]> {
     return this.http.get<Ibeer[]>(this.apiUrl)
-    .pipe(map((beer:Ibeer[]) => {
-      const birrerosse = beer.filter(birra => birra.ebc > 20 || birra.srm > 10);
-      return birrerosse;
-    })
-    );
+      .pipe(map((beer: Ibeer[]) => {
+        const birrerosse = beer.filter(birra => birra.ebc > 20 || birra.srm > 10);
+        return birrerosse;
+      })
+      );
   }
+
   getBlondBeer(): Observable<Ibeer[]> {
     return this.http.get<Ibeer[]>(this.apiUrl)
-    .pipe(map((beer:Ibeer[]) => {
-      const birrerosse = beer.filter(birra => birra.ebc < 10);
-      return birrerosse;
-    })
-    );
+      .pipe(map((beer: Ibeer[]) => {
+        const birrerosse = beer.filter(birra => birra.ebc < 10);
+        return birrerosse;
+      })
+      );
   }
+
   getWhiteBeer(): Observable<Ibeer[]> {
     return this.http.get<Ibeer[]>(this.apiUrl)
-    .pipe(map((beer:Ibeer[]) => {
-      const birrerosse = beer.filter(birra => birra.srm < 5);
-      return birrerosse;
-    })
-    );
+      .pipe(map((beer: Ibeer[]) => {
+        const birrerosse = beer.filter(birra => birra.srm < 5);
+        return birrerosse;
+      })
+      );
   }
 
-    addToWishList(beerId: number,userId:string): Observable<{id:number,beerId:number,userId:number}> {
-      return this.http.post<{id:number,beerId:number,userId:number}>(this.api+'/wishlist',{beerId:beerId,userId:userId});
-
-
-    }
+  addToWishList(beerId: number, userId: string): Observable<{ id: number, beerId: number, userId: number }> {
+    return this.http.post<{ id: number, beerId: number, userId: number }>(this.api + '/wishlist', { beerId: beerId, userId: userId });
+  }
 
 }
