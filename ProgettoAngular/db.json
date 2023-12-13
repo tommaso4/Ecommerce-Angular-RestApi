@@ -1,6 +1,7 @@
 {
   "users": [
     {
+<<<<<<< HEAD
       "email": "tommasocantarini4@gmail.com",
       "password": "$2a$10$41Qng172sV8KXKhSOtDflutVh/9IB2aEOrSsax.odH3Vso72ZtNs2",
       "name": "Tommaso",
@@ -27,6 +28,119 @@
       "volume": {
         "valore": 20,
         "unità": "litres"
+=======
+      "email": "prova@gmail.com",
+      "password": "$2a$10$ddg0bWKpQpKnrK.li96tFO5vDDPLofMWcQUZRI7rhRXeAySbbxnuq",
+      "name": "prova",
+      "surname": "prova",
+      "id": 1
+    },
+    {
+      "email": "simo@gmail.com",
+      "password": "$2a$10$1RV5tg4bEJuRYFp745fg8erdHHe.PGsx/pNM6xm3.Lp0LxCXsjC52",
+      "name": "simo",
+      "surname": "aimo",
+      "id": 2
+    }
+  ],
+  "cart": [],
+  "wishlist": [
+    {
+      "beerId": 1,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "beerId": 2,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "beerId": 1,
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "beerId": 1,
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "beerId": 1,
+      "userId": 2,
+      "id": 5
+    },
+    {
+      "beerId": 2,
+      "userId": 2,
+      "id": 6
+    },
+    {
+      "beerId": 3,
+      "userId": 2,
+      "id": 7
+    },
+    {
+      "beerId": 8,
+      "userId": 2,
+      "id": 8
+    },
+    {
+      "beerId": 7,
+      "userId": 2,
+      "id": 9
+    },
+    {
+      "beerId": 3,
+      "userId": 1,
+      "id": 10
+    },
+    {
+      "beerId": 4,
+      "userId": 1,
+      "id": 11
+    },
+    {
+      "beerId": 5,
+      "userId": 1,
+      "id": 12
+    },
+    {
+      "beerId": 13,
+      "userId": 1,
+      "id": 13
+    },
+    {
+      "beerId": 14,
+      "userId": 1,
+      "id": 14
+    },
+    {
+      "beerId": 15,
+      "userId": 1,
+      "id": 15
+    }
+  ],
+  "shop": [
+    {
+      "id": 1,
+      "nome": "Buzz",
+      "slogan": "A Real Bitter Experience.",
+      "primaProduzione": "09/2007",
+      "descrizione": "A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.",
+      "urlImmagine": "https://images.punkapi.com/v2/keg.png",
+      "abv": 4.5,
+      "ibu": 60,
+      "targetFg": 1010,
+      "targetOg": 1044,
+      "ebc": 20,
+      "srm": 10,
+      "ph": 4.4,
+      "volume": {
+        "valore": 20,
+        "unità": "litres",
+        "tipologia": "rossa"
+>>>>>>> b484bd82aacf089d2d36a2d76bee30de95c44fed
       },
       "volumeBollire": {
         "valore": 25,
@@ -36,15 +150,26 @@
         "mashTemp": [
           {
             "temp": {
+<<<<<<< HEAD
               "valore": 69,
               "unità": "celsius"
             },
             "durata": null
+=======
+              "valore": 64,
+              "unità": "celsius"
+            },
+            "durata": 75
+>>>>>>> b484bd82aacf089d2d36a2d76bee30de95c44fed
           }
         ],
         "fermentazione": {
           "temp": {
+<<<<<<< HEAD
             "valore": 18,
+=======
+            "valore": 19,
+>>>>>>> b484bd82aacf089d2d36a2d76bee30de95c44fed
             "unità": "celsius"
           }
         },
@@ -55,7 +180,11 @@
           {
             "nome": "Maris Otter Extra Pale",
             "quantità": {
+<<<<<<< HEAD
               "valore": 3.25,
+=======
+              "valore": 3.3,
+>>>>>>> b484bd82aacf089d2d36a2d76bee30de95c44fed
               "unità": "kilograms"
             }
           },
@@ -76,24 +205,37 @@
         ],
         "luppolo": [
           {
+<<<<<<< HEAD
             "nome": "Amarillo",
             "quantità": {
               "valore": 13.8,
+=======
+            "nome": "Fuggles",
+            "quantità": {
+              "valore": 25,
+>>>>>>> b484bd82aacf089d2d36a2d76bee30de95c44fed
               "unità": "grams"
             },
             "aggiungi": "start",
             "attributo": "bitter"
           },
           {
+<<<<<<< HEAD
             "nome": "Simcoe",
             "quantità": {
               "valore": 13.8,
+=======
+            "nome": "First Gold",
+            "quantità": {
+              "valore": 25,
+>>>>>>> b484bd82aacf089d2d36a2d76bee30de95c44fed
               "unità": "grams"
             },
             "aggiungi": "start",
             "attributo": "bitter"
           },
           {
+<<<<<<< HEAD
             "nome": "Amarillo",
             "quantità": {
               "valore": 26.3,
@@ -106,6 +248,29 @@
             "nome": "Motueka",
             "quantità": {
               "valore": 18.8,
+=======
+            "nome": "Fuggles",
+            "quantità": {
+              "valore": 37.5,
+              "unità": "grams"
+            },
+            "aggiungi": "middle",
+            "attributo": "flavour"
+          },
+          {
+            "nome": "First Gold",
+            "quantità": {
+              "valore": 37.5,
+              "unità": "grams"
+            },
+            "aggiungi": "middle",
+            "attributo": "flavour"
+          },
+          {
+            "nome": "Cascade",
+            "quantità": {
+              "valore": 37.5,
+>>>>>>> b484bd82aacf089d2d36a2d76bee30de95c44fed
               "unità": "grams"
             },
             "aggiungi": "end",
@@ -115,6 +280,7 @@
         "lievito": "Wyeast 1056 - American Ale™"
       },
       "abbinamentoCibo": [
+<<<<<<< HEAD
         "Fresh crab with lemon",
         "Garlic butter dipping sauce",
         "Goats cheese salad",
@@ -123,6 +289,15 @@
       "brewersTips": "Be careful not to collect too much wort from the mash. Once the sugars are all washed out there are some very unpleasant grainy tasting compounds that can be extracted into the wort.",
       "contribuitoDa": "Sam Mason <samjbmason>",
       "prezzo": 4.19
+=======
+        "Spicy chicken tikka masala",
+        "Grilled chicken quesadilla",
+        "Caramel toffee cake"
+      ],
+      "brewersTips": "The earthy and floral aromas from the hops can be overpowering. Drop a little Cascade in at the end of the boil to lift the profile with a bit of citrus.",
+      "contribuitoDa": "Sam Mason <samjbmason>",
+      "prezzo": 4.5
+>>>>>>> b484bd82aacf089d2d36a2d76bee30de95c44fed
     }
   ],
   "beers": [

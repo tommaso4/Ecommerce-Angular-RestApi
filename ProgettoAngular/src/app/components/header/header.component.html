@@ -1,0 +1,24 @@
+<div class="header d-flex justify-content-between align-items-center">
+<div class="d-flex align-items-center">
+  <div class="d-flex logo-container rounded ">
+    <a routerLink="home" routerLinkActive="router-link-active">
+      <img src="/assets/img/logo1.png" alt="logo" class="logo rounded"
+    /></a>
+  </div>
+
+  <div class="d-flex align-items-center">
+    <a routerLink="/home">HOME</a>
+    <a routerLink="/whitebeer">White Beer</a>
+    <a routerLink="/redbeer">Red Beer</a>
+    <a *ngIf="isLogged" routerLink="/wishlist">Wish List</a>
+  </div>
+</div>
+
+
+  <div>
+    <a routerLink="userprofile">Profilo</a>
+    <fa-icon [icon]="['far','user']" class="paginate-button__icon h3 log-in-icon"></fa-icon>
+    <a routerLink="/LogSystem">LogIn</a>
+
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="d-flex flex-wrap m-1 gap-1">
+  <div *ngFor="let item of Whishlist">
+    <div class="card">
+      <img [src]="item.beer?.urlImmagine" class="card__img" alt="beer image">
+      <div class="card__data">
+        <h2>{{ item.beer?.nome }}</h2>
+        <p class="card__data--title">{{ item.beer?.descrizione }}</p>
+        <h5 class="card__data--text">ABV: {{ item.beer?.abv }}</h5>
+        <h5 class="card__data--text">Price: {{ item.beer?.prezzo | currency:'EUR' }}</h5>
+      </div>
+    </div>
+  </div>
+</div>
