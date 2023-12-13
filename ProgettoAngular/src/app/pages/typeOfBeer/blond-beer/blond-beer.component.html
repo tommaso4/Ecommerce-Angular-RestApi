@@ -8,6 +8,7 @@
         <h5 class="card__data--text"><strong>Vol:</strong> {{ birra.abv | percent }}</h5>
         <h5 class="card__data--text"><strong>Price:</strong> {{ birra.prezzo | currency:'EUR' }}</h5>
       </div>
+      <button (click)="addToWish(birra.id)" class="mb-3">WISH</button>
     </div>
   </div>
 </div>
