@@ -34,6 +34,8 @@ export class RegisterComponent {
 
   submit(){
     this.loading=true;
+    this.form.value.admin=false;
+
     delete this.form.value.confirmPassword;
 
     this.LSS.register(this.form.value).pipe(tap(()=>{

@@ -4,4 +4,5 @@ export interface IUser {
   surname:string;
   email:string;
   password:string;
+  admin:boolean;
 }
