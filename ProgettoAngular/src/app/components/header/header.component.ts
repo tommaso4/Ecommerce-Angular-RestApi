@@ -8,4 +8,14 @@ import { IUserAuth } from '../../Modules/iuser-auth';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+
+  isLogged = false;
+  constructor(private LSS:LogSystemService) { }
+  ngOnInit(){
+    console.log('ciao');
+
+    this.LSS.user$.subscribe((user:IUserAuth|null)=>{
+      this.isLogged=!!user
+    })
+  }
 }
