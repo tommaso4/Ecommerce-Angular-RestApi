@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Ibeer } from '../../Modules/ibeer';
-import { BeerService } from '../../services/beer.service';
+import { Ibeer } from '../../../Modules/ibeer';
+import { BeerService } from '../../../services/beer.service';
 
 @Component({
   selector: 'app-red-beer',

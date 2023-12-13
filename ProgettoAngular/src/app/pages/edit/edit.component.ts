@@ -1,4 +1,4 @@
-import { BeerService } from './../../core/services/beer.service';
+import { BeerService } from '../../services/beer.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Ibeer } from '../../Modules/ibeer';
@@ -24,7 +24,6 @@ export class EditComponent implements OnInit {
     id: [''],
     nome: [''],
     slogan: [''],
-    // ... altri campi corrispondenti alle proprietà dell'oggetto Ibeer
     prezzo: ['']
   });}
 
@@ -44,7 +43,7 @@ export class EditComponent implements OnInit {
     this.beerService.getBeerById(this.beerId).subscribe({
       next: (beer: Ibeer) => {
         this.beer = beer;
-        this.populateForm(); // Aggiorna il form con i dettagli della birra recuperati
+        this.populateForm();
       },
       error: (error) => {
         console.error('Errore nel recupero dei dettagli della birra:', error);

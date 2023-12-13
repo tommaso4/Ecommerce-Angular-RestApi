@@ -1,7 +1,7 @@
 <div class="d-flex flex-wrap m-1 gap-1">
   <div *ngFor="let birra of beer">
     <div class="card">
-      <img [src]="birra.urlImmagine" class="card__img" alt="beer image">
+      <img [src]="birra.urlImmagine || 'https://images.punkapi.com/v2/keg.png'" class="card__img" alt="beer image">
       <div class="card__data">
         <h2>{{ birra.nome }}</h2>
         <p class="card__data--title">{{ birra.descrizione }}</p>
@@ -11,3 +11,4 @@
     </div>
   </div>
 </div>
+

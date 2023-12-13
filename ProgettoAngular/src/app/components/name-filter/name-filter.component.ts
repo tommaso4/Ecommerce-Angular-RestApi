@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { BeerService } from '../../../core/services/beer.service';
+import { BeerService } from '../../services/beer.service';
 
 @Component({
   selector: 'app-name-filter',

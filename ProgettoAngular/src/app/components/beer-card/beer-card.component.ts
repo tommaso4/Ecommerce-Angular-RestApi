@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { Ibeer } from '../../../Modules/ibeer';
+import { Ibeer } from '../../Modules/ibeer';
 
 
 @Component({

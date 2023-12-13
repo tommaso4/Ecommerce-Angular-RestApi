@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { BeerService } from '../../services/beer.service';
-import { Ibeer } from '../../Modules/ibeer';
+import { BeerService } from '../../../services/beer.service';
+import { Ibeer } from '../../../Modules/ibeer';
+import { PaginatorService } from '../../../services/paginator.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-white-beer',
@@ -10,7 +12,11 @@ import { Ibeer } from '../../Modules/ibeer';
 export class WhiteBeerComponent {
   beer:Ibeer[] = [];
 
-  constructor(private beerSvc:BeerService){}
+  constructor(
+    private beerSvc: BeerService,
+    private paginatorService: PaginatorService,
+    private router: Router
+  ) {}
 
   ngOnInit(){
     this.InBirreWhite();

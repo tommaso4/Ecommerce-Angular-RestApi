@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { BeerService } from '../../core/services/beer.service';
+import { BeerService } from '../../services/beer.service';
 import { Ibeer } from '../../Modules/ibeer';
 
 
