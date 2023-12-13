@@ -3,10 +3,10 @@
     <div class="card d-flex justify-content-end">
       <img [src]="birra.urlImmagine || 'https://images.punkapi.com/v2/keg.png'" class="card__img" alt="beer image">
       <div class="card__data">
-        <h2>{{ birra.nome }}</h2>
-        <p class="card__data--title">{{ birra.descrizione }}</p>
-        <h5 class="card__data--text">Vol: {{ birra.abv | percent }}</h5>
-        <h5 class="card__data--text">Price: {{ birra.prezzo | currency:'EUR' }}</h5>
+        <h4 class="card__data--title">{{ birra.nome }}</h4>
+        <div  class="card__data--text desc">{{ birra.descrizione }}</div>
+        <h5 class="card__data--text"><strong>Vol:</strong> {{ birra.abv | percent }}</h5>
+        <h5 class="card__data--text"><strong>Price:</strong> {{ birra.prezzo | currency:'EUR' }}</h5>
       </div>
     </div>
   </div>
