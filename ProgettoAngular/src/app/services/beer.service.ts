@@ -81,7 +81,8 @@ export class BeerService {
           nameBeer: beer.nameBeer,
           beerId: beer.beerId,
           numberBeer: numberBeerToSend,
-          price: beer.price
+          price: beer.price,
+          img: beer.img
         })
   }
 

@@ -48,44 +48,40 @@
   ],
   "shop": [
     {
-      "nameBeer": "Trashy Blonde",
-      "beerId": 2,
-      "numberBeer": 3,
+      "nameBeer": "Buzz",
+      "beerId": 1,
+      "numberBeer": 5,
       "userId": 3,
-      "price": 4.19,
+      "price": 4.5,
+      "img": "https://images.punkapi.com/v2/keg.png",
       "id": 1
     },
     {
-      "nameBeer": "Buzz",
-      "beerId": 1,
+      "nameBeer": "Trashy Blonde",
+      "beerId": 2,
       "numberBeer": 6,
       "userId": 3,
-      "price": 4.5,
+      "price": 4.19,
+      "img": "https://images.punkapi.com/v2/2.png",
       "id": 2
     },
     {
+      "userId": 3,
       "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
       "beerId": 3,
-      "numberBeer": 13,
-      "userId": 3,
+      "numberBeer": 1,
       "price": 9.68,
+      "img": "https://images.punkapi.com/v2/keg.png",
       "id": 3
     },
     {
       "nameBeer": "Pilsen Lager",
       "beerId": 4,
-      "numberBeer": 3,
+      "numberBeer": 4,
       "userId": 3,
       "price": 4.68,
+      "img": "https://images.punkapi.com/v2/4.png",
       "id": 4
-    },
-    {
-      "nameBeer": "Electric India",
-      "beerId": 6,
-      "numberBeer": 2,
-      "userId": 3,
-      "price": 4.49,
-      "id": 5
     },
     {
       "userId": 3,
@@ -93,7 +89,44 @@
       "beerId": 5,
       "numberBeer": 1,
       "price": 8.82,
+      "img": "https://images.punkapi.com/v2/5.png",
+      "id": 5
+    },
+    {
+      "userId": 3,
+      "nameBeer": "Storm",
+      "beerId": 23,
+      "numberBeer": 1,
+      "price": 5,
+      "img": "https://images.punkapi.com/v2/23.png",
       "id": 6
+    },
+    {
+      "userId": 3,
+      "nameBeer": "The End Of History",
+      "beerId": 24,
+      "numberBeer": 1,
+      "price": 8.77,
+      "img": "https://images.punkapi.com/v2/24.png",
+      "id": 7
+    },
+    {
+      "nameBeer": "Baby Saison - B-Sides",
+      "beerId": 84,
+      "numberBeer": 4,
+      "userId": 3,
+      "price": 8.62,
+      "img": "https://images.punkapi.com/v2/keg.png",
+      "id": 8
+    },
+    {
+      "nameBeer": "Small Batch: Rye IPA",
+      "beerId": 250,
+      "numberBeer": 4,
+      "userId": 3,
+      "price": 4.59,
+      "img": "https://images.punkapi.com/v2/keg.png",
+      "id": 9
     }
   ],
   "beers": [
