@@ -67,7 +67,7 @@ export class EditProfileComponent {
     if(formC.value!=this.form?.get(`password`)?.value){
       return {
         invalid: true,
-        message: 'Le password sono diverse!!'
+        message: `Passwords don't match`
       }
     }
     return null;
@@ -113,7 +113,7 @@ export class EditProfileComponent {
         Swal.fire({
           position: "top-end",
           icon: "success",
-          title: "Ora sei un amministratore",
+          title: "Now you are an admin",
           showConfirmButton: false,
           timer: 3000
         });

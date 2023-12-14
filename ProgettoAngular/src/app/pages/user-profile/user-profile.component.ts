@@ -45,7 +45,7 @@ export class UserProfileComponent {
           Swal.fire({
             position: "top-end",
             icon: "success",
-            title: `Account eliminato! Alla prossima ${this.user?.name}! Ci dispiace vederti andare via!`,
+            title: `Account deleted! See you next time ${this.user?.name}! We're sorry to see you're going!`,
             showConfirmButton: false,
             timer: 3000
           }).then(()=>this.logOut());
@@ -58,13 +58,6 @@ export class UserProfileComponent {
   }
 
   cancelDelete(){
-    Swal.fire({
-      position: "top-end",
-      icon: "success",
-      title: "Account eliminato! Alla prossima "+this.user?.name+" Ci dispiace vederti andare via!",
-      showConfirmButton: false,
-      timer: 1500
-    });
     this.deleting=false;
   }
 }

@@ -22,14 +22,10 @@ export class CartComponent {
   totalCart: number = 0;
 
 
-
-
   constructor
   (private beerSvc: BeerService,
    private LSS: LogSystemService,
    private cartSvc: CartService){}
-
-
 
   ngOnInit(): void {
     this.LSS.user$.subscribe((user: IUserAuth | null) => {
@@ -39,7 +35,6 @@ export class CartComponent {
       this.fetchShop(this.userId);
     });
   }
-
 
   totalsCart(){
     this.allItem.forEach(item => {this.totalCart += item.totalPrice})
@@ -95,9 +90,19 @@ export class CartComponent {
     }
   }
 
-
   calculateTotalCart() {
     this.totalCart = this.allItem.reduce((total, item) => total + item.totalPrice, 0);
+  }
+
+  delateItemCart(itemId?: number) {
+    if (itemId !== undefined) {
+      this.cartSvc.deleteCart(itemId).subscribe(() => {
+        this.allItem = this.allItem.filter(item => item.id !== itemId);
+        this.calculateTotalCart();
+      });
+    } else {
+      console.error('itemId è undefined. Impossibile eliminare l\'elemento.');
+    }
   }
 
   }

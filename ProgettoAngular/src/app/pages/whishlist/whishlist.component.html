@@ -1,15 +1,15 @@
-<div class="d-flex flex-wrap m-1 gap-1">
+<div class="d-flex flex-wrap justify-content-center">
   <div *ngFor="let item of Whishlist">
-    <div class="card">
+    <div class="card justify-content-end">
       <img [src]="item.beer?.urlImmagine" class="card__img" alt="beer image">
       <div class="card__data">
-        <h2>{{ item.beer?.nome }}</h2>
-        <p class="card__data--title">{{ item.beer?.descrizione }}</p>
-        <h5 class="card__data--text">ABV: {{ item.beer?.abv }}</h5>
-        <h5 class="card__data--text">Price: {{ item.beer?.prezzo | currency:'EUR' }}</h5>
-        <app-add-to-shop *ngIf="item.beer" [beer]="item.beer"></app-add-to-shop>
-        <button (click)="removeBerrWish(item.id)">REMOVE</button>
-        {{item.id}}
+        <h5 class="card__data--title">{{ item.beer?.nome }}</h5>
+        <p class="card__data--text desc">{{ item.beer?.descrizione }}</p>
+        <h5 class="card__data--text"><strong>Vol:</strong> {{ item.beer?.abv }}</h5>
+        <h5 class="card__data--text"><strong>Price:</strong> {{ item.beer?.prezzo | currency:'EUR' }}</h5>
+        <h5 class="card__data--text"><strong>L'id dellla birra è:</strong> {{item.id}}</h5>
+        <app-add-to-shop class="shop" *ngIf="item.beer" [beer]="item.beer"></app-add-to-shop>
+        <button class="wish" (click)="removeBerrWish(item.id)">REMOVE</button>
       </div>
     </div>
   </div>
