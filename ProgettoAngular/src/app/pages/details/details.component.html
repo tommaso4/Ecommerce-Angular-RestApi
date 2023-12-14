@@ -10,7 +10,7 @@
           <h5 class="px-3">{{beer.descrizione}}</h5>
           <div class="d-flex  align-items-baseline detFoot ms-3 mt-3">
             <button *ngIf="isLogged" (click)="addToWish(beer.id)">WISH</button>
-            <button *ngIf="isLogged" (click)="addToShop()">ADD TO CART</button>
+            <app-add-to-shop [beer]="beer"></app-add-to-shop>
             <button *ngIf="isLogged" [routerLink]="['/edit/'+ beer.id]" >EDIT</button>
             <p>{{beer.prezzo}} &#8364;</p>
           </div>

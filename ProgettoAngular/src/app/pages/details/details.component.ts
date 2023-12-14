@@ -61,56 +61,6 @@ export class DetailsComponent {
   }
 
 
-  addToShop() {
-    if (!this.beer) {
-      console.error('Nessuna birra selezionata.');
-      return;
-    }
-
-    this.LSS.user$.subscribe((accessData) => {
-      if (!accessData) {
-        alert("Per aggiungere ai preferiti devi loggarti o registrarti");
-        return;
-      }
-
-      const existingBeerIndex = this.allItem.findIndex(item => item.beerId === this.beer.id);
-
-      if (existingBeerIndex !== -1) {
-        const existingBeer = this.allItem[existingBeerIndex];
-        const numberBeerToUpdate: number = existingBeer.numberBeer !== undefined ? existingBeer.numberBeer + 1 : 1;
-
-        this.beerService.updateShopItem(existingBeer.id, {
-          nameBeer: this.beer.nome,
-          beerId: this.beer.id,
-          numberBeer: numberBeerToUpdate,
-          userId: accessData.user.id
-        }).subscribe((data: any) => {
-          console.log('Birra aggiornata:', data);
-          this.fetchShop(Number(accessData.user.id));
-
-
-        });
-      } else {
-        this.beerService.addToShop(Number(accessData.user.id), {
-          nameBeer: this.beer.nome,
-          beerId: this.beer.id,
-          numberBeer: 1
-        }).subscribe((data: any) => {
-          console.log('Birra creata:', data);
-          this.fetchShop(Number(accessData.user.id));
-
-        });
-      }
-    });
-  }
-
-
-
-
-
-
-
-
   fetchShop(userId: number): void {
     this.beerService.getShop(userId).subscribe({
       next: (data:any) => {
@@ -122,8 +72,6 @@ export class DetailsComponent {
       }
     });
   }
-
-
 
 
   addToWish(beerid:number):void{

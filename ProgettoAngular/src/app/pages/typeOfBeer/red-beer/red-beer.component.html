@@ -9,6 +9,7 @@
         <h5 class="card__data--text"><strong>Price:</strong> {{ birra.prezzo | currency:'EUR' }}</h5>
       </div>
       <button *ngIf="isLogged" (click)="addToWish(birra.id)" class="mb-3 wish">WISH</button>
+      <app-add-to-shop [beer]="birra"></app-add-to-shop>
     </div>
   </div>
 </div>

@@ -31,6 +31,7 @@ import { PaypalComponent } from './components/payment/paypal/paypal.component';
 import { BancomatComponent } from './components/payment/bancomat/bancomat.component';
 import { RimborsiComponent } from './components/rimborsi/rimborsi.component';
 import { SpedizioniComponent } from './components/spedizioni/spedizioni.component';
+import { AddToShopComponent } from './components/add-to-shop/add-to-shop.component';
 
 
 
@@ -63,6 +64,7 @@ import { SpedizioniComponent } from './components/spedizioni/spedizioni.componen
     SpedizioniComponent,
     RimborsiComponent,
     ServizioClientiComponent,
+    AddToShopComponent,
   ],
   imports: [
     BrowserModule,

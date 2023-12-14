@@ -80,7 +80,8 @@ export class BeerService {
           userId: userId,
           nameBeer: beer.nameBeer,
           beerId: beer.beerId,
-          numberBeer: numberBeerToSend
+          numberBeer: numberBeerToSend,
+          price: beer.price
         })
   }
 
