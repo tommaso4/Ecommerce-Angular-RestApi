@@ -75,102 +75,52 @@
     {
       "nameBeer": "Buzz",
       "beerId": 1,
-      "numberBeer": 157,
+      "numberBeer": 24,
       "userId": 3,
       "price": 4.5,
       "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 706.5,
+      "totalPrice": 108,
       "id": 1
     },
     {
       "nameBeer": "Trashy Blonde",
       "beerId": 2,
-      "numberBeer": 983,
+      "numberBeer": 5,
       "userId": 3,
       "price": 4.19,
       "img": "https://images.punkapi.com/v2/2.png",
-      "totalPrice": 4118.77,
+      "totalPrice": 20.950000000000003,
       "id": 2
     },
     {
       "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
       "beerId": 3,
-      "numberBeer": 118,
+      "numberBeer": 16,
       "userId": 3,
       "price": 9.68,
       "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 1142.24,
+      "totalPrice": 154.88,
       "id": 3
     },
     {
-      "nameBeer": "Devine Rebel (w/ Mikkeller)",
+      "nameBeer": "Pilsen Lager",
       "beerId": 4,
-      "numberBeer": 6,
+      "numberBeer": 100000,
       "userId": 3,
-      "price": 8.61,
-      "img": "https://images.punkapi.com/v2/22.png",
-      "totalPrice": 51.66,
+      "price": 4.68,
+      "img": "https://images.punkapi.com/v2/4.png",
+      "totalPrice": 468000,
       "id": 4
     },
     {
-      "nameBeer": "Berliner Weisse With Raspberries And Rhubarb - B-Sides",
-      "beerId": 35,
-      "numberBeer": 3,
-      "userId": 3,
-      "price": 9.24,
-      "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 27.72,
-      "id": 5
-    },
-    {
-      "nameBeer": "Vote Sepp",
-      "beerId": 6,
-      "numberBeer": 15,
-      "userId": 3,
-      "price": 4.03,
-      "img": "https://images.punkapi.com/v2/112.png",
-      "totalPrice": 60.45,
-      "id": 6
-    },
-    {
-      "nameBeer": "Blitz Series",
-      "beerId": 221,
-      "numberBeer": 3,
-      "userId": 3,
-      "price": 9.51,
-      "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 28.53,
-      "id": 7
-    },
-    {
       "nameBeer": "Hello My Name Is Mette-Marit",
-      "beerId": 8,
-      "numberBeer": 9,
+      "beerId": 19,
+      "numberBeer": 5,
       "userId": 3,
       "price": 9.12,
       "img": "https://images.punkapi.com/v2/19.png",
-      "totalPrice": 82.08,
-      "id": 8
-    },
-    {
-      "userId": 3,
-      "nameBeer": "Avery Brown Dredge",
-      "beerId": 5,
-      "numberBeer": 1,
-      "price": 8.82,
-      "img": "https://images.punkapi.com/v2/5.png",
-      "totalPrice": 8.82,
-      "id": 9
-    },
-    {
-      "nameBeer": "The End Of History",
-      "beerId": 24,
-      "numberBeer": 12,
-      "userId": 3,
-      "price": 8.77,
-      "img": "https://images.punkapi.com/v2/24.png",
-      "totalPrice": 105.24,
-      "id": 10
+      "totalPrice": 45.599999999999994,
+      "id": 5
     }
   ],
   "beers": [

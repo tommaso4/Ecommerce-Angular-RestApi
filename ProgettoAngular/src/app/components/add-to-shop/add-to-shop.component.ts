@@ -78,9 +78,9 @@ export class AddToShopComponent implements OnInit {
         totalPrice: this.beer.prezzo * numberBeerToUpdate
       }).subscribe((data: any) => {
         console.log('Birra aggiornata:', data);
-        const updatedTotal = this.cartSvc.calculateTotalCart(this.allItem);
-        this.cartSvc.setTotalCart(updatedTotal);
+        this.fetchShopUpdate(this.userId)
       });
+
     } else {
       this.cartSvc.addToShop(Number(accessData.user.id), {
         nameBeer: this.beer.nome,
@@ -91,16 +91,27 @@ export class AddToShopComponent implements OnInit {
         totalPrice: this.beer.prezzo
       }).subscribe((data: any) => {
         console.log('Birra creata:', data);
-        const updatedTotal = this.cartSvc.calculateTotalCart(this.allItem);
-        this.cartSvc.setTotalCart(updatedTotal);
-
+        this.fetchShopUpdate(this.userId)
       });
     }
   }
 
-
   calculateTotalCart() {
     this.totalCart = this.allItem.reduce((total, item) => total + item.totalPrice, 0);
+  }
+
+  fetchShopUpdate(userId: number): void {
+    this.cartSvc.getShop(userId).subscribe({
+      next: (data: any) => {
+        this.allItem = data;
+        console.log(this.allItem);
+        const updatedTotal = this.cartSvc.calculateTotalCart(this.allItem);
+        this.cartSvc.setTotalCart(updatedTotal);
+      },
+      error: (error) => {
+        console.error('Errore nel recupero delle birre:', error);
+      }
+    });
   }
 }
 
