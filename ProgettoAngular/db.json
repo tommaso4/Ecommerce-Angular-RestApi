@@ -1,56 +1,18 @@
 {
   "users": [
     {
-      "email": "emilio.plances@gmail.com",
-      "password": "$2a$10$De8RUbneFkmQ5rIjQ48mJOh9xheYH8143PriRgU3brIwiPBG5L1YK",
-      "name": "Emilio",
-      "surname": "Plances",
-      "admin": false,
-      "id": 1
-    },
-    {
-      "email": "simo@gmail.com",
-      "password": "$2a$10$1RV5tg4bEJuRYFp745fg8erdHHe.PGsx/pNM6xm3.Lp0LxCXsjC52",
-      "name": "simo",
-      "surname": "aimo",
-      "id": 2
-    },
-    {
-      "email": "caloteresi@gmail.com",
-      "password": "$2a$10$LEKJUJqxKRIl4vwXaEVq2uoSoZ0SWoBx.y6xHYGmKunhSdk0rvHDi",
-      "name": "Calogero",
-      "surname": "Teresi",
-      "id": 3
-    },
-    {
       "email": "tommasocantarini4@gmail.com",
-      "password": "$2a$10$gbQHnGD1ZtwCQL.MhQ.ie.w9cr4yajUe45HeRfnFmSa.D19/cr40e",
+      "password": "$2a$10$35t.K9Wa0htwCJsrvtlACexlbFMl81/aVk1p1CgT0zvtFOv.4ZODu",
       "name": "Tommaso",
       "surname": "Cantarini",
-      "admin": false,
-      "id": 4
-    },
+      "id": 1
+    }
+  ],
+  "roles": [
     {
-      "email": "mario@rossi.it",
-      "password": "$2a$10$yEvLFToQ7YSH3hDb7Y8efej9PsKHwL6naxszLjPFSMKYSI1AUVDSe",
-      "name": "Mario",
-      "surname": "Rossi",
-      "admin": false,
-      "id": 5
-    },
-    {
-      "email": "emilioo@ciao.com",
-      "password": "$2a$10$DlPKrIF6gfZ.djtOds/Xwuu0Ds9dLEczPUm/9WXeDtRhakO1uce7u",
-      "name": "eeeeeee",
-      "surname": "ciaoemi",
-      "id": 6
-    },
-    {
-      "email": "emilio@ciao.com",
-      "password": "$2a$10$UNvTpDb.K/yecukhZRSiT.ynr.lJP0/FQB.V6uSfq8C20ILJNzf9.",
-      "name": "emi",
-      "surname": "emi",
-      "id": 7
+      "userID": 1,
+      "role": "admin",
+      "id": 1
     }
   ],
   "wishlist": [
@@ -58,6 +20,11 @@
       "beerId": 2,
       "userId": 1,
       "id": 1
+    },
+    {
+      "beerId": 1,
+      "userId": 1,
+      "id": 2
     }
   ],
   "shop": [
