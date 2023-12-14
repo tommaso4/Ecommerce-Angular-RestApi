@@ -11,6 +11,11 @@
   padding: 0rem 1rem;
   position: relative;
 
+  &:hover #icon {
+    color: $primary;
+      filter: brightness(0.8); /* Modifica la luminosità */
+    }
+
   &__img {
     align-self: center;
     padding-top: 30px;
@@ -62,7 +67,7 @@ button{
   position: absolute;
   top: 20px;
   font-size: 20px;
-  color: red;
+  color: $dark-blue;
 }
 
 button:hover{

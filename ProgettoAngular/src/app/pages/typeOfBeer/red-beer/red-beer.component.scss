@@ -81,3 +81,15 @@ top: 10px;
   background-color: $primary;
   color:  $dark-blue;
 }
+
+.card{
+  background-color: rgba($secondary, 0.5);
+}
+
+.card__data--title,
+.card__data--text,
+.desc{
+ color: rgba(black, 1);
+}
+
+
