@@ -1,8 +1,33 @@
 {
-  "users": [],
-  "roles": [],
+  "users": [
+    {
+      "email": "tommasocantarini4@gmail.com",
+      "password": "$2a$10$YLxJIIEMm0bCSftNVBCJO.VXvL.96g5FyGfKPafmaSufm4sDmvw3u",
+      "name": "Tommaso",
+      "surname": "Cantarini",
+      "id": 1
+    }
+  ],
+  "roles": [
+    {
+      "userID": 1,
+      "role": "customer",
+      "id": 1
+    }
+  ],
   "cart": [],
-  "wishlist": [],
+  "wishlist": [
+    {
+      "beerId": 10,
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "beerId": 3,
+      "userId": 1,
+      "id": 6
+    }
+  ],
   "shop": [],
   "beers": [
     {

@@ -6,7 +6,7 @@ import { IwishListItem } from '../../Modules/iwishListItem';
 @Component({
   selector: 'app-whishlist',
   templateUrl: './whishlist.component.html',
-  styleUrl: './whishlist.component.scss'
+  styleUrls: ['./whishlist.component.scss']
 })
 export class WhishlistComponent {
 
@@ -14,25 +14,32 @@ export class WhishlistComponent {
 
   constructor(
     private logSystem: LogSystemService,
-    private whishlistService: WhishlistService) { }
+    private whishlistService: WhishlistService,
+  ) {}
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.getWhishlist()
+  }
+
+  getWhishlist(){
     this.logSystem.user$.subscribe((accessData) => {
       if (!accessData?.user.id) {
         return;
       }
       this.whishlistService.getWishlist(accessData.user.id).subscribe((items) => {
         this.Whishlist = items;
-      })
-
-    })
+      });
+    });
   }
 
-  removeBerrWish(beerid?:number){
-    console.log(this.Whishlist);
-    this.whishlistService.removeWish(beerid).subscribe((items) =>{
-        this.Whishlist.filter(items => items.beerId !== beerid)
-    })
+  removeBerrWish(beerid?: number) {
+
+    this.whishlistService.removeWish(beerid).subscribe(() => {
+      this.Whishlist = this.Whishlist.filter(item => item.beerId !== beerid);
+      this.getWhishlist()
+    });
   }
+
+
 
 }
