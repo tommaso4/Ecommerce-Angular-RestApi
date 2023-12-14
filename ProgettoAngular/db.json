@@ -50,7 +50,7 @@
     {
       "nameBeer": "Trashy Blonde",
       "beerId": 2,
-      "numberBeer": 2,
+      "numberBeer": 3,
       "userId": 3,
       "price": 4.19,
       "id": 1
@@ -58,7 +58,7 @@
     {
       "nameBeer": "Buzz",
       "beerId": 1,
-      "numberBeer": 5,
+      "numberBeer": 6,
       "userId": 3,
       "price": 4.5,
       "id": 2
@@ -66,7 +66,7 @@
     {
       "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
       "beerId": 3,
-      "numberBeer": 11,
+      "numberBeer": 13,
       "userId": 3,
       "price": 9.68,
       "id": 3
@@ -74,18 +74,26 @@
     {
       "nameBeer": "Pilsen Lager",
       "beerId": 4,
-      "numberBeer": 2,
+      "numberBeer": 3,
       "userId": 3,
       "price": 4.68,
       "id": 4
     },
     {
-      "userId": 3,
       "nameBeer": "Electric India",
       "beerId": 6,
-      "numberBeer": 1,
+      "numberBeer": 2,
+      "userId": 3,
       "price": 4.49,
       "id": 5
+    },
+    {
+      "userId": 3,
+      "nameBeer": "Avery Brown Dredge",
+      "beerId": 5,
+      "numberBeer": 1,
+      "price": 8.82,
+      "id": 6
     }
   ],
   "beers": [
