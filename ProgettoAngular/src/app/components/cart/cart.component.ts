@@ -18,13 +18,15 @@ export class CartComponent {
   loggedInUser: IUserAuth | null = null;
   isLogged: boolean = false;
   userId! : number
-  priceTot!: number;
+  totalCart: number = 0
 
 
 
   constructor
   (private beerSvc: BeerService,
    private LSS: LogSystemService){}
+
+
 
   ngOnInit(): void {
     this.LSS.user$.subscribe((user: IUserAuth | null) => {
@@ -33,14 +35,21 @@ export class CartComponent {
       this.isLogged = !!user;
       this.fetchShop(this.userId);
     });
-    this.priceTot
   }
+
+
+  totalsCart(){
+    this.allItem.forEach(item => {this.totalCart += item.totalPrice})
+    console.log(this.totalCart);
+  }
+
 
   fetchShop(userId: number): void {
     this.beerSvc.getShop(userId).subscribe({
       next: (data: any) => {
         this.allItem = data;
         console.log(this.allItem);
+        this.totalsCart()
       },
       error: (error) => {
         console.error('Errore nel recupero delle birre:', error);
@@ -48,3 +57,4 @@ export class CartComponent {
     });
   }
 }
+
