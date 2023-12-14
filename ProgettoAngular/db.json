@@ -23,6 +23,28 @@
       "id": 3
     },
     {
+      "email": "emilio.plances@gmail.com",
+      "password": "$2a$10$De8RUbneFkmQ5rIjQ48mJOh9xheYH8143PriRgU3brIwiPBG5L1YK",
+      "name": "Emilio",
+      "surname": "Plances",
+      "admin": false,
+      "id": 1
+    },
+    {
+      "email": "simo@gmail.com",
+      "password": "$2a$10$1RV5tg4bEJuRYFp745fg8erdHHe.PGsx/pNM6xm3.Lp0LxCXsjC52",
+      "name": "simo",
+      "surname": "aimo",
+      "id": 2
+    },
+    {
+      "email": "caloteresi@gmail.com",
+      "password": "$2a$10$LEKJUJqxKRIl4vwXaEVq2uoSoZ0SWoBx.y6xHYGmKunhSdk0rvHDi",
+      "name": "Calogero",
+      "surname": "Teresi",
+      "id": 3
+    },
+    {
       "email": "lorenzoneroni13@gmail.com",
       "password": "$2a$10$pKSaNu5njvmqtJ59kf0UR.4hURSaCiXcr3eit9B9ZarIvfFPfyWqO",
       "name": "Lorenzo",
