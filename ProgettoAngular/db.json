@@ -11,7 +11,7 @@
   "roles": [
     {
       "userID": 1,
-      "role": "customer",
+      "role": "admin",
       "id": 1
     }
   ],
