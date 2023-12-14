@@ -55,31 +55,31 @@
     {
       "nameBeer": "Buzz",
       "beerId": 1,
-      "numberBeer": 111,
+      "numberBeer": 112,
       "userId": 3,
       "price": 4.5,
       "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 499.5,
+      "totalPrice": 504,
       "id": 1
     },
     {
-      "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
+      "nameBeer": "Trashy Blonde",
       "beerId": 2,
-      "numberBeer": 1001,
+      "numberBeer": 1002,
       "userId": 3,
-      "price": 9.68,
-      "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 9689.68,
+      "price": 4.19,
+      "img": "https://images.punkapi.com/v2/2.png",
+      "totalPrice": 4198.38,
       "id": 2
     },
     {
-      "nameBeer": "Movember",
+      "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
       "beerId": 3,
-      "numberBeer": 54,
+      "numberBeer": 57,
       "userId": 3,
-      "price": 9.97,
-      "img": "https://images.punkapi.com/v2/13.png",
-      "totalPrice": 538.38,
+      "price": 9.68,
+      "img": "https://images.punkapi.com/v2/keg.png",
+      "totalPrice": 551.76,
       "id": 3
     },
     {
@@ -121,6 +121,16 @@
       "img": "https://images.punkapi.com/v2/keg.png",
       "totalPrice": 28.53,
       "id": 7
+    },
+    {
+      "nameBeer": "Hello My Name Is Mette-Marit",
+      "beerId": 8,
+      "numberBeer": 9,
+      "userId": 3,
+      "price": 9.12,
+      "img": "https://images.punkapi.com/v2/19.png",
+      "totalPrice": 82.08,
+      "id": 8
     }
   ],
   "beers": [

@@ -1,4 +1,4 @@
-import { WhishlistService } from './whishlist.service';
+import { WhishlistService } from '../../services/whishlist.service';
 import { Component } from '@angular/core';
 import { LogSystemService } from '../../services/log-system.service';
 import { IwishListItem } from '../../Modules/iwishListItem';

@@ -3,10 +3,11 @@ import { ActivatedRoute } from '@angular/router';
 import { BeerService } from '../../services/beer.service';
 import { Ibeer } from '../../Modules/ibeer';
 import { LogSystemService } from '../../services/log-system.service';
-import { WhishlistService } from '../whishlist/whishlist.service';
+import { WhishlistService } from '../../services/whishlist.service';
 import { IUserAuth } from '../../Modules/iuser-auth';
 import { Observable, map, take, tap } from 'rxjs';
 import { IShop } from '../../Modules/ishop';
+import { CartService } from '../../services/cart.service';
 
 
 @Component({
@@ -25,7 +26,8 @@ export class DetailsComponent {
     private route: ActivatedRoute,
     private beerService: BeerService,
     private LSS:LogSystemService,
-    private whishlistService: WhishlistService
+    private whishlistService: WhishlistService,
+    private cartSvc: CartService
   ) {}
 
   ngOnInit(): void {
@@ -62,7 +64,7 @@ export class DetailsComponent {
 
 
   fetchShop(userId: number): void {
-    this.beerService.getShop(userId).subscribe({
+    this.cartSvc.getShop(userId).subscribe({
       next: (data:any) => {
         this.allItem = data; // Assegna l'array di IShop alla variabile allItem
         console.log('Tutte le birre presenti nello shop:', this.allItem);
@@ -77,7 +79,7 @@ export class DetailsComponent {
   addToWish(beerid:number):void{
     this.LSS.user$.subscribe(accessData=>{
       if(!accessData?.user?.id) return;
-      this.beerService.addToWishList(beerid, accessData.user.id).pipe(take(1)).subscribe( )
+      this.whishlistService.addToWishList(beerid, accessData.user.id).pipe(take(1)).subscribe( )
     })
   }
 }
