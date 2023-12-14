@@ -15,7 +15,8 @@ body {
 }
 
 .contact-container h2 {
-  color:#0275d8
+  color:#0275d8;
+  opacity: 1;
 }
 
 .contact-options {
@@ -63,5 +64,43 @@ button {
 }
 
 .bg-80{
-  height: 80vh;
+  height: 100vh;
+}
+
+.contact-container{
+  background-color: #ffffff; /* Sfondo bianco per ogni sezione */
+  border: 1px solid #ddd; /* Bordo sottile per definire le sezioni */
+  padding: 15px;
+  margin-bottom: 20px; /* Spazio tra le sezioni */
+  border-radius: 5px; /* Angoli arrotondati per un aspetto morbido */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Ombra leggera per profondità */
+
+
+}
+
+
+
+@media only screen and (max-width: 600px){
+.contact-options{
+  display: flex;
+  flex-direction: column;
+}
+}
+
+.contact-container {
+  position: relative;
+  background-color: rgba(177, 230, 255, 0.2);
+  padding: 20px;
+}
+
+
+
+.contact-container:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
 }
