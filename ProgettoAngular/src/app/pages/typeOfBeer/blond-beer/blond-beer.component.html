@@ -3,10 +3,10 @@
     <div class="card d-flex justify-content-end">
       <img [src]="birra.urlImmagine || 'https://images.punkapi.com/v2/keg.png'" class="card__img" alt="beer image">
       <div class="card__data">
-        <h5 class="card__data--title">{{ birra.nome }}</h5>
-        <p  class="card__data--text desc">{{ birra.descrizione }}</p>
-        <h5 class="card__data--text"><strong>Vol:</strong> {{ birra.abv | percent }}</h5>
-        <h5 class="card__data--text"><strong>Price:</strong> {{ birra.prezzo | currency:'EUR' }}</h5>
+        <h5 class="card__data--title lim">{{ birra.nome }}</h5>
+        <p  class="card__data--text desc lim">{{ birra.descrizione }}</p>
+        <h5 class="card__data--text lim"><strong>Vol:</strong> {{ birra.abv | percent }}</h5>
+        <h5 class="card__data--text lim"><strong>Price:</strong> {{ birra.prezzo | currency:'EUR' }}</h5>
         <button *ngIf="isLogged" (click)="addToWish(birra.id)" class="mb-2 wish">WISH</button>
         <app-add-to-shop [beer]="birra" class="w-100"></app-add-to-shop>
       </div>
