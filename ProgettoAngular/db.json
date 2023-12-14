@@ -6,6 +6,13 @@
       "name": "Emilio",
       "surname": "Plances",
       "id": 1
+    },
+    {
+      "email": "MauroCassoni@gmail.com",
+      "password": "$2a$10$Lu0FygVVHbEWE.NesxJExOAsquRU07NAZRa5a4BdAjW0Zb1mAu3Zm",
+      "name": "Mauro",
+      "surname": "Cassoni",
+      "id": 2
     }
   ],
   "roles": [
@@ -13,6 +20,11 @@
       "userID": 1,
       "role": "admin",
       "id": 1
+    },
+    {
+      "userID": 2,
+      "role": "customer",
+      "id": 2
     }
   ],
   "cart": [],
