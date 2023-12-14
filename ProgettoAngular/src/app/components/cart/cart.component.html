@@ -1,32 +1,33 @@
-<div class="container">
+<div class="cart">
+  <div class="container mb-5">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Beer's Name</th>
+          <th>Amount</th>
+          <th>Price</th>
+          <th>Total Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of allItem">
+          <td><img [src]="item.img" alt="Beer Image" /></td>
+          <td>{{ item.nameBeer }}</td>
+          <td><input type="number" [value]="item.numberBeer" /></td>
+          <td>{{ item.price | currency : "EUR" }}</td>
+          <td>{{ item.totalPrice | currency : "EUR" }}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>Total Cart</td>
+          <td></td>
+          <td>{{ totalCart | currency : "EUR" }}</td>
+        </tr>
+      </tbody>
+    </table>
 
-  <table class="table">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Beer's Name</th>
-        <th>Amount</th>
-        <th>Price</th>
-        <th>Total Price</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of allItem">
-        <td><img [src]="item.img" alt="Beer Image" /></td>
-        <td>{{item.nameBeer}}</td>
-        <td><input type="number" [value]="item.numberBeer" /></td>
-        <td>{{item.price | currency:'EUR'}}</td>
-        <td>{{item.totalPrice | currency:'EUR'}}</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td>Total Cart</td>
-        <td></td>
-        <td>{{totalCart | currency:'EUR'}}</td>
-      </tr>
-    </tbody>
-  </table>
-
-<a routerLink="/payment">payment</a>
+    <a routerLink="/payment">payment</a>
+  </div>
 </div>
