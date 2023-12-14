@@ -70,7 +70,8 @@ export class AddToShopComponent implements OnInit {
         numberBeer: numberBeerToUpdate,
         userId: accessData.user.id,
         price: this.beer.prezzo,
-        img: this.beer.urlImmagine
+        img: this.beer.urlImmagine,
+        totalPrice: this.beer.prezzo * numberBeerToUpdate
       }).subscribe((data: any) => {
         console.log('Birra aggiornata:', data);
       });
@@ -80,7 +81,8 @@ export class AddToShopComponent implements OnInit {
         beerId: this.beer.id,
         numberBeer: 1,
         price: this.beer.prezzo,
-        img: this.beer.urlImmagine
+        img: this.beer.urlImmagine,
+        totalPrice: this.beer.prezzo * 1
       }).subscribe((data: any) => {
         console.log('Birra creata:', data);
 

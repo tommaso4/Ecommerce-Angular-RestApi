@@ -1,17 +1,32 @@
-<div *ngFor="let item of allItem">
-  <div class="d-flex align-baseline cart">
-    <div>
-      <img src="{{item.img}}">
-    </div>
-    <div>
-      <h4>{{item.nameBeer}}</h4>
-    </div>
-    <div>
-      <input type="number" value="{{item.numberBeer}}">
-    </div>
-    <div>
-      <h4>{{item.price}}</h4>
-    </div>
-  </div>
-</div>
+<div class="container">
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Beer's Name</th>
+        <th>Amount</th>
+        <th>Price</th>
+        <th>Total Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of allItem">
+        <td><img [src]="item.img" alt="Beer Image" /></td>
+        <td>{{item.nameBeer}}</td>
+        <td><input type="number" [value]="item.numberBeer" /></td>
+        <td>{{item.price | currency:'EUR'}}</td>
+        <td>{{item.totalPrice | currency:'EUR'}}</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>Total Cart</td>
+        <td></td>
+        <td>{{totalCart | currency:'EUR'}}</td>
+      </tr>
+    </tbody>
+  </table>
+
 <a routerLink="/payment">payment</a>
+</div>
