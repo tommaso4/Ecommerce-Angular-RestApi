@@ -16,6 +16,7 @@
         <td><img [src]="item.img" alt="Beer Image" /></td>
         <td>{{item.nameBeer}}</td>
         <td><input type="number" [value]="item.numberBeer" (change)="updateQuantity($event, item.beerId)" /></td>
+        <td>{{item.price | currency:'EUR'}}</td>
         <td>{{item.totalPrice | currency:'EUR'}}</td>
       </tr>
       <tr>

@@ -1,41 +1,18 @@
 {
   "users": [
     {
-      "email": "emilio.plances@gmail.com",
-      "password": "$2a$10$De8RUbneFkmQ5rIjQ48mJOh9xheYH8143PriRgU3brIwiPBG5L1YK",
-      "name": "Emilio",
-      "surname": "Plances",
-      "admin": false,
-      "id": 1
-    },
-    {
-      "email": "simo@gmail.com",
-      "password": "$2a$10$1RV5tg4bEJuRYFp745fg8erdHHe.PGsx/pNM6xm3.Lp0LxCXsjC52",
-      "name": "simo",
-      "surname": "aimo",
-      "id": 2
-    },
-    {
-      "email": "caloteresi@gmail.com",
-      "password": "$2a$10$LEKJUJqxKRIl4vwXaEVq2uoSoZ0SWoBx.y6xHYGmKunhSdk0rvHDi",
-      "name": "Calogero",
-      "surname": "Teresi",
-      "id": 3
-    },
-    {
-      "email": "lorenzoneroni13@gmail.com",
-      "password": "$2a$10$pKSaNu5njvmqtJ59kf0UR.4hURSaCiXcr3eit9B9ZarIvfFPfyWqO",
-      "name": "Lorenzo",
-      "surname": "Neroni",
-      "admin": false,
-      "id": 4
-    },
-    {
       "email": "tommasocantarini4@gmail.com",
-      "password": "$2a$10$IMyWw/Aw4gnwSehj7pqbcu9dGp6.QxJ9ifYWraIxK2y0bGA1dSDxG",
+      "password": "$2a$10$23u9QyUzTH5WPsDfNz1YcuF.pJYY0uVoC6AxZn0RL2mlYwQGJMVha",
       "name": "Tommaso",
       "surname": "Cantarini",
-      "id": 5
+      "id": 1
+    }
+  ],
+  "roles": [
+    {
+      "userID": 1,
+      "role": "customer",
+      "id": 1
     }
   ],
   "cart": [],
@@ -163,14 +140,44 @@
       "id": 10
     },
     {
-      "userId": 5,
       "nameBeer": "Trashy Blonde",
-      "beerId": 2,
-      "numberBeer": 1,
+      "beerId": 11,
+      "numberBeer": 6,
+      "userId": 1,
       "price": 4.19,
       "img": "https://images.punkapi.com/v2/2.png",
-      "totalPrice": 4.19,
+      "totalPrice": 25.14,
       "id": 11
+    },
+    {
+      "userId": 1,
+      "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
+      "beerId": 3,
+      "numberBeer": 1,
+      "price": 9.68,
+      "img": "https://images.punkapi.com/v2/keg.png",
+      "totalPrice": 9.68,
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "nameBeer": "Pilsen Lager",
+      "beerId": 4,
+      "numberBeer": 1,
+      "price": 4.68,
+      "img": "https://images.punkapi.com/v2/4.png",
+      "totalPrice": 4.68,
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "nameBeer": "Avery Brown Dredge",
+      "beerId": 5,
+      "numberBeer": 1,
+      "price": 8.82,
+      "img": "https://images.punkapi.com/v2/5.png",
+      "totalPrice": 8.82,
+      "id": 14
     }
   ],
   "beers": [
