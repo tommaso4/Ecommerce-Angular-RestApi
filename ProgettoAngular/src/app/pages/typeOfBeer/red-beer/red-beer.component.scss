@@ -11,6 +11,7 @@
   padding: 0rem 1rem;
   width: 365px;
   position: relative;
+  margin: 5px;
 
   &__img {
     align-self: center;
@@ -65,7 +66,7 @@ top: 10px;
 }
 
 .card__data--text.desc{
-  height: 208px;
+  height: 165px;
   overflow-y: auto;
 }
 
