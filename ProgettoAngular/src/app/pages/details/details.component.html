@@ -8,12 +8,14 @@
           <h2 class="text-center">{{beer.nome}}</h2>
           <h5 class="text-center text-secondary">{{beer.slogan}}</h5>
           <h5 class="px-3">{{beer.descrizione}}</h5>
-          <div class="d-flex justify-content-end align-items-center detFoot w-100 ms-3 mt-3">
-            <button *ngIf="isLogged && admin" [routerLink]="['/edit/'+ beer.id]">EDIT</button>
-            <div class="d-flex justify-content-end align-items-center">
-              <button class="button" *ngIf="isLogged" (click)="addToWish(beer.id)">WISH</button>
-              <app-add-to-shop [beer]="beer"></app-add-to-shop>
-              <p class="m-0 ms-1">{{beer.prezzo|currency:"EUR"}}</p>
+          <div class="d-flex align-items-center">
+              <h5 class="w-50 mt-3"><strong>Price: {{beer.prezzo|currency:"EUR"}}</strong></h5>
+            <div class="d-flex justify-content-end align-items-center detFoot w-100 ms-3 mt-3">
+              <button *ngIf="isLogged && admin" [routerLink]="['/edit/'+ beer.id]">EDIT</button>
+              <div class="d-flex justify-content-end align-items-center">
+                <button class="button" *ngIf="isLogged" (click)="addToWish(beer.id)">WISH</button>
+                <app-add-to-shop [beer]="beer" class="mt-2"></app-add-to-shop>
+              </div>
             </div>
           </div>
         </div>

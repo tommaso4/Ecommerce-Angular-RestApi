@@ -35,7 +35,7 @@
     },
     {
       "userID": 3,
-      "role": "customer",
+      "role": "admin",
       "id": 3
     }
   ],
@@ -51,14 +51,14 @@
       "id": 2
     },
     {
-      "beerId": 84,
-      "userId": 3,
-      "id": 14
-    },
-    {
       "beerId": 115,
       "userId": 3,
       "id": 15
+    },
+    {
+      "beerId": 2,
+      "userId": 3,
+      "id": 16
     }
   ],
   "shop": [
@@ -185,11 +185,11 @@
     {
       "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
       "beerId": 3,
-      "numberBeer": 3,
+      "numberBeer": 4,
       "userId": 3,
       "price": 9.68,
       "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 29.04,
+      "totalPrice": 38.72,
       "id": 23
     },
     {
