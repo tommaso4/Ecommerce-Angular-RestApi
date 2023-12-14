@@ -8,7 +8,6 @@ import { IUserAuth } from '../Modules/iuser-auth';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { Router } from '@angular/router';
 import { IUser } from '../Modules/iuser';
-import { IRoles } from '../Modules/iroles';
 
 @Injectable({
   providedIn: 'root'
@@ -57,12 +56,13 @@ export class LogSystemService {
     let oldAuth:IUserAuth=JSON.parse(localLogin);
     if(this.jwt.isTokenExpired(oldAuth.accessToken)) return
 
-    this.autoLogOut(oldAuth.accessToken)
+    this.autoLogOut(oldAuth.accessToken);
     this.authorized.next(oldAuth);
   }
 
   logOut(){
     localStorage.removeItem('user');
+    localStorage.removeItem('role');
     this.authorized.next(null);
     this.router.navigate(['/home']);
   }
@@ -78,5 +78,4 @@ export class LogSystemService {
       this.logOut()
     }, remainingTimeMs)
   }
-
 }
