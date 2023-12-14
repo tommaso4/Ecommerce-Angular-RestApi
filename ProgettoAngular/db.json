@@ -23,22 +23,15 @@
       "id": 3
     },
     {
-      "email": "tommasocantarini4@gmail.com",
-      "password": "$2a$10$gbQHnGD1ZtwCQL.MhQ.ie.w9cr4yajUe45HeRfnFmSa.D19/cr40e",
-      "name": "Tommaso",
-      "surname": "Cantarini",
+      "email": "lorenzoneroni13@gmail.com",
+      "password": "$2a$10$pKSaNu5njvmqtJ59kf0UR.4hURSaCiXcr3eit9B9ZarIvfFPfyWqO",
+      "name": "Lorenzo",
+      "surname": "Neroni",
       "admin": false,
       "id": 4
-    },
-    {
-      "email": "mario@rossi.it",
-      "password": "$2a$10$yEvLFToQ7YSH3hDb7Y8efej9PsKHwL6naxszLjPFSMKYSI1AUVDSe",
-      "name": "Mario",
-      "surname": "Rossi",
-      "admin": false,
-      "id": 5
     }
   ],
+  "cart": [],
   "wishlist": [
     {
       "beerId": 3,
@@ -118,6 +111,7 @@
       "id": 7
     }
   ],
+  "shop": [],
   "beers": [
     {
       "id": 1,

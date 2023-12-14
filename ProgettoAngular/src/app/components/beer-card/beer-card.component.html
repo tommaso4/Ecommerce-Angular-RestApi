@@ -2,12 +2,14 @@
 <!-- beer-card-component -->
 <div class="card-container">
   <div class="card">
+    <button *ngIf="islogged" class="addToWishList" (click)="addToWishList(beer.id)">
+      <fa-icon [icon]="['fas','heart']" class="paginate-button__icon"></fa-icon>
+    </button>
       <img [src]="beer.urlImmagine || 'https://images.punkapi.com/v2/keg.png'" class="card__img" alt="beer image">
       <div class="card__data">
           <p class="card__data--title">{{ beer.nome }}</p>
           <p class="card__data--text">ABV: {{ beer.abv }}</p>
           <p class="card__data--text">Price: {{ beer.prezzo | currency:'EUR' }}</p>
       </div>
-
   </div>
 </div>

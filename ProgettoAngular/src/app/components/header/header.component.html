@@ -7,30 +7,22 @@
   </div>
 
   <div class="d-flex align-items-center">
-    <a class= " d-none d-sm-none d-md-block" routerLink="/home">HOME</a>
-    <a routerLink="/home">
-      <fa-icon [icon]="['fas','house']" class="paginate-button__icon h3 d-md-none m-2 whyte-beer log-in-icon"></fa-icon>
-    </a>
-    <a class= " d-none d-sm-none d-md-block"  routerLink="/whitebeer">White Beer</a>
-    <a routerLink="/whitebeer">
-      <fa-icon [icon]="['fas','beer-mug-empty']" class="paginate-button__icon d-md-none m-1 h3 whyte-beer"></fa-icon>
-    </a>
-    <a class= " d-none d-sm-none d-md-block"  routerLink="/blondbeer">Blonde Beer</a>
-    <a routerLink="/blondbeer">
-      <fa-icon [icon]="['fas','beer-mug-empty']" class="paginate-button__icon d-md-none m-1 h3 log-in-icon"></fa-icon>
-    </a>
-    <a class= " d-none d-sm-none d-md-block"  routerLink="/redbeer">Red Beer</a>
-    <a routerLink="/redbeer">
-      <fa-icon [icon]="['fas','beer-mug-empty']" class="paginate-button__icon d-md-none m-1 red-beer h3 "></fa-icon>
-    </a>
-    <a *ngIf="isLogged" routerLink="/wishlist">Wish List</a>
-    <a *ngIf="isLogged" routerLink="/cart">Cart</a>
+    <a class= " d-none d-sm-none d-md-block line" routerLink="/home">HOME</a>
+    <fa-icon [icon]="['fas','house']" class="paginate-button__icon h3 d-md-none m-2 whyte-beer log-in-icon"></fa-icon>
+    <a class= " d-none d-sm-none d-md-block line"  routerLink="/whitebeer">White Beer</a>
+    <fa-icon [icon]="['fas','beer-mug-empty']" class="paginate-button__icon d-md-none m-1 h3 whyte-beer"></fa-icon>
+    <a class= " d-none d-sm-none d-md-block line"  routerLink="/blondbeer">Blonde Beer</a>
+    <fa-icon [icon]="['fas','beer-mug-empty']" class="paginate-button__icon d-md-none m-1 h3 log-in-icon"></fa-icon>
+    <a class= " d-none d-sm-none d-md-block line"  routerLink="/redbeer">Red Beer</a>
+    <fa-icon [icon]="['fas','beer-mug-empty']" class="paginate-button__icon d-md-none m-1 red-beer h3 "></fa-icon>
+    <a *ngIf="isLogged" class="line" routerLink="/wishlist">Wish List</a>
+    <a *ngIf="isLogged" class="line" routerLink="/cart">Cart</a>
   </div>
 </div>
   <div>
-    <a routerLink="userprofile">Profilo</a>
+    <a class="line" routerLink="userprofile">Profilo</a>
     <fa-icon [icon]="['far','user']" class="paginate-button__icon h3 log-in-icon"></fa-icon>
     <a *ngIf="!isLogged" routerLink="/LogSystem">LogIn</a>
-    <a *ngIf="isLogged" routerLink="/userprofile">{{user.user.name}}</a>
+    <a *ngIf="isLogged" class="line" routerLink="/userprofile">{{user.user.name}}</a>
   </div>
 </div>
