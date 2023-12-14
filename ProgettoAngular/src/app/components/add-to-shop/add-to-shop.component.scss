@@ -1,17 +1,15 @@
-button{
-  border: none;
+.wish{
   background-color: #0a2f69;
   color: #f6b74b;
-  padding: 5px;
+  font-size: large;
   border-radius: 5px;
   width: 100%;
-  margin-top: 5px
 }
 
-button:hover{
-  background-color:#f6b74b;
-  color: #0a2f69;
-  transform: scale(1.05);
+.wish:hover{
+  background-color: #f6b74b;
+  color:  #0a2f69;
 }
+
 
 
