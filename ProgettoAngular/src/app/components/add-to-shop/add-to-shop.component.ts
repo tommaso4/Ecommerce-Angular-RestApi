@@ -12,14 +12,14 @@ import { CartService } from '../../services/cart.service';
   styleUrls: ['./add-to-shop.component.scss']
 })
 export class AddToShopComponent implements OnInit {
+  @Input() totalCart:number = 0;
   @Input() beer!: Ibeer;
   allItem: IShop[] = [];
   loggedInUser: IUserAuth | null = null;
   isLogged: boolean = false;
   userId! : number
 
-  constructor
-  (private beerService: BeerService,
+  constructor(
    private LSS: LogSystemService,
    private cartSvc: CartService) {}
 
@@ -30,6 +30,9 @@ export class AddToShopComponent implements OnInit {
       this.isLogged = !!user;
       if (user && user.user.id && this.beer) {
       }
+    });
+    this.cartSvc.getTotalCart().subscribe((total: number) => {
+      this.totalCart = total;
     });
   }
 
@@ -46,7 +49,6 @@ export class AddToShopComponent implements OnInit {
     });
   }
 
-
   addToShop() {
     if (!this.beer) {
       console.error('Nessuna birra selezionata.');
@@ -59,8 +61,6 @@ export class AddToShopComponent implements OnInit {
       alert("Per aggiungere ai preferiti devi loggarti o registrarti");
       return;
     }
-
-
 
     const existingBeerIndex = this.allItem.findIndex(item => item.beerId === this.beer.id);
 
@@ -78,6 +78,8 @@ export class AddToShopComponent implements OnInit {
         totalPrice: this.beer.prezzo * numberBeerToUpdate
       }).subscribe((data: any) => {
         console.log('Birra aggiornata:', data);
+        const updatedTotal = this.cartSvc.calculateTotalCart(this.allItem);
+        this.cartSvc.setTotalCart(updatedTotal);
       });
     } else {
       this.cartSvc.addToShop(Number(accessData.user.id), {
@@ -86,12 +88,19 @@ export class AddToShopComponent implements OnInit {
         numberBeer: 1,
         price: this.beer.prezzo,
         img: this.beer.urlImmagine,
-        totalPrice: this.beer.prezzo * 1
+        totalPrice: this.beer.prezzo
       }).subscribe((data: any) => {
         console.log('Birra creata:', data);
+        const updatedTotal = this.cartSvc.calculateTotalCart(this.allItem);
+        this.cartSvc.setTotalCart(updatedTotal);
 
       });
     }
+  }
+
+
+  calculateTotalCart() {
+    this.totalCart = this.allItem.reduce((total, item) => total + item.totalPrice, 0);
   }
 }
 

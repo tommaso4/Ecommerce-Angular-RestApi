@@ -10,20 +10,22 @@ import { IShop } from '../Modules/ishop';
 })
 export class CartService {
 
-  addCartSubject=new Subject<ICart|null>();
-  addedProduct$=this.addCartSubject.asObservable();
-  deleteCartSubject=new Subject<ICart|null>();
-  removedProduct$=this.deleteCartSubject.asObservable()
-  private apiUrlShop= environment.apiUrlShop ;
+  apiUrlShop= environment.apiUrlShop ;
+  totalCart = new Subject<number>();
+
 
   constructor(
     private http:HttpClient,
   ) { }
 
-  API:string=environment.API;
 
+  setTotalCart(data: number) {
+    this.totalCart.next(data);
+  }
 
-
+  getTotalCart() {
+    return this.totalCart.asObservable();
+  }
 
   getShop(id: number): Observable<any> {
     let params = new HttpParams().set('userId', id.toString());
@@ -62,4 +64,10 @@ export class CartService {
   errorHandler(error: HttpErrorResponse): Observable<never> {
     return throwError(() => error);
   }
+
+  // Nel servizio CartService
+calculateTotalCart(items: IShop[]): number {
+  return items.reduce((total, item) => total + item.totalPrice, 0);
+}
+
 }

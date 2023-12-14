@@ -63,6 +63,16 @@
   ],
   "shop": [
     {
+      "nameBeer": "Buzz",
+      "beerId": 1,
+      "numberBeer": 157,
+      "userId": 3,
+      "price": 4.5,
+      "img": "https://images.punkapi.com/v2/keg.png",
+      "totalPrice": 706.5,
+      "id": 1
+    },
+    {
       "nameBeer": "Alpha Dog",
       "beerId": 17,
       "numberBeer": 6,
