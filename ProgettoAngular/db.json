@@ -42,9 +42,63 @@
       "beerId": 1,
       "userId": 4,
       "id": 2
+    },
+    {
+      "beerId": 19,
+      "userId": 4,
+      "id": 3
     }
   ],
-  "shop": [],
+  "shop": [
+    {
+      "nameBeer": "AB:06",
+      "beerId": 17,
+      "numberBeer": 4,
+      "userId": 4,
+      "price": 4.24,
+      "id": 1
+    },
+    {
+      "nameBeer": "Libertine Porter",
+      "beerId": 16,
+      "numberBeer": 2,
+      "userId": 4,
+      "price": 8.08,
+      "id": 2
+    },
+    {
+      "userId": 4,
+      "nameBeer": "Russian Doll – India Pale Ale",
+      "beerId": 18,
+      "numberBeer": 1,
+      "price": 9.75,
+      "id": 3
+    },
+    {
+      "nameBeer": "Hello My Name Is Mette-Marit",
+      "beerId": 19,
+      "numberBeer": 3,
+      "userId": 4,
+      "price": 9.12,
+      "id": 4
+    },
+    {
+      "userId": 4,
+      "nameBeer": "Rabiator",
+      "beerId": 20,
+      "numberBeer": 1,
+      "price": 4.77,
+      "id": 5
+    },
+    {
+      "userId": 4,
+      "nameBeer": "Mixtape 8",
+      "beerId": 15,
+      "numberBeer": 1,
+      "price": 5.24,
+      "id": 6
+    }
+  ],
   "beers": [
     {
       "id": 1,
