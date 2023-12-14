@@ -23,8 +23,6 @@ export class CartService {
   API:string=environment.API;
 
 
-
-
   getShop(id: number): Observable<any> {
     let params = new HttpParams().set('userId', id.toString());
 
@@ -55,11 +53,9 @@ export class CartService {
     return this.http.put(`${this.apiUrlShop}/${beerId}`, updatedData);
   }
 
-  deleteCart(cartID:number):Observable<ICart>{
-    return this.http.delete<ICart>(`${this.API}/${cartID}`).pipe(tap(product=>this.deleteCartSubject.next(product)));
+  deleteCart(beerId: number):Observable<any>{
+    return this.http.delete(`${this.apiUrlShop}/${beerId}`);
   }
-
-
 
   errorHandler(error: HttpErrorResponse): Observable<never> {
     return throwError(() => error);
