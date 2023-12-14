@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { LogSystemService } from '../../../services/log-system.service';
 import { Router } from '@angular/router';
+import { RolesService } from '../../../services/roles.service';
 
 @Component({
   selector: 'app-login',
@@ -19,7 +20,8 @@ export class LoginComponent {
   constructor(
     private fb:FormBuilder,
     private LSS:LogSystemService,
-    private router:Router
+    private router:Router,
+    private RolesSVC:RolesService
   ){}
 
   ngOnInit(){
@@ -48,6 +50,6 @@ export class LoginComponent {
       }
       throw error
     })
-    ).subscribe()
+    ).subscribe(data=>this.RolesSVC.getRoleByUserID(data.user.id).subscribe())
   }
 }

@@ -1,6 +1,20 @@
 {
-  "users": [],
-  "roles":[],
+  "users": [
+    {
+      "email": "emilio.plances@gmail.com",
+      "password": "$2a$10$xnZf9d441/iXx9VLHFs3ueNOJXKYOpRq2ODDPr3VdpihETMCsLTNG",
+      "name": "Emilio",
+      "surname": "Plances",
+      "id": 1
+    }
+  ],
+  "roles": [
+    {
+      "userID": 1,
+      "role": "admin",
+      "id": 1
+    }
+  ],
   "cart": [],
   "wishlist": [],
   "shop": [],

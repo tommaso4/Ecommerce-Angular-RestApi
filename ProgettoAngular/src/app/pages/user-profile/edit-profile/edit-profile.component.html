@@ -1,4 +1,5 @@
 <form [formGroup]="form" *ngIf="editMode">
+  <button *ngIf="!admin" (click)="adminSwitch()">Admin</button>
   <div>
     <label for="name">Nome:</label>
     <input class="form-control" type="text" id="name" formControlName="name" >
