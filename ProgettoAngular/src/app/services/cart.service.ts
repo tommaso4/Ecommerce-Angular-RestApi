@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment.development';
-import { HttpClient } from '@angular/common/http';
-import { Observable, Subject, map, tap } from 'rxjs';
+import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
+import { Observable, Subject, catchError, map, tap, throwError } from 'rxjs';
 import { ICart } from '../Modules/icart';
+import { IShop } from '../Modules/ishop';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +14,7 @@ export class CartService {
   addedProduct$=this.addCartSubject.asObservable();
   deleteCartSubject=new Subject<ICart|null>();
   removedProduct$=this.deleteCartSubject.asObservable()
+  private apiUrlShop= environment.apiUrlShop ;
 
   constructor(
     private http:HttpClient,
@@ -20,19 +22,46 @@ export class CartService {
 
   API:string=environment.API;
 
-  getCartByUserID(userID:number):Observable<ICart[]>{
-    return this.http.get<ICart[]>(this.API).pipe(map(cartArr=>cartArr.filter(cart=>cart.userID === userID)));
+
+
+
+  getShop(id: number): Observable<any> {
+    let params = new HttpParams().set('userId', id.toString());
+
+    return this.http.get<IShop>(this.apiUrlShop, { params }).pipe(
+      catchError(this.errorHandler)
+    );
   }
 
-  addCart(cart:ICart):Observable<ICart>{
-    return this.http.post<ICart>(this.API,cart).pipe(tap(product=>this.addCartSubject.next(product)))
+  addToShop(userId: number, beer: IShop) {
+    let numberBeerToSend = 1; // Valore predefinito
+    if (beer.numberBeer !== undefined && beer.numberBeer > 1) {
+      numberBeerToSend = beer.numberBeer;
+    }
+    return this.http
+      .post('http://localhost:3000/shop',
+        {
+          userId: userId,
+          nameBeer: beer.nameBeer,
+          beerId: beer.beerId,
+          numberBeer: numberBeerToSend,
+          price: beer.price,
+          img: beer.img,
+          totalPrice: beer.price * numberBeerToSend
+        })
+  }
+
+  updateShopItem(beerId: number|undefined, updatedData: any): Observable<any> {
+    return this.http.put(`${this.apiUrlShop}/${beerId}`, updatedData);
   }
 
   deleteCart(cartID:number):Observable<ICart>{
     return this.http.delete<ICart>(`${this.API}/${cartID}`).pipe(tap(product=>this.deleteCartSubject.next(product)));
   }
 
-  updateCart(cart:ICart):Observable<ICart>{
-    return this.http.put<ICart>(`${this.API}/${cart.ID}`,cart)
+
+
+  errorHandler(error: HttpErrorResponse): Observable<never> {
+    return throwError(() => error);
   }
 }

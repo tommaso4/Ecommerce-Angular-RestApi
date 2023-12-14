@@ -1,10 +1,19 @@
-a {
-  text-decoration: none;
-  color: white;
-  margin: 10px 20px;
-}
-
+@import "../../../colors.scss";
 
 .payContainer{
+
   height: 80vh;
+  color: #F6B74B;
+  .container{
+    background-color: $dark-blue;
+    padding: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: #F6B74B;
+    padding: 10px 20px;
+    &:hover{
+      color: white;
+    }
+  }
 }

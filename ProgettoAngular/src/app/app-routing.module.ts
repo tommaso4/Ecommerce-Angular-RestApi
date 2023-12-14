@@ -18,6 +18,7 @@ import { TransferComponent } from './components/payment/transfer/transfer.compon
 import { RimborsiComponent } from './components/rimborsi/rimborsi.component';
 import { ServizioClientiComponent } from './components/servizioclienti/servizioclienti.component';
 import { SpedizioniComponent } from './components/spedizioni/spedizioni.component';
+import { AdminGuard } from './pages/log-system/admin.guard';
 
 
 
@@ -40,7 +41,7 @@ const routes: Routes = [
     { path: '', redirectTo: 'bancomat', pathMatch: 'full' }
   ],
   canActivate:[LogGuard]},
-  { path: 'edit/:id', component: EditComponent },
+  { path: 'edit/:id', component: EditComponent ,canActivate:[AdminGuard]},
   { path: 'wishlist', component: WhishlistComponent },
   { path: 'rimborsi', component: RimborsiComponent },
   { path: 'servizioclienti', component: ServizioClientiComponent },

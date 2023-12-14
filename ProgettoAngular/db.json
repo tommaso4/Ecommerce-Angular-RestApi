@@ -1,211 +1,154 @@
 {
   "users": [
     {
-      "email": "emilio.plances@gmail.com",
-      "password": "$2a$10$De8RUbneFkmQ5rIjQ48mJOh9xheYH8143PriRgU3brIwiPBG5L1YK",
-      "name": "Emilio",
-      "surname": "Plances",
-      "admin": false,
-      "id": 1
-    },
-    {
-      "email": "simo@gmail.com",
-      "password": "$2a$10$1RV5tg4bEJuRYFp745fg8erdHHe.PGsx/pNM6xm3.Lp0LxCXsjC52",
-      "name": "simo",
-      "surname": "aimo",
-      "id": 2
-    },
-    {
-      "email": "caloteresi@gmail.com",
-      "password": "$2a$10$LEKJUJqxKRIl4vwXaEVq2uoSoZ0SWoBx.y6xHYGmKunhSdk0rvHDi",
-      "name": "Calogero",
-      "surname": "Teresi",
-      "id": 3
-    },
-    {
-      "email": "lorenzoneroni13@gmail.com",
-      "password": "$2a$10$pKSaNu5njvmqtJ59kf0UR.4hURSaCiXcr3eit9B9ZarIvfFPfyWqO",
-      "name": "Lorenzo",
-      "surname": "Neroni",
-      "admin": false,
-      "id": 4
-    },
-    {
       "email": "tommasocantarini4@gmail.com",
-      "password": "$2a$10$IMyWw/Aw4gnwSehj7pqbcu9dGp6.QxJ9ifYWraIxK2y0bGA1dSDxG",
+      "password": "$2a$10$35t.K9Wa0htwCJsrvtlACexlbFMl81/aVk1p1CgT0zvtFOv.4ZODu",
       "name": "Tommaso",
       "surname": "Cantarini",
-      "id": 5
-    }
-  ],
-  "cart": [],
-  "wishlist": [
-    {
-      "beerId": 3,
-      "userId": 3,
       "id": 1
     },
     {
-      "beerId": 3,
-      "userId": 4,
+      "email": "emilio.plances@gmail.com",
+      "password": "$2a$10$bWZdHBTNU71qNbOqW2fGpeX6UH0MAPgwIslFv3qpj6XNKcdDIpaqC",
+      "name": "Emilio",
+      "surname": "Plances",
       "id": 2
+    }
+  ],
+  "roles": [
+    {
+      "userID": 1,
+      "role": "admin",
+      "id": 1
     },
     {
-      "beerId": 19,
-      "userId": 4,
-      "id": 3
-    },
-    {
-      "beerId": 24,
-      "userId": 4,
-      "id": 4
-    },
+      "userID": 2,
+      "role": "customer",
+      "id": 2
+    }
+  ],
+  "wishlist": [
     {
       "beerId": 2,
-      "userId": 4,
-      "id": 5
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "beerId": 1,
+      "userId": 1,
+      "id": 2
     }
   ],
   "shop": [
     {
-      "nameBeer": "Buzz",
-      "beerId": 1,
-      "numberBeer": 100,
-      "userId": 3,
-      "price": 4.5,
+      "nameBeer": "Misspent Youth",
+      "beerId": 11,
+      "numberBeer": 7,
+      "userId": 1,
+      "price": 8.75,
       "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 450,
-      "id": 1
-    },
-    {
-      "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
-      "beerId": 2,
-      "numberBeer": 1111,
-      "userId": 3,
-      "price": 9.68,
-      "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 10754.48,
-      "id": 2
-    },
-    {
-      "nameBeer": "Movember",
-      "beerId": 3,
-      "numberBeer": 15,
-      "userId": 3,
-      "price": 9.97,
-      "img": "https://images.punkapi.com/v2/13.png",
-      "totalPrice": 149.55,
-      "id": 3
-    },
-    {
-      "userId": 5,
-      "nameBeer": "Electric India",
-      "beerId": 6,
-      "numberBeer": 1,
-      "price": 4.49,
-      "img": "https://images.punkapi.com/v2/6.png",
-      "totalPrice": 4.49,
-      "id": 4
-    },
-    {
-      "userId": 5,
-      "nameBeer": "Fake Lager",
-      "beerId": 8,
-      "numberBeer": 1,
-      "price": 6.1,
-      "img": "https://images.punkapi.com/v2/8.png",
-      "totalPrice": 6.1,
-      "id": 5
-    },
-    {
-      "nameBeer": "Vote Sepp",
-      "beerId": 6,
-      "numberBeer": 15,
-      "userId": 3,
-      "price": 4.03,
-      "img": "https://images.punkapi.com/v2/112.png",
-      "totalPrice": 60.45,
-      "id": 6
-    },
-    {
-      "userId": 5,
-      "nameBeer": "Bramling X",
-      "beerId": 10,
-      "numberBeer": 1,
-      "price": 7.84,
-      "img": "https://images.punkapi.com/v2/10.png",
-      "totalPrice": 7.84,
-      "id": 7
-    },
-    {
-      "userId": 5,
-      "nameBeer": "Movember",
-      "beerId": 13,
-      "numberBeer": 1,
-      "price": 9.97,
-      "img": "https://images.punkapi.com/v2/13.png",
-      "totalPrice": 9.97,
-      "id": 8
-    },
-    {
-      "userId": 5,
-      "nameBeer": "Arcade Nation",
-      "beerId": 12,
-      "numberBeer": 1,
-      "price": 6.97,
-      "img": "https://images.punkapi.com/v2/12.png",
-      "totalPrice": 6.97,
-      "id": 9
-    },
-    {
-      "userId": 5,
-      "nameBeer": "Mixtape 8",
-      "beerId": 15,
-      "numberBeer": 1,
-      "price": 5.24,
-      "img": "https://images.punkapi.com/v2/15.png",
-      "totalPrice": 5.24,
-      "id": 10
-    },
-    {
-      "nameBeer": "Trashy Blonde",
-      "beerId": 2,
-      "numberBeer": 2,
-      "userId": 4,
-      "price": 4.19,
-      "img": "https://images.punkapi.com/v2/2.png",
-      "totalPrice": 8.38,
+      "totalPrice": 61.25,
       "id": 11
     },
     {
-      "userId": 4,
+      "userId": 1,
+      "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
+      "beerId": 3,
+      "numberBeer": 1,
+      "price": 9.68,
+      "img": "https://images.punkapi.com/v2/keg.png",
+      "totalPrice": 9.68,
+      "id": 12
+    },
+    {
+      "userId": 1,
       "nameBeer": "Pilsen Lager",
       "beerId": 4,
       "numberBeer": 1,
       "price": 4.68,
       "img": "https://images.punkapi.com/v2/4.png",
       "totalPrice": 4.68,
-      "id": 12
-    },
-    {
-      "userId": 4,
-      "nameBeer": "AB:12",
-      "beerId": 7,
-      "numberBeer": 1,
-      "price": 9.9,
-      "img": "https://images.punkapi.com/v2/7.png",
-      "totalPrice": 9.9,
       "id": 13
     },
     {
-      "userId": 4,
+      "userId": 1,
+      "nameBeer": "Avery Brown Dredge",
+      "beerId": 5,
+      "numberBeer": 1,
+      "price": 8.82,
+      "img": "https://images.punkapi.com/v2/5.png",
+      "totalPrice": 8.82,
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "nameBeer": "Arcade Nation",
+      "beerId": 12,
+      "numberBeer": 1,
+      "price": 6.97,
+      "img": "https://images.punkapi.com/v2/12.png",
+      "totalPrice": 6.97,
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "nameBeer": "Movember",
+      "beerId": 13,
+      "numberBeer": 1,
+      "price": 9.97,
+      "img": "https://images.punkapi.com/v2/13.png",
+      "totalPrice": 9.97,
+      "id": 16
+    },
+    {
+      "nameBeer": "Alpha Dog",
+      "beerId": 14,
+      "numberBeer": 2,
+      "userId": 1,
+      "price": 8.09,
+      "img": "https://images.punkapi.com/v2/14.png",
+      "totalPrice": 16.18,
+      "id": 17
+    },
+    {
+      "userId": 1,
+      "nameBeer": "Mixtape 8",
+      "beerId": 15,
+      "numberBeer": 1,
+      "price": 5.24,
+      "img": "https://images.punkapi.com/v2/15.png",
+      "totalPrice": 5.24,
+      "id": 18
+    },
+    {
+      "userId": 1,
       "nameBeer": "AB:07",
       "beerId": 9,
       "numberBeer": 1,
       "price": 9.87,
       "img": "https://images.punkapi.com/v2/9.png",
       "totalPrice": 9.87,
-      "id": 14
+      "id": 19
+    },
+    {
+      "userId": 1,
+      "nameBeer": "Fake Lager",
+      "beerId": 8,
+      "numberBeer": 1,
+      "price": 6.1,
+      "img": "https://images.punkapi.com/v2/8.png",
+      "totalPrice": 6.1,
+      "id": 20
+    },
+    {
+      "nameBeer": "Bramling X",
+      "beerId": 21,
+      "numberBeer": 1,
+      "userId": 2,
+      "price": 7.84,
+      "img": "https://images.punkapi.com/v2/10.png",
+      "totalPrice": 7.84,
+      "id": 21
     }
   ],
   "beers": [

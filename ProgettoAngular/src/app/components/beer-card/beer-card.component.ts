@@ -4,6 +4,7 @@ import { Ibeer } from '../../Modules/ibeer';
 import { take } from 'rxjs';
 import { BeerService } from '../../services/beer.service';
 import { LogSystemService } from '../../services/log-system.service';
+import { WhishlistService } from '../../services/whishlist.service';
 
 
 @Component({
@@ -15,11 +16,15 @@ export class BeerCardComponent {
   @Input() beer!: Ibeer;
   islogged:boolean = true;
 
-  constructor(private beerSvc:BeerService,private logService: LogSystemService) { }
-  addToWishList(beerId: number): void {
+  constructor(
+    private logService: LogSystemService,
+    private wishlistSvc: WhishlistService) { }
+
+   addToWishList(beerId: number,event:Event): void {
+    event.stopPropagation()
     this.logService.user$.subscribe(accessData => {
       if (!accessData?.user?.id) return;
-      this.beerSvc.addToWishList(beerId, accessData.user.id).pipe(take(1)).subscribe(
+      this.wishlistSvc.addToWishList(beerId, accessData.user.id).pipe(take(1)).subscribe(
       )
     });
   }

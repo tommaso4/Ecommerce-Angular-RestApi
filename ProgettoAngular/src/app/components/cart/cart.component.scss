@@ -5,10 +5,25 @@
 }
 
 .cart{
-  height: 100vh;
+  background-image: url(../../../assets/img/newcart.svg);
+    background-size: 35px;
+    background-position: left;
+    background-repeat: no-repeat;
+    line-height: 36px;
 }
-.table{
-  img{
+.table {
+  img {
     height: 60px;
   }
+  .text-left{
+    text-align: left;
+  }
+  input {
+    width: 60px;
+    text-align: center;
+    border-width: 1px;
+    border-radius:30px;
+    background-color: transparent;
+  }
 }
+

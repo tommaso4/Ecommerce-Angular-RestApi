@@ -1,0 +1,14 @@
+@import "../../../../colors.scss";
+
+.myInputPay{
+  height: 30px;
+  border-radius: 5px;
+}
+
+.myBtnPay{
+  background-color: $dark-blue;
+  margin-left: 10px;
+  padding: 5px 10px;
+  color: $primary;
+  cursor: pointer;
+}

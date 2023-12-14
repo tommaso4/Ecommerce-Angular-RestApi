@@ -1,13 +1,15 @@
 <div class="card-container">
   <div class="card mb-1">
-    <button *ngIf="islogged" class="addToWishList" (click)="addToWishList(beer.id)">
+    <button *ngIf="islogged" class="addToWishList" (click)="addToWishList(beer.id,$event)">
       <fa-icon [icon]="['fas','heart']" id="icon" class="paginate-button__icon"></fa-icon>
     </button>
-      <img [src]="beer.urlImmagine || 'https://images.punkapi.com/v2/keg.png'" class="card__img" alt="beer image">
+    <a class="d-block text-center"[routerLink]="['/details/'+ beer.id]">
+      <img  [src]="beer.urlImmagine || 'https://images.punkapi.com/v2/keg.png'" class="card__img" alt="beer image">
       <div class="card__data">
           <p class="card__data--title">{{ beer.nome }}</p>
           <p class="card__data--text">ABV: {{ beer.abv }}</p>
           <p class="card__data--text">Price: {{ beer.prezzo | currency:'EUR' }}</p>
       </div>
+    </a>
   </div>
 </div>

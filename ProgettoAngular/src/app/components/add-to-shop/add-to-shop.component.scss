@@ -4,13 +4,10 @@
   font-size: large;
   border-radius: 5px;
   width: 100%;
+  padding: 0 8px;
+
+  &:hover{
+    background-color: #f6b74b;
+    color: #0a2f69;
+  }
 }
-
-.wish:hover{
-  background-color: #f6b74b;
-  color:  #0a2f69;
-}
-
-
-
-

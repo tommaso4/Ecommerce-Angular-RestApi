@@ -37,6 +37,10 @@
       text-align: center;
     }
 
+    .addToWishList{
+      z-index: 1000;
+    }
+
   }
 
   @media(min-width:768px) {
@@ -68,6 +72,10 @@ button{
 
 button:hover{
   transform: scale(1.25);
+}
+a{
+  color:black;
+  text-decoration: none;
 }
 
 

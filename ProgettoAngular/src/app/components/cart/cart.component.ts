@@ -4,6 +4,7 @@ import { LogSystemService } from '../../services/log-system.service';
 import { IUserAuth } from '../../Modules/iuser-auth';
 import { IShop } from '../../Modules/ishop';
 import { Ibeer } from '../../Modules/ibeer';
+import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-cart',
@@ -24,7 +25,8 @@ export class CartComponent {
 
   constructor
   (private beerSvc: BeerService,
-   private LSS: LogSystemService){}
+   private LSS: LogSystemService,
+   private cartSvc: CartService){}
 
 
 
@@ -40,12 +42,13 @@ export class CartComponent {
 
   totalsCart(){
     this.allItem.forEach(item => {this.totalCart += item.totalPrice})
+    this.beerSvc.totalCart = this.totalCart;
     console.log(this.totalCart);
   }
 
 
   fetchShop(userId: number): void {
-    this.beerSvc.getShop(userId).subscribe({
+    this.cartSvc.getShop(userId).subscribe({
       next: (data: any) => {
         this.allItem = data;
         console.log(this.allItem);
@@ -71,7 +74,7 @@ export class CartComponent {
     }
     const index = this.allItem.findIndex(item => item.beerId === beerId);
     if (index !== -1) {
-      this.beerSvc.updateShopItem(this.allItem[index].id, {
+      this.cartSvc.updateShopItem(this.allItem[index].id, {
         nameBeer: this.allItem[index].nameBeer,
         beerId: this.allItem[index].id,
         numberBeer: newQuantity,

@@ -4,6 +4,7 @@ import { BeerService } from '../../services/beer.service';
 import { IUserAuth } from '../../Modules/iuser-auth';
 import { IShop } from '../../Modules/ishop';
 import { LogSystemService } from '../../services/log-system.service';
+import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-add-to-shop',
@@ -17,7 +18,10 @@ export class AddToShopComponent implements OnInit {
   isLogged: boolean = false;
   userId! : number
 
-  constructor(private beerService: BeerService, private LSS: LogSystemService) {}
+  constructor
+  (private beerService: BeerService,
+   private LSS: LogSystemService,
+   private cartSvc: CartService) {}
 
   ngOnInit(): void {
     this.LSS.user$.subscribe((user: IUserAuth | null) => {
@@ -30,7 +34,7 @@ export class AddToShopComponent implements OnInit {
   }
 
   fetchShop(userId: number): void {
-    this.beerService.getShop(userId).subscribe({
+    this.cartSvc.getShop(userId).subscribe({
       next: (data: any) => {
         this.allItem = data;
         console.log(this.allItem);
@@ -64,7 +68,7 @@ export class AddToShopComponent implements OnInit {
       const existingBeer = this.allItem[existingBeerIndex];
       const numberBeerToUpdate: number = existingBeer.numberBeer !== undefined ? existingBeer.numberBeer + 1 : 1;
 
-      this.beerService.updateShopItem(existingBeer.id, {
+      this.cartSvc.updateShopItem(existingBeer.id, {
         nameBeer: this.beer.nome,
         beerId: this.beer.id,
         numberBeer: numberBeerToUpdate,
@@ -76,7 +80,7 @@ export class AddToShopComponent implements OnInit {
         console.log('Birra aggiornata:', data);
       });
     } else {
-      this.beerService.addToShop(Number(accessData.user.id), {
+      this.cartSvc.addToShop(Number(accessData.user.id), {
         nameBeer: this.beer.nome,
         beerId: this.beer.id,
         numberBeer: 1,
