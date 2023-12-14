@@ -37,6 +37,20 @@
       "surname": "Rossi",
       "admin": false,
       "id": 5
+    },
+    {
+      "email": "emilioo@ciao.com",
+      "password": "$2a$10$DlPKrIF6gfZ.djtOds/Xwuu0Ds9dLEczPUm/9WXeDtRhakO1uce7u",
+      "name": "eeeeeee",
+      "surname": "ciaoemi",
+      "id": 6
+    },
+    {
+      "email": "emilio@ciao.com",
+      "password": "$2a$10$UNvTpDb.K/yecukhZRSiT.ynr.lJP0/FQB.V6uSfq8C20ILJNzf9.",
+      "name": "emi",
+      "surname": "emi",
+      "id": 7
     }
   ],
   "wishlist": [
