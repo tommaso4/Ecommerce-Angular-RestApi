@@ -2,10 +2,11 @@
   <label class="me-2" for="bancomatNumber">Numero Bancomat:</label>
   <input class="myInputPay me-2" type="text" id="bancomatNumber" name="bancomatNumber" [(ngModel)]="bancomatNumber" required pattern="[0-9]{16}" />
 
+  <button class="myBtnPay" type="submit" [ngStyle]="{'border': bancomatForm.valid ? '1px solid #ffffff' : 'none'}" [disabled]="bancomatForm.invalid">Invia</button>
+
   <div class="py-2" *ngIf="bancomatForm && bancomatForm.controls['bancomatNumber'] && (bancomatForm.controls['bancomatNumber'].dirty || bancomatForm.controls['bancomatNumber'].touched)">
     <div *ngIf="bancomatForm.controls['bancomatNumber'].errors?.['required']">Il numero Bancomat è obbligatorio.</div>
     <div *ngIf="bancomatForm.controls['bancomatNumber'].errors?.['pattern']">Il numero Bancomat deve contenere solo cifre e avere una lunghezza di 16 cifre.</div>
   </div>
 
-  <button class="myBtnPay" type="submit" [ngStyle]="{'border': bancomatForm.valid ? '1px solid #ffffff' : 'none'}" [disabled]="bancomatForm.invalid">Invia</button>
 </form>

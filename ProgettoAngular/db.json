@@ -25,77 +25,22 @@
       "beerId": 1,
       "userId": 1,
       "id": 2
+    },
+    {
+      "beerId": 4,
+      "userId": 1,
+      "id": 3
     }
   ],
   "shop": [
     {
-      "nameBeer": "Misspent Youth",
-      "beerId": 11,
-      "numberBeer": 7,
-      "userId": 1,
-      "price": 8.75,
-      "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 61.25,
-      "id": 11
-    },
-    {
-      "userId": 1,
-      "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
-      "beerId": 3,
-      "numberBeer": 1,
-      "price": 9.68,
-      "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 9.68,
-      "id": 12
-    },
-    {
-      "userId": 1,
-      "nameBeer": "Pilsen Lager",
-      "beerId": 4,
-      "numberBeer": 1,
-      "price": 4.68,
-      "img": "https://images.punkapi.com/v2/4.png",
-      "totalPrice": 4.68,
-      "id": 13
-    },
-    {
-      "userId": 1,
-      "nameBeer": "Avery Brown Dredge",
-      "beerId": 5,
-      "numberBeer": 1,
-      "price": 8.82,
-      "img": "https://images.punkapi.com/v2/5.png",
-      "totalPrice": 8.82,
-      "id": 14
-    },
-    {
-      "userId": 1,
-      "nameBeer": "Arcade Nation",
-      "beerId": 12,
-      "numberBeer": 1,
-      "price": 6.97,
-      "img": "https://images.punkapi.com/v2/12.png",
-      "totalPrice": 6.97,
-      "id": 15
-    },
-    {
-      "userId": 1,
-      "nameBeer": "Movember",
-      "beerId": 13,
-      "numberBeer": 1,
-      "price": 9.97,
-      "img": "https://images.punkapi.com/v2/13.png",
-      "totalPrice": 9.97,
-      "id": 16
-    },
-    {
       "nameBeer": "Alpha Dog",
-      "beerId": 14,
-      "numberBeer": 2,
+      "beerId": 17,
+      "numberBeer": 6,
       "userId": 1,
       "price": 8.09,
       "img": "https://images.punkapi.com/v2/14.png",
-      "totalPrice": 16.18,
+      "totalPrice": 48.54,
       "id": 17
     },
     {
