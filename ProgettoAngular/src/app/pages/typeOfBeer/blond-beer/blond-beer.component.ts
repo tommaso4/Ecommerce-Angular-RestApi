@@ -5,6 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { LogSystemService } from '../../../services/log-system.service';
 import { IUserAuth } from '../../../Modules/iuser-auth';
 import { take } from 'rxjs';
+import { WhishlistService } from '../../../services/whishlist.service';
 
 @Component({
   selector: 'app-blond-beer',
@@ -19,7 +20,8 @@ export class BlondBeerComponent {
   constructor(
     private beerSvc:BeerService,
     private route: ActivatedRoute,
-    private LSS:LogSystemService,){}
+    private LSS:LogSystemService,
+    private whishlistSvc: WhishlistService){}
 
   ngOnInit(){
     this.InBirreBlond();
@@ -44,7 +46,7 @@ export class BlondBeerComponent {
       if(!accessData?.user?.id) return;
       console.log(beerid);
 
-      this.beerSvc.addToWishList(beerid, accessData.user.id).pipe(take(1)).subscribe(
+      this.whishlistSvc.addToWishList(beerid, accessData.user.id).pipe(take(1)).subscribe(
         )
     })
   }

@@ -5,6 +5,7 @@ import { BeerService } from '../../services/beer.service';
 import { PaginatorService } from '../../services/paginator.service';
 import { LogSystemService } from '../../services/log-system.service';
 import { IUserAuth } from '../../Modules/iuser-auth';
+import { WhishlistService } from '../../services/whishlist.service';
 
 
 @Component({
@@ -24,7 +25,8 @@ export class HomeComponent implements OnInit {
   constructor(
     private beerService: BeerService,
     private paginatorService: PaginatorService,
-    private logService: LogSystemService
+    private logService: LogSystemService,
+    private whishlistSvc: WhishlistService
   ) { }
 
   ngOnInit(): void {
@@ -84,7 +86,7 @@ export class HomeComponent implements OnInit {
   addToWishList(beerId: number): void {
     this.logService.user$.subscribe(accessData => {
       if (!accessData?.user?.id) return;
-      this.beerService.addToWishList(beerId, accessData.user.id).pipe(take(1)).subscribe(
+      this.whishlistSvc.addToWishList(beerId, accessData.user.id).pipe(take(1)).subscribe(
       )
     });
   }

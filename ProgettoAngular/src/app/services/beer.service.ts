@@ -15,7 +15,6 @@ export class BeerService {
 
   private apiUrl = environment.apiUrl ;
   private apiUrlShop= environment.apiUrlShop ;
-  private api = environment.API ;
   beerName: string = ""
 
   constructor(private http: HttpClient) { }
@@ -45,14 +44,6 @@ export class BeerService {
     }
   }
 
-  getShop(id: number): Observable<any> {
-    let params = new HttpParams().set('userId', id.toString());
-
-    return this.http.get<IShop>(this.apiUrlShop, { params }).pipe(
-      catchError(this.errorHandler)
-    );
-  }
-
   errorHandler(error: HttpErrorResponse): Observable<never> {
     return throwError(() => error);
   }
@@ -70,40 +61,6 @@ export class BeerService {
     );
   }
 
-  addToCart(userId: number, beerId: number): Observable<any> {
-    return this.http.get<any[]>(`${this.apiUrlShop}?beerId=${beerId}`).pipe(
-      tap(cartItems => console.log('Elementi nel carrello:', cartItems)),
-
-    );
-  }
-
-  addToShop(userId: number, beer: IShop) {
-    let numberBeerToSend = 1;
-    if (beer.numberBeer !== undefined && beer.numberBeer > 1) {
-      numberBeerToSend = beer.numberBeer;
-    }
-    return this.http
-      .post('http://localhost:3000/shop',
-        {
-          userId: userId,
-          nameBeer: beer.nameBeer,
-          beerId: beer.beerId,
-          numberBeer: numberBeerToSend,
-          price: beer.price,
-          img: beer.img,
-          totalPrice: beer.price * numberBeerToSend
-        })
-  }
-
-  updateShopItem(beerId: number|undefined, updatedData: any): Observable<any> {
-    return this.http.put(`${this.apiUrlShop}/${beerId}`, updatedData);
-  }
-
-
-
-
-
-
   getRedBeer(): Observable<Ibeer[]> {
     return this.http.get<Ibeer[]>(this.apiUrl)
       .pipe(map((beer: Ibeer[]) => {
@@ -112,8 +69,6 @@ export class BeerService {
       })
       );
   }
-
-
 
   getBlondBeer(): Observable<Ibeer[]> {
     return this.http.get<Ibeer[]>(this.apiUrl)
@@ -132,10 +87,5 @@ export class BeerService {
       })
       );
   }
-
-  addToWishList(beerId: number, userId: string): Observable<{ id: number, beerId: number, userId: number }> {
-    return this.http.post<{ id: number, beerId: number, userId: number }>(this.api + '/wishlist', { beerId: beerId, userId: userId });
-  }
-
 
 }

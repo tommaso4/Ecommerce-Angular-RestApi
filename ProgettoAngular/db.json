@@ -1,21 +1,44 @@
 {
   "users": [
     {
+      "email": "emilio.plances@gmail.com",
+      "password": "$2a$10$De8RUbneFkmQ5rIjQ48mJOh9xheYH8143PriRgU3brIwiPBG5L1YK",
+      "name": "Emilio",
+      "surname": "Plances",
+      "admin": false,
+      "id": 1
+    },
+    {
+      "email": "simo@gmail.com",
+      "password": "$2a$10$1RV5tg4bEJuRYFp745fg8erdHHe.PGsx/pNM6xm3.Lp0LxCXsjC52",
+      "name": "simo",
+      "surname": "aimo",
+      "id": 2
+    },
+    {
+      "email": "caloteresi@gmail.com",
+      "password": "$2a$10$LEKJUJqxKRIl4vwXaEVq2uoSoZ0SWoBx.y6xHYGmKunhSdk0rvHDi",
+      "name": "Calogero",
+      "surname": "Teresi",
+      "id": 3
+    },
+    {
       "email": "tommasocantarini4@gmail.com",
-      "password": "$2a$10$23u9QyUzTH5WPsDfNz1YcuF.pJYY0uVoC6AxZn0RL2mlYwQGJMVha",
+      "password": "$2a$10$gbQHnGD1ZtwCQL.MhQ.ie.w9cr4yajUe45HeRfnFmSa.D19/cr40e",
       "name": "Tommaso",
       "surname": "Cantarini",
-      "id": 1
-    }
-  ],
-  "roles": [
+      "admin": false,
+      "id": 4
+    },
     {
-      "userID": 1,
-      "role": "admin",
-      "id": 1
+      "email": "mario@rossi.it",
+      "password": "$2a$10$yEvLFToQ7YSH3hDb7Y8efej9PsKHwL6naxszLjPFSMKYSI1AUVDSe",
+      "name": "Mario",
+      "surname": "Rossi",
+      "admin": false,
+      "id": 5
     }
   ],
-  "cart": [],
   "wishlist": [
     {
       "beerId": 2,
