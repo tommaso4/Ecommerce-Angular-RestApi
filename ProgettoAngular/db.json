@@ -59,6 +59,11 @@
       "beerId": 24,
       "userId": 4,
       "id": 4
+    },
+    {
+      "beerId": 2,
+      "userId": 4,
+      "id": 5
     }
   ],
   "shop": [
