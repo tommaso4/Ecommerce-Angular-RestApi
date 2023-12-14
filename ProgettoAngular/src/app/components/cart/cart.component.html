@@ -1,2 +1,17 @@
-<p>cart works!</p>
+<div *ngFor="let item of allItem">
+  <div class="d-flex align-baseline cart">
+    <div>
+      <img src="{{item.img}}">
+    </div>
+    <div>
+      <h4>{{item.nameBeer}}</h4>
+    </div>
+    <div>
+      <input type="number" value="{{item.numberBeer}}">
+    </div>
+    <div>
+      <h4>{{item.price}}</h4>
+    </div>
+  </div>
+</div>
 <a routerLink="/payment">payment</a>

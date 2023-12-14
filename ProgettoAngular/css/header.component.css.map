@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../src/app/components/header/header.component.scss","../src/colors.scss"],"names":[],"mappings":"AAEA;EACI;EACA,kBCFQ;EDGR;EACA;EACA;EACA;EACA;EACA;;AAEA;EAEE;EACA;EACA;;AAGF;EACI;;AAGJ;EACI,OCvBI;EDwBJ;;AAGJ;EACE;EACA,OC7BM;ED8BN;;AAEF;EACE;;;AAMN;EACE;;;AAGF;EACE","file":"header.component.css"}

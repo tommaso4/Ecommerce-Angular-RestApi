@@ -1,0 +1,16 @@
+.userTab {
+  height: 80vh;
+}
+.userTab form {
+  background-color: #0A2F69;
+  color: white;
+  padding: 20px 20px;
+}
+.userTab form input {
+  margin: 10px 0;
+}
+.userTab form button {
+  background-color: rgba(246, 183, 75, 0.9725490196);
+  color: black;
+  font-size: large;
+}/*# sourceMappingURL=login.component.css.map */

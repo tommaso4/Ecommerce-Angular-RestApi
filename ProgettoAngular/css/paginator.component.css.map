@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../src/app/components/paginator/paginator.component.scss","../src/colors.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA;EACA;EACA;;AAGE;EACE;EACA;;;AAKN;EACE;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE,kBCzBQ;ED0BR;;AAGF;EACE,OC9BQ;ED+BR;;AAEA;EACE,OCjCM","file":"paginator.component.css"}

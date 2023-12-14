@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../src/app/pages/whishlist/whishlist.component.scss","../src/colors.scss"],"names":[],"mappings":"AAEA;EACE,kBCFU;EDGV;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACD;;AAEC;EACE;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;;AAIJ;EAEE;IACE,kBCpCM;;EDwCN;IACE;;EAGF;IACE,OC9CI","file":"whishlist.component.css"}

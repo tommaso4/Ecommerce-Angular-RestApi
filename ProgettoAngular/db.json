@@ -127,6 +127,33 @@
       "price": 4.59,
       "img": "https://images.punkapi.com/v2/keg.png",
       "id": 9
+    },
+    {
+      "userId": 4,
+      "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
+      "beerId": 3,
+      "numberBeer": 1,
+      "price": 9.68,
+      "img": "https://images.punkapi.com/v2/keg.png",
+      "id": 10
+    },
+    {
+      "userId": 4,
+      "nameBeer": "Pilsen Lager",
+      "beerId": 4,
+      "numberBeer": 1,
+      "price": 4.68,
+      "img": "https://images.punkapi.com/v2/4.png",
+      "id": 11
+    },
+    {
+      "userId": 4,
+      "nameBeer": "Avery Brown Dredge",
+      "beerId": 5,
+      "numberBeer": 1,
+      "price": 8.82,
+      "img": "https://images.punkapi.com/v2/5.png",
+      "id": 12
     }
   ],
   "beers": [

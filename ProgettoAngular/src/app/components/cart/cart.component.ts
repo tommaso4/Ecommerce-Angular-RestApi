@@ -10,12 +10,17 @@ import { Ibeer } from '../../Modules/ibeer';
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.scss'
 })
+
 export class CartComponent {
+
   beer!: Ibeer;
   allItem: IShop[] = [];
   loggedInUser: IUserAuth | null = null;
   isLogged: boolean = false;
   userId! : number
+  priceTot!: number;
+
+
 
   constructor
   (private beerSvc: BeerService,
@@ -28,6 +33,7 @@ export class CartComponent {
       this.isLogged = !!user;
       this.fetchShop(this.userId);
     });
+    this.priceTot
   }
 
   fetchShop(userId: number): void {
