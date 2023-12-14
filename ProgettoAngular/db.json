@@ -23,38 +23,43 @@
       "id": 3
     },
     {
-      "email": "lorenzoneroni13@gmail.com",
-      "password": "$2a$10$pKSaNu5njvmqtJ59kf0UR.4hURSaCiXcr3eit9B9ZarIvfFPfyWqO",
-      "name": "Lorenzo",
-      "surname": "Neroni",
+      "email": "tommasocantarini4@gmail.com",
+      "password": "$2a$10$gbQHnGD1ZtwCQL.MhQ.ie.w9cr4yajUe45HeRfnFmSa.D19/cr40e",
+      "name": "Tommaso",
+      "surname": "Cantarini",
       "admin": false,
       "id": 4
     },
     {
-      "email": "tommasocantarini4@gmail.com",
-      "password": "$2a$10$IMyWw/Aw4gnwSehj7pqbcu9dGp6.QxJ9ifYWraIxK2y0bGA1dSDxG",
-      "name": "Tommaso",
-      "surname": "Cantarini",
+      "email": "mario@rossi.it",
+      "password": "$2a$10$yEvLFToQ7YSH3hDb7Y8efej9PsKHwL6naxszLjPFSMKYSI1AUVDSe",
+      "name": "Mario",
+      "surname": "Rossi",
+      "admin": false,
       "id": 5
     }
   ],
-  "cart": [],
   "wishlist": [
     {
       "beerId": 3,
       "userId": 3,
       "id": 1
+    },
+    {
+      "beerId": 6,
+      "userId": 3,
+      "id": 2
     }
   ],
   "shop": [
     {
       "nameBeer": "Buzz",
       "beerId": 1,
-      "numberBeer": 100,
+      "numberBeer": 110,
       "userId": 3,
       "price": 4.5,
       "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 450,
+      "totalPrice": 495,
       "id": 1
     },
     {
@@ -78,23 +83,23 @@
       "id": 3
     },
     {
-      "userId": 5,
-      "nameBeer": "Electric India",
-      "beerId": 6,
-      "numberBeer": 1,
-      "price": 4.49,
-      "img": "https://images.punkapi.com/v2/6.png",
-      "totalPrice": 4.49,
+      "nameBeer": "Devine Rebel (w/ Mikkeller)",
+      "beerId": 22,
+      "numberBeer": 3,
+      "userId": 3,
+      "price": 8.61,
+      "img": "https://images.punkapi.com/v2/22.png",
+      "totalPrice": 25.83,
       "id": 4
     },
     {
-      "userId": 5,
-      "nameBeer": "Fake Lager",
-      "beerId": 8,
-      "numberBeer": 1,
-      "price": 6.1,
-      "img": "https://images.punkapi.com/v2/8.png",
-      "totalPrice": 6.1,
+      "nameBeer": "Berliner Weisse With Raspberries And Rhubarb - B-Sides",
+      "beerId": 35,
+      "numberBeer": 3,
+      "userId": 3,
+      "price": 9.24,
+      "img": "https://images.punkapi.com/v2/keg.png",
+      "totalPrice": 27.72,
       "id": 5
     },
     {
@@ -108,44 +113,14 @@
       "id": 6
     },
     {
-      "userId": 5,
-      "nameBeer": "Bramling X",
-      "beerId": 10,
-      "numberBeer": 1,
-      "price": 7.84,
-      "img": "https://images.punkapi.com/v2/10.png",
-      "totalPrice": 7.84,
+      "nameBeer": "Blitz Series",
+      "beerId": 221,
+      "numberBeer": 3,
+      "userId": 3,
+      "price": 9.51,
+      "img": "https://images.punkapi.com/v2/keg.png",
+      "totalPrice": 28.53,
       "id": 7
-    },
-    {
-      "userId": 5,
-      "nameBeer": "Movember",
-      "beerId": 13,
-      "numberBeer": 1,
-      "price": 9.97,
-      "img": "https://images.punkapi.com/v2/13.png",
-      "totalPrice": 9.97,
-      "id": 8
-    },
-    {
-      "userId": 5,
-      "nameBeer": "Arcade Nation",
-      "beerId": 12,
-      "numberBeer": 1,
-      "price": 6.97,
-      "img": "https://images.punkapi.com/v2/12.png",
-      "totalPrice": 6.97,
-      "id": 9
-    },
-    {
-      "userId": 5,
-      "nameBeer": "Mixtape 8",
-      "beerId": 15,
-      "numberBeer": 1,
-      "price": 5.24,
-      "img": "https://images.punkapi.com/v2/15.png",
-      "totalPrice": 5.24,
-      "id": 10
     }
   ],
   "beers": [
