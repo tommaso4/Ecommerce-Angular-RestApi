@@ -1,8 +1,11 @@
+import { RolesService } from './../../../services/roles.service';
 import { Component, Input } from '@angular/core';
 import { FormGroup, Validators, FormControl, ValidationErrors, FormBuilder } from '@angular/forms';
 import { catchError } from 'rxjs';
 import { LogSystemService } from '../../../services/log-system.service';
 import { IUserAuth } from '../../../Modules/iuser-auth';
+import Swal from 'sweetalert2';
+import { IRoles } from '../../../Modules/iroles';
 
 @Component({
   selector: 'app-edit-profile',
@@ -18,14 +21,22 @@ export class EditProfileComponent {
   confirmPassword!:string;
   loading!:boolean;
   userAuth:IUserAuth|undefined;
+  admin!:boolean;
+  userRole!:IRoles;
 
   constructor(
     private fb:FormBuilder,
     private LSS:LogSystemService,
+    private RolesSVC:RolesService
     ){
     this.LSS.user$.subscribe(user =>{
       if(!user)  return
       this.userAuth=user
+    });
+    this.RolesSVC.userRole$.subscribe(role =>{
+      if(!role) return;
+      this.userRole=role;
+      this.admin=role.role==`admin`?true:false
     });
   }
 
@@ -82,5 +93,40 @@ export class EditProfileComponent {
       localStorage.setItem('user', JSON.stringify(this.userAuth))
       window.location.reload();
     })
+  }
+
+  async adminSwitch(){
+    const { value: password } = await Swal.fire({
+      title: "Enter your password",
+      input: "password",
+      inputLabel: "Password",
+      inputPlaceholder: "Enter your password",
+      inputAttributes: {
+        maxlength: "10",
+        autocapitalize: "off",
+        autocorrect: "off"
+      }
+    });
+    if (password==`4DM1N`) {
+      this.userRole.role=`admin`;
+      this.RolesSVC.upgradeUserRole(this.userRole).subscribe(()=>{
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: "Ora sei un amministratore",
+          showConfirmButton: false,
+          timer: 3000
+        });
+      })
+
+    }else{
+      Swal.fire({
+        position: "top-end",
+        icon: "error",
+        title: "EH! Volevi!",
+        showConfirmButton: false,
+        timer: 3000
+      });
+    }
   }
 }

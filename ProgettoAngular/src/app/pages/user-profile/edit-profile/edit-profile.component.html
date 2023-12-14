@@ -34,7 +34,10 @@
 
   <div class="d-flex justify-content-between mt-3">
     <ng-content></ng-content>
-    <button [disabled]="!form.valid" class="btn btn-primary" (click)="submit()">Salva</button>
+    <div class="d-flex">
+      <button *ngIf="!admin" (click)="adminSwitch()" class="btn btn-primary me-2">Admin</button>
+      <button [disabled]="!form.valid" class="btn btn-primary" (click)="submit()">Salva</button>
+    </div>
   </div>
 </form>
 <div *ngIf="loading">Caricamento...</div>
