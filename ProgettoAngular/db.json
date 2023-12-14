@@ -1,8 +1,21 @@
 {
   "users": [
-
+    {
+      "email": "tommasocantarini4@gmail.com",
+      "password": "$2a$10$23u9QyUzTH5WPsDfNz1YcuF.pJYY0uVoC6AxZn0RL2mlYwQGJMVha",
+      "name": "Tommaso",
+      "surname": "Cantarini",
+      "id": 1
+    }
   ],
-  "roles": [],
+  "roles": [
+    {
+      "userID": 1,
+      "role": "customer",
+      "id": 1
+    }
+  ],
+  "cart": [],
   "wishlist": [
     {
       "beerId": 3,
@@ -110,6 +123,46 @@
       "img": "https://images.punkapi.com/v2/15.png",
       "totalPrice": 5.24,
       "id": 10
+    },
+    {
+      "nameBeer": "Trashy Blonde",
+      "beerId": 11,
+      "numberBeer": 6,
+      "userId": 1,
+      "price": 4.19,
+      "img": "https://images.punkapi.com/v2/2.png",
+      "totalPrice": 25.14,
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
+      "beerId": 3,
+      "numberBeer": 1,
+      "price": 9.68,
+      "img": "https://images.punkapi.com/v2/keg.png",
+      "totalPrice": 9.68,
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "nameBeer": "Pilsen Lager",
+      "beerId": 4,
+      "numberBeer": 1,
+      "price": 4.68,
+      "img": "https://images.punkapi.com/v2/4.png",
+      "totalPrice": 4.68,
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "nameBeer": "Avery Brown Dredge",
+      "beerId": 5,
+      "numberBeer": 1,
+      "price": 8.82,
+      "img": "https://images.punkapi.com/v2/5.png",
+      "totalPrice": 8.82,
+      "id": 14
     }
   ],
   "beers": [
