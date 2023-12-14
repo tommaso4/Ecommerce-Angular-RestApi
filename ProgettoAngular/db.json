@@ -37,6 +37,11 @@
       "userID": 3,
       "role": "customer",
       "id": 3
+    },
+    {
+      "userID": 3,
+      "role": "customer",
+      "id": 3
     }
   ],
   "wishlist": [
@@ -106,6 +111,16 @@
       "img": "https://images.punkapi.com/v2/10.png",
       "totalPrice": 7.84,
       "id": 21
+    },
+    {
+      "userId": 3,
+      "nameBeer": "Baby Saison - B-Sides",
+      "beerId": 84,
+      "numberBeer": 1,
+      "price": 8.62,
+      "img": "https://images.punkapi.com/v2/keg.png",
+      "totalPrice": 8.62,
+      "id": 22
     }
   ],
   "beers": [

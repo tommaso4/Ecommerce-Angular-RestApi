@@ -7,9 +7,9 @@
         <p  class="card__data--text desc">{{ birra.descrizione }}</p>
         <h5 class="card__data--text"><strong>Vol:</strong> {{ birra.abv | percent }}</h5>
         <h5 class="card__data--text"><strong>Price:</strong> {{ birra.prezzo | currency:'EUR' }}</h5>
+        <button *ngIf="isLogged" (click)="addToWish(birra.id)" class="mb-2 wish">WISH</button>
+        <app-add-to-shop [beer]="birra"></app-add-to-shop>
       </div>
-      <button *ngIf="isLogged" (click)="addToWish(birra.id)" class="mb-2 wish">WISH</button>
-      <app-add-to-shop [beer]="birra"></app-add-to-shop>
     </div>
   </div>
 </div>
