@@ -1,66 +1,39 @@
 <div class="bg-80">
-  <div class="container py-5 rounded style-ctn">
+  <div class="container p-5 rounded style-ctn">
     <div *ngIf="!editMode">
       <div>
-        <p>Nome: {{ user?.name }}</p>
-        <p>Cognome: {{ user?.surname }}</p>
+        <p>Name: {{ user?.name|titlecase}}</p>
+        <p>Surname: {{ user?.surname |titlecase}}</p>
         <p>Email: {{ user?.email }}</p>
       </div>
       <div>
         <div class="d-flex justify-content-between">
           <div>
-                      <button (click)="deleteAccount()" class="btn bottone">
-            Elimina Account
-          </button>
+            <button (click)="deleteAccount()" class="btn bottone">Delete Account</button>
           </div>
           <div>
-            <button (click)="editMode = !editMode" class="btn bottone me-2">
-              Modifica Dati
-            </button>
-            <button (click)="logOut()" class="btn bottone me-2">
-              Disconnettiti
-            </button>
+            <button (click)="editMode = !editMode" class="btn bottone me-2">Edit</button>
+            <button (click)="logOut()" class="btn bottone me-2">Log Out</button>
           </div>
         </div>
-        <div
-          *ngIf="deleting"
-          class="bg-eliminazione rounded mt-3 text-white p-3"
-        >
-          <h3 class="h3-eliminazione">
-            Sei sicuro di volere eliminare questo account?
-          </h3>
-          <label for="deleting-name" class="mb-1"
-            >Inserisci "{{ user?.name }}" per confermare l'eliminazione!</label
-          >
+        <div *ngIf="deleting" class="bg-eliminazione rounded mt-3 text-white p-3">
+          <h3 class="h3-eliminazione">Do you really want to delete this account?</h3>
+          <label for="deleting-name" class="mb-1">Enter "{{ user?.name }}" to confirm!</label>
           <div class="d-flex me-1">
-            <input
-              id="deleting-name"
-              class="me-2"
-              [(ngModel)]="deletingName"
-              type="text"
-            />
-            <button class="btn btn-danger me-2" (click)="confirmDelete()">
-              ELIMINA
-            </button>
+            <input id="deleting-name" class="me-2" [(ngModel)]="deletingName"type="text"/>
+            <button class="btn btn-danger me-2" (click)="confirmDelete()">Delete</button>
             <button class="btn btn-success" (click)="cancelDelete()">No</button>
           </div>
           <div *ngIf="wrongName">
-            Se si desidera proseguire inserire il proprio nome
+            Enter your name to continue
           </div>
         </div>
       </div>
     </div>
     <div>
       <app-edit-profile [editMode]="editMode">
-        <button
-          class="disable-edit-mode btn bottone"
-          *ngIf="editMode"
-          (click)="editMode = !editMode"
-        >
-          <fa-icon
-            [icon]="['fas', 'arrow-left']"
-            class="paginate-button__icon"
-          ></fa-icon>
+        <button class="disable-edit-mode btn bottone" *ngIf="editMode" (click)="editMode = !editMode">
+          <fa-icon [icon]="['fas', 'arrow-left']" class="paginate-button__icon"></fa-icon>
         </button>
       </app-edit-profile>
     </div>

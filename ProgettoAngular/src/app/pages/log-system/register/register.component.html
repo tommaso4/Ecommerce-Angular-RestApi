@@ -1,50 +1,50 @@
 <div class="container userTab">
   <form [formGroup]="form">
     <div>
-      <label for="name">Nome:</label>
+      <label for="name">Name:</label>
       <input class="form-control" type="text" id="name" formControlName="name" >
     </div>
-    <div *ngIf="isValidAndTouched('name')" class="alert alert-warning">Non è un nome valido</div>
+    <div *ngIf="isValidAndTouched('name')" class="alert alert-warning">Enter your name</div>
     <div>
-      <label for="surname">Cognome:</label>
+      <label for="surname">Surname:</label>
       <input class="form-control" type="text" id="surname" formControlName="surname">
     </div>
-    <div *ngIf="isValidAndTouched('surname')" class="alert alert-warning">Non è un cognome valido</div>
+    <div *ngIf="isValidAndTouched('surname')" class="alert alert-warning">Enter your username</div>
 
     <div>
       <label for="email">Email:</label>
       <input class="form-control" type="text" id="email" formControlName="email">
     </div>
-    <div *ngIf="isValidAndTouched('email') && !emailExist" class="alert alert-warning">Non è una mail valida</div>
-    <div *ngIf="emailExist" class="alert alert-warning">Questa email è già registrata</div>
+    <div *ngIf="isValidAndTouched('email') && !emailExist" class="alert alert-warning">This isn't a valid email</div>
+    <div *ngIf="emailExist" class="alert alert-warning">This email already exist!</div>
 
     <div>
       <label for="password">Password:</label>
       <input class="form-control" type="password" id="password" formControlName="password">
     </div>
     <div *ngIf="isValidAndTouched('password')" class="alert alert-warning">
-      <p>Non è una password valida. La password deve contenere:</p>
+      <p>Not a valid password. It must contains:</p>
       <ul>
-        <li>Minimo 8 caratteri</li>
-        <li>Almeno un numero</li>
-        <li>Almeno una lettera maiuscola</li>
-        <li>Almeno una lettera minuscola</li>
-        <li>Almeno un carattere speciale</li>
+        <li>At least 8 characters</li>
+        <li>A number</li>
+        <li>An uppercase letter</li>
+        <li>A lowercase letter</li>
+        <li>A special character</li>
       </ul>
     </div>
 
     <div>
-      <label for="confirmPassword">Conferma Password:</label>
+      <label for="confirmPassword">Confirm Password:</label>
       <input class="form-control" type="password" id="confirmPassword" formControlName="confirmPassword">
     </div>
     <div *ngIf="isValidAndTouched('confirmPassword')" class="alert alert-warning">
       {{getCustomMessage('confirmPassword')}}
     </div>
-    <p>Sei già registrato?<a routerLink="/LogSystem/login">Accedi!</a></p>
+    <p>Are you signed?<a routerLink="/LogSystem/login">Log in!</a></p>
 
-    <button [disabled]="!form.valid" class="mt-1 p-1" (click)="submit()">Registrati</button>
+    <button [disabled]="!form.valid" class="mt-1 p-1" (click)="submit()">Sign up</button>
   </form>
-  <div *ngIf="loading">Caricamento...</div>
+  <div *ngIf="loading">Loading...</div>
 </div>
 
 

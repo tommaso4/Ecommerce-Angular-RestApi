@@ -17,12 +17,11 @@ export class BeerCardComponent {
   islogged:boolean = true;
 
   constructor(
-    private beerSvc:BeerService,
     private logService: LogSystemService,
     private wishlistSvc: WhishlistService) { }
 
-
-   addToWishList(beerId: number): void {
+   addToWishList(beerId: number,event:Event): void {
+    event.stopPropagation()
     this.logService.user$.subscribe(accessData => {
       if (!accessData?.user?.id) return;
       this.wishlistSvc.addToWishList(beerId, accessData.user.id).pipe(take(1)).subscribe(

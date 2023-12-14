@@ -6,6 +6,20 @@
       "name": "Tommaso",
       "surname": "Cantarini",
       "id": 1
+    },
+    {
+      "email": "emilio.plances@gmail.com",
+      "password": "$2a$10$bWZdHBTNU71qNbOqW2fGpeX6UH0MAPgwIslFv3qpj6XNKcdDIpaqC",
+      "name": "Emilio",
+      "surname": "Plances",
+      "id": 2
+    },
+    {
+      "email": "EmanueleBarone@gmail.com",
+      "password": "$2a$10$/DJFdMPu51O4/6RTKs13Xu5/QjTPT5n7vnm5TRFe8BlHiujKQR71e",
+      "name": "Emanuele",
+      "surname": "Barone",
+      "id": 3
     }
   ],
   "roles": [
@@ -13,6 +27,16 @@
       "userID": 1,
       "role": "admin",
       "id": 1
+    },
+    {
+      "userID": 2,
+      "role": "customer",
+      "id": 2
+    },
+    {
+      "userID": 3,
+      "role": "customer",
+      "id": 3
     }
   ],
   "wishlist": [
@@ -72,6 +96,16 @@
       "img": "https://images.punkapi.com/v2/8.png",
       "totalPrice": 6.1,
       "id": 20
+    },
+    {
+      "nameBeer": "Bramling X",
+      "beerId": 21,
+      "numberBeer": 1,
+      "userId": 2,
+      "price": 7.84,
+      "img": "https://images.punkapi.com/v2/10.png",
+      "totalPrice": 7.84,
+      "id": 21
     }
   ],
   "beers": [

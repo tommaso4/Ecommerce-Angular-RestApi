@@ -5,9 +5,7 @@
 
   <div class="card-container" *ngIf="beers.length > 0">
       <div *ngFor="let beer of beers" >
-        <a [routerLink]="['/details/'+ beer.id]">
           <app-beer-card [beer]="beer"></app-beer-card>
-        </a>
         <app-add-to-shop [beer]="beer"></app-add-to-shop>
       </div>
 
