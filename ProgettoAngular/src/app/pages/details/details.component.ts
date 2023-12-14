@@ -3,9 +3,10 @@ import { ActivatedRoute } from '@angular/router';
 import { BeerService } from '../../services/beer.service';
 import { Ibeer } from '../../Modules/ibeer';
 import { LogSystemService } from '../../services/log-system.service';
-import { WhishlistService } from '../../components/whishlist/whishlist.service';
+import { WhishlistService } from '../whishlist/whishlist.service';
 import { IUserAuth } from '../../Modules/iuser-auth';
-import { take } from 'rxjs';
+import { Observable, map, take, tap } from 'rxjs';
+import { IShop } from '../../Modules/ishop';
 
 
 @Component({
@@ -18,6 +19,7 @@ export class DetailsComponent {
   isLogged: boolean = false;
   beerId!: number;
   beer!: Ibeer;
+  allItem: IShop[]= [];
 
   constructor(
     private route: ActivatedRoute,
@@ -37,9 +39,13 @@ export class DetailsComponent {
       }
     });
 
-    this.LSS.user$.subscribe((user:IUserAuth|null)=>{
-      this.isLogged=!!user;
-    })
+    this.LSS.user$.subscribe((user: IUserAuth | null) => {
+      this.isLogged = !!user;
+      if (user && user.user.id) {
+        const userId = Number(user.user.id); // Ottieni l'ID dell'utente da LSS.user$
+        this.fetchShop(userId); // Passa l'ID dell'utente a fetchShop() per ottenere le birre associate a quell'utente
+      }
+    });
   }
 
   getBeerDetails(): void {
@@ -54,33 +60,26 @@ export class DetailsComponent {
     });
   }
 
-  addToShop() {
-    this.LSS.user$.subscribe((accessData) => {
-      if (accessData) {
-        console.log(accessData);
-        console.log('vvvvvvv:',this.beer);
-        console.log(this.beer)
-        if(!this.beer) return;
-        this.beerService.addToShop(Number(accessData.user.id), {
 
-          nameBeer: this.beer.nome,
-          beerId: this.beer.id,
-        });
-      }else{
-
-        alert("Per aggiungere ai preferiti devi loggarti o registrarti");
+  fetchShop(userId: number): void {
+    this.beerService.getShop(userId).subscribe({
+      next: (data:any) => {
+        this.allItem = data; // Assegna l'array di IShop alla variabile allItem
+        console.log('Tutte le birre presenti nello shop:', this.allItem);
+      },
+      error: (error) => {
+        console.error('Errore nel recupero delle birre:', error);
       }
     });
   }
 
+
   addToWish(beerid:number):void{
     this.LSS.user$.subscribe(accessData=>{
       if(!accessData?.user?.id) return;
-      this.beerService.addToWishList(beerid, accessData.user.id).pipe(take(1)).subscribe(
-        )
+      this.beerService.addToWishList(beerid, accessData.user.id).pipe(take(1)).subscribe( )
     })
   }
-
 }
 
 

@@ -32,7 +32,9 @@
     </ul>
   </div>
 
-  <button [disabled]="!form.valid" class="btn btn-primary mt-3" (click)="submit()">Salva</button>
+  <div class="d-flex justify-content-between mt-3">
+    <ng-content></ng-content>
+    <button [disabled]="!form.valid" class="btn btn-primary" (click)="submit()">Salva</button>
+  </div>
 </form>
 <div *ngIf="loading">Caricamento...</div>
-

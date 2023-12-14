@@ -1,0 +1,11 @@
+<form #bancomatForm="ngForm" (ngSubmit)="submitForm(bancomatForm)">
+  <label for="bancomatNumber">Numero Bancomat:</label>
+  <input type="text" id="bancomatNumber" name="bancomatNumber" [(ngModel)]="bancomatNumber" required pattern="[0-9]{16}" />
+
+  <div *ngIf="bancomatForm.controls['bancomatNumber'].invalid && (bancomatForm.controls['bancomatNumber'].dirty || bancomatForm.controls['bancomatNumber'].touched)">
+    <div *ngIf="bancomatForm.controls['bancomatNumber'].errors?.['required']">Il numero Bancomat è obbligatorio.</div>
+    <div *ngIf="bancomatForm.controls['bancomatNumber'].errors?.['pattern']">Il numero Bancomat deve contenere solo cifre e avere una lunghezza di 16 cifre.</div>
+  </div>
+
+  <button type="submit" [disabled]="bancomatForm.invalid">Invia</button>
+</form>

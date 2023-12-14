@@ -22,7 +22,9 @@
     </div>
   </div>
   <div>
-    <app-edit-profile [editMode]="editMode"></app-edit-profile>
+    <app-edit-profile [editMode]="editMode">
+      <button class="disable-edit-mode btn btn-primary" *ngIf="editMode" (click)="editMode=!editMode"><fa-icon [icon]="['fas','arrow-left']" class="paginate-button__icon"></fa-icon></button>
+    </app-edit-profile>
   </div>
 </div>
 

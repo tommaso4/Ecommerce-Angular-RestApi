@@ -7,6 +7,9 @@
         <p class="card__data--title">{{ item.beer?.descrizione }}</p>
         <h5 class="card__data--text">ABV: {{ item.beer?.abv }}</h5>
         <h5 class="card__data--text">Price: {{ item.beer?.prezzo | currency:'EUR' }}</h5>
+        <app-add-to-shop *ngIf="item.beer" [beer]="item.beer"></app-add-to-shop>
+        <button (click)="removeBerrWish(item.id)">REMOVE</button>
+        {{item.id}}
       </div>
     </div>
   </div>

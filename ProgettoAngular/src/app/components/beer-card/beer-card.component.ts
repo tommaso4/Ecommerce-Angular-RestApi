@@ -9,7 +9,8 @@ import { Ibeer } from '../../Modules/ibeer';
   styleUrls: ['./beer-card.component.scss']
 })
 export class BeerCardComponent {
-  @Input() beer: Ibeer | null = null; // Inizializzato a null anziché {}
+  @Input() beer!: Ibeer;
+
 
   constructor() { }
 }
