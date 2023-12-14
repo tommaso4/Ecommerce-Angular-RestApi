@@ -1,1 +1,0 @@
-{"version":3,"sourceRoot":"","sources":["../src/app/components/beer-card/beer-card.component.scss","../src/colors.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;;AAIJ;EAEE;IACE,kBCnCM;;EDuCN;IACE;;EAGF;IACE,OC7CI","file":"beer-card.component.css"}
