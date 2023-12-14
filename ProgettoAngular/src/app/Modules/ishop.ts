@@ -1,7 +1,11 @@
+import { Ibeer } from "./ibeer";
+
 export interface IShop {
   id?: number;
   beerId: number;
-  user_id?:number|undefined
+  userId?:number|undefined
   nameBeer: string;
-  numberBeer?: number;
+  numberBeer: number;
+  beer?: Ibeer;
+  price: number;
 }

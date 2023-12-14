@@ -1,10 +1,11 @@
 {
   "users": [
     {
-      "email": "prova@gmail.com",
-      "password": "$2a$10$ddg0bWKpQpKnrK.li96tFO5vDDPLofMWcQUZRI7rhRXeAySbbxnuq",
-      "name": "prova",
-      "surname": "prova",
+      "email": "emilio.plances@gmail.com",
+      "password": "$2a$10$De8RUbneFkmQ5rIjQ48mJOh9xheYH8143PriRgU3brIwiPBG5L1YK",
+      "name": "Emilio",
+      "surname": "Plances",
+      "admin": false,
       "id": 1
     },
     {
@@ -20,154 +21,79 @@
       "name": "Calogero",
       "surname": "Teresi",
       "id": 3
-    }
-  ],
-  "cart": [],
-  "wishlist": [
-    {
-      "beerId": 1,
-      "userId": 1,
-      "id": 1
     },
     {
-      "beerId": 2,
-      "userId": 1,
-      "id": 2
-    },
-    {
-      "beerId": 1,
-      "userId": 1,
-      "id": 3
-    },
-    {
-      "beerId": 1,
-      "userId": 1,
+      "email": "tommasocantarini4@gmail.com",
+      "password": "$2a$10$gbQHnGD1ZtwCQL.MhQ.ie.w9cr4yajUe45HeRfnFmSa.D19/cr40e",
+      "name": "Tommaso",
+      "surname": "Cantarini",
+      "admin": false,
       "id": 4
     },
     {
-      "beerId": 1,
-      "userId": 2,
+      "email": "mario@rossi.it",
+      "password": "$2a$10$yEvLFToQ7YSH3hDb7Y8efej9PsKHwL6naxszLjPFSMKYSI1AUVDSe",
+      "name": "Mario",
+      "surname": "Rossi",
+      "admin": false,
       "id": 5
-    },
-    {
-      "beerId": 2,
-      "userId": 2,
-      "id": 6
-    },
+    }
+  ],
+  "wishlist": [
     {
       "beerId": 3,
-      "userId": 2,
-      "id": 7
-    },
-    {
-      "beerId": 8,
-      "userId": 2,
-      "id": 8
-    },
-    {
-      "beerId": 7,
-      "userId": 2,
-      "id": 9
-    },
-    {
-      "beerId": 3,
-      "userId": 1,
-      "id": 10
-    },
-    {
-      "beerId": 4,
-      "userId": 1,
-      "id": 11
-    },
-    {
-      "beerId": 5,
-      "userId": 1,
-      "id": 12
-    },
-    {
-      "beerId": 13,
-      "userId": 1,
-      "id": 13
-    },
-    {
-      "beerId": 14,
-      "userId": 1,
-      "id": 14
-    },
-    {
-      "beerId": 15,
-      "userId": 1,
-      "id": 15
-    },
-    {
-      "beerId": 17,
       "userId": 3,
-      "id": 16
+      "id": 1
     }
   ],
   "shop": [
     {
+      "nameBeer": "Trashy Blonde",
+      "beerId": 2,
+      "numberBeer": 3,
       "userId": 3,
-      "nameBeer": "Buzz",
-      "beerId": 1,
-      "numberBeer": 1,
+      "price": 4.19,
       "id": 1
     },
     {
-      "userId": 3,
       "nameBeer": "Buzz",
       "beerId": 1,
-      "numberBeer": 1,
+      "numberBeer": 6,
+      "userId": 3,
+      "price": 4.5,
       "id": 2
     },
     {
+      "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
+      "beerId": 3,
+      "numberBeer": 13,
       "userId": 3,
-      "nameBeer": "Buzz",
-      "beerId": 1,
-      "numberBeer": 1,
+      "price": 9.68,
       "id": 3
     },
     {
+      "nameBeer": "Pilsen Lager",
+      "beerId": 4,
+      "numberBeer": 3,
       "userId": 3,
-      "nameBeer": "Buzz",
-      "beerId": 1,
-      "numberBeer": 1,
+      "price": 4.68,
       "id": 4
     },
     {
+      "nameBeer": "Electric India",
+      "beerId": 6,
+      "numberBeer": 2,
       "userId": 3,
-      "nameBeer": "Buzz",
-      "beerId": 1,
-      "numberBeer": 1,
+      "price": 4.49,
       "id": 5
     },
     {
       "userId": 3,
-      "nameBeer": "Buzz",
-      "beerId": 1,
+      "nameBeer": "Avery Brown Dredge",
+      "beerId": 5,
       "numberBeer": 1,
+      "price": 8.82,
       "id": 6
-    },
-    {
-      "userId": 3,
-      "nameBeer": "Buzz",
-      "beerId": 1,
-      "numberBeer": 1,
-      "id": 7
-    },
-    {
-      "userId": 3,
-      "nameBeer": "Buzz",
-      "beerId": 1,
-      "numberBeer": 1,
-      "id": 8
-    },
-    {
-      "userId": 3,
-      "nameBeer": "Buzz",
-      "beerId": 1,
-      "numberBeer": 1,
-      "id": 9
     }
   ],
   "beers": [

@@ -9,6 +9,7 @@
           <app-beer-card [beer]="beer"></app-beer-card>
         </a>
         <button *ngIf="islogged" class="addToWishList" (click)="addToWishList(beer.id)">Add to Whishlist</button>
+        <app-add-to-shop [beer]="beer"></app-add-to-shop>
       </div>
 
   </div>

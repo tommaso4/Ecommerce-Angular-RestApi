@@ -8,6 +8,7 @@ import { IUserAuth } from '../Modules/iuser-auth';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { Router } from '@angular/router';
 import { IUser } from '../Modules/iuser';
+import { IRoles } from '../Modules/iroles';
 
 @Injectable({
   providedIn: 'root'
@@ -23,6 +24,7 @@ export class LogSystemService {
   APIRegister:string=`${environment.API}/register`;
   APILogin:string=`${environment.API}/login`;
 
+
   constructor(
     private http:HttpClient,
     private router: Router
@@ -35,11 +37,8 @@ export class LogSystemService {
   }
 
   updateUser(user:IUserAuth):Observable<IUser>{
-    console.log(user);
     this.authorized.next(user);
-    return this.http.put<IUser>(`${this.APIUser}/${user.user.id}`, user.user).pipe(tap(data=>{
-      console.log(data)
-    }));
+    return this.http.put<IUser>(`${this.APIUser}/${user.user.id}`, user.user)
   }
 
   login(user:ILogin):Observable<IUserAuth>{
@@ -80,6 +79,4 @@ export class LogSystemService {
     }, remainingTimeMs)
   }
 
-
-  
 }
