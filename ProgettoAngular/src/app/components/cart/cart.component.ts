@@ -19,7 +19,8 @@ export class CartComponent {
   loggedInUser: IUserAuth | null = null;
   isLogged: boolean = false;
   userId! : number
-  totalCart: number = 0
+  totalCart: number = 0;
+
 
 
 
@@ -42,7 +43,7 @@ export class CartComponent {
 
   totalsCart(){
     this.allItem.forEach(item => {this.totalCart += item.totalPrice})
-    this.beerSvc.totalCart = this.totalCart;
+    this.cartSvc.setTotalCart(this.totalCart)
     console.log(this.totalCart);
   }
 
@@ -88,6 +89,9 @@ export class CartComponent {
       this.allItem[index].numberBeer = newQuantity;
       this.allItem[index].totalPrice = this.allItem[index].price * newQuantity;
       this.calculateTotalCart();
+      const updatedTotal = this.cartSvc.calculateTotalCart(this.allItem);
+      this.cartSvc.setTotalCart(updatedTotal);
+
     }
   }
 

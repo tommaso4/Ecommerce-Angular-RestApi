@@ -4,6 +4,7 @@ import Swal from 'sweetalert2';
 import { LogSystemService } from '../../../services/log-system.service';
 import { BeerService } from '../../../services/beer.service';
 import { Router } from '@angular/router';
+import { CartService } from '../../../services/cart.service';
 
 @Component({
   selector: 'app-bancomat',
@@ -18,12 +19,14 @@ export class BancomatComponent {
 
   constructor(
     private logSvc : LogSystemService,
-    private beerSvc : BeerService,
+    private cartSvc : CartService,
     private router: Router){}
 
 
-    ngOnInit(){
-      this.totalCart = this.beerSvc.totalCart;
+    ngOnInit() {
+      this.cartSvc.getTotalCart().subscribe((total: number) => {
+        this.totalCart = total;
+      });
     }
 
   submitForm(form: NgForm) {

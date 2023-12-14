@@ -1,17 +1,19 @@
-import { Component } from '@angular/core';
-import { BeerService } from '../../services/beer.service';
+import { Component, OnInit } from '@angular/core';
+import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-payment',
   templateUrl: './payment.component.html',
-  styleUrl: './payment.component.scss'
+  styleUrls: ['./payment.component.scss'] // Utilizza 'styleUrls' invece di 'styleUrl'
 })
-export class PaymentComponent {
-    totalCart!:number;
+export class PaymentComponent implements OnInit {
+  totalCart: number = 0;
 
-    constructor(private beerSvc : BeerService){}
+  constructor(private cartSvc: CartService) {}
 
-    ngOnInit(){
-      this.totalCart = this.beerSvc.totalCart;
-    }
+  ngOnInit() {
+    this.cartSvc.getTotalCart().subscribe((total: number) => {
+      this.totalCart = total;
+    });
+  }
 }

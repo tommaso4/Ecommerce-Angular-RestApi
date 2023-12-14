@@ -23,95 +23,154 @@
       "id": 3
     },
     {
-      "email": "emilio.plances@gmail.com",
-      "password": "$2a$10$De8RUbneFkmQ5rIjQ48mJOh9xheYH8143PriRgU3brIwiPBG5L1YK",
-      "name": "Emilio",
-      "surname": "Plances",
-      "admin": false,
-      "id": 1
-    },
-    {
-      "email": "simo@gmail.com",
-      "password": "$2a$10$1RV5tg4bEJuRYFp745fg8erdHHe.PGsx/pNM6xm3.Lp0LxCXsjC52",
-      "name": "simo",
-      "surname": "aimo",
-      "id": 2
-    },
-    {
-      "email": "caloteresi@gmail.com",
-      "password": "$2a$10$LEKJUJqxKRIl4vwXaEVq2uoSoZ0SWoBx.y6xHYGmKunhSdk0rvHDi",
-      "name": "Calogero",
-      "surname": "Teresi",
-      "id": 3
-    },
-    {
-      "email": "lorenzoneroni13@gmail.com",
-      "password": "$2a$10$pKSaNu5njvmqtJ59kf0UR.4hURSaCiXcr3eit9B9ZarIvfFPfyWqO",
-      "name": "Lorenzo",
-      "surname": "Neroni",
+      "email": "tommasocantarini4@gmail.com",
+      "password": "$2a$10$gbQHnGD1ZtwCQL.MhQ.ie.w9cr4yajUe45HeRfnFmSa.D19/cr40e",
+      "name": "Tommaso",
+      "surname": "Cantarini",
       "admin": false,
       "id": 4
     },
     {
-      "email": "tommasocantarini4@gmail.com",
-      "password": "$2a$10$35t.K9Wa0htwCJsrvtlACexlbFMl81/aVk1p1CgT0zvtFOv.4ZODu",
-      "name": "Tommaso",
-      "surname": "Cantarini",
+      "email": "mario@rossi.it",
+      "password": "$2a$10$yEvLFToQ7YSH3hDb7Y8efej9PsKHwL6naxszLjPFSMKYSI1AUVDSe",
+      "name": "Mario",
+      "surname": "Rossi",
+      "admin": false,
       "id": 5
     }
   ],
   "wishlist": [
     {
-      "beerId": 2,
-      "userId": 1,
+      "beerId": 3,
+      "userId": 3,
       "id": 1
     },
     {
-      "beerId": 1,
-      "userId": 1,
+      "beerId": 6,
+      "userId": 3,
       "id": 2
+    },
+    {
+      "beerId": 3,
+      "userId": 3,
+      "id": 3
+    },
+    {
+      "beerId": 4,
+      "userId": 3,
+      "id": 4
+    },
+    {
+      "beerId": 1,
+      "userId": 3,
+      "id": 5
+    },
+    {
+      "beerId": 1,
+      "userId": 3,
+      "id": 6
     }
   ],
   "shop": [
     {
+      "nameBeer": "Buzz",
+      "beerId": 1,
+      "numberBeer": 157,
+      "userId": 3,
+      "price": 4.5,
+      "img": "https://images.punkapi.com/v2/keg.png",
+      "totalPrice": 706.5,
+      "id": 1
+    },
+    {
       "nameBeer": "Trashy Blonde",
       "beerId": 2,
-      "numberBeer": 2,
-      "userId": 4,
+      "numberBeer": 983,
+      "userId": 3,
       "price": 4.19,
       "img": "https://images.punkapi.com/v2/2.png",
-      "totalPrice": 8.38,
-      "id": 11
+      "totalPrice": 4118.77,
+      "id": 2
     },
     {
-      "userId": 4,
-      "nameBeer": "Pilsen Lager",
+      "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
+      "beerId": 3,
+      "numberBeer": 118,
+      "userId": 3,
+      "price": 9.68,
+      "img": "https://images.punkapi.com/v2/keg.png",
+      "totalPrice": 1142.24,
+      "id": 3
+    },
+    {
+      "nameBeer": "Devine Rebel (w/ Mikkeller)",
       "beerId": 4,
-      "numberBeer": 1,
-      "price": 4.68,
-      "img": "https://images.punkapi.com/v2/4.png",
-      "totalPrice": 4.68,
-      "id": 12
+      "numberBeer": 6,
+      "userId": 3,
+      "price": 8.61,
+      "img": "https://images.punkapi.com/v2/22.png",
+      "totalPrice": 51.66,
+      "id": 4
     },
     {
-      "userId": 4,
-      "nameBeer": "AB:12",
-      "beerId": 7,
-      "numberBeer": 1,
-      "price": 9.9,
-      "img": "https://images.punkapi.com/v2/7.png",
-      "totalPrice": 9.9,
-      "id": 13
+      "nameBeer": "Berliner Weisse With Raspberries And Rhubarb - B-Sides",
+      "beerId": 35,
+      "numberBeer": 3,
+      "userId": 3,
+      "price": 9.24,
+      "img": "https://images.punkapi.com/v2/keg.png",
+      "totalPrice": 27.72,
+      "id": 5
     },
     {
-      "userId": 4,
-      "nameBeer": "AB:07",
-      "beerId": 9,
+      "nameBeer": "Vote Sepp",
+      "beerId": 6,
+      "numberBeer": 15,
+      "userId": 3,
+      "price": 4.03,
+      "img": "https://images.punkapi.com/v2/112.png",
+      "totalPrice": 60.45,
+      "id": 6
+    },
+    {
+      "nameBeer": "Blitz Series",
+      "beerId": 221,
+      "numberBeer": 3,
+      "userId": 3,
+      "price": 9.51,
+      "img": "https://images.punkapi.com/v2/keg.png",
+      "totalPrice": 28.53,
+      "id": 7
+    },
+    {
+      "nameBeer": "Hello My Name Is Mette-Marit",
+      "beerId": 8,
+      "numberBeer": 9,
+      "userId": 3,
+      "price": 9.12,
+      "img": "https://images.punkapi.com/v2/19.png",
+      "totalPrice": 82.08,
+      "id": 8
+    },
+    {
+      "userId": 3,
+      "nameBeer": "Avery Brown Dredge",
+      "beerId": 5,
       "numberBeer": 1,
-      "price": 9.87,
-      "img": "https://images.punkapi.com/v2/9.png",
-      "totalPrice": 9.87,
-      "id": 14
+      "price": 8.82,
+      "img": "https://images.punkapi.com/v2/5.png",
+      "totalPrice": 8.82,
+      "id": 9
+    },
+    {
+      "nameBeer": "The End Of History",
+      "beerId": 24,
+      "numberBeer": 12,
+      "userId": 3,
+      "price": 8.77,
+      "img": "https://images.punkapi.com/v2/24.png",
+      "totalPrice": 105.24,
+      "id": 10
     }
   ],
   "beers": [

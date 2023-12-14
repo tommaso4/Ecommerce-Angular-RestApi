@@ -14,21 +14,9 @@ export class BeerService {
 
 
   private apiUrl = environment.apiUrl ;
-  private apiUrlShop= environment.apiUrlShop ;
   beerName: string = ""
 
   constructor(private http: HttpClient) { }
-
-  // subject TOTALCARD
-  private TotalCart: number = 0;
-
-  get totalCart(): number {
-    return this.TotalCart;
-  }
-
-  set totalCart(value: number) {
-    this.TotalCart = value;
-  }
 
 
   getBeers(): Observable<Ibeer[]> {

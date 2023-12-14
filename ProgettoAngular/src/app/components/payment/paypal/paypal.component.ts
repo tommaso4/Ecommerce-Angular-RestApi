@@ -4,6 +4,7 @@ import { LogSystemService } from '../../../services/log-system.service';
 import { BeerService } from '../../../services/beer.service';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
+import { CartService } from '../../../services/cart.service';
 
 @Component({
   selector: 'app-paypal',
@@ -18,7 +19,7 @@ export class PaypalComponent {
 
   constructor(private fb: FormBuilder,
     private logSvc : LogSystemService,
-    private beerSvc : BeerService,
+    private cartSvc : CartService,
     private router: Router) {
     this.paypalForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
@@ -26,8 +27,10 @@ export class PaypalComponent {
     });
   }
 
-  ngOnInit(){
-    this.totalCart = this.beerSvc.totalCart;
+  ngOnInit() {
+    this.cartSvc.getTotalCart().subscribe((total: number) => {
+      this.totalCart = total;
+    });
   }
 
 
