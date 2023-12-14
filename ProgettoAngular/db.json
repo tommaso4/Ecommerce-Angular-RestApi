@@ -44,6 +44,21 @@
       "beerId": 3,
       "userId": 3,
       "id": 1
+    },
+    {
+      "beerId": 1,
+      "userId": 5,
+      "id": 2
+    },
+    {
+      "beerId": 1,
+      "userId": 5,
+      "id": 3
+    },
+    {
+      "beerId": 3,
+      "userId": 5,
+      "id": 4
     }
   ],
   "shop": [
@@ -146,6 +161,16 @@
       "img": "https://images.punkapi.com/v2/15.png",
       "totalPrice": 5.24,
       "id": 10
+    },
+    {
+      "userId": 5,
+      "nameBeer": "Trashy Blonde",
+      "beerId": 2,
+      "numberBeer": 1,
+      "price": 4.19,
+      "img": "https://images.punkapi.com/v2/2.png",
+      "totalPrice": 4.19,
+      "id": 11
     }
   ],
   "beers": [
