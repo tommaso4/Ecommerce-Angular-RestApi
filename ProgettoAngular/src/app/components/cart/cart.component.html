@@ -1,3 +1,4 @@
+<!-- cart component -->
 <div class="container">
 
   <table class="table">
@@ -11,11 +12,10 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let item of allItem">
+      <tr *ngFor="let item of allItem; let i = index">
         <td><img [src]="item.img" alt="Beer Image" /></td>
         <td>{{item.nameBeer}}</td>
-        <td><input type="number" [value]="item.numberBeer" /></td>
-        <td>{{item.price | currency:'EUR'}}</td>
+        <td><input type="number" [value]="item.numberBeer" (change)="updateQuantity($event, item.beerId)" /></td>
         <td>{{item.totalPrice | currency:'EUR'}}</td>
       </tr>
       <tr>

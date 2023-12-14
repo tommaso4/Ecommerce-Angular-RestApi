@@ -50,31 +50,31 @@
     {
       "nameBeer": "Buzz",
       "beerId": 1,
-      "numberBeer": 3,
+      "numberBeer": 100,
       "userId": 3,
       "price": 4.5,
       "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 13.5,
+      "totalPrice": 450,
       "id": 1
     },
     {
       "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
-      "beerId": 3,
-      "numberBeer": 3,
+      "beerId": 2,
+      "numberBeer": 1111,
       "userId": 3,
       "price": 9.68,
       "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 29.04,
+      "totalPrice": 10754.48,
       "id": 2
     },
     {
       "nameBeer": "Movember",
-      "beerId": 13,
-      "numberBeer": 3,
+      "beerId": 3,
+      "numberBeer": 15,
       "userId": 3,
       "price": 9.97,
       "img": "https://images.punkapi.com/v2/13.png",
-      "totalPrice": 29.910000000000004,
+      "totalPrice": 149.55,
       "id": 3
     },
     {
@@ -99,12 +99,12 @@
     },
     {
       "nameBeer": "Vote Sepp",
-      "beerId": 112,
-      "numberBeer": 3,
+      "beerId": 6,
+      "numberBeer": 15,
       "userId": 3,
       "price": 4.03,
       "img": "https://images.punkapi.com/v2/112.png",
-      "totalPrice": 12.09,
+      "totalPrice": 60.45,
       "id": 6
     },
     {
