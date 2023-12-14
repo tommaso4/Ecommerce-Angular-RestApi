@@ -1,4 +1,6 @@
-<div class="container py-5 bg-white">
+<div class="bg-80">
+
+<div class="container py-5  rounded style-ctn">
   <div *ngIf="!editMode">
     <div>
       <p>Nome: {{user?.name}}</p>
@@ -6,11 +8,11 @@
       <p>Email: {{user?.email}}</p>
     </div>
     <div>
-      <button (click)="editMode=!editMode" class="btn btn-warning me-2">Modifica Dati</button>
-      <button (click)="logOut()" class="btn btn-danger me-2">Disconnettiti</button>
-      <button (click)="deleteAccount()" class="btn btn-dark">Elimina Account</button>
-      <div *ngIf="deleting" class="bg-dark mt-3 text-white p-3">
-        <h3>Sei sicuro di volere eliminare questo account?</h3>
+      <button (click)="editMode=!editMode" class=" btn bottone me-2">Modifica Dati</button>
+      <button (click)="logOut()" class="btn bottone me-2">Disconnettiti</button>
+      <button (click)="deleteAccount()" class="btn bottone">Elimina Account</button>
+      <div *ngIf="deleting" class="bg-eliminazione rounded mt-3 text-white p-3">
+        <h3 class="h3-eliminazione">Sei sicuro di volere eliminare questo account?</h3>
         <label for="deleting-name" class="mb-1">Inserisci "{{user?.name}}" per confermare l'eliminazione!</label>
         <div class="d-flex me-1">
           <input id="deleting-name" class="me-2" [(ngModel)]="deletingName" type="text">
@@ -23,8 +25,8 @@
   </div>
   <div>
     <app-edit-profile [editMode]="editMode">
-      <button class="disable-edit-mode btn btn-primary" *ngIf="editMode" (click)="editMode=!editMode"><fa-icon [icon]="['fas','arrow-left']" class="paginate-button__icon"></fa-icon></button>
+      <button class="disable-edit-mode btn bottone" *ngIf="editMode" (click)="editMode=!editMode"><fa-icon [icon]="['fas','arrow-left']" class="paginate-button__icon"></fa-icon></button>
     </app-edit-profile>
   </div>
 </div>
-
+</div>
