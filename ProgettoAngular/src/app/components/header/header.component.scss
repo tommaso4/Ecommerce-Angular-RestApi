@@ -45,3 +45,9 @@
 .red-beer{
   color: rgb(255, 98, 0);
 }
+
+a.line:hover{
+  border-bottom: 2px solid $primary;
+}
+
+

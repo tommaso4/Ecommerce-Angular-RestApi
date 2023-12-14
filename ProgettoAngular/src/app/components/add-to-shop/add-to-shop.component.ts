@@ -85,6 +85,5 @@ export class AddToShopComponent implements OnInit {
       });
     }
   }
-
-
 }
+

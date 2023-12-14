@@ -23,71 +23,28 @@
       "id": 3
     },
     {
-      "email": "tommasocantarini4@gmail.com",
-      "password": "$2a$10$gbQHnGD1ZtwCQL.MhQ.ie.w9cr4yajUe45HeRfnFmSa.D19/cr40e",
-      "name": "Tommaso",
-      "surname": "Cantarini",
+      "email": "lorenzoneroni13@gmail.com",
+      "password": "$2a$10$pKSaNu5njvmqtJ59kf0UR.4hURSaCiXcr3eit9B9ZarIvfFPfyWqO",
+      "name": "Lorenzo",
+      "surname": "Neroni",
       "admin": false,
       "id": 4
-    },
-    {
-      "email": "mario@rossi.it",
-      "password": "$2a$10$yEvLFToQ7YSH3hDb7Y8efej9PsKHwL6naxszLjPFSMKYSI1AUVDSe",
-      "name": "Mario",
-      "surname": "Rossi",
-      "admin": false,
-      "id": 5
     }
   ],
+  "cart": [],
   "wishlist": [
     {
-      "beerId": 3,
-      "userId": 3,
-      "id": 1
-    }
-  ],
-  "shop": [
-    {
-      "nameBeer": "Trashy Blonde",
-      "beerId": 2,
-      "numberBeer": 2,
-      "userId": 3,
-      "price": 4.19,
+      "beerId": 5,
+      "userId": 4,
       "id": 1
     },
     {
-      "nameBeer": "Buzz",
       "beerId": 1,
-      "numberBeer": 5,
-      "userId": 3,
-      "price": 4.5,
+      "userId": 4,
       "id": 2
-    },
-    {
-      "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
-      "beerId": 3,
-      "numberBeer": 11,
-      "userId": 3,
-      "price": 9.68,
-      "id": 3
-    },
-    {
-      "nameBeer": "Pilsen Lager",
-      "beerId": 4,
-      "numberBeer": 2,
-      "userId": 3,
-      "price": 4.68,
-      "id": 4
-    },
-    {
-      "userId": 3,
-      "nameBeer": "Electric India",
-      "beerId": 6,
-      "numberBeer": 1,
-      "price": 4.49,
-      "id": 5
     }
   ],
+  "shop": [],
   "beers": [
     {
       "id": 1,
