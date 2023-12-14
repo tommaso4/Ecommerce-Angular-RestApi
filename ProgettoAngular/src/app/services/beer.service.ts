@@ -33,7 +33,7 @@ export class BeerService {
 
 
   getShop(id: number): Observable<any> {
-    let params = new HttpParams().set('userId', id.toString()); // Converte l'ID in una stringa
+    let params = new HttpParams().set('userId', id.toString());
 
     return this.http.get<IShop>(this.apiUrlShop, { params }).pipe(
       catchError(this.errorHandler)
@@ -81,7 +81,9 @@ export class BeerService {
           nameBeer: beer.nameBeer,
           beerId: beer.beerId,
           numberBeer: numberBeerToSend,
-          price: beer.price
+          price: beer.price,
+          img: beer.img,
+          totalPrice: beer.price * numberBeerToSend
         })
   }
 

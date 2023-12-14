@@ -8,4 +8,6 @@ export interface IShop {
   numberBeer: number;
   beer?: Ibeer;
   price: number;
+  img: string;
+  totalPrice: number;
 }
