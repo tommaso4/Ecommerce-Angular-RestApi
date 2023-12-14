@@ -1,18 +1,42 @@
 {
   "users": [
     {
+      "email": "emilio.plances@gmail.com",
+      "password": "$2a$10$De8RUbneFkmQ5rIjQ48mJOh9xheYH8143PriRgU3brIwiPBG5L1YK",
+      "name": "Emilio",
+      "surname": "Plances",
+      "admin": false,
+      "id": 1
+    },
+    {
+      "email": "simo@gmail.com",
+      "password": "$2a$10$1RV5tg4bEJuRYFp745fg8erdHHe.PGsx/pNM6xm3.Lp0LxCXsjC52",
+      "name": "simo",
+      "surname": "aimo",
+      "id": 2
+    },
+    {
+      "email": "caloteresi@gmail.com",
+      "password": "$2a$10$LEKJUJqxKRIl4vwXaEVq2uoSoZ0SWoBx.y6xHYGmKunhSdk0rvHDi",
+      "name": "Calogero",
+      "surname": "Teresi",
+      "id": 3
+    },
+    {
       "email": "tommasocantarini4@gmail.com",
-      "password": "$2a$10$23u9QyUzTH5WPsDfNz1YcuF.pJYY0uVoC6AxZn0RL2mlYwQGJMVha",
+      "password": "$2a$10$gbQHnGD1ZtwCQL.MhQ.ie.w9cr4yajUe45HeRfnFmSa.D19/cr40e",
       "name": "Tommaso",
       "surname": "Cantarini",
-      "id": 1
-    }
-  ],
-  "roles": [
+      "admin": false,
+      "id": 4
+    },
     {
-      "userID": 1,
-      "role": "admin",
-      "id": 1
+      "email": "mario@rossi.it",
+      "password": "$2a$10$yEvLFToQ7YSH3hDb7Y8efej9PsKHwL6naxszLjPFSMKYSI1AUVDSe",
+      "name": "Mario",
+      "surname": "Rossi",
+      "admin": false,
+      "id": 5
     }
   ],
   "wishlist": [
@@ -22,66 +46,50 @@
       "id": 1
     },
     {
-      "beerId": 1,
-      "userId": 5,
+      "beerId": 6,
+      "userId": 3,
       "id": 2
-    },
-    {
-      "beerId": 1,
-      "userId": 5,
-      "id": 3
-    },
-    {
-      "beerId": 3,
-      "userId": 5,
-      "id": 4
     }
   ],
   "shop": [
     {
       "nameBeer": "Buzz",
       "beerId": 1,
-      "numberBeer": 110,
+      "numberBeer": 111,
       "userId": 3,
       "price": 4.5,
       "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 495,
+      "totalPrice": 499.5,
       "id": 1
     },
-
-
-
-
-
-
     {
       "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
       "beerId": 2,
-      "numberBeer": 1111,
+      "numberBeer": 1001,
       "userId": 3,
       "price": 9.68,
       "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 10754.48,
+      "totalPrice": 9689.68,
       "id": 2
     },
     {
       "nameBeer": "Movember",
       "beerId": 3,
-      "numberBeer": 15,
+      "numberBeer": 54,
       "userId": 3,
       "price": 9.97,
       "img": "https://images.punkapi.com/v2/13.png",
-      "totalPrice": 149.55,
+      "totalPrice": 538.38,
       "id": 3
     },
     {
       "nameBeer": "Devine Rebel (w/ Mikkeller)",
-      "beerId": 22,
-      "numberBeer": 3,
+      "beerId": 4,
+      "numberBeer": 1,
       "userId": 3,
       "price": 8.61,
       "img": "https://images.punkapi.com/v2/22.png",
-      "totalPrice": 25.83,
+      "totalPrice": 8.61,
       "id": 4
     },
     {
@@ -113,76 +121,6 @@
       "img": "https://images.punkapi.com/v2/keg.png",
       "totalPrice": 28.53,
       "id": 7
-    },
-    {
-      "userId": 5,
-      "nameBeer": "Movember",
-      "beerId": 13,
-      "numberBeer": 1,
-      "price": 9.97,
-      "img": "https://images.punkapi.com/v2/13.png",
-      "totalPrice": 9.97,
-      "id": 8
-    },
-    {
-      "userId": 5,
-      "nameBeer": "Arcade Nation",
-      "beerId": 12,
-      "numberBeer": 1,
-      "price": 6.97,
-      "img": "https://images.punkapi.com/v2/12.png",
-      "totalPrice": 6.97,
-      "id": 9
-    },
-    {
-      "userId": 5,
-      "nameBeer": "Mixtape 8",
-      "beerId": 15,
-      "numberBeer": 1,
-      "price": 5.24,
-      "img": "https://images.punkapi.com/v2/15.png",
-      "totalPrice": 5.24,
-      "id": 10
-    },
-    {
-      "nameBeer": "Trashy Blonde",
-      "beerId": 11,
-      "numberBeer": 6,
-      "userId": 1,
-      "price": 4.19,
-      "img": "https://images.punkapi.com/v2/2.png",
-      "totalPrice": 25.14,
-      "id": 11
-    },
-    {
-      "userId": 1,
-      "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
-      "beerId": 3,
-      "numberBeer": 1,
-      "price": 9.68,
-      "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 9.68,
-      "id": 12
-    },
-    {
-      "userId": 1,
-      "nameBeer": "Pilsen Lager",
-      "beerId": 4,
-      "numberBeer": 1,
-      "price": 4.68,
-      "img": "https://images.punkapi.com/v2/4.png",
-      "totalPrice": 4.68,
-      "id": 13
-    },
-    {
-      "userId": 1,
-      "nameBeer": "Avery Brown Dredge",
-      "beerId": 5,
-      "numberBeer": 1,
-      "price": 8.82,
-      "img": "https://images.punkapi.com/v2/5.png",
-      "totalPrice": 8.82,
-      "id": 14
     }
   ],
   "beers": [
@@ -44060,4 +43998,3 @@
     }
   ]
 }
-
