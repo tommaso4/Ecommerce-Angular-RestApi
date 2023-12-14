@@ -12,11 +12,13 @@ h3 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
+  opacity: 1;
 }
 
 p {
   font-size: 16px;
   margin-bottom: 10px;
+  opacity: 1;
 }
 
 ul, ol {
@@ -34,7 +36,7 @@ main
 
   margin: 10px;
   //sfondo bianco con trasparenza leggera
-  background-color: rgba(255, 255, 255, 0.8);
+
   padding: 20px;
   //bordo arrotondato
   border-radius: 10px;
@@ -52,6 +54,7 @@ main section {
   margin-bottom: 20px; /* Spazio tra le sezioni */
   border-radius: 5px; /* Angoli arrotondati per un aspetto morbido */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Ombra leggera per profondità */
+  opacity: 0.8;
 }
 /* Stili per i titoli delle sezioni */
 main h2, main h3 {

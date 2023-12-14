@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 20px;
   background: #f4f4f4;
-  color: #333;
+  color: black;
 }
 
 .contact-container {
@@ -60,4 +60,8 @@ button {
   border: none;
   outline: none;
   font-size: 1em;
+}
+
+.bg-80{
+  height: 80vh;
 }
