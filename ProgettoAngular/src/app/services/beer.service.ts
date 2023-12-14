@@ -1,7 +1,7 @@
 
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
-import { Observable, catchError, map, mergeMap, tap, throwError } from 'rxjs';
+import { BehaviorSubject, Observable, catchError, map, mergeMap, tap, throwError } from 'rxjs';
 import { environment } from '../../environments/environment.development';
 import { Ibeer } from '../Modules/ibeer';
 import { IShop } from '../Modules/ishop';
@@ -11,11 +11,26 @@ import { IShop } from '../Modules/ishop';
 })
 
 export class BeerService {
+
+
   private apiUrl = environment.apiUrl ;
   private apiUrlShop= environment.apiUrlShop ;
   private api = environment.API ;
   beerName: string = ""
+
   constructor(private http: HttpClient) { }
+
+  // subject TOTALCARD
+  private TotalCart: number = 0;
+
+  get totalCart(): number {
+    return this.TotalCart;
+  }
+
+  set totalCart(value: number) {
+    this.TotalCart = value;
+  }
+
 
   getBeers(): Observable<Ibeer[]> {
     return this.http.get<Ibeer[]>(this.apiUrl);
@@ -30,8 +45,6 @@ export class BeerService {
     }
   }
 
-
-
   getShop(id: number): Observable<any> {
     let params = new HttpParams().set('userId', id.toString());
 
@@ -43,8 +56,6 @@ export class BeerService {
   errorHandler(error: HttpErrorResponse): Observable<never> {
     return throwError(() => error);
   }
-
-
 
   setBeerName(name: string): void {
     this.beerName = name;
@@ -59,8 +70,6 @@ export class BeerService {
     );
   }
 
-
-
   addToCart(userId: number, beerId: number): Observable<any> {
     return this.http.get<any[]>(`${this.apiUrlShop}?beerId=${beerId}`).pipe(
       tap(cartItems => console.log('Elementi nel carrello:', cartItems)),
@@ -68,9 +77,8 @@ export class BeerService {
     );
   }
 
-
   addToShop(userId: number, beer: IShop) {
-    let numberBeerToSend = 1; // Valore predefinito
+    let numberBeerToSend = 1;
     if (beer.numberBeer !== undefined && beer.numberBeer > 1) {
       numberBeerToSend = beer.numberBeer;
     }
@@ -86,7 +94,6 @@ export class BeerService {
           totalPrice: beer.price * numberBeerToSend
         })
   }
-
 
   updateShopItem(beerId: number|undefined, updatedData: any): Observable<any> {
     return this.http.put(`${this.apiUrlShop}/${beerId}`, updatedData);

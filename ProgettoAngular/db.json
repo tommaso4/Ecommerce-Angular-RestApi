@@ -18,127 +18,12 @@
   "cart": [],
   "wishlist": [
     {
-      "beerId": 3,
-      "userId": 3,
+      "beerId": 2,
+      "userId": 1,
       "id": 1
-    },
-    {
-      "beerId": 1,
-      "userId": 5,
-      "id": 2
-    },
-    {
-      "beerId": 1,
-      "userId": 5,
-      "id": 3
-    },
-    {
-      "beerId": 3,
-      "userId": 5,
-      "id": 4
     }
   ],
   "shop": [
-    {
-      "nameBeer": "Buzz",
-      "beerId": 1,
-      "numberBeer": 100,
-      "userId": 3,
-      "price": 4.5,
-      "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 450,
-      "id": 1
-    },
-    {
-      "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
-      "beerId": 2,
-      "numberBeer": 1111,
-      "userId": 3,
-      "price": 9.68,
-      "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 10754.48,
-      "id": 2
-    },
-    {
-      "nameBeer": "Movember",
-      "beerId": 3,
-      "numberBeer": 15,
-      "userId": 3,
-      "price": 9.97,
-      "img": "https://images.punkapi.com/v2/13.png",
-      "totalPrice": 149.55,
-      "id": 3
-    },
-    {
-      "userId": 5,
-      "nameBeer": "Electric India",
-      "beerId": 6,
-      "numberBeer": 1,
-      "price": 4.49,
-      "img": "https://images.punkapi.com/v2/6.png",
-      "totalPrice": 4.49,
-      "id": 4
-    },
-    {
-      "userId": 5,
-      "nameBeer": "Fake Lager",
-      "beerId": 8,
-      "numberBeer": 1,
-      "price": 6.1,
-      "img": "https://images.punkapi.com/v2/8.png",
-      "totalPrice": 6.1,
-      "id": 5
-    },
-    {
-      "nameBeer": "Vote Sepp",
-      "beerId": 6,
-      "numberBeer": 15,
-      "userId": 3,
-      "price": 4.03,
-      "img": "https://images.punkapi.com/v2/112.png",
-      "totalPrice": 60.45,
-      "id": 6
-    },
-    {
-      "userId": 5,
-      "nameBeer": "Bramling X",
-      "beerId": 10,
-      "numberBeer": 1,
-      "price": 7.84,
-      "img": "https://images.punkapi.com/v2/10.png",
-      "totalPrice": 7.84,
-      "id": 7
-    },
-    {
-      "userId": 5,
-      "nameBeer": "Movember",
-      "beerId": 13,
-      "numberBeer": 1,
-      "price": 9.97,
-      "img": "https://images.punkapi.com/v2/13.png",
-      "totalPrice": 9.97,
-      "id": 8
-    },
-    {
-      "userId": 5,
-      "nameBeer": "Arcade Nation",
-      "beerId": 12,
-      "numberBeer": 1,
-      "price": 6.97,
-      "img": "https://images.punkapi.com/v2/12.png",
-      "totalPrice": 6.97,
-      "id": 9
-    },
-    {
-      "userId": 5,
-      "nameBeer": "Mixtape 8",
-      "beerId": 15,
-      "numberBeer": 1,
-      "price": 5.24,
-      "img": "https://images.punkapi.com/v2/15.png",
-      "totalPrice": 5.24,
-      "id": 10
-    },
     {
       "nameBeer": "Trashy Blonde",
       "beerId": 11,
@@ -44055,4 +43940,3 @@
     }
   ]
 }
-

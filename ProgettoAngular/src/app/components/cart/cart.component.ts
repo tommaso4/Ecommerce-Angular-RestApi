@@ -40,6 +40,7 @@ export class CartComponent {
 
   totalsCart(){
     this.allItem.forEach(item => {this.totalCart += item.totalPrice})
+    this.beerSvc.totalCart = this.totalCart;
     console.log(this.totalCart);
   }
 
