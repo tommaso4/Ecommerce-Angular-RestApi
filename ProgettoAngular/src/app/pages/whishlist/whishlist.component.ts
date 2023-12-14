@@ -32,14 +32,11 @@ export class WhishlistComponent {
     });
   }
 
-  removeBerrWish(beerid?: number) {
-
+removeBerrWish(beerid?: number) {
     this.whishlistService.removeWish(beerid).subscribe(() => {
       this.Whishlist = this.Whishlist.filter(item => item.beerId !== beerid);
       this.getWhishlist()
     });
   }
-
-
 
 }
