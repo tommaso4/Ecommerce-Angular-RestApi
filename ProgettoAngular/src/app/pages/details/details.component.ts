@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { RolesService } from './../../services/roles.service';
+import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BeerService } from '../../services/beer.service';
 import { Ibeer } from '../../Modules/ibeer';
 import { LogSystemService } from '../../services/log-system.service';
 import { WhishlistService } from '../../services/whishlist.service';
 import { IUserAuth } from '../../Modules/iuser-auth';
-import { Observable, map, take, tap } from 'rxjs';
+import { take} from 'rxjs';
 import { IShop } from '../../Modules/ishop';
 import { CartService } from '../../services/cart.service';
 
@@ -17,6 +18,7 @@ import { CartService } from '../../services/cart.service';
 })
 export class DetailsComponent {
 
+  admin!:boolean
   isLogged: boolean = false;
   beerId!: number;
   beer!: Ibeer;
@@ -27,7 +29,8 @@ export class DetailsComponent {
     private beerService: BeerService,
     private LSS:LogSystemService,
     private whishlistService: WhishlistService,
-    private cartSvc: CartService
+    private cartSvc: CartService,
+    private RolesSVC:RolesService
   ) {}
 
   ngOnInit(): void {
@@ -47,6 +50,11 @@ export class DetailsComponent {
         const userId = Number(user.user.id); // Ottieni l'ID dell'utente da LSS.user$
         this.fetchShop(userId); // Passa l'ID dell'utente a fetchShop() per ottenere le birre associate a quell'utente
       }
+    });
+
+    this.RolesSVC.userRole$.subscribe(role =>{
+      if(!role) return;
+      this.admin=role.role==`admin`?true:false
     });
   }
 
