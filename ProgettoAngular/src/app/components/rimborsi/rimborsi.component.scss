@@ -28,3 +28,33 @@ li {
   font-size: 16px;
   margin-bottom: 5px;
 }
+
+main
+{
+
+  margin: 10px;
+  //sfondo bianco con trasparenza leggera
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  //bordo arrotondato
+  border-radius: 10px;
+  //ombra
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+
+
+}
+
+/* Stili per le sezioni */
+main section {
+  background-color: #fff; /* Sfondo bianco per ogni sezione */
+  border: 1px solid #ddd; /* Bordo sottile per definire le sezioni */
+  padding: 15px;
+  margin-bottom: 20px; /* Spazio tra le sezioni */
+  border-radius: 5px; /* Angoli arrotondati per un aspetto morbido */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Ombra leggera per profondità */
+}
+/* Stili per i titoli delle sezioni */
+main h2, main h3 {
+  color: #0275d8; /* Colore blu per i titoli */
+  margin-top: 0;
+}
