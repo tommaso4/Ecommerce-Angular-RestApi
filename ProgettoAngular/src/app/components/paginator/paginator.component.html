@@ -1,4 +1,4 @@
-<div class="paginator">
+<div class="paginator d-flex align-items-center">
   <div class="paginator__prev">
     <span class="button paginate-button" [ngClass]="{ 'paginate-button--disabled': currentPage <= 1 }" (click)="goToPreviousPage()">
       <fa-icon [icon]="faChevronLeft" class="paginate-button__icon" [ngClass]="{ 'paginate-button__icon--disabled': currentPage <= 1 }"></fa-icon>
