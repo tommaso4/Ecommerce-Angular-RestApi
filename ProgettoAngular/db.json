@@ -13,6 +13,13 @@
       "name": "Emilio",
       "surname": "Plances",
       "id": 2
+    },
+    {
+      "email": "EmanueleBarone@gmail.com",
+      "password": "$2a$10$/DJFdMPu51O4/6RTKs13Xu5/QjTPT5n7vnm5TRFe8BlHiujKQR71e",
+      "name": "Emanuele",
+      "surname": "Barone",
+      "id": 3
     }
   ],
   "roles": [
@@ -25,6 +32,11 @@
       "userID": 2,
       "role": "customer",
       "id": 2
+    },
+    {
+      "userID": 3,
+      "role": "customer",
+      "id": 3
     }
   ],
   "wishlist": [

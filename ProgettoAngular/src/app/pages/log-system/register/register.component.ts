@@ -35,6 +35,8 @@ export class RegisterComponent {
   }
 
   submit(){
+    this.form.value.name= this.form.value.name.charAt(0).toUpperCase()+this.form.value.name.slice(1).toLowerCase()
+    this.form.value.surname= this.form.value.surname.charAt(0).toUpperCase()+this.form.value.surname.slice(1).toLowerCase()
 
     this.loading=true;
     delete this.form.value.confirmPassword;
