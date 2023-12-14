@@ -49,6 +49,26 @@
       "beerId": 1,
       "userId": 1,
       "id": 2
+    },
+    {
+      "beerId": 3,
+      "userId": 3,
+      "id": 12
+    },
+    {
+      "beerId": 19,
+      "userId": 3,
+      "id": 13
+    },
+    {
+      "beerId": 84,
+      "userId": 3,
+      "id": 14
+    },
+    {
+      "beerId": 115,
+      "userId": 3,
+      "id": 15
     }
   ],
   "shop": [
