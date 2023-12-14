@@ -56,5 +56,41 @@ export class CartComponent {
       }
     });
   }
-}
 
+
+  updateQuantity(event: any, beerId: number) {
+    const accessData = this.loggedInUser;
+    if (!accessData) {
+      alert("Per aggiornare il carello devi loggarti o registrarti");
+      return;
+    }
+    const newQuantity = parseInt(event.target.value, 10);
+    if (isNaN(newQuantity) || newQuantity <= 0) {
+      console.error('La quantità deve essere un numero valido e maggiore di zero.');
+      return;
+    }
+    const index = this.allItem.findIndex(item => item.beerId === beerId);
+    if (index !== -1) {
+      this.beerSvc.updateShopItem(this.allItem[index].id, {
+        nameBeer: this.allItem[index].nameBeer,
+        beerId: this.allItem[index].id,
+        numberBeer: newQuantity,
+        userId: accessData.user.id,
+        price: this.allItem[index].price,
+        img: this.allItem[index].img,
+        totalPrice: this.allItem[index].price * newQuantity
+      }).subscribe((data: any) => {
+        console.log('Birra aggiornata:', data);
+      });
+      this.allItem[index].numberBeer = newQuantity;
+      this.allItem[index].totalPrice = this.allItem[index].price * newQuantity;
+      this.calculateTotalCart();
+    }
+  }
+
+
+  calculateTotalCart() {
+    this.totalCart = this.allItem.reduce((total, item) => total + item.totalPrice, 0);
+  }
+
+  }
