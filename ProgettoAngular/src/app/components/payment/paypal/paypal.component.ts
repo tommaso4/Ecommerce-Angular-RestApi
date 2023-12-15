@@ -5,6 +5,7 @@ import { BeerService } from '../../../services/beer.service';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 import { CartService } from '../../../services/cart.service';
+import { IShop } from '../../../Modules/ishop';
 
 @Component({
   selector: 'app-paypal',
@@ -15,6 +16,7 @@ export class PaypalComponent {
 
   paypalForm: FormGroup;
   totalCart!:number;
+  allItem : IShop[] | null =[];
 
 
   constructor(private fb: FormBuilder,
@@ -31,6 +33,10 @@ export class PaypalComponent {
     this.cartSvc.cart$.subscribe((total: number) => {
       this.totalCart = total;
     });
+    this.cartSvc.allItem$.subscribe((items) => {
+      this.allItem = items;
+      console.log(this.allItem);
+  })
   }
 
 
@@ -50,9 +56,29 @@ export class PaypalComponent {
         });
 
       })
+      setTimeout(() => {
+        this.deleteAll();
+      }, 2000);
 
     } else {
       console.log('Il modulo PayPal non è valido.');
     }
+  }
+
+  deleteAll() {
+    if(!this.allItem)return;
+    this.allItem.forEach(item => {
+     this.cartSvc.deleteCart(item.id).subscribe({
+      next: (data: any) => {
+        this.allItem=data;
+        this.cartSvc.setTotalCart(0);
+        this.totalCart = 0;
+        this.cartSvc.setAllItemSubject([])
+      },
+      error: (error) => {
+        console.error(`Errore durante la cancellazione degli elementi. URL: `, error);
+      }
+    });
+  });
   }
 }

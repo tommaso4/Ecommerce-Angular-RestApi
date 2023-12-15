@@ -53,4 +53,6 @@ export class TransferComponent {
       console.log('Il modulo Bonifico non è valido.');
     }
   }
+
+
 }
