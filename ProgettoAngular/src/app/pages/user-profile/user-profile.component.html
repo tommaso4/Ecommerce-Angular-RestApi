@@ -1,5 +1,5 @@
 <div class="bg-80">
-  <div class="container p-5 rounded style-ctn">
+  <div class="container p-4 rounded style-ctn contorno">
     <div *ngIf="!editMode">
       <div>
         <p>Name: {{ user?.name|titlecase}}</p>
@@ -9,7 +9,7 @@
       <div>
         <div class="d-flex justify-content-between">
           <div>
-            <button (click)="deleteAccount()" class="btn bottone">Delete Account</button>
+            <button (click)="deleteAccount()" class="btn bottone delete">Delete Account</button>
           </div>
           <div>
             <button (click)="editMode = !editMode" class="btn bottone me-2">Edit</button>

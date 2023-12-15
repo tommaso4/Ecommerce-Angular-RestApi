@@ -17,7 +17,7 @@ export class CartService {
   allItem$ = this.allitemSubject.asObservable();
 
   constructor(
-    private http:HttpClient,
+    private http:HttpClient
   ) { }
 
 
