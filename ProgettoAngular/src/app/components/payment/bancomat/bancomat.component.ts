@@ -40,7 +40,7 @@ export class BancomatComponent {
         Swal.fire({
           position: "center",
             icon: "success",
-            title: `Thanks you ${user?.user.name}!! Your order has been successfully!! You had pay ${this.totalCart} $}`,
+            title: `Thanks you ${user?.user.name}!! Your order has been successfully!! You had pay ${this.totalCart.toLocaleString('en-US', { style: 'currency', currency: 'EUR' }) }}`,
             showConfirmButton: false,
             background: "#0a2f69",
             color: " #f6b74b",

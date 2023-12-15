@@ -66,48 +66,7 @@
     }
   ],
   "wishlist": [],
-  "shop": [
-    {
-      "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
-      "beerId": 5,
-      "numberBeer": 1000,
-      "userId": 3,
-      "price": 9.68,
-      "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 9680,
-      "id": 5
-    },
-    {
-      "nameBeer": "Trashy Blonde",
-      "beerId": 2,
-      "numberBeer": 7,
-      "userId": 3,
-      "price": 4.19,
-      "img": "https://images.punkapi.com/v2/2.png",
-      "totalPrice": 29.330000000000002,
-      "id": 6
-    },
-    {
-      "nameBeer": "Pilsen Lager",
-      "beerId": 4,
-      "numberBeer": 2,
-      "userId": 3,
-      "price": 4.68,
-      "img": "https://images.punkapi.com/v2/4.png",
-      "totalPrice": 9.36,
-      "id": 7
-    },
-    {
-      "userId": 3,
-      "nameBeer": "Avery Brown Dredge",
-      "beerId": 5,
-      "numberBeer": 1,
-      "price": 8.82,
-      "img": "https://images.punkapi.com/v2/5.png",
-      "totalPrice": 8.82,
-      "id": 8
-    }
-  ],
+  "shop": [],
   "beers": [
     {
       "id": 2,
