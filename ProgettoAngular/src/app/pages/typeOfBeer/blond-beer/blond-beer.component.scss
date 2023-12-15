@@ -40,6 +40,10 @@
       background-color: $dark-blue;
     }
 
+    &:hover .lim {
+      color: $primary;
+    }
+
     &:hover & {
       &__img {
         transform: rotateZ(25deg);
@@ -75,6 +79,7 @@ top: 10px;
   color: $primary;
   font-size: large;
   border-radius: 5px;
+  width: 100%;
 }
 
 .wish:hover{
@@ -91,3 +96,4 @@ top: 10px;
 .desc{
  color: rgba(black, 1);
 }
+

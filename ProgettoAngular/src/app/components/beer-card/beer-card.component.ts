@@ -17,7 +17,7 @@ export class BeerCardComponent implements OnDestroy {
   wishlistItems: any[] = [];
   loggedInUser: IUserAuth | null = null;
   isLogged: boolean = false;
-  userId!: number;
+  userId!: string | undefined;
   isInWishlist: boolean = false;
   private unsubscribe$ = new Subject<void>();
 
@@ -30,7 +30,7 @@ export class BeerCardComponent implements OnDestroy {
       .pipe(takeUntil(this.unsubscribe$))
       .subscribe((user: IUserAuth | null) => {
         this.loggedInUser = user;
-        this.userId = Number(user?.user.id);
+        this.userId = user?.user.id;
         this.isLogged = !!user;
       });
   }
@@ -61,7 +61,7 @@ export class BeerCardComponent implements OnDestroy {
         });
       }
     } else {
-      this.wishlistSvc.addToWishList(beerId, this.userId).subscribe((data: any) => {
+      this.wishlistSvc.addToWishList(beerId, String(this.userId)).subscribe((data: any) => {
         console.log('Birra aggiunta alla lista dei desideri:', data)
       });
     }
@@ -69,7 +69,7 @@ export class BeerCardComponent implements OnDestroy {
   }
 
   fetchWishlist(): void {
-    this.wishlistSvc.getWishlist(this.userId).subscribe({
+    this.wishlistSvc.getWishlist(String(this.userId)).subscribe({
       next: (data: any) => {
         this.wishlistItems = data;
         this.checkIfInWishlist();

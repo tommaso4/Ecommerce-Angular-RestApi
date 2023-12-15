@@ -86,7 +86,7 @@ export class HomeComponent implements OnInit {
   addToWishList(beerId: number): void {
     this.logService.user$.subscribe(accessData => {
       if (!accessData?.user?.id) return;
-      this.whishlistSvc.addToWishList(beerId,Number (accessData.user.id)).pipe(take(1)).subscribe(
+      this.whishlistSvc.addToWishList(beerId,accessData.user.id).pipe(take(1)).subscribe(
       )
     });
   }

@@ -40,6 +40,11 @@
       background-color: $dark-blue;
     }
 
+    &:hover .lim {
+      color: $primary;
+    }
+
+
     &:hover & {
       &__img {
         transform: rotateZ(25deg);

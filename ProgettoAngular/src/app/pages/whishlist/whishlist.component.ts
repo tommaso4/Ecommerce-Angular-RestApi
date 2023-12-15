@@ -26,7 +26,7 @@ export class WhishlistComponent {
       if (!accessData?.user.id) {
         return;
       }
-      this.whishlistService.getWishlist(Number(accessData.user.id)).subscribe((items) => {
+      this.whishlistService.getWishlist(accessData.user.id).subscribe((items) => {
         this.Whishlist = items;
       });
     });

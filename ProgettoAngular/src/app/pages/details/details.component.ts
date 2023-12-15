@@ -88,7 +88,7 @@ export class DetailsComponent {
   addToWish(beerid:number):void{
     this.LSS.user$.subscribe(accessData=>{
       if(!accessData?.user?.id) return;
-      this.whishlistService.addToWishList(beerid,Number( accessData.user.id)).pipe(take(1)).subscribe( )
+      this.whishlistService.addToWishList(beerid, accessData.user.id).pipe(take(1)).subscribe( )
     })
   }
 

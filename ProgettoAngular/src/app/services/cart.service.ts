@@ -10,9 +10,13 @@ import { IShop } from '../Modules/ishop';
 })
 export class CartService {
 
-  apiUrlShop= environment.apiUrlShop ;
+  apiUrlShop= `${environment.API}/shop`;
   totalCart = new BehaviorSubject<number>(0);
   cart$ = this.totalCart.asObservable();
+
+
+
+
 
   constructor(
     private http:HttpClient,
