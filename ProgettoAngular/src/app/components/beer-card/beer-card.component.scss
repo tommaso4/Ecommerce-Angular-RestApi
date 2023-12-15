@@ -79,6 +79,26 @@
     }
 
   }
+
+
+
+  @media (max-width: 500px){
+    padding: 5px 10px;
+    &__img {
+      height: 140px;
+      position: static;
+      top: 20px;
+
+    }
+
+    &__data {
+      margin:0.5rem;
+    }
+
+    p{
+      margin-bottom: 0;
+    }
+  }
 }
 
 .addToWishList{
@@ -88,7 +108,7 @@
   top: 20px;
   color: $dark-blue;
   font-size: 1.8rem;
-  @media (max-width: 320px) {
+  @media (max-width: 450px) {
     top:10px;
     font-size: 1.5rem;
 
