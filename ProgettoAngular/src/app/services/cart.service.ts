@@ -10,7 +10,7 @@ import { IShop } from '../Modules/ishop';
 })
 export class CartService {
 
-  apiUrlShop= environment.apiUrlShop ;
+  apiUrlShop= `${environment.API}/shop`;
   totalCart = new Subject<number>();
 
 
