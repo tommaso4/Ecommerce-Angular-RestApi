@@ -49,16 +49,6 @@
       "beerId": 1,
       "userId": 1,
       "id": 2
-    },
-    {
-      "beerId": 115,
-      "userId": 3,
-      "id": 15
-    },
-    {
-      "beerId": 2,
-      "userId": 3,
-      "id": 16
     }
   ],
   "shop": [
@@ -225,11 +215,11 @@
     {
       "nameBeer": "Buzz",
       "beerId": 1,
-      "numberBeer": 2,
+      "numberBeer": 3,
       "userId": 3,
       "price": 4.5,
       "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 9,
+      "totalPrice": 13.5,
       "id": 27
     }
   ],
