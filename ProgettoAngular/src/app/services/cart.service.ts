@@ -61,11 +61,11 @@ export class CartService {
     return this.http.delete(`${this.apiUrlShop}/${id}`);
   }
 
+
   errorHandler(error: HttpErrorResponse): Observable<never> {
     return throwError(() => error);
   }
 
-  // Nel servizio CartService
 calculateTotalCart(items: IShop[]): number {
   return items.reduce((total, item) => total + item.totalPrice, 0);
 }

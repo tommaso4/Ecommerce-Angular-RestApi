@@ -49,6 +49,15 @@ export class BeerService {
     );
   }
 
+  deleteBeer(beerId: number): Observable<void> {
+    const url = `${this.apiUrl}/${beerId}`;
+    return this.http.delete<void>(url).pipe(
+      catchError((error: any) => {
+        return throwError(() => new Error('Errore durante l\'eliminazione della birra'));
+      })
+    );
+  }
+
   getRedBeer(): Observable<Ibeer[]> {
     return this.http.get<Ibeer[]>(this.apiUrl)
       .pipe(map((beer: Ibeer[]) => {

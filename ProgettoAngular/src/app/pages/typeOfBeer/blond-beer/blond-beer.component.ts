@@ -46,7 +46,7 @@ export class BlondBeerComponent {
       if(!accessData?.user?.id) return;
       console.log(beerid);
 
-      this.whishlistSvc.addToWishList(beerid, accessData.user.id).pipe(take(1)).subscribe(
+      this.whishlistSvc.addToWishList(beerid,Number( accessData.user.id)).pipe(take(1)).subscribe(
         )
     })
   }

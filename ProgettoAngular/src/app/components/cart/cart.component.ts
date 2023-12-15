@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 import { BeerService } from '../../services/beer.service';
 import { LogSystemService } from '../../services/log-system.service';
@@ -5,6 +6,8 @@ import { IUserAuth } from '../../Modules/iuser-auth';
 import { IShop } from '../../Modules/ishop';
 import { Ibeer } from '../../Modules/ibeer';
 import { CartService } from '../../services/cart.service';
+import { environment } from '../../../environments/environment.development';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cart',
@@ -20,12 +23,14 @@ export class CartComponent {
   isLogged: boolean = false;
   userId! : number
   totalCart: number = 0;
+  private apiUrlShop = environment.apiUrlShop;
 
 
   constructor
   (private beerSvc: BeerService,
    private LSS: LogSystemService,
-   private cartSvc: CartService){}
+   private cartSvc: CartService,
+   private router: Router){}
 
   ngOnInit(): void {
     this.LSS.user$.subscribe((user: IUserAuth | null) => {
@@ -42,7 +47,6 @@ export class CartComponent {
     console.log(this.totalCart);
   }
 
-
   fetchShop(userId: number): void {
     this.cartSvc.getShop(userId).subscribe({
       next: (data: any) => {
@@ -55,7 +59,6 @@ export class CartComponent {
       }
     });
   }
-
 
   updateQuantity(event: any, beerId: number) {
     const accessData = this.loggedInUser;
@@ -98,6 +101,7 @@ export class CartComponent {
     if (itemId !== undefined) {
       this.cartSvc.deleteCart(itemId).subscribe(() => {
         this.allItem = this.allItem.filter(item => item.id !== itemId);
+        this.fetchShop(this.userId);
         this.calculateTotalCart();
       });
     } else {
@@ -105,4 +109,25 @@ export class CartComponent {
     }
   }
 
+  deleteAll() {
+    this.allItem.forEach(item => {
+     this.cartSvc.deleteCart(item.id).subscribe({
+      next: (data: any) => {
+        const index = this.allItem.indexOf(item);
+        if (index > -1) {
+          this.allItem.splice(index, 1);
+        }
+        this.cartSvc.setTotalCart(0);
+        this.totalCart = 0;
+      },
+      error: (error) => {
+        console.error(`Errore durante la cancellazione degli elementi. URL: ${this.apiUrlShop}`, error);
+      }
+    });
+  });
   }
+
+  goToPaymentPage(): void {
+    this.router.navigate(['/payment']);
+  }
+}

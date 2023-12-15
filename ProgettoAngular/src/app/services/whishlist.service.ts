@@ -18,7 +18,7 @@ export class WhishlistService {
     private LSS:LogSystemService,
     private httpClient:HttpClient) { }
 
-  getWishlist(userId:string): Observable<IwishListItem[] >{
+  getWishlist(userId:number): Observable<IwishListItem[] >{
     return this.httpClient.get<IwishListItem[]>('http://localhost:3000/wishlist?_expand=beer&userId='+userId);
   }
 
@@ -27,7 +27,7 @@ export class WhishlistService {
     return this.httpClient.delete(url)
   }
 
-  addToWishList(beerId: number, userId: string): Observable<{ id: number, beerId: number, userId: number }> {
+  addToWishList(beerId: number, userId: number): Observable<{ id: number, beerId: number, userId: number }> {
     return this.httpClient.post<{ id: number, beerId: number, userId: number }>(this.api + '/wishlist', { beerId: beerId, userId: userId });
   }
 }

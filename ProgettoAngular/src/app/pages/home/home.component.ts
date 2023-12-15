@@ -67,26 +67,26 @@ export class HomeComponent implements OnInit {
   // Metodo per filtrare le birre per nome
   searchBeersByName(nome: string): void {
     if (!nome) {
-      this.beers = this.allBeers.slice(); // Mostra tutte le birre se il campo di ricerca è vuoto
+      this.beers = this.allBeers.slice();
       return;
     }
     // Filtra le birre in base al nome
     this.beers = this.allBeers.filter((beer: any) =>
       beer.nome.toLowerCase().includes(nome.toLowerCase())
     );
-    this.updatePage(); // Aggiorna la paginazione con i nuovi dati filtrati
+    this.updatePage();
   }
 
 
   handleBeerNameEvent(nome: string): void {
     this.beerService.setBeerName(nome);
-    this.updatePage(); // Aggiorna la visualizzazione quando il nome della birra cambia
+    this.updatePage();
   }
-  //metodo per aggiungere la birra alla lista dei desideri da richiamare nel bottone addToWishList nella pagina edit component
+
   addToWishList(beerId: number): void {
     this.logService.user$.subscribe(accessData => {
       if (!accessData?.user?.id) return;
-      this.whishlistSvc.addToWishList(beerId, accessData.user.id).pipe(take(1)).subscribe(
+      this.whishlistSvc.addToWishList(beerId,Number (accessData.user.id)).pipe(take(1)).subscribe(
       )
     });
   }

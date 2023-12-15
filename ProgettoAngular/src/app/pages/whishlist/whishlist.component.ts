@@ -26,13 +26,13 @@ export class WhishlistComponent {
       if (!accessData?.user.id) {
         return;
       }
-      this.whishlistService.getWishlist(accessData.user.id).subscribe((items) => {
+      this.whishlistService.getWishlist(Number(accessData.user.id)).subscribe((items) => {
         this.Whishlist = items;
       });
     });
   }
 
-removeBerrWish(beerid?: number) {
+  removeBerrWish(beerid?: number) {
     this.whishlistService.removeWish(beerid).subscribe(() => {
       this.Whishlist = this.Whishlist.filter(item => item.beerId !== beerid);
       this.getWhishlist()

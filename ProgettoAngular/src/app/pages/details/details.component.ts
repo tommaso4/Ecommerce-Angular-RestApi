@@ -1,6 +1,6 @@
 import { RolesService } from './../../services/roles.service';
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { BeerService } from '../../services/beer.service';
 import { Ibeer } from '../../Modules/ibeer';
 import { LogSystemService } from '../../services/log-system.service';
@@ -30,7 +30,8 @@ export class DetailsComponent {
     private LSS:LogSystemService,
     private whishlistService: WhishlistService,
     private cartSvc: CartService,
-    private RolesSVC:RolesService
+    private RolesSVC:RolesService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -87,9 +88,27 @@ export class DetailsComponent {
   addToWish(beerid:number):void{
     this.LSS.user$.subscribe(accessData=>{
       if(!accessData?.user?.id) return;
-      this.whishlistService.addToWishList(beerid, accessData.user.id).pipe(take(1)).subscribe( )
+      this.whishlistService.addToWishList(beerid,Number( accessData.user.id)).pipe(take(1)).subscribe( )
     })
   }
+
+
+  deleteBeer(id: number): void {
+    this.beerService.deleteBeer(id).subscribe({
+      next: (data: any) => {
+        console.log('Prodotto rimosso:', data);
+
+
+        setTimeout(() => {
+          this.router.navigate(['/home']);
+        }, 2000);
+      },
+      error: (error: any) => {
+        console.error('Errore durante la rimozione della birra:', error);
+      }
+    });
+  }
+
 }
 
 

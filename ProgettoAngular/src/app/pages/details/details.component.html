@@ -1,5 +1,8 @@
 <div *ngIf="beer">
     <div class="singleCard">
+      <button *ngIf="isLogged && admin" class="deleteBeer"(click)="deleteBeer(beer.id)">
+        <fa-icon [icon]="[  'fas', 'trash-arrow-up']" class="trash"></fa-icon>
+      </button>
       <div class="d-flex">
         <div>
           <img [src]="beer.urlImmagine" >
