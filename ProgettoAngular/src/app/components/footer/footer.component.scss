@@ -1,28 +1,22 @@
 .bg-footer{
-
   background-color: #0a2f69;
-
   position: fixed;
   bottom: 0%;
   left: 0;
   width: 100%;
   z-index: 1000;
-
-
 }
 
 //DIMENSIONI FOTO LOGO
 
 .footer-container-logo{
   height: 15vh;
-
 }
 
 // BOTTONI SCARICA APP
 .scarica{
   height: 30px;
   width: 100px;
-
 }
 
 // BOTTONI servizi clienti, spedizioni, resi e rimborsi
@@ -88,7 +82,6 @@ div{
     flex-direction: column;
 
   }
-
 
   .footer-menu, .menu-icons, .menu-servizi{
     margin: 0%;
