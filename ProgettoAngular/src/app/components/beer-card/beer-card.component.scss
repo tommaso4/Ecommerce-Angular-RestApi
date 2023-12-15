@@ -61,13 +61,13 @@
   }
 }
 
-button{
+.addToWishList{
   border: none;
   background:none;
   position: absolute;
   top: 20px;
-  font-size: 20px;
   color: $dark-blue;
+  font-size: 1.8rem;
 }
 
 button:hover{

@@ -46,7 +46,7 @@ export class WhiteBeerComponent {
   addToWish(beerid:number){
     this.LSS.user$.subscribe(accessData=>{
       if(!accessData?.user?.id) return;
-      this.whishlistSvc.addToWishList(beerid, accessData.user.id).pipe(take(1)).subscribe(
+      this.whishlistSvc.addToWishList(beerid,accessData.user.id).pipe(take(1)).subscribe(
         )
     })
   }

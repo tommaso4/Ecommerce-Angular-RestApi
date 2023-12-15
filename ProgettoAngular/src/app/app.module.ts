@@ -33,6 +33,7 @@ import { RimborsiComponent } from './components/rimborsi/rimborsi.component';
 import { SpedizioniComponent } from './components/spedizioni/spedizioni.component';
 import { AddToShopComponent } from './components/add-to-shop/add-to-shop.component';
 import { CreateComponent } from './pages/create/create.component';
+import { CartIconComponent } from './components/header/cart-icon/cart-icon.component';
 
 
 
@@ -67,6 +68,7 @@ import { CreateComponent } from './pages/create/create.component';
     ServizioClientiComponent,
     AddToShopComponent,
     CreateComponent,
+    CartIconComponent,
   ],
   imports: [
     BrowserModule,

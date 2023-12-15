@@ -29,7 +29,7 @@ export class TransferComponent {
   }
 
   ngOnInit() {
-    this.cartSvc.getTotalCart().subscribe((total: number) => {
+    this.cartSvc.cart$.subscribe((total: number) => {
       this.totalCart = total;
     });
   }

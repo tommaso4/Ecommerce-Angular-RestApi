@@ -1,8 +1,9 @@
 <div class="card-container">
   <div class="card mb-1">
-    <button *ngIf="islogged" class="addToWishList" (click)="addToWishList(beer.id,$event)">
-      <fa-icon [icon]="['fas','heart']" id="icon" class="paginate-button__icon"></fa-icon>
+    <button *ngIf="isLogged" class="addToWishList" (click)="addToWishList(beer.id, $event)">
+      <fa-icon [icon]="isInWishlist ? ['fas', 'heart'] : ['far', 'heart']" id="icon" class="paginate-button__icon"></fa-icon>
     </button>
+
     <a class="d-block text-center"[routerLink]="['/details/'+ beer.id]">
       <img  [src]="beer.urlImmagine || 'https://images.punkapi.com/v2/keg.png'" class="card__img" alt="beer image">
       <div class="card__data">

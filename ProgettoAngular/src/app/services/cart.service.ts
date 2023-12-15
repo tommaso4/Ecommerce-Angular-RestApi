@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment.development';
 import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
-import { Observable, Subject, catchError, map, tap, throwError } from 'rxjs';
+import { BehaviorSubject, Observable, Subject, catchError, map, tap, throwError } from 'rxjs';
 import { ICart } from '../Modules/icart';
 import { IShop } from '../Modules/ishop';
 
@@ -10,8 +10,12 @@ import { IShop } from '../Modules/ishop';
 })
 export class CartService {
 
-  apiUrlShop= environment.apiUrlShop ;
-  totalCart = new Subject<number>();
+  apiUrlShop= `${environment.API}/shop`;
+  totalCart = new BehaviorSubject<number>(0);
+  cart$ = this.totalCart.asObservable();
+
+
+
 
 
   constructor(
@@ -23,9 +27,6 @@ export class CartService {
     this.totalCart.next(data);
   }
 
-  getTotalCart() {
-    return this.totalCart.asObservable();
-  }
 
   getShop(id: number): Observable<any> {
     let params = new HttpParams().set('userId', id.toString());
@@ -50,7 +51,9 @@ export class CartService {
           price: beer.price,
           img: beer.img,
           totalPrice: beer.price * numberBeerToSend
-        })
+        }).pipe(tap(()=> {
+          // this.totalCart.next(beer.price)
+        }))
   }
 
   updateShopItem(beerId: number|undefined, updatedData: any): Observable<any> {
@@ -61,11 +64,11 @@ export class CartService {
     return this.http.delete(`${this.apiUrlShop}/${id}`);
   }
 
+
   errorHandler(error: HttpErrorResponse): Observable<never> {
     return throwError(() => error);
   }
 
-  // Nel servizio CartService
 calculateTotalCart(items: IShop[]): number {
   return items.reduce((total, item) => total + item.totalPrice, 0);
 }

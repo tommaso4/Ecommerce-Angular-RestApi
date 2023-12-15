@@ -1,352 +1,125 @@
 {
   "users": [
     {
-      "email": "tommasocantarini4@gmail.com",
-      "password": "$2a$10$35t.K9Wa0htwCJsrvtlACexlbFMl81/aVk1p1CgT0zvtFOv.4ZODu",
-      "name": "Tommaso",
-      "surname": "Cantarini",
+      "email": "emilio.plances@gmail.com",
+      "password": "$2a$10$De8RUbneFkmQ5rIjQ48mJOh9xheYH8143PriRgU3brIwiPBG5L1YK",
+      "name": "Emilio",
+      "surname": "Plances",
+      "admin": false,
       "id": 1
     },
     {
-      "email": "emilio.plances@gmail.com",
-      "password": "$2a$10$bWZdHBTNU71qNbOqW2fGpeX6UH0MAPgwIslFv3qpj6XNKcdDIpaqC",
-      "name": "Emilio",
-      "surname": "Plances",
+      "email": "simo@gmail.com",
+      "password": "$2a$10$1RV5tg4bEJuRYFp745fg8erdHHe.PGsx/pNM6xm3.Lp0LxCXsjC52",
+      "name": "simo",
+      "surname": "aimo",
       "id": 2
     },
     {
-      "email": "lorenzoneroni13@gmail.com",
-      "password": "$2a$10$QA3SNlaEmXyBXiRiSuoueehZlJ.U0./lWDhW/1a/aCWC369OGp8l.",
-      "name": "Lorenzo",
-      "surname": "Neroni",
+      "email": "caloteresi@gmail.com",
+      "password": "$2a$10$LEKJUJqxKRIl4vwXaEVq2uoSoZ0SWoBx.y6xHYGmKunhSdk0rvHDi",
+      "name": "Calogero",
+      "surname": "Teresi",
       "id": 3
+    },
+    {
+      "email": "tommasocantarini4@gmail.com",
+      "password": "$2a$10$gbQHnGD1ZtwCQL.MhQ.ie.w9cr4yajUe45HeRfnFmSa.D19/cr40e",
+      "name": "Tommaso",
+      "surname": "Cantarini",
+      "admin": false,
+      "id": 4
+    },
+    {
+      "email": "mario@rossi.it",
+      "password": "$2a$10$yEvLFToQ7YSH3hDb7Y8efej9PsKHwL6naxszLjPFSMKYSI1AUVDSe",
+      "name": "Mario",
+      "surname": "Rossi",
+      "admin": false,
+      "id": 5
+    },
+    {
+      "email": "caloteresi@hotmail.it",
+      "password": "$2a$10$E1g8IEB6KcO.fcbjSDNf7uQw1vEQLXQZGJqkmBWTn/EjKKtI/zU5W",
+      "name": "Calogero",
+      "surname": "Teresi",
+      "id": 6
+    },
+    {
+      "email": "martino@verdi.it",
+      "password": "$2a$10$nOlvP9qQ1uNOm7dq/pR64eiJ3zrzikhXxOViOQzXVAaLWpR.aQMTC",
+      "name": "Calogero",
+      "surname": "Teresi",
+      "id": 7
     }
   ],
   "roles": [
     {
-      "userID": 1,
-      "role": "admin",
+      "userID": 6,
+      "role": "customer",
       "id": 1
     },
     {
-      "userID": 2,
-      "role": "customer",
-      "id": 2
-    },
-    {
-      "userID": 3,
+      "userID": 7,
       "role": "admin",
-      "id": 3
+      "id": 2
     }
   ],
   "wishlist": [
     {
-      "beerId": 2,
-      "userId": 1,
-      "id": 1
+      "beerId": 6,
+      "userId": 3,
+      "id": 10
     },
     {
-      "beerId": 1,
-      "userId": 1,
-      "id": 2
+      "beerId": 19,
+      "userId": 3,
+      "id": 11
+    },
+    {
+      "beerId": 4,
+      "userId": 3,
+      "id": 12
+    },
+    {
+      "beerId": 5,
+      "userId": 3,
+      "id": 13
     }
   ],
   "shop": [
     {
-      "nameBeer": "Misspent Youth",
-      "beerId": 11,
-      "numberBeer": 7,
-      "userId": 1,
-      "price": 8.75,
-      "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 61.25,
-      "id": 11
-    },
-    {
-      "userId": 1,
       "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
       "beerId": 3,
-      "numberBeer": 1,
+      "numberBeer": 6,
+      "userId": 7,
       "price": 9.68,
       "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 9.68,
-      "id": 12
-    },
-    {
-      "userId": 1,
-      "nameBeer": "Pilsen Lager",
-      "beerId": 4,
-      "numberBeer": 1,
-      "price": 4.68,
-      "img": "https://images.punkapi.com/v2/4.png",
-      "totalPrice": 4.68,
-      "id": 13
-    },
-    {
-      "userId": 1,
-      "nameBeer": "Avery Brown Dredge",
-      "beerId": 5,
-      "numberBeer": 1,
-      "price": 8.82,
-      "img": "https://images.punkapi.com/v2/5.png",
-      "totalPrice": 8.82,
-      "id": 14
-    },
-    {
-      "userId": 1,
-      "nameBeer": "Arcade Nation",
-      "beerId": 12,
-      "numberBeer": 1,
-      "price": 6.97,
-      "img": "https://images.punkapi.com/v2/12.png",
-      "totalPrice": 6.97,
-      "id": 15
-    },
-    {
-      "userId": 1,
-      "nameBeer": "Movember",
-      "beerId": 13,
-      "numberBeer": 1,
-      "price": 9.97,
-      "img": "https://images.punkapi.com/v2/13.png",
-      "totalPrice": 9.97,
-      "id": 16
-    },
-    {
-      "nameBeer": "Alpha Dog",
-      "beerId": 14,
-      "numberBeer": 2,
-      "userId": 1,
-      "price": 8.09,
-      "img": "https://images.punkapi.com/v2/14.png",
-      "totalPrice": 16.18,
-      "id": 17
-    },
-    {
-      "userId": 1,
-      "nameBeer": "Mixtape 8",
-      "beerId": 15,
-      "numberBeer": 1,
-      "price": 5.24,
-      "img": "https://images.punkapi.com/v2/15.png",
-      "totalPrice": 5.24,
-      "id": 18
-    },
-    {
-      "userId": 1,
-      "nameBeer": "AB:07",
-      "beerId": 9,
-      "numberBeer": 1,
-      "price": 9.87,
-      "img": "https://images.punkapi.com/v2/9.png",
-      "totalPrice": 9.87,
-      "id": 19
-    },
-    {
-      "userId": 1,
-      "nameBeer": "Fake Lager",
-      "beerId": 8,
-      "numberBeer": 1,
-      "price": 6.1,
-      "img": "https://images.punkapi.com/v2/8.png",
-      "totalPrice": 6.1,
-      "id": 20
-    },
-    {
-      "nameBeer": "Bramling X",
-      "beerId": 21,
-      "numberBeer": 1,
-      "userId": 2,
-      "price": 7.84,
-      "img": "https://images.punkapi.com/v2/10.png",
-      "totalPrice": 7.84,
-      "id": 21
-    },
-    {
-      "userId": 3,
-      "nameBeer": "Baby Saison - B-Sides",
-      "beerId": 84,
-      "numberBeer": 1,
-      "price": 8.62,
-      "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 8.62,
-      "id": 22
-    },
-    {
-      "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
-      "beerId": 3,
-      "numberBeer": 4,
-      "userId": 3,
-      "price": 9.68,
-      "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 38.72,
-      "id": 23
+      "totalPrice": 58.08,
+      "id": 2
     },
     {
       "nameBeer": "Trashy Blonde",
       "beerId": 2,
-      "numberBeer": 2,
-      "userId": 3,
+      "numberBeer": 82,
+      "userId": 7,
       "price": 4.19,
       "img": "https://images.punkapi.com/v2/2.png",
-      "totalPrice": 8.38,
-      "id": 24
+      "totalPrice": 343.58000000000004,
+      "id": 3
     },
     {
-      "nameBeer": "Avery Brown Dredge",
-      "beerId": 5,
-      "numberBeer": 2,
+      "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
+      "beerId": 3,
+      "numberBeer": 8,
       "userId": 3,
-      "price": 8.82,
-      "img": "https://images.punkapi.com/v2/5.png",
-      "totalPrice": 17.64,
-      "id": 25
-    },
-    {
-      "nameBeer": "Pilsen Lager",
-      "beerId": 4,
-      "numberBeer": 5,
-      "userId": 3,
-      "price": 4.68,
-      "img": "https://images.punkapi.com/v2/4.png",
-      "totalPrice": 23.4,
-      "id": 26
-    },
-    {
-      "nameBeer": "Buzz",
-      "beerId": 1,
-      "numberBeer": 3,
-      "userId": 3,
-      "price": 4.5,
+      "price": 9.68,
       "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 13.5,
-      "id": 27
+      "totalPrice": 77.44,
+      "id": 5
     }
   ],
   "beers": [
-    {
-      "id": 1,
-      "nome": "Buzz",
-      "slogan": "A Real Bitter Experience.",
-      "primaProduzione": "09/2007",
-      "descrizione": "A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.",
-      "urlImmagine": "https://images.punkapi.com/v2/keg.png",
-      "abv": 4.5,
-      "ibu": 60,
-      "targetFg": 1010,
-      "targetOg": 1044,
-      "ebc": 20,
-      "srm": 10,
-      "ph": 4.4,
-      "volume": {
-        "valore": 20,
-        "unità": "litres",
-        "tipologia": "rossa"
-      },
-      "volumeBollire": {
-        "valore": 25,
-        "unità": "litres"
-      },
-      "metodo": {
-        "mashTemp": [
-          {
-            "temp": {
-              "valore": 64,
-              "unità": "celsius"
-            },
-            "durata": 75
-          }
-        ],
-        "fermentazione": {
-          "temp": {
-            "valore": 19,
-            "unità": "celsius"
-          }
-        },
-        "torsione": null
-      },
-      "ingredienti": {
-        "malto": [
-          {
-            "nome": "Maris Otter Extra Pale",
-            "quantità": {
-              "valore": 3.3,
-              "unità": "kilograms"
-            }
-          },
-          {
-            "nome": "Caramalt",
-            "quantità": {
-              "valore": 0.2,
-              "unità": "kilograms"
-            }
-          },
-          {
-            "nome": "Munich",
-            "quantità": {
-              "valore": 0.4,
-              "unità": "kilograms"
-            }
-          }
-        ],
-        "luppolo": [
-          {
-            "nome": "Fuggles",
-            "quantità": {
-              "valore": 25,
-              "unità": "grams"
-            },
-            "aggiungi": "start",
-            "attributo": "bitter"
-          },
-          {
-            "nome": "First Gold",
-            "quantità": {
-              "valore": 25,
-              "unità": "grams"
-            },
-            "aggiungi": "start",
-            "attributo": "bitter"
-          },
-          {
-            "nome": "Fuggles",
-            "quantità": {
-              "valore": 37.5,
-              "unità": "grams"
-            },
-            "aggiungi": "middle",
-            "attributo": "flavour"
-          },
-          {
-            "nome": "First Gold",
-            "quantità": {
-              "valore": 37.5,
-              "unità": "grams"
-            },
-            "aggiungi": "middle",
-            "attributo": "flavour"
-          },
-          {
-            "nome": "Cascade",
-            "quantità": {
-              "valore": 37.5,
-              "unità": "grams"
-            },
-            "aggiungi": "end",
-            "attributo": "flavour"
-          }
-        ],
-        "lievito": "Wyeast 1056 - American Ale™"
-      },
-      "abbinamentoCibo": [
-        "Spicy chicken tikka masala",
-        "Grilled chicken quesadilla",
-        "Caramel toffee cake"
-      ],
-      "brewersTips": "The earthy and floral aromas from the hops can be overpowering. Drop a little Cascade in at the end of the boil to lift the profile with a bit of citrus.",
-      "contribuitoDa": "Sam Mason <samjbmason>",
-      "prezzo": 4.5
-    },
     {
       "id": 2,
       "nome": "Trashy Blonde",
@@ -2817,101 +2590,6 @@
       "brewersTips": "Using crushed cranberries will dry out the beer further, drawing out their natural astringent character.",
       "contribuitoDa": "Sam Mason <samjbmason>",
       "prezzo": 9.12
-    },
-    {
-      "id": 20,
-      "nome": "Rabiator",
-      "slogan": "Imperial Wheat Beer",
-      "primaProduzione": "03/2011",
-      "descrizione": "Imperial Wheat beer / Weizenbock brewed by a homesick German in leather trousers. Think banana bread, bubble gum and David Hasselhoff.",
-      "urlImmagine": "https://images.punkapi.com/v2/keg.png",
-      "abv": 10.27,
-      "ibu": 26,
-      "targetFg": 1014,
-      "targetOg": 1092,
-      "ebc": 24,
-      "srm": 12,
-      "ph": 4.4,
-      "volume": {
-        "valore": 20,
-        "unità": "litres"
-      },
-      "volumeBollire": {
-        "valore": 25,
-        "unità": "litres"
-      },
-      "metodo": {
-        "mashTemp": [
-          {
-            "temp": {
-              "valore": 64,
-              "unità": "celsius"
-            },
-            "durata": 60
-          }
-        ],
-        "fermentazione": {
-          "temp": {
-            "valore": 21,
-            "unità": "celsius"
-          }
-        },
-        "torsione": null
-      },
-      "ingredienti": {
-        "malto": [
-          {
-            "nome": "Extra Pale",
-            "quantità": {
-              "valore": 5.63,
-              "unità": "kilograms"
-            }
-          },
-          {
-            "nome": "Wheat",
-            "quantità": {
-              "valore": 0.69,
-              "unità": "kilograms"
-            }
-          },
-          {
-            "nome": "Crystal",
-            "quantità": {
-              "valore": 0.63,
-              "unità": "kilograms"
-            }
-          }
-        ],
-        "luppolo": [
-          {
-            "nome": "Columbus",
-            "quantità": {
-              "valore": 12.5,
-              "unità": "grams"
-            },
-            "aggiungi": "start",
-            "attributo": "bitter"
-          },
-          {
-            "nome": "Hersbrucker",
-            "quantità": {
-              "valore": 12.5,
-              "unità": "grams"
-            },
-            "aggiungi": "middle",
-            "attributo": "flavour"
-          }
-        ],
-        "lievito": "Wyeast 3333 - German Wheat™"
-      },
-      "abbinamentoCibo": [
-        "Grilled portabello mushroom burger",
-        "Chicken sausages with creamy mash",
-        "Caramel and banana meringue pie"
-      ],
-      "brewersTips": "If you are struggling to get that authentic head retention increase your mash temperature to about 70°C.",
-      "contribuitoDa": "Sam Mason <samjbmason>",
-      "prezzo": 4.77
     },
     {
       "id": 21,

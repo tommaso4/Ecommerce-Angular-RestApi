@@ -37,3 +37,23 @@ button{
   }
 }
 
+.emptycart {
+  min-height: 70vh;
+  text-align: center;
+  background-image: url(../../../assets/img/emptycart.svg);
+  background-size: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center; /* Centro orizzontalmente */
+  align-items: center; /* Centro verticalmente */
+}
+
+.pCart {
+  max-width: 300px;
+  margin-top: auto;
+  opacity: 1;
+  font-weight: bold; /* Posiziona l'elemento alla fine verticalmente */
+}
+

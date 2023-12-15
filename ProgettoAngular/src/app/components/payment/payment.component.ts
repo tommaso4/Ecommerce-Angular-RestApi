@@ -4,16 +4,24 @@ import { CartService } from '../../services/cart.service';
 @Component({
   selector: 'app-payment',
   templateUrl: './payment.component.html',
-  styleUrls: ['./payment.component.scss'] // Utilizza 'styleUrls' invece di 'styleUrl'
+  styleUrls: ['./payment.component.scss']
 })
-export class PaymentComponent implements OnInit {
-  totalCart: number = 0;
+export class PaymentComponent {
+  totalCart!: number;
 
-  constructor(private cartSvc: CartService) {}
+  constructor(private cartSvc: CartService) {
+
+  }
 
   ngOnInit() {
-    this.cartSvc.getTotalCart().subscribe((total: number) => {
-      this.totalCart = total;
-    });
+    this.fetchCart();
   }
+
+
+  fetchCart(){
+    this.cartSvc.cart$.subscribe((total: number) => {
+      this.totalCart = total;
+      console.log(this.totalCart);
+    });
+}
 }

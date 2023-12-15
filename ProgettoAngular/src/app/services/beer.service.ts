@@ -1,19 +1,17 @@
 
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
-import { BehaviorSubject, Observable, catchError, map, mergeMap, tap, throwError } from 'rxjs';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { Observable, catchError, map, throwError } from 'rxjs';
 import { environment } from '../../environments/environment.development';
 import { Ibeer } from '../Modules/ibeer';
-import { IShop } from '../Modules/ishop';
+
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class BeerService {
-
-
-  private apiUrl = environment.apiUrl ;
+  private apiUrl = `${environment.API}/beers` ;
   beerName: string = ""
 
   constructor(private http: HttpClient) { }
@@ -45,6 +43,15 @@ export class BeerService {
     return this.http.put<Ibeer>(url, updatedBeer).pipe(
       catchError((error: any) => {
         return throwError(() => new Error('Errore durante l\'aggiornamento della birra'));
+      })
+    );
+  }
+
+  deleteBeer(beerId: number): Observable<void> {
+    const url = `${this.apiUrl}/${beerId}`;
+    return this.http.delete<void>(url).pipe(
+      catchError((error: any) => {
+        return throwError(() => new Error('Errore durante l\'eliminazione della birra'));
       })
     );
   }
