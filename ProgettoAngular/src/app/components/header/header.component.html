@@ -1,8 +1,8 @@
-<div class="header d-flex justify-content-between align-items-center">
+<div class="header container-fluid d-flex justify-content-between align-items-center">
 <div class="d-flex align-items-center">
   <div class="d-flex logo-container rounded ">
-    <a routerLink="home" routerLinkActive="router-link-active">
-      <img src="/assets/img/logo1.png" alt="logo" class="logo rounded"
+    <a routerLink="home" routerLinkActive="p-0 router-link-active">
+      <img src="/assets/img/logo1.png" alt="logo" class="logo rounded p-0"
     /></a>
   </div>
 
@@ -13,40 +13,35 @@
     <a class= " d-none d-sm-none d-md-block line"  routerLink="/blondbeer">Blonde Beer</a>
     <a class= " d-none d-sm-none d-md-block line"  routerLink="/redbeer">Red Beer</a>
 
-    <a routerLink="/home">
-      <fa-icon [icon]="['fas','house']" class="paginate-button__icon h3 d-md-none m-2 whyte-beer log-in-icon"></fa-icon>
+    <a routerLink="/whitebeer" class="line">
+       <fa-icon [icon]="['fas','beer-mug-empty']" class="paginate-button__icon d-md-none me-1 h3 whyte-beer beer"></fa-icon>
     </a>
 
-    <a routerLink="/whitebeer">
-       <fa-icon [icon]="['fas','beer-mug-empty']" class="paginate-button__icon d-md-none m-1 h3 whyte-beer"></fa-icon>
+    <a routerLink="/blondbeer" class="line">
+      <fa-icon [icon]="['fas','beer-mug-empty']" class="paginate-button__icon d-md-none me-1 h3 log-in-icon beer"></fa-icon>
     </a>
 
-    <a routerLink="/blondbeer">
-      <fa-icon [icon]="['fas','beer-mug-empty']" class="paginate-button__icon d-md-none m-1 h3 log-in-icon"></fa-icon>
-    </a>
-
-    <a routerLink="/redbeer">
-      <fa-icon [icon]="['fas','beer-mug-empty']" class="paginate-button__icon d-md-none m-1 red-beer h3 "></fa-icon>
+    <a routerLink="/redbeer" class="line">
+      <fa-icon [icon]="['fas','beer-mug-empty']" class="paginate-button__icon d-md-none  red-beer h3 beer"></fa-icon>
     </a>
 
   </div>
 </div>
   <div class="d-flex align-items-center">
-      <a *ngIf="isLogged" class="d-none d-sm-none d-md-block line" routerLink="/wishlist">Wish List</a>
-
-      <a routerLink="/wishlist">
-       <fa-icon [icon]="['fas','bookmark']" class="paginate-button__icon d-md-none m-1  h3 "></fa-icon>
+      <a *ngIf="isLogged" routerLink="/wishlist" class="line">
+        <p class="d-none d-lg-block m-0">Wish List</p>
+       <fa-icon [icon]="['fas','bookmark']" class="paginate-button__icon d-lg-none m-1  h3 "></fa-icon>
       </a>
 
-     <a  *ngIf="isLogged" routerLink="/cart" class="d-flex align-items-center">
+     <a *ngIf="isLogged" routerLink="/cart" class="d-flex align-items-center">
        <app-cart-icon class="d-flex align-items-center mb-2"></app-cart-icon>
      </a>
 
-     <a class="line" routerLink="userprofile">Profile</a>
-     <fa-icon [icon]="['far','user']" class="paginate-button__icon h3 log-in-icon"></fa-icon>
-
-     <a *ngIf="!isLogged" routerLink="/LogSystem">Login</a>
-     <a *ngIf="isLogged" class="line" routerLink="/userprofile">{{user.user.name}}</a>
+    <a class="line d-flex align-items-center" routerLink="/userprofile">
+      <fa-icon [icon]="['far','user']" class="paginate-button__icon h3 log-in-icon"></fa-icon>
+      <p *ngIf="isLogged" class="d-none d-lg-block line m-0 ms-2">{{user.user.name}}</p>
+      <p *ngIf="!isLogged" class="m-0 ms-2">Login</p>
+    </a>
 
   </div>
 </div>

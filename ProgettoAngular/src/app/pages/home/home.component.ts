@@ -6,6 +6,7 @@ import { PaginatorService } from '../../services/paginator.service';
 import { LogSystemService } from '../../services/log-system.service';
 import { IUserAuth } from '../../Modules/iuser-auth';
 import { WhishlistService } from '../../services/whishlist.service';
+import { IwishListItem } from '../../Modules/iwishListItem';
 
 
 @Component({
@@ -21,19 +22,23 @@ export class HomeComponent implements OnInit {
   currentPage: number = 1;
   itemsPerPage: number = 25;
   islogged:boolean = false;
+  userId!: string|undefined;
+  wishlistItems: IwishListItem[]=[]
 
   constructor(
     private beerService: BeerService,
     private paginatorService: PaginatorService,
     private logService: LogSystemService,
     private whishlistSvc: WhishlistService
-  ) { }
+    ) {}
 
   ngOnInit(): void {
-    this.fetchBeers();
     this.logService.user$.subscribe((user:IUserAuth|null)=>{
       this.islogged = !!user
+      this.userId = user?.user.id
     })
+    this.fetchBeers();
+    this.getWhishlist();
   }
 
   fetchBeers(): void {
@@ -64,7 +69,6 @@ export class HomeComponent implements OnInit {
     this.updatePage();
   }
 
-  // Metodo per filtrare le birre per nome
   searchBeersByName(nome: string): void {
     if (!nome) {
       this.beers = this.allBeers.slice();
@@ -77,18 +81,18 @@ export class HomeComponent implements OnInit {
     this.updatePage();
   }
 
-
   handleBeerNameEvent(nome: string): void {
     this.beerService.setBeerName(nome);
     this.updatePage();
   }
 
-  addToWishList(beerId: number): void {
-    this.logService.user$.subscribe(accessData => {
-      if (!accessData?.user?.id) return;
-      this.whishlistSvc.addToWishList(beerId,accessData.user.id).pipe(take(1)).subscribe(
-      )
-    });
+  getWhishlist(){
+    if(!this.userId)return
+      this.whishlistSvc.getWishlist(this.userId).subscribe((items) => {
+        console.log(items)
+        this.whishlistSvc.setWhishListItem(items)
+      });
+
   }
 }
 

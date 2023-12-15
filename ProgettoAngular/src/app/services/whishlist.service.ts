@@ -2,7 +2,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { IwishListItem } from '../Modules/iwishListItem';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { environment } from '../../environments/environment.development';
 
 @Injectable({
@@ -10,6 +10,15 @@ import { environment } from '../../environments/environment.development';
 })
 export class WhishlistService {
   private api = `${environment.API}/wishlist` ;
+
+
+  whishListItem : BehaviorSubject<IwishListItem []|null> = new BehaviorSubject<IwishListItem []|null>(null);
+
+  whishlistItem$ = this.whishListItem.asObservable();
+
+  setWhishListItem(data: IwishListItem[]) {
+    this.whishListItem.next(data);
+  }
 
   constructor(
     private httpClient:HttpClient) { }

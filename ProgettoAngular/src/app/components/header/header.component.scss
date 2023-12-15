@@ -10,32 +10,30 @@
     right:0;
     width: 100%;
 
-    .logo-container {
+  .logo-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-    }
+  .logo {
+    height: 4rem;
+    padding-left: 5px;
+  }
 
-    .logo {
-        height: 4rem;
-        padding-left: 5px;
+  .title {
+    color: $secondary;
+    font-size: 1.5rem;
+  }
 
-    }
-
-    .title {
-        color: $secondary;
-        font-size: 1.5rem;
-    }
-
-    a{
-      text-decoration: none;
-      color: $secondary;
-      padding: 0.5rem;
-    }
-    .log-in-icon{
-      color: #F6B74B;
-    }
+  a{
+    text-decoration: none;
+    color: $secondary;
+    padding: 0.5rem;
+  }
+  .log-in-icon{
+    color: #F6B74B;
+  }
 }
 
 
@@ -52,5 +50,14 @@ a.line:hover{
   border-bottom: 2px solid $primary;
 }
 
+@media screen and (max-width:340px) {
+  fa-icon{
+    font-size: 1.2em;
+  }
+  img.logo{
+    width:50px;
+    height:50px
+  }
+}
 
 

@@ -69,6 +69,7 @@ import { CartIconComponent } from './components/header/cart-icon/cart-icon.compo
     AddToShopComponent,
     CreateComponent,
     CartIconComponent,
+    PAGES404Component
   ],
   imports: [
     BrowserModule,
