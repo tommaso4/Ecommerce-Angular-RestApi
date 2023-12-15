@@ -30,7 +30,7 @@ export class CartIconComponent {
       this.isLogged = !!user;
     });
     this.fetchShopUpdate(this.userId);
-    this.cartSvc.getTotalCart().subscribe((total: number) => {
+    this.cartSvc.cart$.subscribe((total: number) => {
       this.totalCart = total;
     });
   }

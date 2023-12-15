@@ -10,7 +10,7 @@ export class PaymentComponent {
   totalCart!: number;
 
   constructor(private cartSvc: CartService) {
-    this.fetchCart();
+
   }
 
   ngOnInit() {
@@ -19,7 +19,7 @@ export class PaymentComponent {
 
 
   fetchCart(){
-    this.cartSvc.getTotalCart().subscribe((total: number) => {
+    this.cartSvc.cart$.subscribe((total: number) => {
       this.totalCart = total;
       console.log(this.totalCart);
     });
