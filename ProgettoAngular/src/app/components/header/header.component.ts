@@ -22,10 +22,10 @@ export class HeaderComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.roleSvc.userRole$.subscribe(user=> this.admin = user?.role== 'admin' ? true : false)
     this.LSS.user$.subscribe((user: IUserAuth | null) => {
       this.isLogged = !!user;
       this.user = user!;
     });
+    this.roleSvc.userRole$.subscribe(user=> this.admin = user?.role== 'admin' ? true : false)
   }
 }
