@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../../services/cart.service';
+import { IShop } from '../../Modules/ishop';
 
 @Component({
   selector: 'app-payment',
@@ -8,6 +9,7 @@ import { CartService } from '../../services/cart.service';
 })
 export class PaymentComponent {
   totalCart!: number;
+  allItem : IShop[] | null =[];
 
   constructor(private cartSvc: CartService) {
 
@@ -15,7 +17,10 @@ export class PaymentComponent {
 
   ngOnInit() {
     this.fetchCart();
-  }
+    this.cartSvc.allItem$.subscribe((items) => {
+      this.allItem = items;
+      console.log(this.allItem);
+  })}
 
 
   fetchCart(){
@@ -25,3 +30,5 @@ export class PaymentComponent {
     });
 }
 }
+
+

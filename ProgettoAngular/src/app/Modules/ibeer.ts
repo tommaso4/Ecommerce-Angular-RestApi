@@ -7,13 +7,13 @@ export interface Ibeer {
   urlImmagine: string;
   abv: number;
   ibu: number;
-  targetFg: number;
-  targetOg: number;
+  targetFg?: number;
+  targetOg?: number;
   ebc: number;
   srm: number;
-  ph: number;
-  livelloAttenuazione: number;
-  volume: {
+  ph?: number;
+  livelloAttenuazione?: number;
+  volume?: {
     valore: number;
     unità: string;
     tipologia: string;
@@ -63,8 +63,8 @@ export interface Ibeer {
     ];
     lievito: string;
   };
-  abbinamentoCibo: string[];
-  brewersTips: string;
-  contribuitoDa: string;
+  abbinamentoCibo?: string[];
+  brewersTips?: string;
+  contribuitoDa?: string;
   prezzo: number;
 }

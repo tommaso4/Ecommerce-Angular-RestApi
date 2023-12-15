@@ -51,6 +51,7 @@ export class CartComponent {
     this.cartSvc.getShop(userId).subscribe({
       next: (data: any) => {
         this.allItem = data;
+        this.cartSvc.setAllItemSubject(this.allItem)
         console.log(this.allItem);
         this.totalsCart()
       },

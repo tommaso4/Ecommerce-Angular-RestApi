@@ -19,6 +19,7 @@ import { RimborsiComponent } from './components/rimborsi/rimborsi.component';
 import { ServizioClientiComponent } from './components/servizioclienti/servizioclienti.component';
 import { SpedizioniComponent } from './components/spedizioni/spedizioni.component';
 import { AdminGuard } from './pages/log-system/admin.guard';
+import { CreateComponent } from './pages/create/create.component';
 
 
 
@@ -42,6 +43,7 @@ const routes: Routes = [
   ],
   canActivate:[LogGuard]},
   { path: 'edit/:id', component: EditComponent ,canActivate:[AdminGuard]},
+  { path: 'create', component: CreateComponent ,canActivate:[AdminGuard]},
   { path: 'wishlist', component: WhishlistComponent },
   { path: 'rimborsi', component: RimborsiComponent },
   { path: 'servizioclienti', component: ServizioClientiComponent },

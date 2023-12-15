@@ -1,40 +1,46 @@
-<form id="beerForm">
-  <label for="id">ID:</label>
-  <input type="number" id="id" name="id" required><br><br>
+<div class="container create">
+<form id="beerForm" (ngSubmit)="submitForm()">
 
-  <label for="nome">Nome:</label>
-  <input type="text" id="nome" name="nome" required><br><br>
+  <fieldset>
+    <legend>Informazioni generali</legend>
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" class="form-control" required [(ngModel)]="beer.nome">
+    </div>
+    <div class="form-group">
+      <label for="slogan">Slogan:</label>
+      <input type="text" id="slogan" name="slogan" class="form-control" required [(ngModel)]="beer.slogan">
+    </div>
+    <div class="form-group">
+      <label for="descrizione">Descrizione:</label>
+      <input type="text" id="descrizione" name="descrizione" class="form-control" required [(ngModel)]="beer.descrizione">
+    </div>
+    <div class="form-group">
+      <label for="primaProduzione">Prima Produzione:</label>
+      <input type="text" id="primaProduzione" name="primaProduzione" class="form-control" required [(ngModel)]="beer.primaProduzione">
+    </div>
+    <div class="form-group">
+      <label for="urlImmagine">Url Img:</label>
+      <input type="text" id="urlImmagine" name="urlImmagine" class="form-control" required [(ngModel)]="beer.urlImmagine">
+    </div>
+    <div class="form-group">
+      <label for="abv">Abv:</label>
+      <input type="text" id="abv" name="abv" class="form-control" required [(ngModel)]="beer.abv">
+    </div>
+    <div class="form-group">
+      <label for="ebc">EBC:</label>
+      <input type="text" id="ebc" name="ebc" class="form-control" required [(ngModel)]="beer.ebc">
+    </div>
+    <div class="form-group">
+      <label for="srm">SRM:</label>
+      <input type="text" id="srm" name="srm" class="form-control" required [(ngModel)]="beer.srm">
+    </div>
+    <div class="form-group">
+      <label for="prezzo">Prezzo:</label>
+      <input type="number" id="prezzo" name="prezzo" class="form-control" required [(ngModel)]="beer.prezzo">
+    </div>
+  </fieldset>
 
-  <label for="slogan">Slogan:</label>
-  <input type="text" id="slogan" name="slogan" required><br><br>
-
-  <label for="descrizione">Prima Produzione:</label>
-  <input type="text" id="descrizione" name="descrizione" required><br><br>
-  <label for="primaProduzione">Prima Produzione:</label>
-  <input type="text" id="primaProduzione" name="primaProduzione" required><br><br>
-  <label for="primaProduzione">Prima Produzione:</label>
-  <input type="text" id="primaProduzione" name="primaProduzione" required><br><br>
-  <label for="primaProduzione">Prima Produzione:</label>
-  <input type="text" id="primaProduzione" name="primaProduzione" required><br><br>
-
-
-
-  <!-- Esempio con campi nidificati -->
-  <label for="volumeValore">Volume Valore:</label>
-  <input type="number" id="volumeValore" name="volumeValore" required>
-  <label for="volumeUnita">Volume Unità:</label>
-  <input type="text" id="volumeUnita" name="volumeUnita" required>
-  <label for="volumeTipologia">Volume Tipologia:</label>
-  <input type="text" id="volumeTipologia" name="volumeTipologia" required><br><br>
-
-  <!-- Esempio con campi nidificati all'interno di volumeBollire -->
-  <label for="volumeBollireValore">Volume Bollire Valore:</label>
-  <input type="number" id="volumeBollireValore" name="volumeBollireValore" required>
-  <label for="volumeBollireUnita">Volume Bollire Unità:</label>
-  <input type="text" id="volumeBollireUnita" name="volumeBollireUnita" required><br><br>
-
-  <!-- Aggiungi campi nidificati e campi array per tutti gli altri dati -->
-
-  <!-- Aggiungi un pulsante per inviare il form -->
-  <input type="submit" value="Invia">
+  <button type="submit" class="btn btn-primary">Invia</button>
 </form>
+</div>

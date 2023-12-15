@@ -34,6 +34,7 @@ import { SpedizioniComponent } from './components/spedizioni/spedizioni.componen
 import { AddToShopComponent } from './components/add-to-shop/add-to-shop.component';
 import { CreateComponent } from './pages/create/create.component';
 import { CartIconComponent } from './components/header/cart-icon/cart-icon.component';
+import { BeerCardEmptyComponent } from './components/beer-card-empty/beer-card-empty.component';
 
 
 
@@ -69,7 +70,8 @@ import { CartIconComponent } from './components/header/cart-icon/cart-icon.compo
     AddToShopComponent,
     CreateComponent,
     CartIconComponent,
-    PAGES404Component
+    PAGES404Component,
+    BeerCardEmptyComponent
   ],
   imports: [
     BrowserModule,
