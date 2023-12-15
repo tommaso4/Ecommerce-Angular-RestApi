@@ -14,10 +14,6 @@ export class CartService {
   totalCart = new BehaviorSubject<number>(0);
   cart$ = this.totalCart.asObservable();
 
-
-
-
-
   constructor(
     private http:HttpClient,
   ) { }
@@ -26,7 +22,6 @@ export class CartService {
   setTotalCart(data: number) {
     this.totalCart.next(data);
   }
-
 
   getShop(id: number): Observable<any> {
     let params = new HttpParams().set('userId', id.toString());
@@ -69,7 +64,7 @@ export class CartService {
     return throwError(() => error);
   }
 
-calculateTotalCart(items: IShop[]): number {
+  calculateTotalCart(items: IShop[]): number {
   return items.reduce((total, item) => total + item.totalPrice, 0);
 }
 
