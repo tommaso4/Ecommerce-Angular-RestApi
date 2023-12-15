@@ -29,36 +29,6 @@
   ],
   "shop": [
     {
-      "nameBeer": "Avery Brown Dredge",
-      "beerId": 5,
-      "numberBeer": 3,
-      "userId": 1,
-      "price": 8.82,
-      "img": "https://images.punkapi.com/v2/5.png",
-      "totalPrice": 26.46,
-      "id": 1
-    },
-    {
-      "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
-      "beerId": 3,
-      "numberBeer": 3,
-      "userId": 1,
-      "price": 9.68,
-      "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 29.04,
-      "id": 2
-    },
-    {
-      "nameBeer": "Trashy Blonde",
-      "beerId": 3,
-      "numberBeer": 5,
-      "userId": 1,
-      "price": 4.19,
-      "img": "https://images.punkapi.com/v2/2.png",
-      "totalPrice": 20.950000000000003,
-      "id": 3
-    },
-    {
       "userId": 1,
       "nameBeer": "Trashy Blonde",
       "beerId": 2,
@@ -66,37 +36,27 @@
       "price": 4.19,
       "img": "https://images.punkapi.com/v2/2.png",
       "totalPrice": 4.19,
-      "id": 4
+      "id": 1
     },
     {
-      "nameBeer": "Fake Lager",
+      "userId": 1,
+      "nameBeer": "Pilsen Lager",
+      "beerId": 4,
+      "numberBeer": 1,
+      "price": 4.68,
+      "img": "https://images.punkapi.com/v2/4.png",
+      "totalPrice": 4.68,
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "nameBeer": "Avery Brown Dredge",
       "beerId": 5,
-      "numberBeer": 44,
-      "userId": 1,
-      "price": 6.1,
-      "img": "https://images.punkapi.com/v2/8.png",
-      "totalPrice": 268.4,
-      "id": 5
-    },
-    {
-      "userId": 1,
-      "nameBeer": "AB:12",
-      "beerId": 7,
       "numberBeer": 1,
-      "price": 9.9,
-      "img": "https://images.punkapi.com/v2/7.png",
-      "totalPrice": 9.9,
-      "id": 6
-    },
-    {
-      "userId": 1,
-      "nameBeer": "AB:07",
-      "beerId": 9,
-      "numberBeer": 1,
-      "price": 9.87,
-      "img": "https://images.punkapi.com/v2/9.png",
-      "totalPrice": 9.87,
-      "id": 7
+      "price": 8.82,
+      "img": "https://images.punkapi.com/v2/5.png",
+      "totalPrice": 8.82,
+      "id": 3
     }
   ],
   "beers": [
@@ -2693,6 +2653,101 @@
       "brewersTips": "Using crushed cranberries will dry out the beer further, drawing out their natural astringent character.",
       "contribuitoDa": "Sam Mason <samjbmason>",
       "prezzo": 9.12
+    },
+    {
+      "id": 20,
+      "nome": "Rabiator",
+      "slogan": "Imperial Wheat Beer",
+      "primaProduzione": "03/2011",
+      "descrizione": "Imperial Wheat beer / Weizenbock brewed by a homesick German in leather trousers. Think banana bread, bubble gum and David Hasselhoff.",
+      "urlImmagine": "https://images.punkapi.com/v2/keg.png",
+      "abv": 10.27,
+      "ibu": 26,
+      "targetFg": 1014,
+      "targetOg": 1092,
+      "ebc": 24,
+      "srm": 12,
+      "ph": 4.4,
+      "volume": {
+        "valore": 20,
+        "unità": "litres"
+      },
+      "volumeBollire": {
+        "valore": 25,
+        "unità": "litres"
+      },
+      "metodo": {
+        "mashTemp": [
+          {
+            "temp": {
+              "valore": 64,
+              "unità": "celsius"
+            },
+            "durata": 60
+          }
+        ],
+        "fermentazione": {
+          "temp": {
+            "valore": 21,
+            "unità": "celsius"
+          }
+        },
+        "torsione": null
+      },
+      "ingredienti": {
+        "malto": [
+          {
+            "nome": "Extra Pale",
+            "quantità": {
+              "valore": 5.63,
+              "unità": "kilograms"
+            }
+          },
+          {
+            "nome": "Wheat",
+            "quantità": {
+              "valore": 0.69,
+              "unità": "kilograms"
+            }
+          },
+          {
+            "nome": "Crystal",
+            "quantità": {
+              "valore": 0.63,
+              "unità": "kilograms"
+            }
+          }
+        ],
+        "luppolo": [
+          {
+            "nome": "Columbus",
+            "quantità": {
+              "valore": 12.5,
+              "unità": "grams"
+            },
+            "aggiungi": "start",
+            "attributo": "bitter"
+          },
+          {
+            "nome": "Hersbrucker",
+            "quantità": {
+              "valore": 12.5,
+              "unità": "grams"
+            },
+            "aggiungi": "middle",
+            "attributo": "flavour"
+          }
+        ],
+        "lievito": "Wyeast 3333 - German Wheat™"
+      },
+      "abbinamentoCibo": [
+        "Grilled portabello mushroom burger",
+        "Chicken sausages with creamy mash",
+        "Caramel and banana meringue pie"
+      ],
+      "brewersTips": "If you are struggling to get that authentic head retention increase your mash temperature to about 70°C.",
+      "contribuitoDa": "Sam Mason <samjbmason>",
+      "prezzo": 4.77
     },
     {
       "id": 21,

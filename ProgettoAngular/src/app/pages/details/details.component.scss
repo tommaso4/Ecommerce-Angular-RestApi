@@ -22,9 +22,16 @@
 
   .detFoot {
     width: 100%;
-    button {
+    button{
       margin-right: 10px;
-      padding: 5px 10px;
+      padding: 0px 8px;
+      background-color: #0A2F69;
+      color: #F6B74B;
+      font-size: large;
+      &:hover{
+        background-color: #f6b74b;
+        color: #0a2f69;
+      }
     }
   }
 }

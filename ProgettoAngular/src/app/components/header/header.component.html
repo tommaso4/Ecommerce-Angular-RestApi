@@ -11,13 +11,13 @@
     <a class= " d-none d-sm-none d-md-block line"  routerLink="/blondbeer">Blonde Beer</a>
     <a class= " d-none d-sm-none d-md-block line"  routerLink="/redbeer">Red Beer</a>
     <a *ngIf="admin" class= " d-none d-sm-none d-md-block line"  routerLink="/create">Create</a>
-    <a routerLink="/whitebeer" class="line">
+    <a routerLink="/whitebeer" class="line d-md-none">
        <fa-icon [icon]="['fas','beer-mug-empty']" class="paginate-button__icon d-md-none me-1 h3 whyte-beer beer"></fa-icon>
     </a>
-    <a routerLink="/blondbeer" class="line">
+    <a routerLink="/blondbeer" class="line d-md-none">
       <fa-icon [icon]="['fas','beer-mug-empty']" class="paginate-button__icon d-md-none me-1 h3 log-in-icon beer"></fa-icon>
     </a>
-    <a routerLink="/redbeer" class="line">
+    <a routerLink="/redbeer" class="line d-md-none">
       <fa-icon [icon]="['fas','beer-mug-empty']" class="paginate-button__icon d-md-none  red-beer h3 beer"></fa-icon>
     </a>
   </div>
