@@ -59,6 +59,16 @@
       "beerId": 4,
       "userId": 1,
       "id": 3
+    },
+    {
+      "beerId": 1,
+      "userId": 2,
+      "id": 4
+    },
+    {
+      "beerId": 2,
+      "userId": 2,
+      "id": 5
     }
   ],
   "shop": [
@@ -111,16 +121,6 @@
       "img": "https://images.punkapi.com/v2/8.png",
       "totalPrice": 6.1,
       "id": 20
-    },
-    {
-      "nameBeer": "Bramling X",
-      "beerId": 21,
-      "numberBeer": 1,
-      "userId": 2,
-      "price": 7.84,
-      "img": "https://images.punkapi.com/v2/10.png",
-      "totalPrice": 7.84,
-      "id": 21
     },
     {
       "userId": 3,

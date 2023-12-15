@@ -1,19 +1,17 @@
 
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
-import { BehaviorSubject, Observable, catchError, map, mergeMap, tap, throwError } from 'rxjs';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { Observable, catchError, map, throwError } from 'rxjs';
 import { environment } from '../../environments/environment.development';
 import { Ibeer } from '../Modules/ibeer';
-import { IShop } from '../Modules/ishop';
+
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class BeerService {
-
-
-  private apiUrl = environment.apiUrl ;
+  private apiUrl = `${environment.API}/beers` ;
   beerName: string = ""
 
   constructor(private http: HttpClient) { }
