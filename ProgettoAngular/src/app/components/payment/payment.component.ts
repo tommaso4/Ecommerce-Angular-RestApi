@@ -9,13 +9,19 @@ import { CartService } from '../../services/cart.service';
 export class PaymentComponent {
   totalCart!: number;
 
-  constructor(private cartSvc: CartService) {}
+  constructor(private cartSvc: CartService) {
+    this.fetchCart();
+  }
 
   ngOnInit() {
+    this.fetchCart();
+  }
+
+
+  fetchCart(){
     this.cartSvc.getTotalCart().subscribe((total: number) => {
       this.totalCart = total;
       console.log(this.totalCart);
     });
-  }
 }
-
+}
