@@ -11,7 +11,7 @@
   "roles": [
     {
       "userID": 1,
-      "role": "customer",
+      "role": "admin",
       "id": 1
     }
   ],
@@ -69,13 +69,13 @@
       "id": 4
     },
     {
-      "userId": 1,
       "nameBeer": "Fake Lager",
-      "beerId": 8,
-      "numberBeer": 1,
+      "beerId": 5,
+      "numberBeer": 44,
+      "userId": 1,
       "price": 6.1,
       "img": "https://images.punkapi.com/v2/8.png",
-      "totalPrice": 6.1,
+      "totalPrice": 268.4,
       "id": 5
     },
     {
