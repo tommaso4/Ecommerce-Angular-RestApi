@@ -2,6 +2,9 @@
   background-color: white;
   padding:20px;
   opacity: 0.8;
+  table{
+    max-width: 100%;
+  }
 }
 button{
   border: none;
@@ -20,6 +23,7 @@ button{
     background-position: left;
     background-repeat: no-repeat;
     line-height: 36px;
+    color: transparent;
 }
 .table {
   img {

@@ -1,8 +1,104 @@
 {
-  "users": [],
-  "roles": [],
-  "wishlist": [],
-  "shop": [],
+  "users": [
+    {
+      "email": "tommasocantarini4@gmail.com",
+      "password": "$2a$10$ekhKjhRjjzBNucCEsuplTuG0CqcJjSp93UX1kk8AanddL404LMjSO",
+      "name": "Tommaso",
+      "surname": "Cantarini",
+      "id": 1
+    }
+  ],
+  "roles": [
+    {
+      "userID": 1,
+      "role": "customer",
+      "id": 1
+    }
+  ],
+  "wishlist": [
+    {
+      "beerId": 2,
+      "userId": "1",
+      "id": 1
+    },
+    {
+      "beerId": 3,
+      "userId": "1",
+      "id": 2
+    }
+  ],
+  "shop": [
+    {
+      "nameBeer": "Avery Brown Dredge",
+      "beerId": 5,
+      "numberBeer": 3,
+      "userId": 1,
+      "price": 8.82,
+      "img": "https://images.punkapi.com/v2/5.png",
+      "totalPrice": 26.46,
+      "id": 1
+    },
+    {
+      "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
+      "beerId": 3,
+      "numberBeer": 3,
+      "userId": 1,
+      "price": 9.68,
+      "img": "https://images.punkapi.com/v2/keg.png",
+      "totalPrice": 29.04,
+      "id": 2
+    },
+    {
+      "nameBeer": "Trashy Blonde",
+      "beerId": 3,
+      "numberBeer": 5,
+      "userId": 1,
+      "price": 4.19,
+      "img": "https://images.punkapi.com/v2/2.png",
+      "totalPrice": 20.950000000000003,
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "nameBeer": "Trashy Blonde",
+      "beerId": 2,
+      "numberBeer": 1,
+      "price": 4.19,
+      "img": "https://images.punkapi.com/v2/2.png",
+      "totalPrice": 4.19,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "nameBeer": "Fake Lager",
+      "beerId": 8,
+      "numberBeer": 1,
+      "price": 6.1,
+      "img": "https://images.punkapi.com/v2/8.png",
+      "totalPrice": 6.1,
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "nameBeer": "AB:12",
+      "beerId": 7,
+      "numberBeer": 1,
+      "price": 9.9,
+      "img": "https://images.punkapi.com/v2/7.png",
+      "totalPrice": 9.9,
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "nameBeer": "AB:07",
+      "beerId": 9,
+      "numberBeer": 1,
+      "price": 9.87,
+      "img": "https://images.punkapi.com/v2/9.png",
+      "totalPrice": 9.87,
+      "id": 7
+    }
+  ],
   "beers": [
     {
       "id": 1,

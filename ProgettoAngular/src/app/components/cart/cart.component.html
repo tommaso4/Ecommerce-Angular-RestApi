@@ -1,52 +1,68 @@
 <!-- cart component -->
-<div *ngIf="allItem.length > 0" class="container table-responsive">
-  <table class="table table-striped table-hover align-middle">
-    <thead>
-      <tr class="text-center">
-        <th><button (click)="deleteAll()"><fa-icon [icon]="[  'fas', 'trash-arrow-up']" class="trash"></fa-icon></button></th>
-        <th></th>
-        <th class="text-left">Beer's Name</th>
-        <th>Amount</th>
-        <th>Price</th>
-        <th>Total Price</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of allItem; let i = index">
-        <td><button (click)="delateItemCart(item.id)"><fa-icon [icon]="[  'fas', 'trash-arrow-up']" class="trash"></fa-icon></button></td>
-        <td class="text-center"><img [src]="item.img" alt="Beer Image" /></td>
-        <td>{{ item.nameBeer }}</td>
-        <td class="text-center">
-          <input
-            type="number" min="1"
-            [value]="item.numberBeer"
-            (change)="updateQuantity($event, item.beerId)"
-          />
-        </td>
-        <td class="text-center">{{ item.price | currency : "EUR" }}</td>
-        <td class="text-center">{{ item.totalPrice | currency : "EUR" }}</td>
-      </tr>
-    </tbody>
-      <tfoot class=" text-center align-middle">
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>
-
-            <a class="cart text-right nav-link" routerLink="/payment">
+<div *ngIf="allItem.length > 0" class="container">
+  <div class="table-responsive">
+    <table class="table table-striped table-hover align-middle">
+      <thead>
+        <tr class="text-center">
+          <th>
+            <button (click)="deleteAll()">
+              <fa-icon
+                [icon]="['fas', 'trash-arrow-up']"
+                class="trash"
+              ></fa-icon>
+            </button>
+          </th>
+          <th></th>
+          <th class="text-left">Beer's Name</th>
+          <th>Amount</th>
+          <th>Price</th>
+          <th>Total Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of allItem; let i = index">
+          <td>
+            <button (click)="delateItemCart(item.id)">
+              <fa-icon
+                [icon]="['fas', 'trash-arrow-up']"
+                class="trash"
+              ></fa-icon>
+            </button>
+          </td>
+          <td class="text-center"><img [src]="item.img" alt="Beer Image" /></td>
+          <td>{{ item.nameBeer }}</td>
+          <td class="text-center">
+            <input
+              type="number"
+              min="1"
+              [value]="item.numberBeer"
+              (change)="updateQuantity($event, item.beerId)"
+            />
+          </td>
+          <td class="text-center">{{ item.price | currency : "EUR" }}</td>
+          <td class="text-center">{{ item.totalPrice | currency : "EUR" }}</td>
+        </tr>
+      </tbody>
+      <tfoot class="text-center align-middle">
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            <a class="cart text-right nav-link ms-md-5" routerLink="/payment"><span>a</span></a>
+          </td>
+          <td>
             <span *ngIf="totalCart">{{ totalCart | currency : "EUR" }}</span>
-            </a>
-
-        </td>
+          </td>
+        </tr>
       </tfoot>
-  </table>
-</div>
-<div *ngIf="allItem.length === 0" class="emptycart container">
-  <div class="pCart">
-    <p> Il carrello è vuoto.</p>
-    <p>Aggiungi almeno un articolo prima di procedere.</p>
+    </table>
   </div>
 </div>
 
-
+<div *ngIf="allItem.length === 0" class="emptycart container">
+  <div class="pCart">
+    <p>Il carrello è vuoto.</p>
+    <p>Aggiungi almeno un articolo prima di procedere.</p>
+  </div>
+</div>

@@ -15,7 +15,7 @@ export class CartService {
   cart$ = this.totalCart.asObservable();
 
   constructor(
-    private http:HttpClient,
+    private http:HttpClient
   ) { }
 
 

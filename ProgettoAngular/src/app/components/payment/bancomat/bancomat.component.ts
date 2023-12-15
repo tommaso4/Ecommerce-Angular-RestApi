@@ -49,4 +49,6 @@ export class BancomatComponent {
       console.log('Il modulo Bancomat non è valido.');
     }
   }
+
+
 }
