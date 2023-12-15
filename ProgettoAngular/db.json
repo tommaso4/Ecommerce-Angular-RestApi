@@ -51,6 +51,13 @@
       "name": "Calogero",
       "surname": "Teresi",
       "id": 7
+    },
+    {
+      "email": "lorenzoneroni13@gmail.com",
+      "password": "$2a$10$cHLCOHAGkIZC4mxtM1ISIOnMbqEPm.rA4s1sMvzlC/L.lA6jrJ6Fi",
+      "name": "Lorenzo",
+      "surname": "Neroni",
+      "id": 8
     }
   ],
   "roles": [
@@ -63,28 +70,33 @@
       "userID": 7,
       "role": "admin",
       "id": 2
+    },
+    {
+      "userID": 8,
+      "role": "customer",
+      "id": 3
     }
   ],
   "wishlist": [
     {
-      "beerId": 6,
-      "userId": 3,
-      "id": 10
+      "beerId": 10,
+      "userId": "8",
+      "id": 6
     },
     {
-      "beerId": 19,
-      "userId": 3,
-      "id": 11
+      "beerId": 11,
+      "userId": "8",
+      "id": 7
     },
     {
-      "beerId": 4,
-      "userId": 3,
-      "id": 12
+      "beerId": 9,
+      "userId": "8",
+      "id": 8
     },
     {
-      "beerId": 5,
-      "userId": 3,
-      "id": 13
+      "beerId": 8,
+      "userId": "8",
+      "id": 9
     }
   ],
   "shop": [
@@ -109,14 +121,64 @@
       "id": 3
     },
     {
-      "nameBeer": "Berliner Weisse With Yuzu - B-Sides",
-      "beerId": 3,
-      "numberBeer": 8,
-      "userId": 3,
-      "price": 9.68,
+      "userId": 8,
+      "nameBeer": "Bramling X",
+      "beerId": 10,
+      "numberBeer": 1,
+      "price": 7.84,
+      "img": "https://images.punkapi.com/v2/10.png",
+      "totalPrice": 7.84,
+      "id": 4
+    },
+    {
+      "userId": 8,
+      "nameBeer": "Misspent Youth",
+      "beerId": 11,
+      "numberBeer": 1,
+      "price": 8.75,
       "img": "https://images.punkapi.com/v2/keg.png",
-      "totalPrice": 77.44,
+      "totalPrice": 8.75,
       "id": 5
+    },
+    {
+      "userId": 8,
+      "nameBeer": "AB:07",
+      "beerId": 9,
+      "numberBeer": 1,
+      "price": 9.87,
+      "img": "https://images.punkapi.com/v2/9.png",
+      "totalPrice": 9.87,
+      "id": 6
+    },
+    {
+      "userId": 8,
+      "nameBeer": "Fake Lager",
+      "beerId": 8,
+      "numberBeer": 1,
+      "price": 6.1,
+      "img": "https://images.punkapi.com/v2/8.png",
+      "totalPrice": 6.1,
+      "id": 7
+    },
+    {
+      "userId": 8,
+      "nameBeer": "Trashy Blonde",
+      "beerId": 2,
+      "numberBeer": 1,
+      "price": 4.19,
+      "img": "https://images.punkapi.com/v2/2.png",
+      "totalPrice": 4.19,
+      "id": 8
+    },
+    {
+      "nameBeer": "Pilsen Lager",
+      "beerId": 9,
+      "numberBeer": 100,
+      "userId": 8,
+      "price": 4.68,
+      "img": "https://images.punkapi.com/v2/4.png",
+      "totalPrice": 468,
+      "id": 9
     }
   ],
   "beers": [
