@@ -4,6 +4,8 @@ import { LogSystemService } from '../../services/log-system.service';
 import { IUser } from '../../Modules/iuser';
 import { RolesService } from '../../services/roles.service';
 import Swal from 'sweetalert2';
+import { CartService } from '../../services/cart.service';
+import { WhishlistService } from '../../services/whishlist.service';
 
 @Component({
   selector: 'app-user-profile',
@@ -21,7 +23,9 @@ export class UserProfileComponent {
 
   constructor(
     private LSS:LogSystemService,
-    private RolesSVC:RolesService
+    private RolesSVC:RolesService,
+    private CartSVC:CartService,
+    private WLS:WhishlistService
   ){
     this.LSS.user$.subscribe(userAuth =>{
       this.userAuth=userAuth;
@@ -42,6 +46,8 @@ export class UserProfileComponent {
       this.LSS.deleteAccount(this.user.id).subscribe(()=>{
         if(!this.user?.id) return
         this.RolesSVC.deleteUserRole(this.user?.id).subscribe(()=>{
+          this.deleteCartArr();
+          this.deleteWishlistArr();
           Swal.fire({
             position: "top-end",
             icon: "success",
@@ -59,6 +65,22 @@ export class UserProfileComponent {
 
   cancelDelete(){
     this.deleting=false;
+  }
+
+  deleteCartArr(){
+    if(!this.user?.id) return
+    this.CartSVC.getShop(Number(this.user?.id)).subscribe(cartArr=>{
+      cartArr.forEach(element => {
+        this.CartSVC.deleteCart(element.id).subscribe();
+      });
+    })
+  }
+
+  deleteWishlistArr(){
+    if(!this.user?.id) return
+    this.WLS.getWishlist(this.user?.id).subscribe(wishlistArr=>{
+      wishlistArr.forEach(element=>this.WLS.removeWish(element.id))
+    })
   }
 }
 

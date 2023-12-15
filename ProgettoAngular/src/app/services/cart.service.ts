@@ -23,10 +23,11 @@ export class CartService {
     this.totalCart.next(data);
   }
 
-  getShop(id: number): Observable<any> {
+
+  getShop(id: number): Observable<IShop[]> {
     let params = new HttpParams().set('userId', id.toString());
 
-    return this.http.get<IShop>(this.apiUrlShop, { params }).pipe(
+    return this.http.get<IShop[]>(this.apiUrlShop, { params }).pipe(
       catchError(this.errorHandler)
     );
   }
