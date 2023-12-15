@@ -3,6 +3,7 @@
 .card {
   background-color:  #f6b74b9e;
   border-radius: 0.6rem;
+  box-sizing: border-box;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -13,7 +14,7 @@
 
   &:hover #icon {
     color: $primary;
-      filter: brightness(0.8); 
+      filter: brightness(0.8);
   }
 
   &__img {
@@ -21,6 +22,7 @@
     padding-top: 30px;
     height: 150px;
     transition: all 0.3s;
+    max-width: 100%;
   }
 
   &__data {
@@ -59,6 +61,24 @@
       }
     }
   }
+  @media (max-width: 320px) {
+    padding: 5px 10px;
+    &__img {
+      height: 140px;
+      position: static;
+      top: 20px;
+
+    }
+
+    &__data {
+      margin:0.2rem;
+    }
+
+    p{
+      margin-bottom: 0;
+    }
+
+  }
 }
 
 .addToWishList{
@@ -68,6 +88,13 @@
   top: 20px;
   color: $dark-blue;
   font-size: 1.8rem;
+  @media (max-width: 320px) {
+    top:10px;
+    font-size: 1.5rem;
+
+
+
+  }
 }
 
 button:hover{

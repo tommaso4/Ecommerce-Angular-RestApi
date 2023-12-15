@@ -13,10 +13,18 @@ export class CartService {
   apiUrlShop= `${environment.API}/shop`;
   totalCart = new BehaviorSubject<number>(0);
   cart$ = this.totalCart.asObservable();
+  allitemSubject : BehaviorSubject<IShop []|null> = new BehaviorSubject<IShop []|null>(null);
+  allItem$ = this.allitemSubject.asObservable();
 
   constructor(
     private http:HttpClient
   ) { }
+
+
+
+  setAllItemSubject(data: IShop[]) {
+    this.allitemSubject.next(data);
+  }
 
 
   setTotalCart(data: number) {

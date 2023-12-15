@@ -28,7 +28,9 @@ export class EditComponent implements OnInit {
     id: [''],
     nome: [''],
     slogan: [''],
-    prezzo: ['']
+    prezzo: [''],
+    urlImmagine: [''],
+    descrizione: [''],
   });}
 
   ngOnInit(): void {
@@ -56,27 +58,27 @@ export class EditComponent implements OnInit {
   }
 
   populateForm(): void {
-    // Popola il form con i dettagli della birra ottenuti
+
     this.beerForm.patchValue({
       id: this.beer.id,
       nome: this.beer.nome,
       slogan: this.beer.slogan,
-      // ... altri campi corrispondenti alle proprietà dell'oggetto Ibeer
-      prezzo: this.beer.prezzo
+      urlImmagine: this.beer.urlImmagine,
+      prezzo: this.beer.prezzo,
+      descrizione: this.beer.descrizione
     });
   }
 
   onSave(): void {
-    const updatedData: Partial<Ibeer> = this.beerForm.value; // Ottieni solo i dati modificati
+    const updatedData: Partial<Ibeer> = this.beerForm.value;
 
-    // Copia solo i dati modificati nell'oggetto della birra
     const updatedBeer: Ibeer = { ...this.beer, ...updatedData };
 
-    // Chiamata al servizio per aggiornare solo i dati modificati
+
     this.beerService.updateBeer(this.beerId, updatedBeer).subscribe({
       next: (updatedBeer: Ibeer) => {
         console.log('Birra aggiornata con successo:', updatedBeer);
-        // Esegui il redirect alla pagina di dettaglio dopo l'aggiornamento
+
         this.router.navigate(['/details/', this.beerId]);
       },
       error: (error) => {
@@ -84,6 +86,5 @@ export class EditComponent implements OnInit {
       }
     });
   }
-
 
 }

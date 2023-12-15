@@ -4,6 +4,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, catchError, map, throwError } from 'rxjs';
 import { environment } from '../../environments/environment.development';
 import { Ibeer } from '../Modules/ibeer';
+import { ICreateBeer } from '../Modules/i-create-beer';
 
 
 @Injectable({
@@ -81,6 +82,14 @@ export class BeerService {
         return birrerosse;
       })
       );
+  }
+
+  createBeer(newBeer: ICreateBeer): Observable<ICreateBeer> {
+    return this.http.post<ICreateBeer>(this.apiUrl, newBeer).pipe(
+      catchError((error: any) => {
+        return throwError(() => new Error('Errore durante la creazione della birra'));
+      })
+    );
   }
 
 }
