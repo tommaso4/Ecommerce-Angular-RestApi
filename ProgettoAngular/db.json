@@ -5,6 +5,129 @@
   "shop": [],
   "beers": [
     {
+      "id": 1,
+      "nome": "Buzz",
+      "slogan": "A Real Bitter Experience.",
+      "primaProduzione": "09/2007",
+      "descrizione": "A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.",
+      "urlImmagine": "https://images.punkapi.com/v2/keg.png",
+      "abv": 4.5,
+      "ibu": 60,
+      "targetFg": 1010,
+      "targetOg": 1044,
+      "ebc": 20,
+      "srm": 10,
+      "ph": 4.4,
+      "volume": {
+        "valore": 20,
+        "unità": "litres",
+        "tipologia": "rossa"
+      },
+      "volumeBollire": {
+        "valore": 25,
+        "unità": "litres"
+      },
+      "metodo": {
+        "mashTemp": [
+          {
+            "temp": {
+              "valore": 64,
+              "unità": "celsius"
+            },
+            "durata": 75
+          }
+        ],
+        "fermentazione": {
+          "temp": {
+            "valore": 19,
+            "unità": "celsius"
+          }
+        },
+        "torsione": null
+      },
+      "ingredienti": {
+        "malto": [
+          {
+            "nome": "Maris Otter Extra Pale",
+            "quantità": {
+              "valore": 3.3,
+              "unità": "kilograms"
+            }
+          },
+          {
+            "nome": "Caramalt",
+            "quantità": {
+              "valore": 0.2,
+              "unità": "kilograms"
+            }
+          },
+          {
+            "nome": "Munich",
+            "quantità": {
+              "valore": 0.4,
+              "unità": "kilograms"
+            }
+          }
+        ],
+        "luppolo": [
+          {
+            "nome": "Fuggles",
+            "quantità": {
+              "valore": 25,
+              "unità": "grams"
+            },
+            "aggiungi": "start",
+            "attributo": "bitter"
+          },
+          {
+            "nome": "First Gold",
+            "quantità": {
+              "valore": 25,
+              "unità": "grams"
+            },
+            "aggiungi": "start",
+            "attributo": "bitter"
+          },
+          {
+            "nome": "Fuggles",
+            "quantità": {
+              "valore": 37.5,
+              "unità": "grams"
+            },
+            "aggiungi": "middle",
+            "attributo": "flavour"
+          },
+          {
+            "nome": "First Gold",
+            "quantità": {
+              "valore": 37.5,
+              "unità": "grams"
+            },
+            "aggiungi": "middle",
+            "attributo": "flavour"
+          },
+          {
+            "nome": "Cascade",
+            "quantità": {
+              "valore": 37.5,
+              "unità": "grams"
+            },
+            "aggiungi": "end",
+            "attributo": "flavour"
+          }
+        ],
+        "lievito": "Wyeast 1056 - American Ale™"
+      },
+      "abbinamentoCibo": [
+        "Spicy chicken tikka masala",
+        "Grilled chicken quesadilla",
+        "Caramel toffee cake"
+      ],
+      "brewersTips": "The earthy and floral aromas from the hops can be overpowering. Drop a little Cascade in at the end of the boil to lift the profile with a bit of citrus.",
+      "contribuitoDa": "Sam Mason <samjbmason>",
+      "prezzo": 4.5
+    },
+    {
       "id": 2,
       "nome": "Trashy Blonde",
       "slogan": "You Know You Shouldn't",
@@ -2474,6 +2597,101 @@
       "brewersTips": "Using crushed cranberries will dry out the beer further, drawing out their natural astringent character.",
       "contribuitoDa": "Sam Mason <samjbmason>",
       "prezzo": 9.12
+    },
+    {
+      "id": 20,
+      "nome": "Rabiator",
+      "slogan": "Imperial Wheat Beer",
+      "primaProduzione": "03/2011",
+      "descrizione": "Imperial Wheat beer / Weizenbock brewed by a homesick German in leather trousers. Think banana bread, bubble gum and David Hasselhoff.",
+      "urlImmagine": "https://images.punkapi.com/v2/keg.png",
+      "abv": 10.27,
+      "ibu": 26,
+      "targetFg": 1014,
+      "targetOg": 1092,
+      "ebc": 24,
+      "srm": 12,
+      "ph": 4.4,
+      "volume": {
+        "valore": 20,
+        "unità": "litres"
+      },
+      "volumeBollire": {
+        "valore": 25,
+        "unità": "litres"
+      },
+      "metodo": {
+        "mashTemp": [
+          {
+            "temp": {
+              "valore": 64,
+              "unità": "celsius"
+            },
+            "durata": 60
+          }
+        ],
+        "fermentazione": {
+          "temp": {
+            "valore": 21,
+            "unità": "celsius"
+          }
+        },
+        "torsione": null
+      },
+      "ingredienti": {
+        "malto": [
+          {
+            "nome": "Extra Pale",
+            "quantità": {
+              "valore": 5.63,
+              "unità": "kilograms"
+            }
+          },
+          {
+            "nome": "Wheat",
+            "quantità": {
+              "valore": 0.69,
+              "unità": "kilograms"
+            }
+          },
+          {
+            "nome": "Crystal",
+            "quantità": {
+              "valore": 0.63,
+              "unità": "kilograms"
+            }
+          }
+        ],
+        "luppolo": [
+          {
+            "nome": "Columbus",
+            "quantità": {
+              "valore": 12.5,
+              "unità": "grams"
+            },
+            "aggiungi": "start",
+            "attributo": "bitter"
+          },
+          {
+            "nome": "Hersbrucker",
+            "quantità": {
+              "valore": 12.5,
+              "unità": "grams"
+            },
+            "aggiungi": "middle",
+            "attributo": "flavour"
+          }
+        ],
+        "lievito": "Wyeast 3333 - German Wheat™"
+      },
+      "abbinamentoCibo": [
+        "Grilled portabello mushroom burger",
+        "Chicken sausages with creamy mash",
+        "Caramel and banana meringue pie"
+      ],
+      "brewersTips": "If you are struggling to get that authentic head retention increase your mash temperature to about 70°C.",
+      "contribuitoDa": "Sam Mason <samjbmason>",
+      "prezzo": 4.77
     },
     {
       "id": 21,

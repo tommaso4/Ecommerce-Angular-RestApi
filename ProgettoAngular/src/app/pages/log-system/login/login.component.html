@@ -1,5 +1,5 @@
 <div class="container userTab">
-  <form [formGroup]="form">
+  <form [formGroup]="form" class="rounded">
     <div>
       <label for="email">Email:</label>
       <input class="form-control" type="text" id="email" formControlName="email">
@@ -13,7 +13,7 @@
     <div class="my-3" *ngIf="failedLogin">Wrong Email or Password</div>
     <div class="d-flex mt-3  justify-content-between align-items-center">
       <p class="m-0">You aren't signed? <a routerLink="/LogSystem/register">Sign In!</a></p>
-      <button [disabled]="!form.valid" class="p-1" (click)="submit()">Login</button>
+      <button [disabled]="!form.valid" class="p-1 rounded" (click)="submit()">Login</button>
     </div>
 
   </form>
