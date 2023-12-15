@@ -23,7 +23,7 @@ export class CartComponent {
   isLogged: boolean = false;
   userId! : number
   totalCart: number = 0;
-  private apiUrlShop = environment.apiUrlShop;
+  private apiUrlShop = environment.API+ '/shop';
 
 
   constructor
